@@ -1,18 +1,36 @@
 import React from 'react'
 import { FaHome } from "react-icons/fa";
-import { FcAbout } from "react-icons/fc";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
-import { BsPersonFill } from "react-icons/bs";
+import { BsInfoCircleFill } from "react-icons/bs";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaUserTie } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
+import { BsClipboard2CheckFill } from "react-icons/bs";
+
+import { BiFontColor } from "react-icons/bi";
+import { BsHeadphones } from "react-icons/bs";
+import { BsGlobe } from "react-icons/bs";
+import { FaMicrophone } from "react-icons/fa";
+import { FaClosedCaptioning } from "react-icons/fa";
+import { FaMicrophoneAlt } from "react-icons/fa";
+import { BsHeadset } from "react-icons/bs";
+import { BsFillFileEarmarkWordFill } from "react-icons/bs";
+import { FaFileVideo } from "react-icons/fa";
+import { FaMicrochip } from "react-icons/fa";
+
+import { BsFillEnvelopeFill } from "react-icons/bs";
+import { BsSkype } from "react-icons/bs";
+
 import '../App.css';
 
 export default function Footer() {
     return (
         <>
-            <div className='footer pt-5'>
-                <div className='container'>
+            <div className='footer pt-4'>
+                <div className='container-fluid'>
                     <div className=' row'>
                         {/* 1st section */}
                         <div className='col-md-2 first-section'  >
@@ -32,7 +50,6 @@ export default function Footer() {
                                 <BsLinkedin color='#49dab5' />
                                 <BsYoutube color='#49dab5' />
                                 <BsFacebook color='#49dab5' />
-
                                 </span>
                         </div>
                         {/* third section */}
@@ -47,37 +64,37 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='container py-3'>
+                <div className='container-fluid pt-5 pb-2'>
                     <div className='row px-5'>
                         <div className='footer-col'>
                             <h2>Quick Links</h2>
-                            <ul>
-                                <li> <FaHome /> Home </li>
-                                <li><FcAbout color='white'/><a href="">About</a> </li>
-                                <li> <a href=""><BsPersonFill/> Clients</a> </li>
-                                <li><a href="">Blogs</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">privacy policy</a></li>
+                            <ul className='p-0'>
+                                <li> <a href="#"><FaHome/> Home</a> </li>
+                                <li><a href="#"><BsInfoCircleFill/> About</a> </li>
+                                <li> <a href="#"><FaUserTie/> Clients</a> </li>
+                                <li><a href="#"><FaEdit/> Blog</a></li>
+                                <li><a href="#"><BsFillTelephoneFill /> Contact</a></li>
+                                <li><a href="#"><BsClipboard2CheckFill /> Privacy Policy</a></li>
                             </ul>
                         </div>
                         <div className='footer-col'>
                             <h2>Services</h2>
-                            <ul>
-                                <li><a>Translation</a></li>
-                                <li><a>Transcription</a></li>
-                                <li><a>Localization</a></li>
-                                <li><a>Dubbing</a></li>
-                                <li><a>Dubbing</a></li>
-                                <li><a>Voice Over</a></li>
-                                <li><a>Interpretation (VRI)</a></li>
-                                <li><a>Content Writing</a></li>
-                                <li><a>Video creation</a></li>
-                                <li><a>AI Dubbing</a></li>
+                            <ul className='p-0'>
+                                <li><a href="#"><BiFontColor /> Translation</a></li>
+                                <li><a href="#"><BsHeadphones /> Transcription</a></li>
+                                <li><a href="#"><BsGlobe /> Localization</a></li>
+                                <li><a href="#"><FaMicrophone /> Dubbing</a></li>
+                                <li><a href="#"><FaClosedCaptioning /> Subtitling</a></li>
+                                <li><a href="#"><FaMicrophoneAlt /> Voice Over</a></li>
+                                <li><a href="#"><BsHeadset /> Interpretation (VRI)</a></li>
+                                <li><a href="#"><BsFillFileEarmarkWordFill /> Content Writing</a></li>
+                                <li><a href="#"><FaFileVideo /> Video Creation</a></li>
+                                <li><a href="#"><FaMicrochip /> AI Dubbing</a></li>
                             </ul>
                         </div>
 
                         <div className='footer-col'>
-                            <h2>contact details</h2>
+                            <h2>Contact Details</h2>
 
                             <p>316, Gemstar Commercial
                                 Complex,<br />
@@ -86,9 +103,11 @@ export default function Footer() {
                                 Malad West, Mumbai 400064<br/>
                                 Maharashtra, India</p>
 
-                            <p>+91-9136109881<br/>
-                                amitt@parikhinfosoltions.com<br/>
-                                amitt.parikh</p>
+                            <ul className='p-0'>
+                                <li><a href="#"><BsFillTelephoneFill /> +91-9136109881</a></li>
+                                <li><a href="#"><BsFillEnvelopeFill /> amitt@parikhinfosoltions.com</a></li>
+                                <li><a href="#"><BsSkype /> amitt.parikh</a></li>
+                            </ul>
 
                         </div>
                         <div className='footer-col '>
