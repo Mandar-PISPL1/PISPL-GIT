@@ -5,6 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
+import { BsPersonFill } from "react-icons/bs";
 import '../App.css';
 
 export default function Footer() {
@@ -52,8 +53,8 @@ export default function Footer() {
                             <h2>Quick Links</h2>
                             <ul>
                                 <li> <FaHome /> Home </li>
-                                <li><FcAbout /><a href="">About</a> </li>
-                                <li> <a href="">Services</a> </li>
+                                <li><FcAbout color='white'/><a href="">About</a> </li>
+                                <li> <a href=""><BsPersonFill/> Clients</a> </li>
                                 <li><a href="">Blogs</a></li>
                                 <li><a href="">Contact</a></li>
                                 <li><a href="">privacy policy</a></li>
