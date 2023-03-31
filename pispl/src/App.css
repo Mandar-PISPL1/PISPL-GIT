@@ -41,7 +41,6 @@
 }
 
 .footer-col{
-	width: 25% ;
 	padding: 0 20px;
     font-weight: 400;
 }
@@ -61,7 +60,7 @@
 
 @media(max-width: 415px){
   .footer-col{
-    width: 100%;
+    width: 100%!important;
 }
  .footer-col ul li a{
     color:#eee;
