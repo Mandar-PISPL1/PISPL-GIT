@@ -21,7 +21,7 @@ export default function Navbar() {
 
             <div className="nav-btn">
                 <div className="nav-links">
-                    <ul className="my-auto">
+                    <ul className="my-auto p-0">
                         <li className="nav-link" style={{'--i': 1}}>
                             <a href="#">Services <BiCaretDown/></a>
                             <div className="dropdown">
