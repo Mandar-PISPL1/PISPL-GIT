@@ -1,4 +1,5 @@
 import React from 'react'
+import { BiCaretDown } from "react-icons/bi";
 export default function Navbar() {
   return (
     <>
@@ -22,7 +23,7 @@ export default function Navbar() {
                 <div className="nav-links">
                     <ul className="my-auto">
                         <li className="nav-link" style={{'--i': 1}}>
-                            <a href="#">Services<i className="fas fa-caret-down"></i></a>
+                            <a href="#">Services <BiCaretDown/></a>
                             <div className="dropdown">
                                 <ul>
                                     <li className="dropdown-link">
@@ -38,13 +39,13 @@ export default function Navbar() {
                                         <a href="#">Voice over Services</a>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">dubbing Services</a>
+                                        <a href="#">Dubbing Services</a>
                                     </li>
                                     <li className="dropdown-link">
                                         <a href="#">AI Dubbing Services</a>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Video Subscripting Services</a>
+                                        <a href="#">Video Subtitling Services</a>
                                     </li>
                                     <li className="dropdown-link">
                                         <a href="#">Interpretation Services</a>

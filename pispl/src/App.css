@@ -8,7 +8,7 @@
 
 :root {
 	--mainColor: #0d2366;
-	--mainColorLight: #5767aa;
+	--mainColorLight: #0d2366;
 	--secondaryColor: #db2b39;
 	--textColor: #eee;
 }
@@ -257,7 +257,7 @@ section{
     position: absolute;
     top: 100%;
     left: 0;
-    width: 12rem;
+    width: 14rem;
     transform: translateY(10px);
     opacity: 0;
     pointer-events: none;
@@ -271,16 +271,16 @@ section{
 .dropdown-link > a{
     display: flex;
     background-color: #fff;
-    color: #3498db;
+    color: #494c4f;
     padding: .5rem 1rem;
-    font-size: .9rem;
+    font-size: .8rem;
     align-items: center;
     justify-content: space-between;
     transition: .3s;
 }
 
 .dropdown-link:hover > a{
-    background-color: #0d2366;
+    background-color: #0d3266;
     color: #fff;
 }
 
