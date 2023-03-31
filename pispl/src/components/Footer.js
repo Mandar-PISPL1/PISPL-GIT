@@ -34,7 +34,7 @@ export default function Footer() {
                     <div className=' row'>
                         {/* 1st section */}
                         <div className='col-md-2 first-section'  >
-                            <div className='d-flex align-items-center' > <img src="https://parikhinfosolutions.com/wp-content/uploads/2023/01/logo-desktop.webp" alt="Logo" width="90" height="95" className="d-inline-block align-text-top" />
+                            <div className='d-flex align-items-center' > <img src="https://parikhinfosolutions.com/wp-content/uploads/2023/01/logo-desktop.webp" alt="PISPL Logo" width="90" height="95" className="d-inline-block align-text-top" />
                                 <div style={{ backgroundColor: "#041020", color: "white", display: "flex", flexDirection: "column" }} >
                                     <p className='h6 ms-3 mt-3'>&copy; Parikh info Solution Pvt. Ltd. <br />
                                     2023 All Rights Reserved
@@ -59,41 +59,41 @@ export default function Footer() {
                             
                                 <img  width="162" height="162" src="https://parikhinfosolutions.com/wp-content/uploads/2020/10/ISO-27100_2015.jpg" className="attachment-full size-full wp-image-5746 entered lazyloaded" alt="" data-lazy-srcset="https://parikhinfosolutions.com/wp-content/uploads/2020/10/ISO-27100_2015.jpg 200w, https://parikhinfosolutions.com/wp-content/uploads/2020/10/ISO-27100_2015-150x150.jpg 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://parikhinfosolutions.com/wp-content/uploads/2020/10/ISO-27100_2015.jpg" data-ll-status="loaded" sizes="(max-width: 200px) 100vw, 200px" srcSet="https://parikhinfosolutions.com/wp-content/uploads/2020/10/ISO-27100_2015.jpg 200w, https://parikhinfosolutions.com/wp-content/uploads/2020/10/ISO-27100_2015-150x150.jpg 150w" />
                             
-                                <img width="162" height="162" src="https://parikhinfosolutions.com/wp-content/uploads/elementor/thumbs/image-pn95k96glrglsmc6dwdojynp8trm0xcoq6iz3gs98w.png" title="image" alt="image" data-lazy-src="https://parikhinfosolutions.com/wp-content/uploads/elementor/thumbs/image-pn95k96glrglsmc6dwdojynp8trm0xcoq6iz3gs98w.png" data-ll-status="loaded" className="entered lazyloaded" />
+                                <img width="162" height="162" src="https://parikhinfosolutions.com/wp-content/uploads/elementor/thumbs/image-pn95k96glrglsmc6dwdojynp8trm0xcoq6iz3gs98w.png" title="Certificate 1" alt="Certificate 1" data-lazy-src="https://parikhinfosolutions.com/wp-content/uploads/elementor/thumbs/image-pn95k96glrglsmc6dwdojynp8trm0xcoq6iz3gs98w.png" data-ll-status="loaded" className="entered lazyloaded" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='container-fluid pt-5 pb-2'>
-                    <div className='row px-5'>
-                        <div className='footer-col'>
+                    <div className='row px-3'>
+                        <div className='footer-col' style={{width:"20%"}}>
                             <h2>Quick Links</h2>
                             <ul className='p-0'>
-                                <li> <a href="#"><FaHome/> Home</a> </li>
-                                <li><a href="#"><BsInfoCircleFill/> About</a> </li>
-                                <li> <a href="#"><FaUserTie/> Clients</a> </li>
-                                <li><a href="#"><FaEdit/> Blog</a></li>
-                                <li><a href="#"><BsFillTelephoneFill /> Contact</a></li>
-                                <li><a href="#"><BsClipboard2CheckFill /> Privacy Policy</a></li>
+                                <li> <a href="/"><FaHome/> Home</a> </li>
+                                <li><a href="/"><BsInfoCircleFill/> About</a> </li>
+                                <li> <a href="/"><FaUserTie/> Clients</a> </li>
+                                <li><a href="/"><FaEdit/> Blog</a></li>
+                                <li><a href="/"><BsFillTelephoneFill /> Contact</a></li>
+                                <li><a href="/"><BsClipboard2CheckFill /> Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div className='footer-col'>
+                        <div className='footer-col' style={{width:"20%"}}>
                             <h2>Services</h2>
                             <ul className='p-0'>
-                                <li><a href="#"><BiFontColor /> Translation</a></li>
-                                <li><a href="#"><BsHeadphones /> Transcription</a></li>
-                                <li><a href="#"><BsGlobe /> Localization</a></li>
-                                <li><a href="#"><FaMicrophone /> Dubbing</a></li>
-                                <li><a href="#"><FaClosedCaptioning /> Subtitling</a></li>
-                                <li><a href="#"><FaMicrophoneAlt /> Voice Over</a></li>
-                                <li><a href="#"><BsHeadset /> Interpretation (VRI)</a></li>
-                                <li><a href="#"><BsFillFileEarmarkWordFill /> Content Writing</a></li>
-                                <li><a href="#"><FaFileVideo /> Video Creation</a></li>
-                                <li><a href="#"><FaMicrochip /> AI Dubbing</a></li>
+                                <li><a href="/"><BiFontColor /> Translation</a></li>
+                                <li><a href="/"><BsHeadphones /> Transcription</a></li>
+                                <li><a href="/"><BsGlobe /> Localization</a></li>
+                                <li><a href="/"><FaMicrophone /> Dubbing</a></li>
+                                <li><a href="/"><FaClosedCaptioning /> Subtitling</a></li>
+                                <li><a href="/"><FaMicrophoneAlt /> Voice Over</a></li>
+                                <li><a href="/"><BsHeadset /> Interpretation (VRI)</a></li>
+                                <li><a href="/"><BsFillFileEarmarkWordFill /> Content Writing</a></li>
+                                <li><a href="/"><FaFileVideo /> Video Creation</a></li>
+                                <li><a href="/"><FaMicrochip /> AI Dubbing</a></li>
                             </ul>
                         </div>
 
-                        <div className='footer-col'>
+                        <div className='footer-col' style={{width:"25%"}}>
                             <h2>Contact Details</h2>
 
                             <p>316, Gemstar Commercial
@@ -104,16 +104,16 @@ export default function Footer() {
                                 Maharashtra, India</p>
 
                             <ul className='p-0'>
-                                <li><a href="#"><BsFillTelephoneFill /> +91-9136109881</a></li>
-                                <li><a href="#"><BsFillEnvelopeFill /> amitt@parikhinfosoltions.com</a></li>
-                                <li><a href="#"><BsSkype /> amitt.parikh</a></li>
+                                <li><a href="/"><BsFillTelephoneFill /> +91-9136109881</a></li>
+                                <li><a href="/"><BsFillEnvelopeFill /> amitt@parikhinfosoltions.com</a></li>
+                                <li><a href="/"><BsSkype /> amitt.parikh</a></li>
                             </ul>
 
                         </div>
-                        <div className='footer-col '>
+                        <div className='footer-col' style={{width:"35%"}}>
                             <h2>Map</h2>
                             <div className='map'>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d471.0161570555002!2d72.838855!3d19.189556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x832a1bf6767b8c34!2sParikh%20Info%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sus!4v1673971330090!5m2!1sen!2sus" width="340" height="300" style={{ border: "0",width:"100%" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" data-lf-form-tracking-inspected-dzlr5a5ogex7boq2="true" data-lf-yt-playback-inspected-dzlr5a5ogex7boq2="true" data-lf-vimeo-playback-inspected-dzlr5a5ogex7boq2="true"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d471.0161570555002!2d72.838855!3d19.189556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x832a1bf6767b8c34!2sParikh%20Info%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sus!4v1673971330090!5m2!1sen!2sus" title="Google Map" width="340" height="300" style={{ border: "0",width:"100%" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" data-lf-form-tracking-inspected-dzlr5a5ogex7boq2="true" data-lf-yt-playback-inspected-dzlr5a5ogex7boq2="true" data-lf-vimeo-playback-inspected-dzlr5a5ogex7boq2="true"></iframe>
                             </div>
                         </div>
                     </div>
