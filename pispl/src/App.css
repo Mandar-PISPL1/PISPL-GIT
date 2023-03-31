@@ -256,7 +256,7 @@ section{
     position: absolute;
     top: 100%;
     left: 0;
-    width: 12rem;
+    width: 14rem;
     transform: translateY(10px);
     opacity: 0;
     pointer-events: none;
