@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import styled from './Form.module.css'
 import axios from "axios";
-// import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 export default function Form() {
  
     const [formValue,setFormValue] = useState(
@@ -14,11 +14,10 @@ export default function Form() {
             briefdetails:""
         });
 
+    
     const handleChange =(e)=>{
-        // console.log(e.target)
         const name=e.target.name;
         const value=e.target.value;
-        // console.log(name,value)
         setFormValue({...formValue,[name]:value})
         
     }
@@ -29,6 +28,20 @@ export default function Form() {
             console.log(response);
 
         })
+        // web@parikhinfosolutions.com
+        // web@parikhinfosolutions.com
+        // const config={
+        //     SecureToken:"9e163d01-c830-4ad0-82b3-496abed197e0",
+        //     Port:2525,
+        //     To : "web@parikhinfosolutions.com",
+        //     From : formValue.email,
+        //     Subject : "Contact form has been submitted",
+        //     Body : `${formValue.name} connected to you over email address: ${formValue.email}`,
+        // }
+        // if(window.Email){
+        //     window.Email.send(config).then(()=> alert("Email sent successfully"));
+        //     console.log("Sent email")
+        // }
         setFormValue(
             {
                 email:"",
@@ -38,7 +51,13 @@ export default function Form() {
                 briefdetails:""
             }
         )
-        // emailjs.sendForm()
+        // emailjs.sendForm('service_gfkmnbe','template_15tmdog',e.target)
+    //     emailjs.sendForm('service_gfkmnbe', 'template_15tmdog',e.target , 'YOUR_PUBLIC_KEY')
+    //   .then((result) => {
+    //       alert("email send");
+    //   }, (error) => {
+    //       console.log(error.text);
+    //   });
 
     }
 
@@ -48,7 +67,7 @@ export default function Form() {
                 className="container-sm border border-primary"
                 style={{ marginTop: "50px" ,width:"35%"}}
             >
-                <form onSubmit={handleSubmit}>
+                <form  onSubmit={handleSubmit}>
                     <p className="mb-3">Get free support and quote on your email. Please submit the form to get in touch with us.</p>
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label">
@@ -100,7 +119,8 @@ export default function Form() {
                                 County Code
                             </label>
                             <select className="form-select" aria-label="Default select example" name="countrycode" onChange={handleChange}>
-                                <option defaultValue={"India (+91)"}>India (+91)</option>
+                                {/* <option value="" >Select country code</option> */}
+                                <option value="India (+91)" >India (+91)</option>
                                 <option value="Andorra (+376)">Andorra (+376)</option>
                                 <option value="Angola (+244)">Angola (+244)</option>
                             </select>
@@ -132,6 +152,7 @@ export default function Form() {
                     </div>
                     <div className="mb-3">
                         <button type="submit" className="btn btn-primary">Send Enquiry</button>
+                        
                     </div>
                 </form>
             </div>

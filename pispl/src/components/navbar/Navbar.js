@@ -1,5 +1,6 @@
 import React from 'react'
 import { BiCaretDown } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
@@ -10,7 +11,8 @@ export default function Navbar() {
             
             <div className="logo-container">
                 <div  style={{color: "white", display: "flex", flexDirection: "row" }} >
-                    <img src="https://parikhinfosolutions.com/wp-content/uploads/2023/01/logo-desktop.webp" alt="Logo" width="55" height="55"  />
+                    <NavLink to="#">
+                    <img src="https://parikhinfosolutions.com/wp-content/uploads/2023/01/logo-desktop.webp" alt="Logo" width="55" height="55"  /></NavLink>
                         <div style={{ color: "white", margin:"auto"}}>
                             <p className='h6 ms-2 '>Parikh info Solution Pvt. Ltd. <br /><span className='small'>Localization & globalization</span>
                             </p>
@@ -27,34 +29,34 @@ export default function Navbar() {
                             <div className="dropdown">
                                 <ul>
                                     <li className="dropdown-link">
-                                        <a href="#">Translation Services</a>
+                                        <NavLink to="/translation">Translation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Transcription Services</a>
+                                        <NavLink to="/transcription">Transcription Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Localization Services</a>
+                                        <NavLink to="/localiztion">Localization Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Voice over Services</a>
+                                        <NavLink to="/voiceover">Voice over Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Dubbing Services</a>
+                                        <NavLink to="/dubbing">Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">AI Dubbing Services</a>
+                                        <NavLink to="/aidubbing">AI Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Video Subtitling Services</a>
+                                        <NavLink to="/videosubtitling">Video Subtitling Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Interpretation Services</a>
+                                        <NavLink to="/interpretation">Interpretation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Content Writing Services</a>
+                                        <NavLink to="/contentwriting">Content Writing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <a href="#">Video creation Services</a>
+                                        <NavLink to="/videocreation">Video creation Services</NavLink>
                                     </li>
                                    
                                     <div className="arrow"></div>
