@@ -80,16 +80,16 @@ export default function Footer() {
                         <div className='footer-col' style={{width:"20%"}}>
                             <h2>Services</h2>
                             <ul className='p-0'>
-                                <li><a href="/"><BiFontColor /> Translation</a></li>
-                                <li><a href="/"><BsHeadphones /> Transcription</a></li>
-                                <li><a href="/"><BsGlobe /> Localization</a></li>
-                                <li><a href="/"><FaMicrophone /> Dubbing</a></li>
-                                <li><a href="/"><FaClosedCaptioning /> Subtitling</a></li>
-                                <li><a href="/"><FaMicrophoneAlt /> Voice Over</a></li>
-                                <li><a href="/"><BsHeadset /> Interpretation (VRI)</a></li>
-                                <li><a href="/"><BsFillFileEarmarkWordFill /> Content Writing</a></li>
-                                <li><a href="/"><FaFileVideo /> Video Creation</a></li>
-                                <li><a href="/"><FaMicrochip /> AI Dubbing</a></li>
+                                <li><a href="/translation"><BiFontColor /> Translation</a></li>
+                                <li><a href="/transcription"><BsHeadphones /> Transcription</a></li>
+                                <li><a href="/localization"><BsGlobe /> Localization</a></li>
+                                <li><a href="/dubbing"><FaMicrophone /> Dubbing</a></li>
+                                <li><a href="/videosubtitling"><FaClosedCaptioning /> Subtitling</a></li>
+                                <li><a href="/voiceover"><FaMicrophoneAlt /> Voice Over</a></li>
+                                <li><a href="/interpretation"><BsHeadset /> Interpretation (VRI)</a></li>
+                                <li><a href="/contentwriting"><BsFillFileEarmarkWordFill /> Content Writing</a></li>
+                                <li><a href="/videocreation"><FaFileVideo /> Video Creation</a></li>
+                                <li><a href="/aidubbing"><FaMicrochip /> AI Dubbing</a></li>
                             </ul>
                         </div>
 
