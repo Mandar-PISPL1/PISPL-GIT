@@ -24,6 +24,7 @@ export default function Banner(props) {
                         <h1 className='fw-bold py-3'>{arr[a].name_of_service}</h1>
                         <div style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></div>
                         <p className='py-4'>{arr[a].content}</p>
+                        <p>adarsh</p>
                         <button style={buttonstyle}>Download Free Brochure <FaBook/></button>
                     </div>
                     <div className='col-md-5 d-flex justify-content-center '>
