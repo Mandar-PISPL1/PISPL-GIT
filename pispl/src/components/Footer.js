@@ -9,7 +9,6 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { BsClipboard2CheckFill } from "react-icons/bs";
-
 import { BiFontColor } from "react-icons/bi";
 import { BsHeadphones } from "react-icons/bs";
 import { BsGlobe } from "react-icons/bs";

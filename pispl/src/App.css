@@ -535,3 +535,9 @@ section{
 
    
 }
+
+@media(min-width: 975px){
+	.repon{
+        width: 0px 80%;
+    }
+}
