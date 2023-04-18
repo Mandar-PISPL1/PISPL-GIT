@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from '../../translation/Banner'
 import brands from './brands'
 import TopBrandSection from '../../translation/TopBrandSection'
+import UspSection from '../../translation/UspSection'
 import dubbing_lottie from './dubbing_lottie.json'
 export default function Dubbing() {
   const mystyle = {
@@ -27,6 +28,15 @@ export default function Dubbing() {
           </div>
         </div>
       </div>
+      <UspSection
+        heading="Give Your Viewers A Better Experience"
+        data1="Lip Syncing"
+        data2="Clear Sound-Track"
+        data3="Natural Accents"
+        button="Start Your Dubbing Projects"
+        lowerdataValue="true"
+        lowerdata="Are you looking for transcription services?"
+        />
     </>
   )
 }

@@ -3,6 +3,7 @@ import Banner from '../../translation/Banner'
 import videosubtitling_lottie from './videosubtitling_lottie.json'
 import TopBrandSection from '../../translation/TopBrandSection'
 import brands from './brands'
+import UspSection from '../../translation/UspSection'
 export default function VideoSubtitling() {
   const mystyle = {
     display: "flex",
@@ -27,6 +28,15 @@ export default function VideoSubtitling() {
           </div>
         </div>
       </div>
+      <UspSection
+        heading="Provide Better User Engagement and Experience"
+        data1="Time Sync"
+        data2="Desired Fonts"
+        data3="Precise Positioning"
+        button="Get Your Subtitlies"
+        lowerdataValue="true"
+        lowerdata="Are you looking for transcription services?"
+        />
     </>
   )
 }

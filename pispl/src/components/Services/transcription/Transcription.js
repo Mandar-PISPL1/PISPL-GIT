@@ -3,6 +3,7 @@ import Banner from '../../translation/Banner'
 import transcription_lottie from './transcription_lottie.json'
 import brands from './brands'
 import TopBrandSection from '../../translation/TopBrandSection'
+import UspSection from '../../translation/UspSection'
 export default function Transcription() {
   const mystyle={
     display:"flex",
@@ -27,6 +28,15 @@ export default function Transcription() {
           </div>
         </div>
       </div>
+      <UspSection
+        heading="Get Your 100 % Human Transcription"
+        data1="Native Transcribers"
+        data2="Hassel-Free Process"
+        data3="Accuracy Guaranteed"
+        button="Get Your Transcription"
+        lowerdata="Are you looking for professional translation services company?"
+        lowerdataValue="true"
+        />
     </>
   )
 }

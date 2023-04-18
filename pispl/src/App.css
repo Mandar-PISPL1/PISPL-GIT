@@ -541,8 +541,14 @@ section{
         width: 0px 80%;
     }
 }
-@media  only screen and(max-width:595px){
-    .usp-section{
+@media(max-width: 575px){
+    .phone{
         flex-direction: column;
+        width: 18rem;
+        margin: auto;
     }
+    
 }
+/* .kk{
+    background-color: red;
+} */

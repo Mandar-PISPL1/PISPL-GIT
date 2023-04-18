@@ -3,6 +3,8 @@ import Banner from '../../translation/Banner'
 import voiceover_lottie from './voiceover_lottie.json'
 import brands from './brands'
 import TopBrandSection from '../../translation/TopBrandSection'
+import UspSection from '../../translation/UspSection'
+
 export default function VoiceOver() {
   const mystyle = {
     display: "flex",
@@ -27,6 +29,17 @@ export default function VoiceOver() {
           </div>
         </div>
       </div>
+      <UspSection
+        heading="Provide Better User Engagement and Experience"
+        data1="Time Sync"
+        data2="Desired Fonts"
+        data3="Precise Positioning"
+        dataValue="true"
+        data4="Affordable Rates"
+        button="Get Your Subtitlies"
+        lowerdataValue="true"
+        lowerdata="Are you looking for interpretation services?"
+        />
     </>
   )
 }

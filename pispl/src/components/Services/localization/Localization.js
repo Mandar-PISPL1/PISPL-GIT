@@ -3,6 +3,7 @@ import Banner from '../../translation/Banner'
 import localization_lottie from './localization_lottie.json'
 import brands from './brands'
 import TopBrandSection from '../../translation/TopBrandSection'
+import UspSection from '../../translation/UspSection'
 export default function Localization() {
   const mystyle = {
     display: "flex",
@@ -27,6 +28,17 @@ export default function Localization() {
           </div>
         </div>
       </div>
+      <UspSection
+        heading="Go Local"
+        heading_value="true"
+        heading2="Attract New Traffic Like Never Before!"
+        data1="Higher ROI"
+        data2="Native Linguists"
+        data3="Higher Search Rate"
+        button="Localize Now"
+        lowerdataValue="true"
+        lowerdata="Are you looking for language interpreter? "
+        />
     </>
   )
 }
