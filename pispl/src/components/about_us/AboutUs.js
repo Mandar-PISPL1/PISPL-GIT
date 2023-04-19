@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <>
       <Banner lottie={aboutus_lottie} index={10} upperpara={true} />
-      {/* About Us */}
+      {/* About Us Part -1*/}
       <div className='py-5'>
         <div className='container-fluid'>
           <div className='row px-md-5' >
@@ -19,7 +19,7 @@ export default function AboutUs() {
               </div>
               <div className='container my-3'>
                 <div className='row'>
-                  <div className='col-md-3 text-sm-center '>
+                  <div className='col-md-3 text-center '>
                     <h1 style={{ color: "#49dab5" }}>95%</h1>
                     <p>Client Retention</p>
                   </div>
@@ -41,6 +41,60 @@ export default function AboutUs() {
 
         </div>
       </div>
+       {/* About Us : End of part -1 */}
+       {/* brands section */}
+       <div style={{backgroundColor:"#f6f6f6"}}>
+          <div>
+            <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Trusted by World's Major Brands</h1>
+            <div className='container-fluid'>
+              <div className='row'>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+                <div className='col-xs-6 col-md-2 '>
+                  fghfhjg
+                </div>
+
+              </div>
+            </div>
+          </div>
+       </div>
     </>
   )
 }
