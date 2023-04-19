@@ -14,12 +14,12 @@ export default function Translation() {
     flexDirection: "row",
     flexWrap: "wrap"
   }
-  
+  // a={translation_service} lottie file json
 
 
   return (
     <>
-      <Banner index={0} a={translation_service} />
+      <Banner index={0} lottie={translation_service} />
       {/* Top Brands Section */}
       <div className="repon" style={{ textAlign: "center", margin: "3rem auto", textAlign: "center" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Brands We Work With</h1>

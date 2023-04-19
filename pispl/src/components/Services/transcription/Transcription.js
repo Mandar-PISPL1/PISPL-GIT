@@ -13,7 +13,8 @@ export default function Transcription() {
   }
   return (
     <>
-      <Banner index={1} a={transcription_lottie} />
+      <Banner index={1} lottie={transcription_lottie} />
+      {/* Top Brand Section */}
       <div className="repon" style={{ textAlign: "center", margin: " 3rem auto", textAlign: "center" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Join Our Happy Customers</h1>
         <div className='container-fluid'>

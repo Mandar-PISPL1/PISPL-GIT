@@ -14,23 +14,23 @@ export default function Banner(props) {
         borderRadius:"5px",
         border:"0px",
     }
-    const a=props.index;
+    const index=props.index; // index of array of services_content
     return (
         <>
 
             <div className='container-fluid py-3' style={{backgroundColor:"var(--mainColor)",color:"var(--textColor)"}}>
                 <div className='row align-items-center' style={{margin:"4% 8%"}} >
                     <div className='col-md-7 justify-content-center align-items-center '>
-                        <h1 className='fw-bold py-3'>{arr[a].name_of_service}</h1>
+                        <h1 className='fw-bold py-3'>{arr[index].name_of_service}</h1>
                         <div className='mb-2' style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></div>
-                        <p className='py-2'>{arr[a].content1}</p>
-                        <p className='py-2'>{arr[a].content2}</p>
-                        <p className='py-2'>{arr[a].content3}</p>
+                        <p className='py-2'>{arr[index].content1}</p>
+                        <p className='py-2'>{arr[index].content2}</p>
+                        <p className='py-2'>{arr[index].content3}</p>
                         <button  style={buttonstyle}>Download Free Brochure <FaBook/></button>
                     </div>
-                    <div className='col-md-5 d-flex justify-content-center adarsh'>
+                    <div className='col-md-5 d-flex justify-content-center '>
                         <div className=''  >
-                            {!props.flag && <Lottie animationData={props.a}  style={{height:"364px", width:"364px"}}/>}
+                            {!props.flag && <Lottie animationData={props.lottie}  style={{height:"364px", width:"100%"}}/>}
                             {props.flag && <img src={props.b} style={{height:"456px",width:"456px"}}></img>}
                         </div>
                     </div>

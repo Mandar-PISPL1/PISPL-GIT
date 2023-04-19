@@ -1,5 +1,4 @@
 import Navbar from './components/navbar/Navbar';
-
 import Footer from './components/Footer';
 import './App.css';
 import Translation from './components/Services/translation/Translation';
@@ -14,6 +13,11 @@ import VideoSubtitling from './components/Services/video_subtitling/VideoSubtitl
 import Interpretation from './components/Services/interpretation/Interpretation';
 import ContentWriting from './components/Services/content_writing/ContentWriting';
 import VideoCreation from './components/Services/video_creation/VideoCreation';
+import AboutUs from './components/about_us/AboutUs';
+import Clients from './components/clients/Clients';
+import Blogs from './components/blogs/Blogs';
+import JoinNow from './components/join_now/JoinNow';
+import Contact from './components/contact/Contact';
 // import Form from './components/form/Form';
 
 function App() {
@@ -36,6 +40,11 @@ function App() {
           <Route path='/interpretation' element={<Interpretation />} />
           <Route path='/contentwriting' element={<ContentWriting />} />
           <Route path='/videocreation' element={<VideoCreation />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/aboutus' element={<AboutUs />} />
+          <Route path='/clients' element={<Clients />} />
+          <Route path='/blogs' element={<Blogs />} />
+          <Route path='/joinnow' element={<JoinNow />} />
         </Routes>
         <Footer />
         {/* <Form/> */}

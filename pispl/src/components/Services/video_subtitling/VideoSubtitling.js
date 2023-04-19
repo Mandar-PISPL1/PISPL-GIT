@@ -13,7 +13,7 @@ export default function VideoSubtitling() {
   }
   return (
     <>
-        <Banner index={6} a={videosubtitling_lottie}/>
+        <Banner index={6} lottie={videosubtitling_lottie}/>
         <div className="repon" style={{ textAlign: "center", margin: " 3rem auto", textAlign: "center" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Subtitles Provided To Big Brands</h1>
         <div className='container-fluid'>

@@ -16,7 +16,7 @@ const arr=[
     },
     {
         name_of_service: "Localization Services In India",
-        content1: "With years dedicated to the localization industry, we have perfected the formula to create decisive content and methods for\nlocalization. Be it Apps, Websites, or Software, we help you connect with consumers on the most fundamental level.",
+        content1: "With years dedicated to the localization industry, we have perfected the formula to create decisive content and methods for localization. Be it Apps, Websites, or Software, we help you connect with consumers on the most fundamental level.",
         content2: "",
         content3: ""
     }

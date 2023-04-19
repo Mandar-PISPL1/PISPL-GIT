@@ -5,7 +5,7 @@ import UspSection from '../../translation/UspSection'
 export default function () {
   return (
     <>
-        <Banner index={7} a={interpretation_lottie}/>
+        <Banner index={7} lottie={interpretation_lottie}/>
         <UspSection
         heading="Provide Better User Engagement and Experience"
         data1="Fast Connect Time"

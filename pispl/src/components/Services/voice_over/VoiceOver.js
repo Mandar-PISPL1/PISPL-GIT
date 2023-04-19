@@ -14,7 +14,7 @@ export default function VoiceOver() {
   }
   return (
     <>
-        <Banner index={3} a={voiceover_lottie}/>
+        <Banner index={3} lottie={voiceover_lottie}/>
         <div className="repon" style={{ textAlign: "center", margin: " 3rem auto", textAlign: "center" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
         <div className='container-fluid'>

@@ -13,7 +13,7 @@ export default function Localization() {
   }
   return (
     <>
-        <Banner index={2} a={localization_lottie}/>
+        <Banner index={2} lottie={localization_lottie}/>
         <div className="repon" style={{ textAlign: "center", margin: " 3rem auto", textAlign: "center" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
         <div className='container-fluid'>

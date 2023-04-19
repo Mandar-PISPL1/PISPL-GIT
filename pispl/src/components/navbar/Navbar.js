@@ -69,19 +69,19 @@ export default function Navbar() {
                             </div>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
-                            <a href="/">About Us</a>
+                        <NavLink to="/aboutus" onClick={handleDropdownClick}>About Us</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
-                            <a href="/">Clients</a>
+                        <NavLink to="/clients" onClick={handleDropdownClick}>Clients</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                            <a href="/">Blogs</a>
+                        <NavLink to="/blogs" onClick={handleDropdownClick}>Blogs</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                            <a href="/">Join Now</a>
+                        <NavLink to="/joinnow" onClick={handleDropdownClick}>Join Now</NavLink>
                         </li>
                         <li className="nav-link"style={{'--i': 1}}>
-                            <a href="/">Contact</a>
+                        <NavLink to="/contact" onClick={handleDropdownClick}>Contact</NavLink>
                         </li>
                     </ul>
                 </div>
