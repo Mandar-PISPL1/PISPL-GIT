@@ -21,11 +21,12 @@ export default function Banner(props) {
             <div className='container-fluid py-3' style={{backgroundColor:"var(--mainColor)",color:"var(--textColor)"}}>
                 <div className='row align-items-center' style={{margin:"4% 8%"}} >
                     <div className='col-md-7 justify-content-center align-items-center '>
-                        <h1 className='fw-bold py-3'>{arr[index].name_of_service}</h1>
+                        {props.upperpara && <p className='mb-0 fw-light'>OUR MISSION IS TO</p>}
+                        <h1 className='fw-bold pb-3'>{arr[index].name_of_service}</h1>
                         <div className='mb-2' style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></div>
-                        <p className='py-2'>{arr[index].content1}</p>
-                        <p className='py-2'>{arr[index].content2}</p>
-                        <p className='py-2'>{arr[index].content3}</p>
+                        <p className='py-2 fw-light'>{arr[index].content1}</p>
+                        <p className='py-2 fw-light'>{arr[index].content2}</p>
+                        <p className='py-2 fw-light'>{arr[index].content3}</p>
                         <button  style={buttonstyle}>Download Free Brochure <FaBook/></button>
                     </div>
                     <div className='col-md-5 d-flex justify-content-center '>

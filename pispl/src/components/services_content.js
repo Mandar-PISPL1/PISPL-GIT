@@ -71,6 +71,11 @@ const arr=[
         content2:"Capture your audiences attention with creative and professional explainer videos. With an increase in technological advancements, people have become prone to short attention span time. The explainer videos can help you spread your brands message and spread awareness effectively in a few minutes. We at Parikh Info Solutions, offer video creation services at every step from content, scripting, and editing, to voice-over and final video production.",
         content3:""
 
-    },
+    },{
+        name_of_service:"Provide You with The Highest Quality Services within Deadline",
+        content1:"With more than 20 years of experience, we stand by your side to support you while you climb the staircase to business growth.",
+        content2:"",
+        content3:"",
+    }
 ]
 export default arr;

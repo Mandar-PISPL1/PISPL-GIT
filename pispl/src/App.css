@@ -547,6 +547,11 @@ section{
         width: 18rem;
         margin: auto;
     }
+    .my-text-center{
+        text-align: center;
+    }
+    
+    
     
 }
 /* .kk{
