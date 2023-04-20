@@ -69,7 +69,7 @@ export default function Navbar() {
                             </div>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
-                        <NavLink to="/aboutus" onClick={handleDropdownClick}>About Us</NavLink>
+                        <NavLink to="/about" onClick={handleDropdownClick}>About Us</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
                         <NavLink to="/clients" onClick={handleDropdownClick}>Clients</NavLink>
