@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../translation/Banner'
 import aboutus_lottie from './aboutus_lottie.json'
+import arr from './brands'
 export default function AboutUs() {
   return (
     <>
@@ -46,50 +47,18 @@ export default function AboutUs() {
        <div style={{backgroundColor:"#f6f6f6"}}>
           <div>
             <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Trusted by World's Major Brands</h1>
-            <div className='container-fluid'>
-              <div className='row'>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
-                <div className='col-xs-6 col-md-2 '>
-                  fghfhjg
-                </div>
+            <div className='container'>
+              <div className='row px-md-5'>
+                
+                {
+                  arr.map((element)=>{
+                    return (
+                      <div className='col-5 col-md-2 p-5 text-center'>
+                        <img src={element.link} style={{height:"97px",width:"169px"}}></img>
+                      </div>
+                    )
+                  })
+                }
 
               </div>
             </div>
