@@ -36,9 +36,10 @@ export default function Localization() {
         data2="Native Linguists"
         data3="Higher Search Rate"
         button="Localize Now"
-        lowerdataValue="true"
-        lowerdata="Are you looking for language interpreter? "
         />
+        <div style={{backgroundColor:"#49dab5"}}>
+                    <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for language interpreter?<a href='/interpretation'>Read More.</a></p>
+        </div>
     </>
   )
 }

@@ -11,7 +11,7 @@ export default function AboutUs() {
         <div className='container-fluid'>
           <div className='row px-md-5' >
             <div className='col-md-5 d-flex justify-content-center p-md-5 pd-sm-2'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Team.jpg' className='aboutus-img' style={{ height: "100%", width: "100%" }} />
+              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Team.jpg'  style={{ height: "100%", width: "100%" }} />
             </div>
             <div className='col-md-7 p-md-5 ' style={{padding:"23px 0px"}}>
               <div >
@@ -44,7 +44,7 @@ export default function AboutUs() {
       </div>
        {/* About Us : End of part -1 */}
        {/* brands section */}
-       <div style={{backgroundColor:"#f6f6f6"}}>
+       <div style={{backgroundColor:"#f6f6f6",padding:"3rem 0rem"}}>
           <div>
             <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Trusted by World's Major Brands</h1>
             <div className='container'>
@@ -53,7 +53,7 @@ export default function AboutUs() {
                 {
                   arr.map((element)=>{
                     return (
-                      <div className='col-5 col-md-2 p-5 text-center'>
+                      <div className='col-6 col-md-2 py-2  text-center'>
                         <img src={element.link} style={{height:"97px",width:"169px"}}></img>
                       </div>
                     )
@@ -63,7 +63,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-       </div>
+        </div>
     </>
   )
 }

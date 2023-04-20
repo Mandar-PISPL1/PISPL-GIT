@@ -35,9 +35,10 @@ export default function Transcription() {
         data2="Hassel-Free Process"
         data3="Accuracy Guaranteed"
         button="Get Your Transcription"
-        lowerdata="Are you looking for professional translation services company?"
-        lowerdataValue="true"
         />
+        <div style={{backgroundColor:"#49dab5"}}>
+                    <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for professional translation services company?<a href='/translation'>Read More.</a></p>
+        </div>
         
     </>
   )

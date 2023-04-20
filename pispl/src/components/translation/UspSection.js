@@ -33,9 +33,7 @@ export default function UspSection(props) {
                 
 
             </div>
-            {props.lowerdataValue && <div style={{backgroundColor:"#49dab5"}}>
-                    <p className='text-white text-center my-0 py-3 fs-6'>{props.lowerdata} <a href='#'>Read More.</a></p>
-            </div>}
+            
         </>
     )
 }

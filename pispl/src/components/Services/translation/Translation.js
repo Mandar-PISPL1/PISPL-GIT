@@ -44,9 +44,10 @@ export default function Translation() {
         data2="Per Word Rate Structure"
         data3="On-Time Delivery"
         button="Start Translating"
-        lowerdata="Are You Looking For Transcription Services?"
-        lowerdataValue="true"
         />
+        <div style={{backgroundColor:"#49dab5"}}>
+                    <p className='text-white text-center my-0 py-3 fs-6'>Are You Looking For Transcription Services?<a href='/transcription'>Read More.</a></p>
+        </div>
 
     </>
   )

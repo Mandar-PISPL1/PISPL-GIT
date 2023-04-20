@@ -37,9 +37,11 @@ export default function VoiceOver() {
         dataValue="true"
         data4="Affordable Rates"
         button="Get Your Subtitlies"
-        lowerdataValue="true"
-        lowerdata="Are you looking for interpretation services?"
+        
         />
+        <div style={{backgroundColor:"#49dab5"}}>
+                    <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for interpretation services?<a href='/interpretation'>Read More.</a></p>
+        </div>
     </>
   )
 }

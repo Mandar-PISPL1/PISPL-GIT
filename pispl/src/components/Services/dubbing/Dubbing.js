@@ -34,9 +34,10 @@ export default function Dubbing() {
         data2="Clear Sound-Track"
         data3="Natural Accents"
         button="Start Your Dubbing Projects"
-        lowerdataValue="true"
-        lowerdata="Are you looking for transcription services?"
         />
+        <div style={{backgroundColor:"#49dab5"}}>
+                    <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for transcription services? <a href='transcription'>Read More.</a></p>
+        </div>
     </>
   )
 }

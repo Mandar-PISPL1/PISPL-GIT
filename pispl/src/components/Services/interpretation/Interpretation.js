@@ -14,10 +14,9 @@ export default function () {
         dataValue="true"
         data4="Experienced"
         button="Get Professional Interpreter"
-        lowerdataValue="false"
-        lowerdata=""
 
         />
+        
     </>
   )
 }
