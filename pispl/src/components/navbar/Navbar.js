@@ -40,28 +40,28 @@ export default function Navbar() {
                                         <NavLink to="/transcription" onClick={handleDropdownClick}>Transcription Services</NavLink>
                                     </li>
                                     <li className="dropdown-link" >
-                                        <NavLink to="/localiztion" onClick={handleDropdownClick}>Localization Services</NavLink>
+                                        <NavLink to="/localization" onClick={handleDropdownClick}>Localization Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/voiceover" onClick={handleDropdownClick}>Voice over Services</NavLink>
+                                        <NavLink to="/voice-over" onClick={handleDropdownClick}>Voice over Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
                                         <NavLink to="/dubbing" onClick={handleDropdownClick}>Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/aidubbing" onClick={handleDropdownClick}>AI Dubbing Services</NavLink>
+                                        <NavLink to="/ai-dubbing" onClick={handleDropdownClick}>AI Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/videosubtitling" onClick={handleDropdownClick}>Video Subtitling Services</NavLink>
+                                        <NavLink to="/video-subtitling" onClick={handleDropdownClick}>Video Subtitling Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
                                         <NavLink to="/interpretation" onClick={handleDropdownClick}>Interpretation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/contentwriting" onClick={handleDropdownClick}>Content Writing Services</NavLink>
+                                        <NavLink to="/content-writing" onClick={handleDropdownClick}>Content Writing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/videocreation" onClick={handleDropdownClick}>Video creation Services</NavLink>
+                                        <NavLink to="/video-creation" onClick={handleDropdownClick}>Video creation Services</NavLink>
                                     </li>
                                    
                                     <div className="arrow"></div>
@@ -78,7 +78,7 @@ export default function Navbar() {
                         <NavLink to="/blogs" onClick={handleDropdownClick}>Blogs</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                        <NavLink to="/joinnow" onClick={handleDropdownClick}>Join Now</NavLink>
+                        <NavLink to="/join-now" onClick={handleDropdownClick}>Join Now</NavLink>
                         </li>
                         <li className="nav-link"style={{'--i': 1}}>
                         <NavLink to="/contact" onClick={handleDropdownClick}>Contact</NavLink>

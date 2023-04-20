@@ -32,19 +32,19 @@ function App() {
           {/* <Route path='/translation' element={<Translation />} /> */}
           <Route path='/translation' element={<Translation />} />
           <Route path='/transcription' element={<Transcription />} />
-          <Route path='/localiztion' element={<Localization />} />
-          <Route path='/voiceover' element={<VoiceOver />} />
+          <Route path='/localization' element={<Localization />} />
+          <Route path='/voice-over' element={<VoiceOver />} />
           <Route path='/dubbing' element={<Dubbing />} />
-          <Route path='/aidubbing' element={<AiDubbing />} />
-          <Route path='/videosubtitling' element={<VideoSubtitling />} />
+          <Route path='/ai-dubbing' element={<AiDubbing />} />
+          <Route path='/video-subtitling' element={<VideoSubtitling />} />
           <Route path='/interpretation' element={<Interpretation />} />
-          <Route path='/contentwriting' element={<ContentWriting />} />
-          <Route path='/videocreation' element={<VideoCreation />} />
+          <Route path='/content-writing' element={<ContentWriting />} />
+          <Route path='/video-creation' element={<VideoCreation />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/clients' element={<Clients />} />
           <Route path='/blogs' element={<Blogs />} />
-          <Route path='/joinnow' element={<JoinNow />} />
+          <Route path='/join-now' element={<JoinNow />} />
         </Routes>
         <Footer />
         {/* <Form/> */}

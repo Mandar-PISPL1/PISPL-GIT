@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
@@ -33,7 +34,8 @@ export default function Footer() {
                     <div className=' row'>
                         {/* 1st section */}
                         <div className='col-md-2 first-section'  >
-                            <div className='d-flex align-items-center' > <img src="https://parikhinfosolutions.com/wp-content/uploads/2023/01/logo-desktop.webp" alt="PISPL Logo" width="90" height="95" className="d-inline-block align-text-top" />
+                            <div className='d-flex align-items-center' > 
+                            <NavLink to="/"><img src="https://parikhinfosolutions.com/wp-content/uploads/2023/01/logo-desktop.webp" alt="PISPL Logo" width="90" height="95" className="d-inline-block align-text-top" /></NavLink>
                                 <div style={{ backgroundColor: "#041020", color: "white", display: "flex", flexDirection: "column" }} >
                                     <p className='h6 ms-3 mt-3'>&copy; Parikh info Solution Pvt. Ltd. <br />
                                     2023 All Rights Reserved
@@ -45,10 +47,13 @@ export default function Footer() {
                         <div className='col-md-4 second-section my-3'>
                             <p className='fs-5 mb-0'>Find us on:</p>
                             <span className='my-icons'>
-                                <BsInstagram color='#49dab5' />
-                                <BsLinkedin color='#49dab5' />
-                                <BsYoutube color='#49dab5' />
-                                <BsFacebook color='#49dab5' />
+                                <a href="https://www.instagram.com/parikh_info_solutions/"><BsInstagram color='#49dab5' /></a>
+                                <a href="https://www.linkedin.com/company/parikh-info-solutions-private-limited"><BsLinkedin color='#49dab5'/></a>
+                                <a href="https://www.youtube.com/@parikhinfosolutions1837"><BsYoutube color='#49dab5' /></a>
+                                <a href="https://www.facebook.com/parikhinfosolutionspvtltd"><BsFacebook color='#49dab5' /></a>
+                                
+                                
+                                
                                 </span>
                         </div>
                         {/* third section */}
@@ -68,27 +73,27 @@ export default function Footer() {
                         <div className='footer-col' style={{width:"20%"}}>
                             <h2>Quick Links</h2>
                             <ul className='p-0'>
-                                <li> <a href="/"><FaHome/> Home</a> </li>
-                                <li><a href="/"><BsInfoCircleFill/> About</a> </li>
-                                <li> <a href="/"><FaUserTie/> Clients</a> </li>
-                                <li><a href="/"><FaEdit/> Blog</a></li>
-                                <li><a href="/"><BsFillTelephoneFill /> Contact</a></li>
-                                <li><a href="/"><BsClipboard2CheckFill /> Privacy Policy</a></li>
+                                <li><NavLink to="/"><FaHome/> Home</NavLink></li>
+                                <li><NavLink to="/about"><BsInfoCircleFill/> About</NavLink></li>
+                                <li><NavLink to="/clients"><FaUserTie/> Clients</NavLink></li>
+                                <li><NavLink to="/blogs"><FaEdit/> Clients</NavLink></li>
+                                <li><NavLink to="/contact"><BsFillTelephoneFill/> Contact</NavLink></li>
+                                <li><NavLink to="/"><BsClipboard2CheckFill/> Privacy Policy</NavLink></li>
                             </ul>
                         </div>
                         <div className='footer-col' style={{width:"20%"}}>
                             <h2>Services</h2>
                             <ul className='p-0'>
-                                <li><a href="/translation"><BiFontColor /> Translation</a></li>
-                                <li><a href="/transcription"><BsHeadphones /> Transcription</a></li>
-                                <li><a href="/localization"><BsGlobe /> Localization</a></li>
-                                <li><a href="/dubbing"><FaMicrophone /> Dubbing</a></li>
-                                <li><a href="/videosubtitling"><FaClosedCaptioning /> Subtitling</a></li>
-                                <li><a href="/voiceover"><FaMicrophoneAlt /> Voice Over</a></li>
-                                <li><a href="/interpretation"><BsHeadset /> Interpretation (VRI)</a></li>
-                                <li><a href="/contentwriting"><BsFillFileEarmarkWordFill /> Content Writing</a></li>
-                                <li><a href="/videocreation"><FaFileVideo /> Video Creation</a></li>
-                                <li><a href="/aidubbing"><FaMicrochip /> AI Dubbing</a></li>
+                                <li><NavLink to="/translation"><BiFontColor/> Translation</NavLink></li>
+                                <li><NavLink to="/transcription"><BsHeadphones/> Transcription</NavLink></li>
+                                <li><NavLink to="/localization"><BsGlobe/> Localization</NavLink></li>
+                                <li><NavLink to="/dubbing"><FaMicrophone/> Dubbing</NavLink></li>
+                                <li><NavLink to="/video-subtitling"><FaClosedCaptioning/> Subtitling</NavLink></li>
+                                <li><NavLink to="/voice-over"><BsHeadphones/> Voice Over</NavLink></li>
+                                <li><NavLink to="/interpretation"><BsHeadset/> Interpretation (VRI)</NavLink></li>
+                                <li><NavLink to="/content-writing"><BsFillFileEarmarkWordFill/> Content Writing</NavLink></li>
+                                <li><NavLink to="/video-creation"><FaFileVideo/> Video Creation</NavLink></li>
+                                <li><NavLink to="/ai-dubbing"><FaMicrochip/> AI Dubbing</NavLink></li>
                             </ul>
                         </div>
 
@@ -103,9 +108,9 @@ export default function Footer() {
                                 Maharashtra, India</p>
 
                             <ul className='p-0'>
-                                <li><a href="/"><BsFillTelephoneFill /> +91-9136109881</a></li>
-                                <li><a href="/"><BsFillEnvelopeFill /> amitt@parikhinfosoltions.com</a></li>
-                                <li><a href="/"><BsSkype /> amitt.parikh</a></li>
+                                <li><a href="tel:+919136109881"><BsFillTelephoneFill /> +91-9136109881</a></li>
+                                <li><a href="mailto:amitt@parikhinfosolutions.com"><BsFillEnvelopeFill /> amitt@parikhinfosoltions.com</a></li>
+                                <li><a href="skype:amitt.parikh?chat"><BsSkype /> amitt.parikh</a></li>
                             </ul>
 
                         </div>

@@ -109,7 +109,7 @@ iframe{
 }
 
 
-.my-icons :nth-child(n){
+.my-icons a:nth-child(n){
 	margin: 5px 12px;
     height: 22px;
 }
