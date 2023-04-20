@@ -76,6 +76,13 @@ const arr=[
         content1:"With more than 20 years of experience, we stand by your side to support you while you climb the staircase to business growth.",
         content2:"",
         content3:"",
+    },
+    {
+        name_of_service:"Contact Us",
+        content1:"For any queries regarding our services or for service consultation reach out to us, and our experts will be happy to help you out.",
+        content2:"",
+        content3:""
+       
     }
 ]
 export default arr;
