@@ -8,7 +8,7 @@ export default function Navbar() {
       }
   return (
     <>
-    <header>
+    <header >
         <div className="container-fluid d-flex align-items-center py-3
         ">
             {/* <input type="checkbox" name="" id="check"/> */}

@@ -5,9 +5,12 @@ import Banner from '../../translation/Banner'
 import translation_service from './translation_service.json'
 import TopBrandSection from '../../translation/TopBrandSection'
 import brands from './brands'
-
+import { useEffect } from 'react';
 import UspSection from '../../translation/UspSection'
 export default function Translation() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // import '../../App.css'
   const mystyle = {
     display: "flex",
@@ -22,7 +25,7 @@ export default function Translation() {
     <>
       <Banner index={0} lottie={translation_service} />
       {/* Top Brands Section */}
-      <div className="repon" style={{ textAlign: "center", margin: "3rem auto", textAlign: "center" }}>
+      <div className="repon" style={{ textAlign: "center", margin: "3rem auto"}}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Brands We Work With</h1>
         <div className='container-fluid'>
           <div className='' style={mystyle}>

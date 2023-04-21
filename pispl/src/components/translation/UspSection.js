@@ -13,7 +13,7 @@ export default function UspSection(props) {
         border: "0px",
         margin: "0px auto",
         display: " block",
-        margin: "0 auto",
+        
     }
     return (
         <>

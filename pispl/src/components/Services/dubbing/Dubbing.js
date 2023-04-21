@@ -5,7 +5,11 @@ import brands from './brands'
 import TopBrandSection from '../../translation/TopBrandSection'
 import UspSection from '../../translation/UspSection'
 import dubbing_lottie from './dubbing_lottie.json'
+import { useEffect } from 'react';
 export default function Dubbing() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const mystyle = {
     display: "flex",
     justifyContent: "space-evenly",
@@ -15,7 +19,7 @@ export default function Dubbing() {
   return (
     <>
       <Banner index={4} lottie={dubbing_lottie} />
-      <div className="repon" style={{ textAlign: "center", margin: " 3rem auto", textAlign: "center" }}>
+      <div className="repon" style={{ textAlign: "center", margin: " 3rem auto"}}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
         <div className='container-fluid'>
           <div className='' style={mystyle}>

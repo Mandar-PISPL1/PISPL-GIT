@@ -2,7 +2,11 @@ import React from 'react'
 import Banner from '../../translation/Banner'
 import interpretation_lottie from './interpretation_lottie.json'
 import UspSection from '../../translation/UspSection'
+import { useEffect } from 'react'
 export default function () {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
         <Banner index={7} lottie={interpretation_lottie}/>

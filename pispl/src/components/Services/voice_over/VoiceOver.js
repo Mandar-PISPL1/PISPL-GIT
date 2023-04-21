@@ -11,12 +11,13 @@ export default function VoiceOver() {
     display: "flex",
     justifyContent: "space-evenly",
     flexDirection: "row",
+    
     flexWrap: "wrap"
   }
   return (
     <>
         <Banner index={3} lottie={voiceover_lottie}/>
-        <div className="repon" style={{ textAlign: "center", margin: " 3rem auto", textAlign: "center" }}>
+        <div className="repon" style={{ textAlign: "center", margin: " 3rem auto"}}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
         <div className='container-fluid'>
           <div className='' style={mystyle}>

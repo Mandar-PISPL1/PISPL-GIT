@@ -1,8 +1,12 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Banner from '../translation/Banner'
 import aboutus_lottie from './aboutus_lottie.json'
 import arr from './brands'
+
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Banner lottie={aboutus_lottie} index={10} upperpara={true} />
@@ -11,7 +15,7 @@ export default function AboutUs() {
         <div className='container-fluid'>
           <div className='row px-md-5' >
             <div className='col-md-5 d-flex justify-content-center p-md-5 pd-sm-2'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Team.jpg'  style={{ height: "100%", width: "100%" }} />
+              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Team.jpg'  style={{ height: "100%", width: "100%" }} alt="team"/>
             </div>
             <div className='col-md-7 p-md-5 ' style={{padding:"23px 0px"}}>
               <div >
@@ -54,7 +58,7 @@ export default function AboutUs() {
                   arr.map((element)=>{
                     return (
                       <div className='col-6 col-md-2 py-2  text-center'>
-                        <img src={element.link} style={{height:"97px",width:"169px"}}></img>
+                        <img src={element.link} style={{height:"97px",width:"169px"}} alt='brands'></img>
                       </div>
                     )
                   })

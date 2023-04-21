@@ -18,7 +18,7 @@ export default function Banner(props) {
     return (
         <>
 
-            <div className='container-fluid py-3' style={{backgroundColor:"var(--mainColor)",color:"var(--textColor)"}}>
+            <div className='container-fluid py-3' id="top" style={{backgroundColor:"var(--mainColor)",color:"var(--textColor)"}}>
                 <div className='row align-items-center' style={{margin:"4% 8%"}} >
                     <div className='col-md-7 justify-content-center align-items-center '>
                         {props.upperpara && <p className='mb-0 fw-light'>OUR MISSION IS TO</p>}
@@ -32,7 +32,7 @@ export default function Banner(props) {
                     <div className='col-md-5 d-flex justify-content-center '>
                         <div className=''  >
                             {!props.flag && <Lottie animationData={props.lottie}  style={{height:"364px", width:"100%"}}/>}
-                            {props.flag && <img src={props.b} style={{height:"456px",width:"456px"}}></img>}
+                            {props.flag && <img src={props.b} alt='banner ' style={{height:"456px",width:"456px"}}></img>}
                         </div>
                     </div>
                 </div>
