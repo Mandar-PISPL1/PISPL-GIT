@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import Banner from '../../translation/Banner'
 import brands from './brands'
 import TopBrandSection from '../../translation/TopBrandSection'
@@ -36,7 +37,7 @@ export default function Dubbing() {
         button="Start Your Dubbing Projects"
         />
         <div style={{backgroundColor:"#49dab5"}}>
-                    <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for transcription services? <a href='transcription'>Read More.</a></p>
+                    <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for transcription services? <NavLink to="/transcription">Read More.</NavLink></p>
         </div>
     </>
   )

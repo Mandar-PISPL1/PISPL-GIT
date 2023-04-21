@@ -20,7 +20,6 @@ import { BsHeadset } from "react-icons/bs";
 import { BsFillFileEarmarkWordFill } from "react-icons/bs";
 import { FaFileVideo } from "react-icons/fa";
 import { FaMicrochip } from "react-icons/fa";
-
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import { BsSkype } from "react-icons/bs";
 
@@ -89,7 +88,7 @@ export default function Footer() {
                                 <li><NavLink to="/localization"><BsGlobe/> Localization</NavLink></li>
                                 <li><NavLink to="/dubbing"><FaMicrophone/> Dubbing</NavLink></li>
                                 <li><NavLink to="/video-subtitling"><FaClosedCaptioning/> Subtitling</NavLink></li>
-                                <li><NavLink to="/voice-over"><BsHeadphones/> Voice Over</NavLink></li>
+                                <li><NavLink to="/voice-over"><FaMicrophoneAlt/> Voice Over</NavLink></li>
                                 <li><NavLink to="/interpretation"><BsHeadset/> Interpretation (VRI)</NavLink></li>
                                 <li><NavLink to="/content-writing"><BsFillFileEarmarkWordFill/> Content Writing</NavLink></li>
                                 <li><NavLink to="/video-creation"><FaFileVideo/> Video Creation</NavLink></li>

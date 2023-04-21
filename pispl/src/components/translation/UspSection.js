@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { ImCheckmark } from "react-icons/im";
 export default function UspSection(props) {
@@ -28,10 +29,8 @@ export default function UspSection(props) {
                         {props.dataValue && <p className='mx-2'><ImCheckmark color='#49dab5' size="1.4rem"  className='mx-2'/>{props.data4}</p>}
 
                     </div>
-                    <button style={buttonstyle}><a>{props.button} <HiArrowNarrowRight /></a></button>
+                    <button style={buttonstyle}><NavLink to="/contact" style={{ color: "#0d2366" }}>{props.button} <HiArrowNarrowRight /></NavLink></button>
                 </div>
-                
-
             </div>
             
         </>

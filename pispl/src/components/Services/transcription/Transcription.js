@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import Banner from '../../translation/Banner'
 import transcription_lottie from './transcription_lottie.json'
 import brands from './brands'
@@ -37,7 +38,7 @@ export default function Transcription() {
         button="Get Your Transcription"
         />
         <div style={{backgroundColor:"#49dab5"}}>
-                    <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for professional translation services company?<a href='/translation'>Read More.</a></p>
+          <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for professional translation services company? <NavLink to="/translation">Read More.</NavLink></p>
         </div>
         
     </>

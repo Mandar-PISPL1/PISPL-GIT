@@ -1,7 +1,10 @@
 import React from 'react'
 // import img from '../assets/google-rating.png'
 import arr from './brands'
-import { BsFillStarFill } from "react-icons/bs";
+import { BsFillStarFill } from "react-icons/bs"
+import UspSection from '../translation/UspSection'
+
+
 export default function Clients() {
   return (
     <>
@@ -40,7 +43,7 @@ export default function Clients() {
         </div>
       </div>
       {/* brands section */}
-      <div style={{backgroundColor:"#f6f6f6",padding:"3rem 0rem"}}>
+        <div style={{backgroundColor:"#f6f6f6",padding:"3rem 0rem"}}>
           <div>
             <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Trusted by World's Major Brands</h1>
             <div className='container'>
@@ -60,6 +63,15 @@ export default function Clients() {
             </div>
           </div>
         </div>
+        <UspSection
+        heading="Connect With Us Today!"
+        data1="Affordable Pricing"
+        data2="Superior Quality"
+        data3="Scalability"
+        dataValue="true"
+        data4="Dedicated Team"
+        button="Let's Work Together"
+        />
     </>
   )
 }
