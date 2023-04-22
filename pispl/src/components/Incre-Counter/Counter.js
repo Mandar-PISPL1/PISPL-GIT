@@ -9,7 +9,7 @@ export default function Counter() {
             <div className="container">
                 <div className="row p-md-5 py-5">
                     <div className="col-md-3 col-6 d-flex justify-content-center align-items-center flex-column">
-                        <h1 style={{fontSize:"85px"}}>
+                        <h1 style={{fontSize:"83px"}}>
                             {count && <CountUp start={0} end={50} duration={3} delay={0} />}+
                             
                         </h1>

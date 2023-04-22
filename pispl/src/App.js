@@ -18,6 +18,7 @@ import Clients from './components/clients/Clients';
 import Blogs from './components/blogs/Blogs';
 import JoinNow from './components/join_now/JoinNow';
 import Contact from './components/contact/Contact';
+import Home from './components/Home-page/Home';
 // import Form from './components/form/Form';
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         <Routes>
           {/* <Translation /> */}
           {/* <Transcription/> */}
-          {/* <Route path='/translation' element={<Translation />} /> */}
+          <Route path='/' element={<Home />} />
           <Route path='/translation' element={<Translation />} />
           <Route path='/transcription' element={<Transcription />} />
           <Route path='/localization' element={<Localization />} />

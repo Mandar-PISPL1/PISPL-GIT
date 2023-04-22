@@ -83,6 +83,13 @@ const arr=[
         content2:"",
         content3:""
        
+    },
+    {
+        name_of_service:"Professional Language Service Provider",
+        content1:"ISO 9001:2015 and ISO 17100:2015 Certified 360-Degree Professional Language Service Provider helping businesses to break all the language barriers and expand globally.",
+        content2:"",
+        conten3:"",
+
     }
 ]
 export default arr;
