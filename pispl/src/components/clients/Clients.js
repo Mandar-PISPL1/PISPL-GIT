@@ -10,6 +10,7 @@ import Slider from "react-slick";
 // import Test from '../Test';
 // import TestSlick from '../TestSlick';
 import TestAgain from '../TestAgain';
+import Counter from '../Incre-Counter/Counter';
 const Carousel = styled(Slider)`
     margin-top:20px;
     // margin-left: 30px;
@@ -118,6 +119,7 @@ export default function Clients() {
             </div>
           </div>
         </div>
+        <Counter/>
         <UspSection
           heading="Connect With Us Today!"
           data1="Affordable Pricing"
@@ -132,6 +134,8 @@ export default function Clients() {
       {/* <TestSlick/> */}
       <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Customers Testimonials</h1>
       <TestAgain/>
+
+     
 
     </>
   )
