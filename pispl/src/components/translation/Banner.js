@@ -32,7 +32,7 @@ export default function Banner(props) {
                     <div className='col-md-5 d-flex justify-content-center '>
                         <div className=''  >
                             {!props.flag && <Lottie animationData={props.lottie}  style={{height:"364px", width:"100%"}}/>}
-                            {props.flag && <img src={props.b} alt='banner ' style={{height:"456px",width:"456px"}}></img>}
+                            {props.flag && <img src={props.b} alt='banner ' style={{height:"456px",maxWidth:"456px"}}></img>}
                         </div>
                     </div>
                 </div>
