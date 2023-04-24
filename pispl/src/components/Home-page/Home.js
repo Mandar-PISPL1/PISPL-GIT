@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         <div className='container' >
           <div className='row' style={{ margin: "4% 8%", color: "#4c5c8e" }}>
-            <div className='col-md-4 col-12 border border-danger '>
+            <div className='col-md-4 col-12 border border-danger'>
               <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png'></img>
               <h4>Error-Free Language Service</h4>
               <p>We provide you with error-free language services with our defined work process. This helps us to provide results with utmost accuracy to our clients along with the best customer service experience. We thrive to provide the most accurate, relevant & reliable translation services, transcription services along with other language services & solutions.</p>
