@@ -3,6 +3,7 @@ import Banner from '../translation/Banner'
 import home from '../assets/home.png'
 import arr from '../about_us/brands'
 import UspSection from '../translation/UspSection'
+import arrr from './IndustriesWeCover'
 export default function Home() {
   return (
     <>
@@ -58,62 +59,125 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <div className='container py-3' >
-        <div style={{ margin: "4% 8%",color:"#0d2366" }}>
+        <div style={{ margin: "4% 8%", color: "#0d2366" }}>
           <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Why Choose Us?</h1>
           <p>Parikh Info Solutions is a leading professional language service provider with decades of experience in the field and industry experts in all aspects. Keeping it up with the latest updates & dynamic industry trends, we, at Parikh Info Solutions, strive to serve the best to all our clients across the globe.</p>
         </div>
         <div className='container' >
-          <div className='row' style={{ margin: "4% 8%", color: "#0d2366" }}>
+          <div className='row m-md-5' style={{ color: "#0d2366" }}>
             <div className='col-md-4 col-12'>
               <div className='text-center' >
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
               </div>
-              
+
               <h4 className='text-center'>Error-Free Language Service</h4>
-              <p style={{fontWeight:"300",fontSize:"18px"}}>We provide you with <b style={{fontWeight:"700"}}>error-free language services</b> with our defined work process. This helps us to provide results with utmost accuracy to our clients along with the best customer service experience. We thrive to provide the most accurate, relevant & reliable translation services, transcription services along with other language services & solutions.</p>
+              <p style={{ fontWeight: "300", fontSize: "18px" }}>We provide you with <b style={{ fontWeight: "700" }}>error-free language services</b> with our defined work process. This helps us to provide results with utmost accuracy to our clients along with the best customer service experience. We thrive to provide the most accurate, relevant & reliable translation services, transcription services along with other language services & solutions.</p>
             </div>
             <div className='col-md-4 col-12'>
               <div className='text-center'>
                 <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
               </div>
-              
+
               <h4 className='text-center'>Fast Turnaround</h4>
-              <p style={{fontWeight:"300",fontSize:"18px"}}>me is money for any business. We are committed to providing the <b style={{fontWeight:"700"}}>fastest turnaround </b>time within the given deadline. Making it worth your time & efforts along with giving the best as promised, Parikh Info Solutions, a professional language service provider company, aims to make your exchange with us a worthy one. Leaving your work concerns up to us, we ensure you a timely delivery with accurate outcomes. Fast turnaround being our goal for every client, we adhere to making the process <b style={{fontWeight:"700"}}>easy, fast & hassle-free.</b> Hence, you can utilize your time in implementing further plans of action and focus on your company’s growth.</p>
+              <p style={{ fontWeight: "300", fontSize: "18px" }}>me is money for any business. We are committed to providing the <b style={{ fontWeight: "700" }}>fastest turnaround </b>time within the given deadline. Making it worth your time & efforts along with giving the best as promised, Parikh Info Solutions, a professional language service provider company, aims to make your exchange with us a worthy one. Leaving your work concerns up to us, we ensure you a timely delivery with accurate outcomes. Fast turnaround being our goal for every client, we adhere to making the process <b style={{ fontWeight: "700" }}>easy, fast & hassle-free.</b> Hence, you can utilize your time in implementing further plans of action and focus on your company’s growth.</p>
             </div>
             <div className='col-md-4 col-12 '>
               <div className='text-center'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
               </div>
-              
+
               <h4 className='text-center'>Native Expert Linguists</h4>
-              <p style={{fontWeight:"300",fontSize:"18px"}}>Our team includes professionals from different industries, with years of experience under their belts. Not only proficient in their native languages, but our linguists are<b style={{fontWeight:"700"}}> highly professional experts</b>with experience & recognition in various languages. We believe in offering quality services hence with sheer dedication, we put all the efforts into delivering the perfect results. We have a dynamic team of native experts that helps us in providing authentic language services with high-quality translations.</p>
+              <p style={{ fontWeight: "300", fontSize: "18px" }}>Our team includes professionals from different industries, with years of experience under their belts. Not only proficient in their native languages, but our linguists are<b style={{ fontWeight: "700" }}> highly professional experts</b>with experience & recognition in various languages. We believe in offering quality services hence with sheer dedication, we put all the efforts into delivering the perfect results. We have a dynamic team of native experts that helps us in providing authentic language services with high-quality translations.</p>
             </div>
             <div className='col-md-4 col-12 '>
               <div className='text-center'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
               </div>
-              
+
               <h4 className='text-center'>Affordable Pricing</h4>
-              <p style={{fontWeight:"300",fontSize:"18px"}}>We provide language services at an affordable price that fits your budget. We make the best of every buck and thus keep our rates and the procedure behind them transparent. We believe in establishing a healthy client relationship. At Parikh info solutions, we believe in offering <b style={{fontWeight:"700"}}>quality-oriented work, </b>performed by a team of professionals, we also believe in making it worth our clients every penny.</p>
+              <p style={{ fontWeight: "300", fontSize: "18px" }}>We provide language services at an affordable price that fits your budget. We make the best of every buck and thus keep our rates and the procedure behind them transparent. We believe in establishing a healthy client relationship. At Parikh info solutions, we believe in offering <b style={{ fontWeight: "700" }}>quality-oriented work, </b>performed by a team of professionals, we also believe in making it worth our clients every penny.</p>
             </div>
             <div className='col-md-4 col-12'>
               <div className='text-center'>
                 <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
               </div>
-              
+
               <h4 className='text-center'>Industry Expertise</h4>
-              <p style={{fontWeight:"300",fontSize:"18px"}}>Having <b style={{fontWeight:"700"}}>20+ years of experience</b> and industry-specific knowledge always helps us with your project’s success. Our translations are grammatically correct and consistent with industry standards. With experienced professionals in our team, we work consistently to make your functioning smooth and effortless. Dedicated to catering the best services, we, at Parikh info solutions combine our services with experience & expertise to deliver the best.</p>
+              <p style={{ fontWeight: "300", fontSize: "18px" }}>Having <b style={{ fontWeight: "700" }}>20+ years of experience</b> and industry-specific knowledge always helps us with your project’s success. Our translations are grammatically correct and consistent with industry standards. With experienced professionals in our team, we work consistently to make your functioning smooth and effortless. Dedicated to catering the best services, we, at Parikh info solutions combine our services with experience & expertise to deliver the best.</p>
             </div>
             <div className='col-md-4 col-12 '>
-              <div style={{textAlign:"center"}}>
+              <div style={{ textAlign: "center" }}>
                 <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
-                </div>
+              </div>
               <h4 className='text-center'>100% Data Privacy</h4>
-              <p style={{fontWeight:"300",fontSize:"18px"}}>We understand your concerns about data safety and privacy. We assure complete safety and privacy for your data. Our client’s concerns regarding privacy are our top priority. Hence, all the work done by us are<b style={{fontWeight:"700"}}> confidential and completely secured</b> with no loopholes that cause uncertain consequences. Providing <b style={{fontWeight:"700"}}>100% quality assurance</b> and <b style={{fontWeight:"700"}}>100% safety </b>of your data is our main motto.</p>
+              <p style={{ fontWeight: "300", fontSize: "18px" }}>We understand your concerns about data safety and privacy. We assure complete safety and privacy for your data. Our client’s concerns regarding privacy are our top priority. Hence, all the work done by us are<b style={{ fontWeight: "700" }}> confidential and completely secured</b> with no loopholes that cause uncertain consequences. Providing <b style={{ fontWeight: "700" }}>100% quality assurance</b> and <b style={{ fontWeight: "700" }}>100% safety </b>of your data is our main motto.</p>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Industry we cover */}
+      <div className='container py-3'>
+
+        <div className='row px-md-5' >
+          <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Industries We Cover</h1>
+          <p className='text-center' style={{fontWeight:"300",color:"#7a7a7a"}}>We provide you with tailor-made strategies that suit perfectly for your specific market.</p>
+
+          {
+            
+
+            arrr.map((element) => {
+              return (
+                <div className='col-md-2 col-6 p-2 d-flex justify-content-center'>
+                  <div style={{ width: "10rem", height: "6rem" ,border:"1px solid #d1d1d1" }}>
+                    <div style={{ padding: "9px 0px" }}>
+                      <div style={{ width: "100%", textAlign: "center" }}>
+                        <i aria-hidden="true" class= {`fas ${element.icon} fa-3x py-1s `} style={{ color: "#1e6fe0", height: "2rem" }}></i>
+                      </div>
+                      <p className='text-center' style={{color:"#7a7a7a"}}>{element.title}</p>
+                    </div>
+                  </div>
+
+                </div>
+              )
+            })
+          }
+
+        </div>
+      </div>
+      <div className='container py-3'>
+          <div className='row px-md-5'>
+            <div className='col-md-8 d-flex'>
+              <div>
+                <p>Proud Members of</p>
+              </div>
+              <div>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indiamart-member.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+            </div>
+            <div className='col-md-4 d-flex'>
+              <div>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div>
+                <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" style={{height:"63px",width:"122px"}}></img>
+              </div>
+            </div>
+          </div>
+      </div>
+
       <UspSection
         heading="Choose A Better Way To Present"
         heading_value="true"
