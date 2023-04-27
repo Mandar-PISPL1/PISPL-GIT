@@ -10,7 +10,7 @@ export default function Home() {
       <Banner index={12} b={home} flag={false} />
       {/* Content */}
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{overflowX:"hidden"}}>
         <div className='row' style={{ margin: "4% 8%" }} >
           <div className='col-md-6 col-12' style={{ color: "#0d2366" }}>
             <p>BEST SOLUTION FOR YOU!</p>
@@ -145,10 +145,10 @@ export default function Home() {
 
         </div>
       </div>
-      <div className='container py-3'>
+      {/* <div className='container py-3'>
           <div className='row px-md-5'>
-            <div className='col-md-8 d-flex'>
-              <div>
+            <div className='col-md-8 d-flex flex-wrap'>
+              <div className=''>
                 <p>Proud Members of</p>
               </div>
               <div>
@@ -176,8 +176,35 @@ export default function Home() {
               </div>
             </div>
           </div>
-      </div>
-
+      </div> */}
+{/* test */}
+          {/* <div className="container py-3">
+            <div className='row px-md-5'>
+              <div className='col-md-2 col-12'>
+                <h2>Proud Members of</h2>
+              </div>
+              <div className='col-md-1 col-6'>
+              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indiamart-member.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div className='col-md-1 col-6'>
+              <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div className='col-md-1 col-6'>
+              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div className='col-md-1 col-6'>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' style={{height:"63px",width:"122px"}}></img></div>
+              <div className='col-md-2 col-12'>
+              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div className='col-md-2 col-12'>
+              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' style={{height:"63px",width:"122px"}}></img>
+              </div>
+              <div className='col-md-2 col-12'>
+                <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" style={{height:"63px",width:"122px"}}></img></div>
+            </div>
+          </div> */}
+{/* test */}
       <UspSection
         heading="Choose A Better Way To Present"
         heading_value="true"
