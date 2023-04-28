@@ -6,7 +6,7 @@ import UspSection from '../translation/UspSection'
 import arrr from './IndustriesWeCover'
 export default function Home() {
   return (
-    <>
+    <div>
       <Banner index={12} b={home} flag={false} />
       {/* Content */}
 
@@ -177,7 +177,7 @@ export default function Home() {
             </div>
           </div>
       </div> */}
-{/* test */}
+      {/* test */}
           {/* <div className="container py-3">
             <div className='row px-md-5'>
               <div className='col-md-2 col-12'>
@@ -204,7 +204,7 @@ export default function Home() {
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" style={{height:"63px",width:"122px"}}></img></div>
             </div>
           </div> */}
-{/* test */}
+      {/* test */}
       <UspSection
         heading="Choose A Better Way To Present"
         heading_value="true"
@@ -217,6 +217,6 @@ export default function Home() {
         button="Contact Support"
 
       />
-    </>
+    </div>
   )
 }
