@@ -178,9 +178,10 @@ export default function Home() {
           </div>
       </div> */}
       {/* test */}
-          {/* <div className="container py-3">
+
+          <div className="container py-3">
             <div className='row px-md-5'>
-              <div className='col-md-2 col-12'>
+              <div className='col-md-2 col-12 text-center'>
                 <h2>Proud Members of</h2>
               </div>
               <div className='col-md-1 col-6'>
@@ -189,21 +190,21 @@ export default function Home() {
               <div className='col-md-1 col-6'>
               <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' style={{height:"63px",width:"122px"}}></img>
               </div>
-              <div className='col-md-1 col-6'>
+              <div className='col-md-2 col-6 text-center'>
               <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' style={{height:"63px",width:"122px"}}></img>
               </div>
               <div className='col-md-1 col-6'>
                 <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' style={{height:"63px",width:"122px"}}></img></div>
-              <div className='col-md-2 col-12'>
+              <div className='col-md-1 col-12 text-center'>
               <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' style={{height:"63px",width:"122px"}}></img>
               </div>
-              <div className='col-md-2 col-12'>
+              <div className='col-md-2 col-12 text-center'>
               <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' style={{height:"63px",width:"122px"}}></img>
               </div>
-              <div className='col-md-2 col-12'>
+              <div className='col-md-2 col-12 text-center'>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" style={{height:"63px",width:"122px"}}></img></div>
             </div>
-          </div> */}
+          </div>
       {/* test */}
       <UspSection
         heading="Choose A Better Way To Present"

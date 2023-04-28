@@ -65,7 +65,7 @@ export default function Form() {
         <>
             <div
                 className="container-sm border border-primary"
-                style={{ marginTop: "50px" ,width:"35%"}}
+                style={{ marginTop: "50px" ,width:"100%"}}
             >
                 <form  onSubmit={handleSubmit}>
                     <p className="mb-3">Get free support and quote on your email. Please submit the form to get in touch with us.</p>
