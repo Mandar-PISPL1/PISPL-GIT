@@ -1,12 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Banner from '../translation/Banner'
 import home from '../assets/home.png'
 import arr from '../about_us/brands'
 import UspSection from '../translation/UspSection'
 import arrr from './IndustriesWeCover'
+import CountUp from 'react-countup'
+import ScrollTrigger from 'react-scroll-trigger'
 export default function Home() {
+  const [count,setCount]=useState(false);
   return (
-    <div>
+    <div style={{overflowX:"hidden"}}>
       <Banner index={12} b={home} flag={false} />
       {/* Content */}
 
@@ -56,7 +59,45 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Quick Facts */}
+      <div className='container-fluid' style={{backgroundColor:"#0d2366"}}>
+      <ScrollTrigger onEnter={()=>{setCount(true)}} onExit={()=>{setCount(false)} }>
+          <div className='row'>
+            <div className='col-md-6 col-12'>
+              lottie
 
+            </div>
+            <div className='col-md-6 col-12'>
+              <div>
+                <p style={{ color: "white", fontWeight: "300" }}>ENGAGING, EXPERIENCED AND EFFICIENT!</p>
+                <h1 style={{ color: "white", fontWeight: "700" }}>Quick Facts</h1>
+                <div className='d-flex' style={{color:'#49dab5'}}>
+                  <div className='mx-5'>
+                    <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={50} duration={3} delay={0} />}+</h1>
+                    <p className='text-white text-center'>Languages</p>
+                  </div>
+                  <div  className='mx-5'>
+                    <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={25} duration={3} delay={0} />}+</h1>
+                    <p className='text-white text-center'>Countries</p>
+                  </div>
+                </div>
+                <div className="d-flex"  style={{color:'#49dab5'}}>
+                  <div  className='mx-5'>
+                    <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={275} duration={3} delay={0} />}+</h1>
+                    <p className='text-white text-center'>Clients</p>
+                    </div>
+                  <div  className='mx-5'>
+                    <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={20} duration={3} delay={0} />}+</h1>
+                    <p className='text-white text-center'>Years of Experience</p>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+            
+          </div>
+          </ScrollTrigger>
+      </div>
       {/* Why Choose Us */}
       <div className='container py-3' >
         <div style={{ margin: "4% 8%", color: "#0d2366" }}>
