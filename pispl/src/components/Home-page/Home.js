@@ -72,21 +72,21 @@ export default function Home() {
                 <p style={{ color: "white", fontWeight: "300" }}>ENGAGING, EXPERIENCED AND EFFICIENT!</p>
                 <h1 style={{ color: "white", fontWeight: "700" }}>Quick Facts</h1>
                 <div className='d-flex' style={{color:'#49dab5'}}>
-                  <div className='mx-5'>
+                  <div className='mx-md-5'>
                     <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={50} duration={3} delay={0} />}+</h1>
                     <p className='text-white text-center'>Languages</p>
                   </div>
-                  <div  className='mx-5'>
+                  <div  className='mx-md-5'>
                     <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={25} duration={3} delay={0} />}+</h1>
                     <p className='text-white text-center'>Countries</p>
                   </div>
                 </div>
                 <div className="d-flex"  style={{color:'#49dab5'}}>
-                  <div  className='mx-5'>
+                  <div  className='mx-md-5'>
                     <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={275} duration={3} delay={0} />}+</h1>
                     <p className='text-white text-center'>Clients</p>
                     </div>
-                  <div  className='mx-5'>
+                  <div  className='mx-md-5'>
                     <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={20} duration={3} delay={0} />}+</h1>
                     <p className='text-white text-center'>Years of Experience</p>
                     </div>
