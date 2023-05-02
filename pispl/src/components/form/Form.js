@@ -3,6 +3,14 @@ import React, { useState } from "react";
 import axios from "axios";
 import emailjs from '@emailjs/browser';
 export default function Form() {
+    const btnStyle={
+        width: "100%",
+        fontSize:" 24px",
+        fontWeight:" 500",
+        backgroundColor:"#0d3266",
+        borderRadius:"5px",
+        border:"none"
+    }
  
     const [formValue,setFormValue] = useState(
         {
@@ -64,11 +72,11 @@ export default function Form() {
     return (
         <>
             <div
-                className="container-sm border border-primary"
-                style={{ marginTop: "50px" ,width:"100%"}}
+                className="container-sm"
+                style={{ marginTop: "50px" ,width:"100%",color:"#0d2366"}}
             >
                 <form  onSubmit={handleSubmit}>
-                    <p className="mb-3">Get free support and quote on your email. Please submit the form to get in touch with us.</p>
+                    <h5 className="mb-3" style={{fontWeight:"600"}}>Get free support and quote on your email. Please submit the form to get in touch with us.</h5>
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label">
                             Email address *
@@ -151,7 +159,9 @@ export default function Form() {
                         </div>
                     </div>
                     <div className="mb-3">
-                        <button type="submit" className="btn btn-primary">Send Enquiry</button>
+                        <button type="submit"   style={btnStyle} className="btn btn-primary">Send Enquiry
+                        <i aria-hidden="true" class="fas fa-location-arrow mx-2
+                        "></i></button>
                         
                     </div>
                 </form>
