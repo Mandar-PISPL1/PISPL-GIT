@@ -6,6 +6,8 @@ import brands from './brands'
 import TopBrandSection from '../../translation/TopBrandSection'
 import UspSection from '../../translation/UspSection'
 import { useEffect } from 'react';
+import Benefits from '../../translation/Benefits';
+import arr from './BenefitsContent'
 export default function Localization() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,6 +34,23 @@ export default function Localization() {
             }
           </div>
         </div>
+      </div>
+      <div className='container py-4 mx-md-2'>
+        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >How Language Localization Services Companies Will Benefit?</h2>
+        <div className='row px-md-5 mx-md-5 m-0'>
+        {
+          arr.map((element) =>{
+            return (
+             
+                <Benefits img={element.img} title={element.title} content={element.content}/>
+              
+            )
+          })
+        }
+
+
+        </div>
+
       </div>
       <UspSection
         heading="Go Local"

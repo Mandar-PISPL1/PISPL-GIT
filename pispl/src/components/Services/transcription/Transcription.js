@@ -5,6 +5,8 @@ import transcription_lottie from './transcription_lottie.json'
 import brands from './brands'
 import TopBrandSection from '../../translation/TopBrandSection'
 import UspSection from '../../translation/UspSection'
+import Benefits from '../../translation/Benefits';
+import arr from './BenefitsContent'
 export default function Transcription() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,6 +35,27 @@ export default function Transcription() {
           </div>
         </div>
       </div>
+
+      {/* Benefits */}
+      <div className='container py-4 mx-md-2'>
+        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Benefits of Our Transcription Services</h2>
+        <div className='row px-md-5 mx-md-5 m-0'>
+        {
+          arr.map((element) =>{
+            return (
+             
+                <Benefits img={element.img} title={element.title} content={element.content}/>
+              
+            )
+          })
+        }
+
+
+        </div>
+
+      </div>
+
+
       <UspSection
         heading="Get Your 100 % Human Transcription"
         data1="Native Transcribers"
