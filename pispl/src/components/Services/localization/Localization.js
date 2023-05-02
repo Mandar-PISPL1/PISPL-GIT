@@ -35,6 +35,7 @@ export default function Localization() {
           </div>
         </div>
       </div>
+      {/* benefits section */}
       <div className='container py-4 mx-md-2'>
         <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >How Language Localization Services Companies Will Benefit?</h2>
         <div className='row px-md-5 mx-md-5 m-0'>
