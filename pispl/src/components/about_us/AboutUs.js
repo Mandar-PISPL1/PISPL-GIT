@@ -63,11 +63,19 @@ export default function AboutUs() {
                     )
                   })
                 }
-
               </div>
             </div>
           </div>
         </div>
+
+        {/* { All About Us Section} */}
+        <div style={{ margin: "4% 8%", color: "#0d2366" }}>
+          <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>All About Us</h1>
+          <p>Parikh Info Solutions Pvt. Ltd. is an MSME registered, ISO 9001:2015 and ISO 17100:2015 certified, leading Language Services Provider in India. We offer Translation, Transcription, Voice-over, Dubbing, Subtitling, Localization, Remote Interpretation, Paper to CAD Conversion, and Digital Marketing and Advertising services to international clients from over 25 countries.
+          <br/><br/>
+          Parikh Info Solutions Pvt. Ltd. (PISPL) was founded back in 1998 and was a pioneer in offering CAD conversion and GIS services. In 2002, we ventured into the language services field and since have been expanding our services portfolio and the languages supported.</p>
+        </div>
+
     </>
   )
 }
