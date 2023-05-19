@@ -19,10 +19,8 @@ export default function Navbar() {
                     <NavLink to="/">
                     <img src="https://parikhinfosolutions.com/wp-content/uploads/2023/01/logo-desktop.webp" alt="Logo" width="55" height="55"  /></NavLink>
                         <div style={{ color: "white", margin:"auto"}}>
-                            <p className='h6 ms-2 '>Parikh info Solution Pvt. Ltd. <br /><span className='small'>Localization & globalization</span>
-                            </p>
+                        <NavLink to="/"><p className='h6 ms-2 text-light'>Parikh info Solution Pvt. Ltd. <br /><span className='small'>Localization & globalization</span></p></NavLink>
                         </div>
-                 
                 </div>
             </div>
 
