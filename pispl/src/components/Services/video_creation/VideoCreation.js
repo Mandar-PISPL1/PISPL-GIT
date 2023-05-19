@@ -8,6 +8,7 @@ export default function VideoCreation() {
   return (
     <>
         <Banner index={9} b={myimage} flag={true}/>
+        <div className='myskew'></div>
     </>
   )
 }

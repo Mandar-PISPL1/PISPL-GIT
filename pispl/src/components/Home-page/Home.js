@@ -6,11 +6,14 @@ import UspSection from '../translation/UspSection'
 import arrr from './IndustriesWeCover'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
+import quick_lottie from './Quick.json'
+import Lottie from 'lottie-react';
 export default function Home() {
   const [count,setCount]=useState(false);
   return (
     <div style={{overflowX:"hidden"}}>
       <Banner index={12} b={home} flag={false} />
+      <div className='myskew'></div>
       {/* Content */}
 
       <div className='container py-3' style={{overflowX:"hidden"}}>
@@ -64,7 +67,8 @@ export default function Home() {
       <ScrollTrigger onEnter={()=>{setCount(true)}} onExit={()=>{setCount(false)} }>
           <div className='row'>
             <div className='col-md-6 col-12'>
-              lottie
+              
+            <Lottie animationData={quick_lottie}  style={{height:"400px", width:"100%",position:"relative",}}/>
 
             </div>
             <div className='col-md-6 col-12'>

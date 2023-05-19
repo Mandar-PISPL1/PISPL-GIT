@@ -10,6 +10,8 @@ export default function Contact() {
   return (
     <>
       <Banner index={11} upperpara={false} lottie={lottie} />
+      <div className='myskew'></div>
+      <div className='myskew'></div>
       <div className='container py-3'>
         <div className='row px-md-5' >
           <div className='col-md-6 col-12'  style={{backgroundColor:"#f6f6f6",padding:"30px"}}>

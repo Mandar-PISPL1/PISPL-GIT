@@ -9,6 +9,7 @@ export default function AiDubbing() {
   return (
     <>
         <Banner index={5} b={myimage} flag={true}/>
+        <div className='myskew'></div>
     </>
   )
 }
