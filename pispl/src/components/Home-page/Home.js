@@ -50,7 +50,7 @@ export default function Home() {
                 arr.map((element) => {
                   return (
                     <div className='col-6 col-md-2 py-2  text-center'>
-                      <img src={element.link} style={{ height: "97px", width: "169px" }} alt='brands'></img>
+                      <img src={element.link} style={{ height: "97px", width: "169px" }} alt='Major Brands' title='Major Brands'></img>
                     </div>
                   )
                 })
@@ -109,7 +109,7 @@ export default function Home() {
           <div className='row m-md-5' style={{ color: "#0d2366" }}>
             <div className='col-md-4 col-12'>
               <div className='text-center' >
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Error-Free Language Service Icon' title='Error-Free Language Service' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Error-Free Language Service</h4>
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12'>
               <div className='text-center'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Fast Turnaround Service Icon' title='Fast Turnaround Service' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Fast Turnaround</h4>
@@ -125,7 +125,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12 '>
               <div className='text-center'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Native Expert Linguists Icon' title='Native Expert Linguists'style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Native Expert Linguists</h4>
@@ -133,7 +133,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12 '>
               <div className='text-center'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Affordable Pricing Icon' title='Affordable Pricing' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Affordable Pricing</h4>
@@ -141,7 +141,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12'>
               <div className='text-center'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Industry Expertise Icon' title='Industry Expertise' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Industry Expertise</h4>
@@ -149,7 +149,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12 '>
               <div style={{ textAlign: "center" }}>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' style={{ height: "71px", width: "71px" }}></img>
+                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='100% Data Privacy Icon' title='100% Data Privacy' style={{ height: "71px", width: "71px" }}></img>
               </div>
               <h4 className='text-center'>100% Data Privacy</h4>
               <p style={{ fontWeight: "300", fontSize: "18px" }}>We understand your concerns about data safety and privacy. We assure complete safety and privacy for your data. Our client’s concerns regarding privacy are our top priority. Hence, all the work done by us are<b style={{ fontWeight: "700" }}> confidential and completely secured</b> with no loopholes that cause uncertain consequences. Providing <b style={{ fontWeight: "700" }}>100% quality assurance</b> and <b style={{ fontWeight: "700" }}>100% safety </b>of your data is our main motto.</p>
@@ -187,67 +187,36 @@ export default function Home() {
 
         </div>
       </div>
-      {/* <div className='container py-3'>
-          <div className='row px-md-5'>
-            <div className='col-md-8 d-flex flex-wrap'>
-              <div className=''>
-                <p>Proud Members of</p>
-              </div>
-              <div>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indiamart-member.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-            </div>
-            <div className='col-md-4 d-flex'>
-              <div>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div>
-                <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" style={{height:"63px",width:"122px"}}></img>
-              </div>
-            </div>
+
+      {/* test */}
+      <div className="container py-3">
+        <div className='row px-md-5'>
+          <div className='col-md-2 col-12 text-center'>
+            <h2>Proud Members of</h2>
           </div>
-      </div> */}
+          <div className='col-md-1 col-6'>
+          <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indiamart-member.png' alt='Indiamart Logo' title='Indiamart' style={{height:"63px",width:"122px"}}></img>
+          </div>
+          <div className='col-md-1 col-6'>
+          <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' alt='CITLob Logo' title='CITLob' style={{height:"63px",width:"122px"}}></img>
+          </div>
+          <div className='col-md-2 col-6 text-center'>
+          <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' alt='Translation Directory Logo' title='Translation Directory' style={{height:"63px",width:"122px"}}></img>
+          </div>
+          <div className='col-md-1 col-6'>
+            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' alt='Sulekha.com Logo' title='Sulekha.com' style={{height:"63px",width:"122px"}}></img></div>
+          <div className='col-md-1 col-12 text-center'>
+          <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' alt='Proz Logo' title='Proz' style={{height:"63px",width:"122px"}}></img>
+          </div>
+          <div className='col-md-2 col-12 text-center'>
+          <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' alt='Indian Trasnlation Associations Logo' title='Indian Trasnlation Associations' style={{height:"63px",width:"122px"}}></img>
+          </div>
+          <div className='col-md-2 col-12 text-center'>
+            <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" alt='Executive Council Member Logo' title='Executive Council Member' style={{height:"63px",width:"122px"}}></img></div>
+        </div>
+      </div>
       {/* test */}
 
-          <div className="container py-3">
-            <div className='row px-md-5'>
-              <div className='col-md-2 col-12 text-center'>
-                <h2>Proud Members of</h2>
-              </div>
-              <div className='col-md-1 col-6'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indiamart-member.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div className='col-md-1 col-6'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div className='col-md-2 col-6 text-center'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div className='col-md-1 col-6'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' style={{height:"63px",width:"122px"}}></img></div>
-              <div className='col-md-1 col-12 text-center'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div className='col-md-2 col-12 text-center'>
-              <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' style={{height:"63px",width:"122px"}}></img>
-              </div>
-              <div className='col-md-2 col-12 text-center'>
-                <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" style={{height:"63px",width:"122px"}}></img></div>
-            </div>
-          </div>
-      {/* test */}
       <UspSection
         heading="Choose A Better Way To Present"
         heading_value="true"
