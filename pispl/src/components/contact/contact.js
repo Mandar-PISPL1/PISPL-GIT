@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Banner from '../translation/Banner'
 import lottie from './contact-lottie.json'
 import { ImCheckmark } from "react-icons/im";
+import PhishingAlert from '../translation/PhishingAlert';
 import Form from '../form/Form'
 export default function Contact() {
   useEffect(() => {
@@ -10,7 +11,6 @@ export default function Contact() {
   return (
     <>
       <Banner index={11} upperpara={false} lottie={lottie} />
-      <div className='myskew'></div>
       <div className='myskew'></div>
       <div className='container py-3'>
         <div className='row px-md-5' >
@@ -75,6 +75,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <PhishingAlert />
     </>
   )
 }

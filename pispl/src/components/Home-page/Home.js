@@ -3,18 +3,17 @@ import Banner from '../translation/Banner'
 import home from '../assets/home.png'
 import arr from '../about_us/brands'
 import UspSection from '../translation/UspSection'
-import { BsFillExclamationTriangleFill } from "react-icons/bs";
 import arrr from './IndustriesWeCover'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
-import quick_lottie from './Quick.json'
-import Lottie from 'lottie-react';
+import PhishingAlert from '../translation/PhishingAlert'
+
+
 export default function Home() {
   const [count,setCount]=useState(false);
   return (
     <div style={{overflowX:"hidden"}}>
       <Banner index={12} b={home} flag={false} />
-      <div className='myskew'></div>
       {/* Content */}
 
       <div className='container py-3' style={{overflowX:"hidden"}}>
@@ -68,8 +67,7 @@ export default function Home() {
       <ScrollTrigger onEnter={()=>{setCount(true)}} onExit={()=>{setCount(false)} }>
           <div className='row'>
             <div className='col-md-6 col-12'>
-              
-            <Lottie animationData={quick_lottie}  style={{height:"400px", width:"100%",position:"relative",}}/>
+              lottie
 
             </div>
             <div className='col-md-6 col-12'>
@@ -233,19 +231,7 @@ export default function Home() {
         button="Contact Support"
 
       />
-
-      {/* Phishing Alert Notice */}
-        <div className="container py-5">
-          <div className="row px-md-5">
-            <div className="col-2 d-flex align-items-center justify-content-center">
-              <BsFillExclamationTriangleFill style={{ fontSize: '84px', color: '#ff0000' }}/>
-            </div>
-            <div className='col-10'>
-            <h3 className='' style={{ color: "#ff0000", fontWeight: "700" }}>Note:</h3>
-            <p style={{ color: "#ff0000" }}>Please note that all our communication with vendors and clients is through our official company domain (@parikhinfosolutions.com) only and no other email ids. Beware of scamsters sending phishing emails from fake email ids.</p>
-            </div>
-          </div>
-        </div>
+    <PhishingAlert />
 
     </div>
   )
