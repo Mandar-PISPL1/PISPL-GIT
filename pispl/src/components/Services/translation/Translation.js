@@ -54,7 +54,7 @@ export default function Translation() {
         </div>
       </div>
       {/* Top Brands Section */}
-      <div className="repon" style={{ textAlign: "center", margin: "3rem auto" }}>
+      <div className="repon py-5" style={{ textAlign: "center", margin: "3rem auto",backgroundColor:"#f6f6f6" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Brands We Work With</h1>
         <div className='container-fluid'>
           <div className='' style={mystyle}>
