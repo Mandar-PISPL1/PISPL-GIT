@@ -9,11 +9,12 @@ import ScrollTrigger from 'react-scroll-trigger'
 import PhishingAlert from '../translation/PhishingAlert'
 import lottieQuick from './Quick.json'
 import Lottie from 'lottie-react';
+// import banner_image from "./Translation-Services-Main.png"
 export default function Home() {
   const [count,setCount]=useState(false);
   return (
     <div style={{overflowX:"hidden"}}>
-      <Banner index={12} b={home} flag={false} />
+      <Banner index={12} b={home} flag={true} />
       <div className='myskew'></div>
       {/* Content */}
 
