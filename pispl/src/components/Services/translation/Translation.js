@@ -26,6 +26,7 @@ export default function Translation() {
   return (
     <>
       <Banner index={0} lottie={translation_service} />
+      <div className='myskew'></div>
       {/* Content */}
       <div className='container py-4 mx-md-2'>
         <div className='row px-md-5 mx-md-5 m-0'>

@@ -557,3 +557,14 @@ section{
 /* .kk{
     background-color: red;
 } */
+.myskew{
+    background-color: #a3abc5;
+    width: 100%;
+    height: 36px;
+    z-index: -1;
+
+    transform: skew(-1deg,1.5deg);
+    transform-origin: left bottom;
+    position: relative;
+    top: -37px;
+}

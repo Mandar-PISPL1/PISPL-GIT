@@ -12,7 +12,7 @@ export default function () {
   return (
     <>
         <Banner index={7} lottie={interpretation_lottie}/>
-
+        <div className='myskew'></div>
         {/* Benefits content */}
         <div className='container py-4 mx-md-2'>
         <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Industries We Are Working With</h2>

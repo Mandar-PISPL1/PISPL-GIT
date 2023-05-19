@@ -9,6 +9,7 @@ export default function ContentWriting() {
   return (
     <>
         <Banner index={8} b={myimage} flag={true}/>
+        <div className='myskew'></div>
     </>
   )
 }
