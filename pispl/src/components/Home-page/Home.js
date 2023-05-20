@@ -9,6 +9,13 @@ import ScrollTrigger from 'react-scroll-trigger'
 import PhishingAlert from '../translation/PhishingAlert'
 import lottieQuick from './Quick.json'
 import Lottie from 'lottie-react';
+import image_error_free from "../assets/home-why-choose-us-error-free-service.png"
+import fastturn_around from "../assets/home-why-choose-us-Fast-turnaround.png"
+import privacy_protection from "../assets/home-why-choose-us-100-Data-Privacy.png"
+import affordable_pricing from "../assets/home-why-choose-us-Affordable-pricing.png"
+import industry_expertise from "../assets/home-why-choose-us-industry-expertise-desktop.webp"
+import native_expert from "../assets/home-why-choose-us-native-expert-linguistist.png"
+
 // import banner_image from "./Translation-Services-Main.png"
 export default function Home() {
   const [count,setCount]=useState(false);
@@ -113,7 +120,7 @@ export default function Home() {
           <div className='row m-md-5' style={{ color: "#0d2366" }}>
             <div className='col-md-4 col-12'>
               <div className='text-center' >
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Error-Free Language Service Icon' title='Error-Free Language Service' style={{ height: "71px", width: "71px" }}></img>
+                <img src={image_error_free} alt='Error-Free Language Service Icon' title='Error-Free Language Service' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Error-Free Language Service</h4>
@@ -121,7 +128,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12'>
               <div className='text-center'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Fast Turnaround Service Icon' title='Fast Turnaround Service' style={{ height: "71px", width: "71px" }}></img>
+                <img src={fastturn_around} alt='Fast Turnaround Service Icon' title='Fast Turnaround Service' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Fast Turnaround</h4>
@@ -129,7 +136,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12 '>
               <div className='text-center'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Native Expert Linguists Icon' title='Native Expert Linguists'style={{ height: "71px", width: "71px" }}></img>
+                <img src={native_expert} alt='Native Expert Linguists Icon' title='Native Expert Linguists'style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Native Expert Linguists</h4>
@@ -137,7 +144,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12 '>
               <div className='text-center'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Affordable Pricing Icon' title='Affordable Pricing' style={{ height: "71px", width: "71px" }}></img>
+                <img src={affordable_pricing} alt='Affordable Pricing Icon' title='Affordable Pricing' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Affordable Pricing</h4>
@@ -145,7 +152,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12'>
               <div className='text-center'>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='Industry Expertise Icon' title='Industry Expertise' style={{ height: "71px", width: "71px" }}></img>
+                <img src={industry_expertise} alt='Industry Expertise Icon' title='Industry Expertise' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Industry Expertise</h4>
@@ -153,7 +160,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12 '>
               <div style={{ textAlign: "center" }}>
-                <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/Error-Free-Services.png' alt='100% Data Privacy Icon' title='100% Data Privacy' style={{ height: "71px", width: "71px" }}></img>
+                <img src={privacy_protection} alt='100% Data Privacy Icon' title='100% Data Privacy' style={{ height: "71px", width: "71px" }}></img>
               </div>
               <h4 className='text-center'>100% Data Privacy</h4>
               <p style={{ fontWeight: "300", fontSize: "18px" }}>We understand your concerns about data safety and privacy. We assure complete safety and privacy for your data. Our client’s concerns regarding privacy are our top priority. Hence, all the work done by us are<b style={{ fontWeight: "700" }}> confidential and completely secured</b> with no loopholes that cause uncertain consequences. Providing <b style={{ fontWeight: "700" }}>100% quality assurance</b> and <b style={{ fontWeight: "700" }}>100% safety </b>of your data is our main motto.</p>
