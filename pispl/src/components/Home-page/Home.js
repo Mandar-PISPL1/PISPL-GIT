@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Banner from '../translation/Banner'
 import home from '../assets/home.png'
 import arr from '../about_us/brands'
@@ -18,14 +18,14 @@ import native_expert from "../assets/home-why-choose-us-native-expert-linguistis
 
 // import banner_image from "./Translation-Services-Main.png"
 export default function Home() {
-  const [count,setCount]=useState(false);
+  const [count, setCount] = useState(false);
   return (
-    <div style={{overflowX:"hidden"}}>
+    <div style={{ overflowX: "hidden" }}>
       <Banner index={12} b={home} flag={true} />
       <div className='myskew'></div>
       {/* Content */}
 
-      <div className='container py-3' style={{overflowX:"hidden"}}>
+      <div className='container py-3' style={{ overflowX: "hidden" }}>
         <div className='row' style={{ margin: "4% 8%" }} >
           <div className='col-md-6 col-12' style={{ color: "#0d2366" }}>
             <p>BEST SOLUTION FOR YOU!</p>
@@ -72,44 +72,46 @@ export default function Home() {
         </div>
       </div>
       {/* Quick Facts */}
-      <div className='container-fluid' style={{backgroundColor:"#0d2366"}}>
-      <ScrollTrigger onEnter={()=>{setCount(true)}} onExit={()=>{setCount(false)} }>
+      <div className='skewed-div-up'></div>
+      <div className=' container-fluid ' style={{ backgroundColor: "#0d2366",position:"relative" }}>
+        <ScrollTrigger onEnter={() => { setCount(true) }} onExit={() => { setCount(false) }}>
           <div className='row'>
             <div className='col-md-6 col-12'>
-            <Lottie animationData={lottieQuick}  style={{height:"364px", width:"100%"}}/>
+              <Lottie animationData={lottieQuick} style={{ height: "364px", width: "100%" }} />
 
             </div>
             <div className='col-md-6 col-12'>
               <div>
-                <p style={{ color: "white", fontWeight: "300",marginBottom:"0rem" }}>ENGAGING, EXPERIENCED AND EFFICIENT!</p>
+                <p style={{ color: "white", fontWeight: "300", marginBottom: "0rem" }}>ENGAGING, EXPERIENCED AND EFFICIENT!</p>
                 <h1 style={{ color: "white", fontWeight: "700" }}>Quick Facts</h1>
-                <div className='d-flex' style={{color:'#49dab5'}}>
+                <div className='d-flex' style={{ color: '#49dab5' }}>
                   <div className='mx-md-5'>
-                    <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={50} duration={3} delay={0} />}+</h1>
+                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={50} duration={3} delay={0} />}+</h1>
                     <p className='text-white text-center'>Languages</p>
                   </div>
-                  <div  className='mx-md-5'>
-                    <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={25} duration={3} delay={0} />}+</h1>
+                  <div className='mx-md-5'>
+                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={25} duration={3} delay={0} />}+</h1>
                     <p className='text-white text-center'>Countries</p>
                   </div>
                 </div>
-                <div className="d-flex"  style={{color:'#49dab5'}}>
-                  <div  className='mx-md-5'>
-                    <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={275} duration={3} delay={0} />}+</h1>
+                <div className="d-flex" style={{ color: '#49dab5' }}>
+                  <div className='mx-md-5'>
+                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={275} duration={3} delay={0} />}+</h1>
                     <p className='text-white text-center'>Clients</p>
-                    </div>
-                  <div  className='mx-md-5'>
-                    <h1 style={{fontSize:"83px"}}>{count && <CountUp start={0} end={20} duration={3} delay={0} />}+</h1>
+                  </div>
+                  <div className='mx-md-5'>
+                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={20} duration={3} delay={0} />}+</h1>
                     <p className='text-white text-center'>Years of Experience</p>
-                    </div>
+                  </div>
                 </div>
 
               </div>
             </div>
-            
+
           </div>
-          </ScrollTrigger>
+        </ScrollTrigger>
       </div>
+      <div className='skewed-div-down'></div>
       {/* Why Choose Us */}
       <div className='container py-3' >
         <div style={{ margin: "4% 8%", color: "#0d2366" }}>
@@ -136,7 +138,7 @@ export default function Home() {
             </div>
             <div className='col-md-4 col-12 '>
               <div className='text-center'>
-                <img src={native_expert} alt='Native Expert Linguists Icon' title='Native Expert Linguists'style={{ height: "71px", width: "71px" }}></img>
+                <img src={native_expert} alt='Native Expert Linguists Icon' title='Native Expert Linguists' style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center'>Native Expert Linguists</h4>
@@ -174,20 +176,20 @@ export default function Home() {
 
         <div className='row px-md-5' >
           <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Industries We Cover</h1>
-          <p className='text-center' style={{fontWeight:"300",color:"#7a7a7a"}}>We provide you with tailor-made strategies that suit perfectly for your specific market.</p>
+          <p className='text-center' style={{ fontWeight: "300", color: "#7a7a7a" }}>We provide you with tailor-made strategies that suit perfectly for your specific market.</p>
 
           {
-            
+
 
             arrr.map((element) => {
               return (
                 <div className='col-md-2 col-6 p-2 d-flex justify-content-center'>
-                  <div style={{ width: "10rem", height: "6rem" ,border:"1px solid #d1d1d1" }}>
+                  <div style={{ width: "10rem", height: "6rem", border: "1px solid #d1d1d1" }}>
                     <div style={{ padding: "9px 0px" }}>
                       <div style={{ width: "100%", textAlign: "center" }}>
-                        <i aria-hidden="true" class= {`fas ${element.icon} fa-3x py-1s `} style={{ color: "#1e6fe0", height: "2rem" }}></i>
+                        <i aria-hidden="true" class={`fas ${element.icon} fa-3x py-1s `} style={{ color: "#1e6fe0", height: "2rem" }}></i>
                       </div>
-                      <p className='text-center' style={{color:"#7a7a7a"}}>{element.title}</p>
+                      <p className='text-center' style={{ color: "#7a7a7a" }}>{element.title}</p>
                     </div>
                   </div>
 
@@ -206,24 +208,24 @@ export default function Home() {
             <h2>Proud Members of</h2>
           </div>
           <div className='col-md-1 col-6'>
-          <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indiamart-member.png' alt='Indiamart Logo' title='Indiamart' style={{height:"63px",width:"122px"}}></img>
+            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indiamart-member.png' alt='Indiamart Logo' title='Indiamart' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-1 col-6'>
-          <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' alt='CITLob Logo' title='CITLob' style={{height:"63px",width:"122px"}}></img>
+            <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' alt='CITLob Logo' title='CITLob' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-2 col-6 text-center'>
-          <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' alt='Translation Directory Logo' title='Translation Directory' style={{height:"63px",width:"122px"}}></img>
+            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' alt='Translation Directory Logo' title='Translation Directory' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-1 col-6'>
-            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' alt='Sulekha.com Logo' title='Sulekha.com' style={{height:"63px",width:"122px"}}></img></div>
+            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' alt='Sulekha.com Logo' title='Sulekha.com' style={{ height: "63px", width: "122px" }}></img></div>
           <div className='col-md-1 col-12 text-center'>
-          <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' alt='Proz Logo' title='Proz' style={{height:"63px",width:"122px"}}></img>
+            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' alt='Proz Logo' title='Proz' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-2 col-12 text-center'>
-          <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' alt='Indian Trasnlation Associations Logo' title='Indian Trasnlation Associations' style={{height:"63px",width:"122px"}}></img>
+            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' alt='Indian Trasnlation Associations Logo' title='Indian Trasnlation Associations' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-2 col-12 text-center'>
-            <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" alt='Executive Council Member Logo' title='Executive Council Member' style={{height:"63px",width:"122px"}}></img></div>
+            <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" alt='Executive Council Member Logo' title='Executive Council Member' style={{ height: "63px", width: "122px" }}></img></div>
         </div>
       </div>
       {/* test */}
@@ -240,7 +242,7 @@ export default function Home() {
         button="Contact Support"
 
       />
-    <PhishingAlert />
+      <PhishingAlert />
 
     </div>
   )

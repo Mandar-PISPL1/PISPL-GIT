@@ -554,9 +554,6 @@ section{
     
     
 }
-/* .kk{
-    background-color: red;
-} */
 .myskew{
     background-color: #a3abc5;
     width: 100%;
@@ -566,5 +563,27 @@ section{
     transform: skew(-1deg,1.5deg);
     transform-origin: left bottom;
     position: relative;
-    top: -37px;
+    top: -40px;
+}
+
+.skewed-div-up{
+    height: 100px;
+  background-color: #0d2468; 
+  position: relative;
+  transform: skewY(-3deg);
+  transform-origin: bottom left;
+  
+  bottom:-80px;
+  left: 0;
+  z-index: -1;
+}
+.skewed-div-down{
+  height: 100px;
+  background-color: #0d2468; 
+  position: relative;
+  transform: skewY(3deg);
+  transform-origin: bottom left;
+  top: -90px;
+  left: 0;
+  z-index: -1;
 }
