@@ -81,7 +81,7 @@ export default function Home() {
             </div>
             <div className='col-md-6 col-12'>
               <div>
-                <p style={{ color: "white", fontWeight: "300" }}>ENGAGING, EXPERIENCED AND EFFICIENT!</p>
+                <p style={{ color: "white", fontWeight: "300",marginBottom:"0rem" }}>ENGAGING, EXPERIENCED AND EFFICIENT!</p>
                 <h1 style={{ color: "white", fontWeight: "700" }}>Quick Facts</h1>
                 <div className='d-flex' style={{color:'#49dab5'}}>
                   <div className='mx-md-5'>
