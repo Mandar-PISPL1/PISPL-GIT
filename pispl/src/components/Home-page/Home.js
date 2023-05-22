@@ -50,7 +50,7 @@ export default function Home() {
       </div>
 
 
-      {/*brands section  */}
+      {/* Trustedbrands section  */}
       <div style={{ backgroundColor: "#f6f6f6", padding: "3rem 0rem" }}>
         <div>
           <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Trusted by World's Major Brands</h1>
@@ -60,8 +60,8 @@ export default function Home() {
               {
                 arr.map((element) => {
                   return (
-                    <div className='col-6 col-md-2 py-2  text-center'>
-                      <img src={element.link} style={{ height: "97px", width: "169px" }} alt='Major Brands' title='Major Brands'></img>
+                    <div className=' col-6 col-md-2 py-2  text-center'>
+                      <img src={element.link} style={{ maxHeight: "97px", MaxWidth: "169px" }} alt='Major Brands' title='Major Brands'></img>
                     </div>
                   )
                 })
@@ -71,47 +71,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* Quick Facts */}
-      <div className='skewed-div-up'></div>
-      <div className=' container-fluid ' style={{ backgroundColor: "#0d2366",position:"relative" }}>
-        <ScrollTrigger onEnter={() => { setCount(true) }} onExit={() => { setCount(false) }}>
-          <div className='row'>
-            <div className='col-md-6 col-12'>
-              <Lottie animationData={lottieQuick} style={{ height: "364px", width: "100%" }} />
-
-            </div>
-            <div className='col-md-6 col-12'>
-              <div>
-                <p style={{ color: "white", fontWeight: "300", marginBottom: "0rem" }}>ENGAGING, EXPERIENCED AND EFFICIENT!</p>
-                <h1 style={{ color: "white", fontWeight: "700" }}>Quick Facts</h1>
-                <div className='d-flex' style={{ color: '#49dab5' }}>
-                  <div className='mx-md-5'>
-                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={50} duration={3} delay={0} />}+</h1>
-                    <p className='text-white text-center'>Languages</p>
-                  </div>
-                  <div className='mx-md-5'>
-                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={25} duration={3} delay={0} />}+</h1>
-                    <p className='text-white text-center'>Countries</p>
-                  </div>
-                </div>
-                <div className="d-flex" style={{ color: '#49dab5' }}>
-                  <div className='mx-md-5'>
-                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={275} duration={3} delay={0} />}+</h1>
-                    <p className='text-white text-center'>Clients</p>
-                  </div>
-                  <div className='mx-md-5'>
-                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={20} duration={3} delay={0} />}+</h1>
-                    <p className='text-white text-center'>Years of Experience</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </ScrollTrigger>
-      </div>
-      <div className='skewed-div-down'></div>
+      
       {/* Why Choose Us */}
       <div className='container py-3' >
         <div style={{ margin: "4% 8%", color: "#0d2366" }}>
@@ -170,6 +130,49 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
+      {/* Quick Facts */}
+      <div className='skewed-div-up'></div>
+      <div className=' container-fluid ' style={{ backgroundColor: "#0d2366",position:"relative" }}>
+        <ScrollTrigger onEnter={() => { setCount(true) }} onExit={() => { setCount(false) }}>
+          <div className='row'>
+            <div className='col-md-6 col-12'>
+              <Lottie animationData={lottieQuick} style={{ height: "364px", width: "100%" }} />
+
+            </div>
+            <div className='col-md-6 col-12'>
+              <div>
+                <p style={{ color: "white", fontWeight: "300", marginBottom: "0rem" }}>ENGAGING, EXPERIENCED AND EFFICIENT!</p>
+                <h1 style={{ color: "white", fontWeight: "700" }}>Quick Facts</h1>
+                <div className='d-flex' style={{ color: '#49dab5' }}>
+                  <div className='mx-md-5'>
+                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={50} duration={3} delay={0} />}+</h1>
+                    <p className='text-white text-center'>Languages</p>
+                  </div>
+                  <div className='mx-md-5'>
+                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={25} duration={3} delay={0} />}+</h1>
+                    <p className='text-white text-center'>Countries</p>
+                  </div>
+                </div>
+                <div className="d-flex" style={{ color: '#49dab5' }}>
+                  <div className='mx-md-5'>
+                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={275} duration={3} delay={0} />}+</h1>
+                    <p className='text-white text-center'>Clients</p>
+                  </div>
+                  <div className='mx-md-5'>
+                    <h1 style={{ fontSize: "83px" }}>{count && <CountUp start={0} end={20} duration={3} delay={0} />}+</h1>
+                    <p className='text-white text-center'>Years of Experience</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </ScrollTrigger>
+      </div>
+      <div className='skewed-div-down'></div>
+
 
       {/* Industry we cover */}
       <div className='container py-3'>
@@ -201,7 +204,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* test */}
+      {/* Proud Members Section */}
       <div className="container py-3">
         <div className='row px-md-5'>
           <div className='col-md-2 col-12 text-center'>
@@ -228,7 +231,8 @@ export default function Home() {
             <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" alt='Executive Council Member Logo' title='Executive Council Member' style={{ height: "63px", width: "122px" }}></img></div>
         </div>
       </div>
-      {/* test */}
+
+      {/* Usp Section  */}
 
       <UspSection
         heading="Choose A Better Way To Present"
