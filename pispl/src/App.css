@@ -128,6 +128,9 @@ iframe{
 	.second-section div{
 		width: 100%;
 	}
+    .quickfacts{
+        font-size: 64px;
+    }
 }
 
 
@@ -540,6 +543,9 @@ section{
 	.repon{
         width: 0px 80%;
     }
+    .quickfacts{
+        font-size: 64px;
+    }
 }
 @media(max-width: 575px){
     .phone{
@@ -549,6 +555,9 @@ section{
     }
     .my-text-center{
         text-align: center;
+    }
+    .quickfacts{
+        font-size: 64px !important;
     }
     
     
