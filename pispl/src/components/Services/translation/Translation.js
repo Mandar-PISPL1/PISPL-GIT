@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import UspSection from '../../translation/UspSection'
 import Benefits from '../../translation/Benefits';
 import arr from './BenefitsContent'
+import translation3 from "../../assets/Translation-03.png"
 export default function Translation() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -78,8 +79,8 @@ export default function Translation() {
         </div>
         <div className='row px-md-5 mx-md-5 m-0'>
 
-          <div className='col-md-6 col-12' style={{ color: "#2a3d78",margin:"19px 0px" }}>
-            <div style={{ border: "2px solid black", padding: '1.5rem' }}>
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
+            <div style={{ border: "2px solid black", padding: '1.5rem', height: "29rem" }}>
               <div className='text-center pb-3 '>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
               </div>
@@ -90,8 +91,8 @@ export default function Translation() {
 
           </div>
 
-          <div className='col-md-6 col-12' style={{ color: "#2a3d78",margin:"19px 0px" }}>
-            <div style={{ border: "2px solid black", padding: '1.5rem' }}>
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
+            <div style={{ border: "2px solid black", padding: '1.5rem', height: "29rem" }}>
               <div className='text-center pb-3'>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
               </div>
@@ -103,8 +104,8 @@ export default function Translation() {
         </div>
         <div className='row p-md-5 mx-md-5 m-0'>
 
-          <div className='col-md-6 col-12' style={{ color: "#2a3d78" ,margin:"19px 0px"}}>
-            <div style={{ border: "2px solid black",padding:'1.5rem' }}>
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
+            <div style={{ border: "2px solid black", padding: '1.5rem', height: "29rem" }}>
               <div className='text-center pb-3'>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
               </div>
@@ -114,8 +115,8 @@ export default function Translation() {
             </div>
           </div>
 
-          <div className='col-md-6 col-12' style={{ color: "#2a3d78",margin:"19px 0px" }}>
-            <div style={{ border: "2px solid black",padding:'1.5rem' }}>
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
+            <div style={{ border: "2px solid black", padding: '1.5rem', height: "29rem" }}>
               <div className='text-center pb-3'>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
               </div>
@@ -126,7 +127,55 @@ export default function Translation() {
           </div>
         </div>
       </div>
+      {/* How Translation Promotes Business Growth? */}
+      <div className='container py-4 mx-md-2'>
+        <div className='row px-md-5 mx-md-5 m-0'>
+          <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>How Translation Promotes Business Growth?</h1>
 
+          <p>Translating your company’s information into multiple languages makes you reach out to a wider audience and makes you publicly available in their native language. It offers a sense of belonging and gives you a firm stand to kickstart your business beyond geographical borders. It makes you look less alien and gives you an edge over competitors. Thus, with the increase in globalization, translation promotes all-around growth of your business.</p>
+
+          <div className='col-md-6 col-12 d-flex justify-content-center'>
+            <img src={translation3} style={{height:"300px ",width:"300px"}}></img>
+          </div>
+          <div className='col-md-6 col-12 d-flex align-items-center'>
+            <div className="accordion accordion-flush" id="accordionFlushExample">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="flush-headingOne">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Increases your company's visibility
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div className="accordion-body">Language is an essential route toward a company’s success. This process can become challenging with language as a barrier between you and your success. At Parikh Info Solutions, we break that wall with our translation services. Our certified translators make you reach out to a wider audience in their native language.</div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="flush-headingTwo">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Enhances communication with the audience
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div className="accordion-body">To compete in this global marketplace, companies must use effective strategies to fuel their growth in international networks. This includes worldwide communication with partners, customers, and employees in a variety of languages. We bridge this gap by ensuring effective communication with you and your clients through our translation services based in the India.</div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="flush-headingThree">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Ensures a good reputation of your firm
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div className="accordion-body">One small mistake in translation services can cause you a fortune of loss and also put your brand image in jeopardy. Thus, we use the right words at the right time and guard the norms and ethics of languages during translation services.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
 
       {/* Benefits */}
       <div className='container py-4 mx-md-2'>
