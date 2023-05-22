@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import Banner from '../../translation/Banner'
-// import arr from "./services_content"
 import translation_service from './translation_service.json'
 import TopBrandSection from '../../translation/TopBrandSection'
 import brands from './brands'
@@ -54,7 +53,7 @@ export default function Translation() {
         </div>
       </div>
       {/* Top Brands Section */}
-      <div className="repon py-5" style={{ textAlign: "center", margin: "3rem auto",backgroundColor:"#f6f6f6" }}>
+      <div className="repon py-5" style={{ textAlign: "center", margin: "3rem auto", backgroundColor: "#f6f6f6" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Brands We Work With</h1>
         <div className='container-fluid'>
           <div className='' style={mystyle}>
@@ -70,25 +69,84 @@ export default function Translation() {
       </div>
       {/* End of Top Brands Section */}
 
+      {/* What translation services do we provide? */}
+      <div className='container'>
+        <div className='d-flex flex-column justify-content-center px-md-5 mx-md-5 m-0'>
+          <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Brands We Work With</h1>
+          <div className='my-4 ' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
+          <p>We understand the need for translation for all the businesses hence, without confining it to any specific business requirement or industry, we provide full-fledged translation services to all the businesses across different industries.</p>
+        </div>
+        <div className='row px-md-5 mx-md-5 m-0'>
+
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78",margin:"19px 0px" }}>
+            <div style={{ border: "2px solid black", padding: '1.5rem' }}>
+              <div className='text-center pb-3 '>
+                <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
+              </div>
+
+              <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Legal Translation</h4>
+              <p style={{ fontSize: "18px" }}>To help you with the understanding of your legal documents & their apt meaning, legal translation comes into the picture. It is a complex translation binding with the judiciary, hence it is of utmost importance to keep it accurate & relevant. Our team of professionals make it possible for you effortlessly at affordable prices.</p>
+            </div>
+
+          </div>
+
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78",margin:"19px 0px" }}>
+            <div style={{ border: "2px solid black", padding: '1.5rem' }}>
+              <div className='text-center pb-3'>
+                <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
+              </div>
+
+              <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Literary Translation</h4>
+              <p style={{ fontSize: "18px" }}>We also help you with the translation of magazines, books, chapters, etc. to help you reach the maximum audience. Be it in any language, or any literary element you want to get translated; we’ve got you covered. Get your literary masterpiece translated into many languages with its apt meaning and emotions. Our experts & professionals make the translation possible for you by making it accurate & relevant at affordable prices.</p>
+            </div>
+          </div>
+        </div>
+        <div className='row p-md-5 mx-md-5 m-0'>
+
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78" ,margin:"19px 0px"}}>
+            <div style={{ border: "2px solid black",padding:'1.5rem' }}>
+              <div className='text-center pb-3'>
+                <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
+              </div>
+
+              <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Business Translation</h4>
+              <p style={{ fontSize: "18px" }}>With the growth in international markets, finding opportunities and growing beyond geographical boundaries have become possible. Although it is not as easy as it looks to stand firmly in the non-local or international market, translation of the business into local languages can do wonders. At Parikh Info Solutions with our team of experienced translators & professionals make it possible for you!.</p>
+            </div>
+          </div>
+
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78",margin:"19px 0px" }}>
+            <div style={{ border: "2px solid black",padding:'1.5rem' }}>
+              <div className='text-center pb-3'>
+                <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
+              </div>
+
+              <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Document Translation</h4>
+              <p style={{ fontSize: "18px" }}>Apart from legal translation or literary translation, we also ace in translating any document you might need aptly with utmost accuracy. Translate your transcripts, courses, or any document with our team of expert translators at prices that favours your budget.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       {/* Benefits */}
       <div className='container py-4 mx-md-2'>
         <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Benefits of Our Translation Services</h2>
         <div className='row px-md-5 mx-md-5 m-0'>
-        {
-          arr.map((element) =>{
-            return (
-             
-                <Benefits img={element.img} title={element.title} content={element.content}/>
-              
-            )
-          })
-        }
+          {
+            arr.map((element) => {
+              return (
+
+                <Benefits img={element.img} title={element.title} content={element.content} />
+
+              )
+            })
+          }
 
 
         </div>
 
       </div>
-      {/* <Benefits/> */}
+
       {/* USP section */}
       <UspSection
         heading="Get Your Effective Translation Today!"
