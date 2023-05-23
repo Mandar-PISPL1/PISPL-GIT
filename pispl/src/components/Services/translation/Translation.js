@@ -9,6 +9,7 @@ import UspSection from '../../translation/UspSection'
 import Benefits from '../../translation/Benefits';
 import arr from './BenefitsContent'
 import translation3 from "../../assets/Translation-03.png"
+import arr1 from './WhyChooseParikh'
 export default function Translation() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -194,6 +195,30 @@ export default function Translation() {
 
         </div>
 
+      </div>
+      {/* Why Choose Parikh Info Solutions As Translation Company? */}
+      <div className='container py-4 mx-md-2'>
+        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Why Choose Parikh Info Solutions As Translation Company?</h2>
+        <p className='text-center m-3' style={{ color: "#0d2366", fontWeight: "300" }} >Speak Like a Local With your Audience!</p>
+        <div className='row px-md-5 mx-md-5 m-0'>
+        {
+            arr1.map((element) => {
+              return (
+
+                <Benefits img={element.img} title={element.title} content={element.content} />
+
+              )
+            })
+          }
+
+
+        </div>
+
+      </div>
+      {/* our translation process */}
+      <div>
+      <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Our Translation Process</h2>
+        <p className='text-center m-3' style={{ color: "#0d2366", fontWeight: "300" }} >We provide 100% Quality Assurance and a fast turnaround time through our human translation services in India and also all around the world.</p>
       </div>
 
       {/* USP section */}
