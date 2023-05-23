@@ -219,6 +219,65 @@ export default function Translation() {
       <div>
       <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Our Translation Process</h2>
         <p className='text-center m-3' style={{ color: "#0d2366", fontWeight: "300" }} >We provide 100% Quality Assurance and a fast turnaround time through our human translation services in India and also all around the world.</p>
+        <div>
+          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
+            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>1</h1></div>
+            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem",maxWidth:"27rem"}}>
+              <h1 style={{fontSize:"35px"}}>Understanding Client Requirements:</h1>
+              <p style={{color:"white"}}>First, we as a translation services company understand your requirements and try to resolve your doubts. We try to understand what exactly you are looking for in the budget of your choice.</p>
+            </div>
+          </div>
+          
+          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
+            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>2</h1></div>
+            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem",maxWidth:"27rem"}}>
+              <h1 style={{fontSize:"35px"}}>Analysis and Preparation of the Source File:</h1>
+              <p style={{color:"white"}}>Then we analyze the source document. Based on that we send a price quote with a specific timeline for the translation project. Meanwhile, the project coordinator, with the help of local language experts creates a source file from the source document.</p>
+            </div>
+          </div>
+          
+          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
+            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>3</h1></div>
+            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
+              <h1 style={{fontSize:"35px"}}>Allocation of Resources:</h1>
+              <p style={{color:"white"}}>After the creation of the source file, the project is assigned to the linguist (or a team of linguists) who has expertise on the subject as per the project requirement.</p>
+            </div>
+          </div>
+          
+          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
+            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>4</h1></div>
+            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
+              <h1 style={{fontSize:"35px"}}>Translation:</h1>
+              <p style={{color:"white"}}>The translation is done as per your specific requirement. We take care of style, tone, grammar, meaning, cultural nuances along with consistency with industry standards within our translated projects.</p>
+            </div>
+          </div>
+          
+          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
+            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>5</h1></div>
+            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
+              <h1 style={{fontSize:"35px"}}>Quality Check and Assurance:</h1>
+              <p style={{color:"white"}}>Quality supervisors proofread and check the translated document. We follow stringent quality check parameters to maintain superior quality in our translation services company.</p>
+            </div>
+          </div>
+          
+          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
+            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>6</h1></div>
+            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
+              <h1 style={{fontSize:"35px"}}>Delivery of the Project:</h1>
+              <p style={{color:"white"}}>After a thorough quality check, the translated document is sent to you for feedback and suggestions.</p>
+            </div>
+          </div>
+          
+          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
+            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>7</h1></div>
+            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
+              <h1 style={{fontSize:"35px"}}>Post-Delivery Services:</h1>
+              <p style={{color:"white"}}>Parikh Info Solutions takes pride in its after delivery services. Any feedback and suggestions from your side are always welcomed. We implement them right away to prevent delays in your further plan of action.</p>
+            </div>
+          </div>
+          
+        </div>
+        
       </div>
 
       {/* USP section */}
