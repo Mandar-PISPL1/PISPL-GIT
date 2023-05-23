@@ -37,8 +37,8 @@ export default function Localization() {
               We offer the best localization services in India at affordable prices and fast outcomes.</p>
 
           </div>
-          <div className="col-md-6 col-12 text-center" style={{MaxHeight:"406px",maxWidth:"406px"}}>
-            <img src={img1} alt="" style={{height:"100%",width:"100%"}}/>
+          <div className="col-md-6 col-12 text-center" style={{ MaxHeight: "406px", maxWidth: "406px" }}>
+            <img src={img1} alt="" style={{ height: "100%", width: "100%" }} />
           </div>
         </div>
       </div>
@@ -69,7 +69,22 @@ export default function Localization() {
       </div>
 
       {/* localization vs translation */}
-
+      <div className="container py-4 mx-md-2">
+        <div className="row px-md-5 mx-md-5 m-0">
+          <h1 className='text-center m-3 ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Localization vs Translation</h1>
+          <div className='my-4 text-center' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px",margin:"0px auto" }}></div>
+          <p className='text-start m-3' style={{ color: "#0d2366", fontWeight: "300" }} >
+            Translation services refer to the process of translating or changing text from one language to another, retaining its original meaning. The goal of translation is to maintain the originality of the original text and content in the target language.
+            <br /><br />
+            Localization services refer to the process of modifying the content by keeping both linguistical and cultural differences in focus. You will need localization services in order to reach a wider audience in different regions and parts of the world. The process of simply translating does not cater to wider audiences as one cannot connect due to major cultural differences. With our localization services in India, we create the perfect blend of content with both linguistic and cultural equivalence.
+            <br /><br />
+            The main difference between translation services and localization services is that localization bridges the gap between cultural differences, modifying it according to the local language of the targeted region. The localization services are important for making content, products, services and campaigns reach global audiences along with meeting cultural expectations.
+            <br /><br />
+            Both translation and localization services are important to make content available in vast languages. But knowing when to use these services is the main key. Translation services are often used for—Legal and Technical documents, Medical documents, Science journals, Publications/Books and User Manuals.
+            <br /><br />
+            Localization services are mainly used for software, websites, mobile apps, video games, and other digital products and services. The main aim of localization services is to make the content appear relatable and “local” in terms of the specific target region. From choosing the content, and graphics according to local languages preferences to modifying it with accurate local and legal requirements. Our localization services in India ensures high quality driven content, focussing on ever aspect like: Language, Expressions, Idioms, Vocabulary, Cultural references, Measuring units , Currency units and Date formats.</p>
+        </div>
+      </div>
 
       <div className="repon" style={{ textAlign: "center", margin: " 3rem auto" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
