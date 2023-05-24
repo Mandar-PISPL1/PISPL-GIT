@@ -11,6 +11,7 @@ import arr from './TypesOfVoiceService-data'
 import Benefits2 from './Benefits';
 import {arr1,arr2} from './Benefits-data'
 import TypesOfVoiceServices from './TypesOfVoiceServices';
+import img2 from '../../assets/Age-Specific.jpg'
 
 export default function VoiceOver() {
 
@@ -128,11 +129,23 @@ export default function VoiceOver() {
               })
             }
             
-          
-         
-          
+        </div>
+      </div>
+      {/* Content */}
+      <div className="conatiner py-4 mx-md-2">
+        <div className="row px-md-5 mx-md-5 m-0">
+          <div className='col-md-3 text-center' >
+            <img src={img2}  style={{height:"132px",width:"132px"}}></img>
+          </div>
+          <div className='col-md-9 text-start'>
+          <h3 className=' ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>We entertain age-specific voice-over for specific needs.</h3>
+          <p className='text-start ' style={{ color: "#0d2366", fontWeight: "300" }} >Adhering to different needs, we support diverse and unique voice-overs. We add a personal touch to your voice overs by providing you with age-specific voices that suit your needs. Be it a corporate video requiring a firm voice, or a pleasing voice for children’s video, we have got everything covered in our package.</p>
+          <h3 className=' ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Other characteristics we excel in:</h3>
+          <p className='text-start ' style={{ color: "#0d2366", fontWeight: "300" }} >Our narration artists and professional voice actors have a fabulous command over the language, and they know how to deliver the dialogue. We consider a variety of requests, for which we have a diversified talent pool of professionals. Different tones of voices are required for different videos. For an educational video inwardly focused and factual is required however, a motivational video would require a charming and assertive voice.</p>
+          <p className='text-start ' style={{ color: "#0d2366", fontWeight: "300" }} >With the right tone and the speaker, you can fill even the dullest video full of life. With the cheerful and friendly tone of voice, you can easily attract children into watching your video, at the same time you will need a dynamic and assertive voice for a company’s presentation. We assign you with the perfect voice-over artist to fit your requirements at cost-effective rates.</p>
 
-          
+          </div>
+            
         </div>
       </div>
 
