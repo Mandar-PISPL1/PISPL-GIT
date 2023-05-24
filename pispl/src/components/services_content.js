@@ -22,9 +22,7 @@ const arr=[
         content1: "With years dedicated to the localization industry, we have perfected the formula to create decisive content and methods for localization. Be it Apps, Websites, or Software, we help you connect with consumers on the most fundamental level.",
         content2: "",
         content3: ""
-    }
-    
-    ,
+    },
     {
         name_of_service:"Professional Voice Over Service",
         service_title:"Voice Over Service",
@@ -95,7 +93,7 @@ const arr=[
        
     },
     {
-        name_of_service:"Professional Language Service Provider",
+        name_of_service:"Professional Language Service Provider - LSP",
         content1:"ISO 9001:2015 and ISO 17100:2015 Certified 360-Degree Professional Language Service Provider helping businesses to break all the language barriers and expand globally.",
         content2:"",
         conten3:"",
