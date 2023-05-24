@@ -10,6 +10,8 @@ import Benefits from '../../translation/Benefits';
 import arr from './BenefitsContent'
 import img from '../../assets/Dubbing-2.png'
 import img2 from '../../assets/Simultaneous-Interpretation.png'
+import DubbingServices from './DubbingServices';
+import arr1 from './Dubbingservices-data'
 export default function Dubbing() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -74,7 +76,7 @@ export default function Dubbing() {
 
 
 
-
+{/* Top brands */}
 
       <div className="repon" style={{ textAlign: "center", margin: " 3rem auto"}}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
@@ -88,6 +90,25 @@ export default function Dubbing() {
               })
             }
           </div>
+        </div>
+      </div>
+      {/* Our Dubbing Services in India Provide */}
+      <div className="conatiner py-4 mx-md-2">
+        <div className="row px-md-5 mx-md-5 m-0">
+          <h1 className='text-center m-3 ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Our Dubbing Services in India Provide</h1>
+          <p className='text-center m-3' style={{ color: "#0d2366", fontWeight: "300" }}>Choose the best dubbing artists, with the right accent and dialects.</p>
+      
+          {
+              arr1.map((element)=>{
+                return (
+                  <DubbingServices img={element.img} title={element.title} content={element.content}/>
+                )
+              })
+            }
+          
+          
+
+          
         </div>
       </div>
       {/* benefits content */}
