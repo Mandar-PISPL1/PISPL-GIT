@@ -137,14 +137,14 @@ export default function Translation() {
           <p>Translating your company’s information into multiple languages makes you reach out to a wider audience and makes you publicly available in their native language. It offers a sense of belonging and gives you a firm stand to kickstart your business beyond geographical borders. It makes you look less alien and gives you an edge over competitors. Thus, with the increase in globalization, translation promotes all-around growth of your business.</p>
 
           <div className='col-md-6 col-12 d-flex justify-content-center'>
-            <img src={translation3} style={{height:"300px ",width:"300px"}}></img>
+            <img src={translation3} style={{ height: "300px ", width: "300px" }}></img>
           </div>
           <div className='col-md-6 col-12 d-flex align-items-center'>
             <div className="accordion accordion-flush" id="accordionFlushExample">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingOne">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Increases your company's visibility
+                    Increases your company's visibility
                   </button>
                 </h2>
                 <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -154,7 +154,7 @@ export default function Translation() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingTwo">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Enhances communication with the audience
+                    Enhances communication with the audience
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -164,7 +164,7 @@ export default function Translation() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingThree">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Ensures a good reputation of your firm
+                    Ensures a good reputation of your firm
                   </button>
                 </h2>
                 <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -202,7 +202,7 @@ export default function Translation() {
         <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Why Choose Parikh Info Solutions As Translation Company?</h2>
         <p className='text-center m-3' style={{ color: "#0d2366", fontWeight: "300" }} >Speak Like a Local With your Audience!</p>
         <div className='row px-md-5 mx-md-5 m-0'>
-        {
+          {
             arr1.map((element) => {
               return (
 
@@ -218,67 +218,67 @@ export default function Translation() {
       </div>
       {/* our translation process */}
       <div>
-      <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Our Translation Process</h2>
+        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Our Translation Process</h2>
         <p className='text-center m-3' style={{ color: "#0d2366", fontWeight: "300" }} >We provide 100% Quality Assurance and a fast turnaround time through our human translation services in India and also all around the world.</p>
         <div>
-          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
-            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>1</h1></div>
-            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem",maxWidth:"27rem"}}>
-              <h1 style={{fontSize:"35px"}}>Understanding Client Requirements:</h1>
-              <p style={{color:"white"}}>First, we as a translation services company understand your requirements and try to resolve your doubts. We try to understand what exactly you are looking for in the budget of your choice.</p>
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>1</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Understanding Client Requirements:</h1>
+              <p style={{ color: "white" }}>First, we as a translation services company understand your requirements and try to resolve your doubts. We try to understand what exactly you are looking for in the budget of your choice.</p>
             </div>
           </div>
-          
-          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
-            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>2</h1></div>
-            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem",maxWidth:"27rem"}}>
-              <h1 style={{fontSize:"35px"}}>Analysis and Preparation of the Source File:</h1>
-              <p style={{color:"white"}}>Then we analyze the source document. Based on that we send a price quote with a specific timeline for the translation project. Meanwhile, the project coordinator, with the help of local language experts creates a source file from the source document.</p>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>2</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Analysis and Preparation of the Source File:</h1>
+              <p style={{ color: "white" }}>Then we analyze the source document. Based on that we send a price quote with a specific timeline for the translation project. Meanwhile, the project coordinator, with the help of local language experts creates a source file from the source document.</p>
             </div>
           </div>
-          
-          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
-            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>3</h1></div>
-            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
-              <h1 style={{fontSize:"35px"}}>Allocation of Resources:</h1>
-              <p style={{color:"white"}}>After the creation of the source file, the project is assigned to the linguist (or a team of linguists) who has expertise on the subject as per the project requirement.</p>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>3</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Allocation of Resources:</h1>
+              <p style={{ color: "white" }}>After the creation of the source file, the project is assigned to the linguist (or a team of linguists) who has expertise on the subject as per the project requirement.</p>
             </div>
           </div>
-          
-          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
-            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>4</h1></div>
-            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
-              <h1 style={{fontSize:"35px"}}>Translation:</h1>
-              <p style={{color:"white"}}>The translation is done as per your specific requirement. We take care of style, tone, grammar, meaning, cultural nuances along with consistency with industry standards within our translated projects.</p>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>4</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Translation:</h1>
+              <p style={{ color: "white" }}>The translation is done as per your specific requirement. We take care of style, tone, grammar, meaning, cultural nuances along with consistency with industry standards within our translated projects.</p>
             </div>
           </div>
-          
-          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
-            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>5</h1></div>
-            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
-              <h1 style={{fontSize:"35px"}}>Quality Check and Assurance:</h1>
-              <p style={{color:"white"}}>Quality supervisors proofread and check the translated document. We follow stringent quality check parameters to maintain superior quality in our translation services company.</p>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>5</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Quality Check and Assurance:</h1>
+              <p style={{ color: "white" }}>Quality supervisors proofread and check the translated document. We follow stringent quality check parameters to maintain superior quality in our translation services company.</p>
             </div>
           </div>
-          
-          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
-            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>6</h1></div>
-            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
-              <h1 style={{fontSize:"35px"}}>Delivery of the Project:</h1>
-              <p style={{color:"white"}}>After a thorough quality check, the translated document is sent to you for feedback and suggestions.</p>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>6</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Delivery of the Project:</h1>
+              <p style={{ color: "white" }}>After a thorough quality check, the translated document is sent to you for feedback and suggestions.</p>
             </div>
           </div>
-          
-          <div className='d-flex ' style={{maxWidth:"29rem",margin:"47px auto"}}>
-            <div style={{color:"#49dab5",fontSize:"48px",padding:"0px 9px",maxWidth:"2rem"}}> <h1>7</h1></div>
-            <div style={{backgroundColor:"#49dab5",color:"#0d2366",padding:"2rem 1rem"}}>
-              <h1 style={{fontSize:"35px"}}>Post-Delivery Services:</h1>
-              <p style={{color:"white"}}>Parikh Info Solutions takes pride in its after delivery services. Any feedback and suggestions from your side are always welcomed. We implement them right away to prevent delays in your further plan of action.</p>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>7</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Post-Delivery Services:</h1>
+              <p style={{ color: "white" }}>Parikh Info Solutions takes pride in its after delivery services. Any feedback and suggestions from your side are always welcomed. We implement them right away to prevent delays in your further plan of action.</p>
             </div>
           </div>
-          
+
         </div>
-        
+
       </div>
 
       {/* USP section */}
