@@ -130,6 +130,69 @@ export default function Dubbing() {
         </div>
 
       </div>
+
+      {/* have a look on process */}
+
+      <div>
+        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Have a Look at Our Process</h2>
+        <p className='text-center m-3' style={{ color: "#0d2366", fontWeight: "300" }}> We have brilliant recording facilities, complete with an arsenal of equipment. Several pro tools and Software are employed for high quality. Professional recording studios with proficient direction and original voice actors to complete the job and provide top-notch dubbing.</p>
+        <div>
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>1</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Script Adaptation</h1>
+              <p style={{ color: "white" }}>Source script is adapted by experienced native translators capturing every sentiment and notion of the theme</p>
+            </div>
+          </div>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>2</h1></div>
+            <div style={{ backgroundColor: "#0d2366", color: "#49dab5", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Choosing Artists</h1>
+              <p style={{ color: "white" }}>A pool of talented, professional dubbing artists is made available to the client to make a choice according to their requirements.</p>
+            </div>
+          </div>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>3</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Assigning Artists
+</h1>
+              <p style={{ color: "white" }}>The client selects artists as per the requirements. We ensure that age, sex, and the sound of the speaker are in parallel to the role required.</p>
+            </div>
+          </div>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>4</h1></div>
+            <div style={{  backgroundColor: "#0d2366",color: "#49dab5", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Recording</h1>
+              <p style={{ color: "white" }}>We make use of professionally monitored studios for precise and quality recording of your files.</p>
+            </div>
+          </div>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>5</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Editing & Mixing</h1>
+              <p style={{ color: "white" }}>Videos are edited and mixed with M&E and dubbed audio tracks leaving no discrepancies at all.</p>
+            </div>
+          </div>
+
+          <div className='d-flex ' style={{ maxWidth: "29rem", margin: "47px auto" }}>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>6</h1></div>
+            <div style={{ backgroundColor: "#0d2366", color: "#49dab5", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" }}>
+              <h1 style={{ fontSize: "35px" }}>Quality Control</h1>
+              <p style={{ color: "white" }}>Any unwanted background sounds are removed, to ensure a clear sound-track. Superior quality dubbing with perfect lip sync is presented to the clients.</p>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+
       <UspSection
         heading="Give Your Viewers A Better Experience"
         data1="Lip Syncing"
