@@ -48,7 +48,7 @@ export default function Localization() {
         <div className="row px-md-5 mx-md-5 m-0">
 
           <div className="col-md-6 col-12">
-            <p></p>
+            <p style={{ color: "#0d2366", fontWeight: "700" }}>ONE-STOP SOLUTION FOR ALL LOCALIZATION NEEDS</p>
             <h1 className=' m-3 ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Go Global With Confidence</h1>
             <div className='my-4 ' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
             <p className='text-start m-3' style={{ color: "#0d2366", fontWeight: "300" }} >

@@ -59,7 +59,7 @@ export default function VideoSubtitling() {
         data1="Time Sync"
         data2="Desired Fonts"
         data3="Precise Positioning"
-        button="Get Your Subtitlies"
+        button="Get Your Subtitles"
         />
         <div style={{backgroundColor:"#49dab5"}}>
                     <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for transcription services? <NavLink to="/transcription">Read More.</NavLink></p>
