@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import arr from '../services_content'
 import Lottie from 'lottie-react';
 import { FaBook } from "react-icons/fa";
@@ -29,6 +30,8 @@ export default function Banner(props) {
                         <p className='py-2 fw-light'>{arr[index].content2}</p>
                         <p className='py-2 fw-light'>{arr[index].content3}</p>
                         <button data-bs-toggle="modal" data-bs-target="#exampleModal" style={buttonstyle}>Download Free Brochure <FaBook /></button>
+                        <br/><br/>
+                        <NavLink to="/"><span className='fw-light text-danger'>Home</span></NavLink> &#187; <span className='fw-light'>Our Services</span> &#187; <span className='fw-light'>{arr[index].service_title}</span>
                     </div>
                     <div className='col-md-5 d-flex justify-content-center '>
                         <div className=''  >
