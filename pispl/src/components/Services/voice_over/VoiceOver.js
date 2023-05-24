@@ -7,9 +7,10 @@ import TopBrandSection from '../../translation/TopBrandSection'
 import UspSection from '../../translation/UspSection'
 import img from "../../assets/Voice-Over.png"
 import img1 from '../../assets/Simultaneous-Interpretation-voice-over-service.png'
-
-import Benefits2 from './Benefits2';
+import arr from './TypesOfVoiceService-data'
+import Benefits2 from './Benefits';
 import {arr1,arr2} from './Benefits-data'
+import TypesOfVoiceServices from './TypesOfVoiceServices';
 
 export default function VoiceOver() {
 
@@ -59,12 +60,6 @@ export default function VoiceOver() {
           }
 
           
-
-          
-
-          
-
-          
         </div>
       </div>
 
@@ -98,6 +93,8 @@ export default function VoiceOver() {
 
 
 
+
+      {/* Top brand section */}
       <div className="repon" style={{ textAlign: "center", margin: " 3rem auto" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
         <div className='container-fluid'>
@@ -112,6 +109,35 @@ export default function VoiceOver() {
           </div>
         </div>
       </div>
+
+      {/* Types of Voice-Over Services We Offer */}
+      <div className="conatiner py-4 mx-md-2">
+        <div className="row px-md-5 mx-md-5 m-0">
+          <h1 className='text-center ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Types of Voice-Over Services We Offer</h1>
+          {/* <div className='text-center my-4' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div> */}
+          <p className='text-center ' style={{ color: "#0d2366", fontWeight: "300" }} >Adhering to different needs, our voice over company support diverse and unique voice-overs. We add a personal touch to your voiceovers by providing you with age-specific voices that suit your needs..<br /><br />
+          Be it a corporate video requiring a firm voice, or a pleasing voice for a children’s video, we have got everything covered in our package. Keeping it up with the requirements along with a convenient process, our professional voice over services in India helps you by making the process & requirement of voice-over hassle-free.
+
+            </p>
+            {/* box-shadow:  */}
+            {
+              arr.map((element)=>{
+                return (
+                  <TypesOfVoiceServices img={element.img} title={element.title} content={element.content}/>
+                )
+              })
+            }
+            
+          
+         
+          
+
+          
+        </div>
+      </div>
+
+
+      {/* USP section */}
       <UspSection
         heading="Provide Better User Engagement and Experience"
         data1="Time Sync"
