@@ -117,7 +117,7 @@ export default function AiDubbing() {
 
       {/* Industries We Cover */}
       <div className='container-fluid py-4 mx-md-2'>
-        <div className='row px-md-5 mx-md-5 m-0'>
+        <div className='row px-md-5 mx-md-5 m-0 justify-content-around'>
           <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Industries We Cover</h1>
 
           <p>At Parikh Info Solutions, we offer high-quality dubbing services across industries like Entertainment, media, animation, documentaries, eLearning, Corporate, Gaming, Advertising, and many more.</p>
