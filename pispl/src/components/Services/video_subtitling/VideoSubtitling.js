@@ -21,6 +21,31 @@ export default function VideoSubtitling() {
     <>
         <Banner index={6} lottie={videosubtitling_lottie}/>
         <div className='myskew'></div>
+
+        {/* Get the Best Subtitles Translation for All Media */}
+        <div className="conatiner py-4 mx-md-2">
+        <div className="row px-md-5 mx-md-5 m-0">
+          <div className="col-md-7 col-12">
+            <p className='text-start m-3' style={{ color: "#0d2366", fontWeight: "300" }} >BEST VIDEO SUBTITLES FOR YOUR VIDEOS</p>
+            <h1 className='text-start m-3 ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Get the Best Subtitles Translation for All Media</h1>
+            <div className='my-4 ' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
+            <p className='text-start m-3' style={{ color: "#0d2366", fontWeight: "300" }} >Our team consists of professional subtitlers and captioners who are native speakers and hold expertise in the target language. We will ensure to serve you a high-quality and detailed subtitles translation.
+            <br/><br/>
+            With more than 50+ languages to caption and translate, we offer the best choice for your specifications. We have established a seamless process of subtitles translation in order to convey the right story to the audience. 
+            <br/><br/>
+            With our personnel of dedicated translators and caption experts, we ought to convey the meaning of each dialogue with befitting words. We offer video subtitling services in a wide variety of content including movies, TV shows, web series, webinars, e-learning courses, marketing videos and a lot more.
+            <br/><br/>
+            We ensure to deliver the best subtitles translation at affordable pricing with great efficiency. Whatever is the clients’ requirement, our language experts will ensure that the message is passed effectively and meet the expectations of the audience.
+
+            </p>
+          </div>
+          <div className="col-md-5 col-12">
+          <iframe width="456" height="258" src="https://www.youtube.com/embed/ygJWdNwsyms" title="Budget Friendly Transcription Services in India - Parikh Info Solutions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <p className='text-start m-3' style={{ color: "#0d2366", fontWeight: "300" }}>Our project management team will make sure to deliver the best results. They will look after your work, generate a timeline and will stay connected to you for any doubts and guidance. We also ensure the finest production quality with excellent service. Our expertise range from video subtitling services to an extensive understanding of all aspects of closed caption and video subtitling. We assure to deliver smooth, error-free and affordable subtitling services in India.</p>
+        </div>
+      </div>
+
         <div className="repon" style={{ textAlign: "center", margin: " 3rem auto"}}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Subtitles Provided To Big Brands</h1>
         <div className='container-fluid'>
