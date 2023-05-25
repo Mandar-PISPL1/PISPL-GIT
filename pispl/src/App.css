@@ -548,8 +548,15 @@ section{
     }
 }
 @media(max-width: 575px){
+    .dPhoneview{
+        top:"0px"
+    }
     .myphonewidth{
         width: 80% !important;
+    }
+    .myphone{
+        width: 80% !important;
+        height:100px;
     }
     .phone{
         flex-direction: column;
