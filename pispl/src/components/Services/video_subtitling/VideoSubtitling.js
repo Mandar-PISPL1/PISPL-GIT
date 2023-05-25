@@ -7,6 +7,8 @@ import brands from './brands'
 import UspSection from '../../translation/UspSection'
 import Benefits from '../../translation/Benefits';
 import arr from './BenefitsContent'
+import img1 from "../../assets/CC-1.png"
+import img2 from '../../assets/Subtitle-Translation-Service.png'
 export default function VideoSubtitling() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -60,6 +62,48 @@ export default function VideoSubtitling() {
           </div>
         </div>
       </div>
+
+      {/* Other Major Services */}
+      <div className="conatiner py-4 mx-md-2">
+        <div className="row px-md-5 mx-md-5 m-0">
+          <h1 className='text-center ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Other Major Services</h1>
+          {/* <div className='text-center my-4' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div> */}
+          
+            {/* box-shadow:  */}
+            <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
+            <div style={{  padding: '1.5rem',borderRadius:"10px",boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",height:'100%'}}>
+              <div className='text-center pb-3'>
+                <img src={img1} style={{ height: "200px", width: "315px" }}></img>
+              </div>
+              <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Closed Captions (CC)</h4>
+              <p style={{ fontSize: "18px" }}>Closed captions or CC is a subtitles translation service that serves as an aid, especially for people with deaf and hard of hearing. In this type of video subtitling service, all the audio information, such as background,  sound effects, non-speech elements and speaker IDs are included in the captions.
+              <br/><br/>
+              Closed captions cater to the need of a larger audience and we can help you reach them.
+              <br/><br/>
+              With the best subtitling services in India, we provide high quality and low-cost subtitles translation with a fast turnaround in all media.
+              </p>
+            </div>
+          </div>
+
+          <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
+            <div style={{  padding: '1.5rem',borderRadius:"10px",boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",height:'100%'}}>
+              <div className='text-center pb-3'>
+                <img src={img2} style={{ height: "200px", width: "315px" }}></img>
+              </div>
+              <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Video Subtitles</h4>
+              <p style={{ fontSize: "18px" }}>Viewers all around the world like to enjoy subtitles in their native language. Thus, we create subtitles translations in multiple languages with 99% accuracy to suit the needs of your viewers.
+              <br/><br/>
+              The subtitles should be accurate and timely placed in order to gain more audience. We ensure that the subtitle translations are customized according to the clients’ requirements.
+              <br/><br/>
+              Our team of language experts, translators and subtitlers work efficiently to not just mere translate the words but also add value to them.
+              </p>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+
       {/* benefits section */}
       <div className='container py-4 mx-md-2'>
         <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Benefits of Subtitling</h2>
