@@ -548,6 +548,12 @@ section{
     }
 }
 @media(max-width: 575px){
+    .width50{
+        width: 50% !important;
+    }
+    .width100{
+        width: 100% !important;
+    }
     .dPhoneview{
         top:"0px"
     }
