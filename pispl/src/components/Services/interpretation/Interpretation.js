@@ -8,7 +8,6 @@ import arr from './BenefitsContent'
 import img from '../../assets/Interpretation.png'
 import img1 from '../../assets/Simultaneous-Interpretation.png'
 import img2 from '../../assets/Consecutive-Interpretation.png'
-
 import img3 from '../../assets/Quick-Interpretation.png'
 import img4 from '../../assets/network.png'
 import img5 from '../../assets/Alerts-for-Cultural-Sensitivity-1.png'
@@ -16,6 +15,8 @@ import faqs from './FAQContent'
 import FAQ from '../../translation/FAQ'
 import arr1 from "./WhyChoose-data"
 import Benefits2 from '../voice_over/Benefits2'
+import faqs from './FAQContent'
+import FAQ from '../../translation/FAQ'
 
 export default function () {
   useEffect(() => {

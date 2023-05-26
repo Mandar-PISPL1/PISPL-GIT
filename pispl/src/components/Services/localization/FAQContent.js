@@ -5,8 +5,8 @@ const faqs=[
         no:"One",
     },
     {
-        que:"Is there a minimum order size?",
-        ans:"Yes, a minimum fee of USD 15 for small transcription jobs.",
+        que:"What other services can complement business along with Localization?",
+        ans:"From a business perspective, Translation and Globalization fit well with Localization. Depending upon the business model, industry & market; you can avail of any other services to boost your business.",
         no:"Two",
     },
     {
@@ -16,7 +16,7 @@ const faqs=[
     },
     {
         que:"When do I need to pay?",
-        ans:"For new clients, we accept 50% advance and rest within 1 week of submission. For clients working with us on regular basis, we operate with 30 days net payment cycle.",
+        ans:"For new clients, we accept 50% advance and rest within 1 week of submission. For clients working with us on a regular basis, we operate with a 30 days net payment cycle.",
         no:"Four",
     },
     {
@@ -25,14 +25,9 @@ const faqs=[
         no:"Five",
     },
     {
-        que:"What other services can complement business along with transcription?",
-        ans:"From a business perspective, voice over, & of business fits well with transcription. Depending upon the business model, industry & market; you can avail of any other services to boost your business.",
-        no:"Six",
-    },
-    {
         que:"What if I have to cancel my project?",
         ans:"You can inform the project manager assigned to stop/cancel the project anytime. However, we will bill for the completed part of the project.",
-        no:"Seven",
+        no:"Six",
     },
 ]
 export default faqs;
