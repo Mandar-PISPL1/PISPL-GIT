@@ -7,6 +7,7 @@ import TopBrandSection from '../../translation/TopBrandSection'
 import UspSection from '../../translation/UspSection'
 import Benefits from '../../translation/Benefits';
 import arr from './BenefitsContent'
+
 export default function Transcription() {
   useEffect(() => {
     window.scrollTo(0, 0);

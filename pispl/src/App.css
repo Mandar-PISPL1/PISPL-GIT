@@ -612,3 +612,18 @@ section{
   left: 0;
   z-index: -1;
 }
+
+
+/* FAQ Section Styling */
+.accordion-button {
+    background-color: transparent !important;
+  }
+
+  .accordion-button:focus, .accordion-button .collapsed:focus {
+    box-shadow: none!important;
+  }
+
+  .accordion-heading .btn-link::before {
+    float: left;
+    margin-right: 5px;
+  }
