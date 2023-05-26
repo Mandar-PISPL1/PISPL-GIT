@@ -8,9 +8,14 @@ import arr from './BenefitsContent'
 import img from '../../assets/Interpretation.png'
 import img1 from '../../assets/Simultaneous-Interpretation.png'
 import img2 from '../../assets/Consecutive-Interpretation.png'
+
+import img3 from '../../assets/Quick-Interpretation.png'
+import img4 from '../../assets/network.png'
+import img5 from '../../assets/Alerts-for-Cultural-Sensitivity-1.png'
 import faqs from './FAQContent'
 import FAQ from '../../translation/FAQ'
-
+import arr1 from "./WhyChoose-data"
+import Benefits2 from '../voice_over/Benefits2'
 
 export default function () {
   useEffect(() => {
@@ -77,15 +82,15 @@ export default function () {
 
               <br /><br />
               Our highly-skilled expert interpreters and translators will help your company’s voice to reach the targeted audience in their native language with ease. Some of the main benefits of our video interpretation services include:
-            <ul style={{listStyleType:"disc"}}>
-              <li>Fast Response for Urgent Situations</li>
-              <li>99% Accuracy</li>
-              <li>Secure Network Connectivity</li>
-              <li>Cost-Effective</li>
-              <li>On-Demand Solution</li>
-            </ul>
+              <ul style={{ listStyleType: "disc" }}>
+                <li>Fast Response for Urgent Situations</li>
+                <li>99% Accuracy</li>
+                <li>Secure Network Connectivity</li>
+                <li>Cost-Effective</li>
+                <li>On-Demand Solution</li>
+              </ul>
             </p>
-            
+
 
           </div>
           <div className="col-md-5 col-12" style={{ maxHeight: "200px", maxWidth: "315px" }}>
@@ -116,7 +121,7 @@ export default function () {
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Simultaneous Interpretation</h4>
               <p style={{ fontSize: "18px" }}>Simultaneous interpretation (SI) is a mode of interpretation where the interpreter translates the information from one language to another in real-time.
                 <br /><br />
-                This seamless interpretation translates the words and thoughts in the target language simultaneously while the speaker is speaking. This helps in maintaining a smooth flow, without any pause or interruption. One of the biggest advantages of simultaneous interpretation is it saves time, maintains accuracy and delivers in real-time. 
+                This seamless interpretation translates the words and thoughts in the target language simultaneously while the speaker is speaking. This helps in maintaining a smooth flow, without any pause or interruption. One of the biggest advantages of simultaneous interpretation is it saves time, maintains accuracy and delivers in real-time.
                 <br /><br />
                 The simultaneous interpreters and translators need to be well versed with both the source and target languages in order to convey the right information. The interpreters need to listen, analyse and convey the source language in the target language simultaneously.
                 Our video remote interpretation services provide experienced professional interpreters with exceptional skills, cultural awareness and language fluency. The simultaneous interpreters are also called conference interpreters as this type of interpretation is mainly used in large-scale events, meetings and conferences.
@@ -135,17 +140,78 @@ export default function () {
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Consecutive Interpretation</h4>
               <p style={{ fontSize: "18px" }}>Consecutive Interpretation (CI) is a mode of interpretation where the interpreter translates the information from one language to another after a pause or certain period of time. Firstly the professional interpreter gathers the information accurately and then passes it on to the targeted audience.
                 <br /><br />
-                The interpreter might take notes when the speaker is conveying the message and then reproduce the information to the audience. The consecutive interpretation can also happen when the speaker pauses after one or two sentences while the interpreter delivers it to the audience in the target language. 
+                The interpreter might take notes when the speaker is conveying the message and then reproduce the information to the audience. The consecutive interpretation can also happen when the speaker pauses after one or two sentences while the interpreter delivers it to the audience in the target language.
                 <br /><br />
                 The consecutive interpreters must be active listeners, who accurately pay attention to your speeches and take notes. Our video remote interpretation services provide experienced interpreters and translators with exceptional skills, cultural awareness and language fluency.
                 <br /><br />
-                Their sharp memory and attentiveness help them communicate better with the audience. This type of interpretation is widely used in business meetings, interviews, medical consultations, legal meetings, schools and places where time isn’t a constraint. One of the biggest advantages of consecutive interpretation is its reliability, effectiveness and ability to connect better with the audience. 
+                Their sharp memory and attentiveness help them communicate better with the audience. This type of interpretation is widely used in business meetings, interviews, medical consultations, legal meetings, schools and places where time isn’t a constraint. One of the biggest advantages of consecutive interpretation is its reliability, effectiveness and ability to connect better with the audience.
               </p>
             </div>
           </div>
 
         </div>
       </div>
+      {/* Why you should choose our Best Video Remote Interpretation Services? */}
+      <div className='container py-4 mx-md-2'>
+        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Why you should choose our Best Video Remote Interpretation Services?</h2>
+        <p className=' text-center px-md-5 mx-md-5 m-0 pb-5 pt-1' style={{ color: "#2a3d78" }}>The Video Remote Interpreting offered at our company Parikh Info Solutions Pvt. Ltd. brings you several benefits to facilitate the way you communicate.</p>
+        <div className='row px-md-5 mx-md-5 m-0'>
+
+          <div className='col-md-4 col-12' style={{ color: "#2a3d78" }}>
+            <div className='text-center pb-3'>
+              <img src={img3} style={{ height: "71px", width: "71px" }}></img>
+            </div>
+            <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Quick & Hassle-Free Interpretation</h4>
+            <p style={{ fontSize: "18px" }}>We ensure to deliver the best video remote interpretation services with our state-of-the-art facilities. Our team consists of professional and skilled interpreters and translators.
+              <br /><br />
+              Their expertise will make your experience hassle-free, quick and generate high-quality content. There is little or no delay during meetings, seminars, and discussions.
+              <br /><br />
+              You will get instant communication in numerous regional and international languages.
+            </p>
+          </div>
+
+          <div className='col-md-4 col-12' style={{ color: "#2a3d78" }}>
+            <div className='text-center pb-3'>
+              <img src={img4} style={{ height: "71px", width: "71px" }}></img>
+            </div>
+            <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>High-Speed Network Connectivity</h4>
+            <p style={{ fontSize: "18px" }}>To ensure a smooth flow and interruption-free communication, it is vital to have a high-speed internet connection.
+              <br /><br />
+              We are equipped with interpreters who provide seamless video remote interpreting services to you. They have high-speed internet connectivity and quality web cameras to reduce the number of any issues occurring out of bad internet.
+              <br /><br />
+              We are fully committed to providing you with a quality communication experience unhindered by connectivity complications.
+            </p>
+          </div>
+
+          <div className='col-md-4 col-12' style={{ color: "#2a3d78" }}>
+            <div className='text-center pb-3'>
+              <img src={img5} style={{ height: "71px", width: "71px" }}></img>
+            </div>
+            <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>High-Speed Network Connectivity</h4>
+            <p style={{ fontSize: "18px" }}>The mere translation or interpretation of words isn’t enough to deliver the right information. Every language or region holds cultural differences with various meanings of words, phrases and expressions.
+              <br /><br />
+              We need to ensure the delivery of the right information without offending anyone by paying sheer attention to cultural references.
+              <br /><br />
+              Our native interpreters keep an eye out for these differences with their expertise to deliver the right and quality communication experience.
+            </p>
+          </div>
+
+          {/* cost efficient and high quality and accuracy */}
+            {
+              arr1.map((element)=>{
+                return (
+                  <Benefits2 img={element.img} title={element.title} content1={element.content1} content2={element.content2} content3={element.content3}/>
+                )
+              })
+            }
+
+
+
+
+        </div>
+
+      </div>
+
 
       {/* Benefits content */}
       <div className='container py-4 mx-md-2'>

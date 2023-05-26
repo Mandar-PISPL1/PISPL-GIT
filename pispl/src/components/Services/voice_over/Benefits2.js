@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Benefits(props) {
+export default function Benefits2(props) {
   return (
     <>
         <div className="col-md-6 col-12">

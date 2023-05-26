@@ -8,7 +8,7 @@ import UspSection from '../../translation/UspSection'
 import img from "../../assets/Voice-Over.png"
 import img1 from '../../assets/Simultaneous-Interpretation-voice-over-service.png'
 import arr from './TypesOfVoiceService-data'
-import Benefits2 from './Benefits';
+import Benefits2 from './Benefits2';
 import {arr1,arr2} from './Benefits-data'
 import TypesOfVoiceServices from './TypesOfVoiceServices';
 import img2 from '../../assets/Age-Specific.jpg'
