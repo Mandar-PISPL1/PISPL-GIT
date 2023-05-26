@@ -10,6 +10,10 @@ import Benefits from '../../translation/Benefits';
 import arr from './BenefitsContent'
 import translation3 from "../../assets/Translation-03.png"
 import arr1 from './WhyChooseParikh'
+import faqs from './FAQContent'
+import FAQ from '../../translation/FAQ'
+
+
 export default function Translation() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -292,6 +296,24 @@ export default function Translation() {
       <div style={{ backgroundColor: "#49dab5" }}>
         <p className='text-white text-center my-0 py-3 fs-6'>Are You Looking For Transcription Services? <NavLink to="/transcription">Read More.</NavLink></p>
       </div>
+
+      <div className='container p-5'>
+            <h4 className='text-center h1 fw-bold mb-4' style={{color: "#0D2366"}}>Frequently Asked Questions:</h4>
+            <div className='row justify-content-center'>
+            <div class="accordion col-md-10 col-12" id="accordionExample">
+
+        {
+          faqs.map((element) =>{
+            return (
+             
+              <FAQ que={element.que} no={element.no} ans={element.ans}/>
+              
+            )
+          })
+        }
+        </div>
+            </div>
+        </div>
 
     </>
   )

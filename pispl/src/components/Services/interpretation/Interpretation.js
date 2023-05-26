@@ -5,7 +5,13 @@ import UspSection from '../../translation/UspSection'
 import { useEffect } from 'react'
 import Benefits from '../../translation/Benefits'
 import arr from './BenefitsContent'
+<<<<<<< HEAD
 import img from '../../assets/Interpretation.png'
+=======
+import faqs from './FAQContent'
+import FAQ from '../../translation/FAQ'
+
+>>>>>>> ba9e93ca0be3bf08a0ba199978708c715d8256aa
 export default function () {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -63,6 +69,24 @@ export default function () {
         button="Get Professional Interpreter"
 
         />
+
+        <div className='container p-5'>
+            <h4 className='text-center h1 fw-bold mb-4' style={{color: "#0D2366"}}>Frequently Asked Questions:</h4>
+            <div className='row justify-content-center'>
+            <div class="accordion col-md-10 col-12" id="accordionExample">
+
+        {
+          faqs.map((element) =>{
+            return (
+             
+              <FAQ que={element.que} no={element.no} ans={element.ans}/>
+              
+            )
+          })
+        }
+        </div>
+            </div>
+        </div>
         
     </>
   )
