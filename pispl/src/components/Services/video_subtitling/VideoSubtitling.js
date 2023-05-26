@@ -73,7 +73,7 @@ export default function VideoSubtitling() {
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
             <div style={{ padding: '1.5rem', borderRadius: "10px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", height: '100%' }}>
               <div className='text-center pb-3'>
-                <img src={img1} style={{ height: "200px", width: "315px" }}></img>
+                <img src={img1} style={{ height: "200px", width: "315px" }} alt='Closed Captions (CC) Service'></img>
               </div>
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Closed Captions (CC)</h4>
               <p style={{ fontSize: "18px" }}>Closed captions or CC is a subtitles translation service that serves as an aid, especially for people with deaf and hard of hearing. In this type of video subtitling service, all the audio information, such as background,  sound effects, non-speech elements and speaker IDs are included in the captions.
@@ -88,7 +88,7 @@ export default function VideoSubtitling() {
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
             <div style={{ padding: '1.5rem', borderRadius: "10px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", height: '100%' }}>
               <div className='text-center pb-3'>
-                <img src={img2} style={{ height: "200px", width: "315px" }}></img>
+                <img src={img2} style={{ height: "200px", width: "315px" }} alt='Video Subtitles Service'></img>
               </div>
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Video Subtitles</h4>
               <p style={{ fontSize: "18px" }}>Viewers all around the world like to enjoy subtitles in their native language. Thus, we create subtitles translations in multiple languages with 99% accuracy to suit the needs of your viewers.
@@ -133,27 +133,27 @@ export default function VideoSubtitling() {
 
           <div className='d-flex flex-wrap justify-content-around'>
             <div className=' mx-md-2 d-flex width50' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "100%", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "100%", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.srt]</span>
               </div>
             </div>
             <div className=' mx-md-2 d-flex width50' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.scc]</span>
               </div>
             </div>
             <div className=' mx-md-2 d-flex width50' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.mcc]</span>
               </div>
             </div>
             <div className=' mx-md-2 d-flex width50' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.stl]</span>
               </div>
             </div>
             <div className=' mx-md-2 d-flex width100' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "100%", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "100%", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.ttml]</span>
               </div>
             </div>
@@ -163,27 +163,27 @@ export default function VideoSubtitling() {
 
           <div className='d-flex flex-wrap justify-content-around'>
             <div className=' mx-md-2 d-flex width50' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "100%", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "100%", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.qt.txt]</span>
               </div>
             </div>
             <div className=' mx-md-2 d-flex width50' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.txt]</span>
               </div>
             </div>
             <div className=' mx-md-2 d-flex width50' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.vtt]</span>
               </div>
             </div>
             <div className=' mx-md-2 d-flex width50' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "13rem", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.dfxp]</span>
               </div>
             </div>
             <div className=' mx-md-2 d-flex width100' style={{ width: "17%" }}>
-              <div style={{ backgroundColor: "#49dab5", backgroundColor: "rgb(73, 218, 181)", padding: "10px 10px", width: "100%", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
+              <div style={{ backgroundColor: "#49dab5", padding: "10px 10px", width: "100%", textAlign: "center", borderRadius: "51px", margin: "13px 8px" }}>
                 <span style={{ color: "#0d2366", fontSize: "23px", fontWeight: "600" }}>[.cap]</span>
               </div>
             </div>
