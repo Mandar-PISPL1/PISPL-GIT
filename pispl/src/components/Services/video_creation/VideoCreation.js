@@ -9,7 +9,20 @@ import img3 from '../../assets/Team-of-Experts.png'
 import img4 from '../../assets/Faster-Turnaround.png'
 import img5 from '../../assets/Cost-Efficient.png'
 import img6 from '../../assets/Detail-Oriented.png'
+import img7 from '../../assets/Video-Creation-Handshake-Image.jpg'
 export default function VideoCreation() {
+  const buttonstyle = {
+    color: "#0d2366",
+    backgroundColor: "#49dab5",
+    fontSize: "20px",
+    padding:"0 1rem",
+    height: "3rem",
+    borderRadius: "5px",
+    border: "0px",
+    margin: "0px auto",
+    display: " block",
+    
+}
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -101,35 +114,53 @@ export default function VideoCreation() {
               <h2>5. Video Creation</h2>
               <p>After the voice-over, the creative team will initiate the process of video creation. Relevant animation and visuals are well-timely put in to create a high-quality appealing video.</p>
             </div>
-            
+
 
           </div>
 
         </div>
       </div>
       {/* Why Choose Us for Video Creation? */}
-      <div className='container-fluid py-4 ' style={{backgroundColor:"#0d2366"}}>
+      <div className='container-fluid py-4 ' style={{ backgroundColor: "#0d2366" }}>
         <div className="row px-md-5 mx-md-5 m-0">
-        <h1 className='text-start m-3 ml-2' style={{ color: "White", fontWeight: "700" }}> Why Choose Us for Video Creation?</h1>
-        <div className='d-flex flex-wrap '>
-          <div className='width100 text-center my-4' style={{width:"20%"}}>
-            <img src={img2}></img>
+          <h1 className='text-start m-3 ml-2' style={{ color: "White", fontWeight: "700" }}> Why Choose Us for Video Creation?</h1>
+          <div className='d-flex flex-wrap '>
+            <div className='width100 text-center my-4' style={{ width: "20%" }}>
+              <img src={img2}></img>
+            </div>
+            <div className='width100 text-center my-4' style={{ width: "20%" }}>
+              <img src={img3}></img>
+            </div>
+            <div className='width100 text-center my-4' style={{ width: "20%" }}>
+              <img src={img4}></img>
+            </div>
+            <div className='width100 text-center my-4' style={{ width: "20%" }}>
+              <img src={img5}></img>
+            </div>
+            <div className='width100 text-center my-4' style={{ width: "20%" }}>
+              <img src={img6}></img>
+            </div>
           </div>
-          <div className='width100 text-center my-4' style={{width:"20%"}}>
-            <img src={img3}></img>
+        </div>
+      </div>
+
+      <div className='container-fluid py-4 my-3' style={{color:"#0d2366"}}>
+        <div className="row px-md-5 mx-md-5 m-0" style={{border:"2px dashed #0d2366"}}>
+          <div className='col-md-2 col-12 text-center my-4'>
+            <img src={img7}></img>
           </div>
-          <div className='width100 text-center my-4' style={{width:"20%"}}>
-            <img src={img4}></img>
+          <div className='col-md-8 col-12 text-center d-flex align-item-center'>
+              <h2>Engage your Audience, Raise Awareness & Build Trust with Our Video Creation Services.</h2>
           </div>
-          <div className='width100 text-center my-4' style={{width:"20%"}}>
-            <img src={img5}></img>
-          </div>
-          <div className='width100 text-center my-4' style={{width:"20%"}}>
-            <img src={img6}></img>
+          <div className='col-md-2 col-12 text-center my-4'>
+            <img src={img7}></img>
           </div>
         </div>
 
-        </div>
+      </div>
+
+      <div className='text-center my-5'>
+        <button style={buttonstyle}> GET A QUOTE <i aria-hidden="true" class="fas fa-arrow-alt-circle-right"></i></button>
       </div>
 
     </>
