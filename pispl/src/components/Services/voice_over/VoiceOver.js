@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import { NavLink } from "react-router-dom";
 import Banner from '../../translation/Banner'
 import voiceover_lottie from './voiceover_lottie.json'
@@ -16,6 +16,9 @@ import faqs from './FAQContent'
 import FAQ from '../../translation/FAQ'
 
 export default function VoiceOver() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const mystyle = {
     display: "flex",

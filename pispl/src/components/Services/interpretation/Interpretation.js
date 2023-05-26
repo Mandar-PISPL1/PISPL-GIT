@@ -15,8 +15,8 @@ import faqs from './FAQContent'
 import FAQ from '../../translation/FAQ'
 import arr1 from "./WhyChoose-data"
 import Benefits2 from '../voice_over/Benefits2'
-import faqs from './FAQContent'
-import FAQ from '../../translation/FAQ'
+// import faqs from './FAQContent'
+// import FAQ from '../../translation/FAQ'
 
 export default function () {
   useEffect(() => {
