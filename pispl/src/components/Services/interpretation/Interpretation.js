@@ -5,6 +5,7 @@ import UspSection from '../../translation/UspSection'
 import { useEffect } from 'react'
 import Benefits from '../../translation/Benefits'
 import arr from './BenefitsContent'
+import img from '../../assets/Interpretation.png'
 export default function () {
   useEffect(() => {
     window.scrollTo(0, 0);
