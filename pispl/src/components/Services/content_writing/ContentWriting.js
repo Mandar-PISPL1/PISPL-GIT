@@ -93,7 +93,7 @@ export default function ContentWriting() {
         <h3 className='text-center h1 fw-bold' style={{ color: "#0D2366" }}>Industries We Cover</h3>
         <p className='text-center'>We provide tailor-made content writing solutions for different niche markets.</p>
         <div className='container'>
-          <div className='row'>
+          <div className='row justify-content-center'>
             <div className='mx-5 mb-4 mb-md-0 d-flex justify-content-center align-center' style={{ width: "12rem", border: "2px dashed #0D2366", textAlign: "center" }}>
               <div style={{ padding: "20px" }}>
                 <div style={{ width: "100%", textAlign: "center" }}>
@@ -130,7 +130,7 @@ export default function ContentWriting() {
         </div>
         <br />
         <div className='container'>
-          <div className='row'>
+          <div className='row justify-content-center'>
             <div className='mx-5 mb-4 mb-md-0 d-flex justify-content-center align-center' style={{ width: "12rem", border: "2px dashed #0D2366", textAlign: "center" }}>
               <div style={{ padding: "20px" }}>
                 <div style={{ width: "100%", textAlign: "center" }}>
