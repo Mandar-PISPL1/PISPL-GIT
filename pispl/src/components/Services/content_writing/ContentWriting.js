@@ -54,13 +54,13 @@ export default function ContentWriting() {
         <div className="conatiner py-4 mx-md-5">
           <div className="row px-md-5 mx-md-5 m-0" style={{border: "2px dashed #49dab5"}}>
             <h2 className='text-center m-3 ml-2 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Content Writing Services We Offer</h2>
-            <div className="col-md-6 col-12 my-5 px-md-5 px-3" style={{borderRight:"2px dashed #9099b8"}}>
+            <div className="col-md-6 col-12 my-md-5 px-md-5 px-3" style={{borderRight:"2px dashed #9099b8"}}>
               <p style={{fontSize:"22px"}}><i aria-hidden="true" className="far fa-file-alt mx-3" style={{color:"#49dab5"}}></i>Blog Writing</p>
               <p style={{fontSize:"22px"}}><i aria-hidden="true" className="far fa-file-alt mx-3" style={{color:"#49dab5"}}></i>SEO Articles</p>
               <p style={{fontSize:"22px"}}><i aria-hidden="true" className="far fa-file-alt mx-3" style={{color:"#49dab5"}}></i>Press Releases</p>
               <p style={{fontSize:"22px"}}><i aria-hidden="true" className="far fa-file-alt mx-3" style={{color:"#49dab5"}}></i>Social Media Copies</p>
             </div>
-            <div className="col-md-6 col-12 my-5 px-md-5 px-3">
+            <div className="col-md-6 col-12 my-md-5 px-md-5 px-3">
               <p style={{fontSize:"22px"}}><i aria-hidden="true" className="far fa-file-alt mx-3" style={{color:"#49dab5"}}></i>Website Content</p>
               <p style={{fontSize:"22px"}}><i aria-hidden="true" className="far fa-file-alt mx-3" style={{color:"#49dab5"}}></i>Landing Pages</p>
               <p style={{fontSize:"22px"}}><i aria-hidden="true" className="far fa-file-alt mx-3" style={{color:"#49dab5"}}></i>Newsletters</p>
