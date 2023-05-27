@@ -10,6 +10,9 @@ import Benefits from '../../translation/Benefits';
 import arr from './BenefitsContent'
 import img from '../../assets/Software-Localization.png'
 import img1 from '../../assets/Localization-01.png'
+import img2 from '../../assets/Website-Localization.png'
+import img3 from '../../assets/App-Localization.png'
+import img4 from '../../assets/Software-Localization.png'
 import faqs from './FAQContent'
 import FAQ from '../../translation/FAQ'
 
@@ -89,7 +92,7 @@ export default function Localization() {
             Localization services are mainly used for software, websites, mobile apps, video games, and other digital products and services. The main aim of localization services is to make the content appear relatable and “local” in terms of the specific target region. From choosing the content, and graphics according to local languages preferences to modifying it with accurate local and legal requirements. Our localization services in India ensures high quality driven content, focussing on ever aspect like: Language, Expressions, Idioms, Vocabulary, Cultural references, Measuring units , Currency units and Date formats.</p>
         </div>
       </div>
-
+      {/* Top Brands */}
       <div className="repon" style={{ textAlign: "center", margin: " 3rem auto" }}>
         <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
         <div className='container-fluid'>
@@ -104,6 +107,60 @@ export default function Localization() {
           </div>
         </div>
       </div>
+
+      {/* We Provide Following Localization Services */}
+      <div className="container py-4 mx-md-2">
+        <div className="row px-md-5 mx-md-5 m-0">
+        <ul className="nav nav-pills mb-3 border border-danger" id="pills-tab" role="tablist">
+        <li className="nav-item" role="presentation">
+          <button style={{backgroundColor:"#0d3266"}} className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" >Web Localization</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style={{color:"#0d3266"}}>App Localization</button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style={{color:"#0d3266"}}>Software Localization</button>
+        </li>
+      </ul>
+      <div className="tab-content" id="pills-tabContent">
+        <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"  style={{color:"white",backgroundColor:"#0d3266"}}>
+          <div className='text-center'>
+            <img src={img2} alt="" />
+          </div>
+          <p>
+          In today’s era, you can’t compromise yourself to target a limited set of viewers. With website localization services, you can modify and localize your websites to reach overseas markets and welcome new opportunities using multiple languages. Through website localization we will modify your content to meet the linguistic, functional and cultural equivalence of target and global markets. Our localization services drives business to new customers, caring for their culture and customs as well. Offering the best localization services in India, our developers and translators make the website safe and sensitive for your target viewers with efficient website localization tools.<br/><br/>
+          Website localization goes beyond simple translation. It is a complete modification of website content, elements and other specifications to meet the needs of customer in their desired language. A localized website will help you reach huge audience and impact wider markets. The main areas of focus in website localization services are modifying content by keeping in account with the cultural differences. This might also lead to changes in certain website elements and technological aspects in order to make the website user friendly and easy to navigate. <br/><br/>
+          The mere translation of a website will lack the cultural nuances and understanding of the specific region in order to make it relevant for the targeted audiences. Whereas, the localization of website will bridge the language gap and modify your message to reach global audience. Our localization services in India pays special attention to the details in order to make the website effective and relevant to the new market. Our highly trained professionals will work towards localization strategy catering to target and global markets to build effective customer experiences. 
+          </p>
+        </div>
+        <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"  style={{color:"white",backgroundColor:"#0d3266"}}>
+          <div className='text-center'>
+            <img src={img3} alt="" />
+          </div>
+          <p>
+          The mobile app localization refers to the process of modifying the interface and functionality in order to suit the language of target audiences. The app localization services can improve your App Store rankings, increase downloads and reach global audiences. We make your applications available and ready to use in the intended languages with our localization services. It is made sure that the app handles all the different characters, numbers, and alphabets precisely and clearly. We accommodate all the little details to your applications to make them perfect in every way.<br/><br/>
+          The goal of app localization service is to take language, technical and cultural differences into account and modify it to suit the needs of target audiences. The localization helps in keeping the original message and content intent with the preferred language. The mere translation of mobile app will lack the cultural nuances and understanding of the specific region in order to make it relevant for the targeted audiences. Whereas, the app localization will bridge the language gap and modify your message to reach global audience. Our localization services in India pays special attention to the details in order to make the app effective and relevant to the new market. Our highly trained professionals will work towards localization strategy catering to target and global markets to build effective customer experiences. 
+
+          </p>
+        </div>
+        <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" style={{color:"white",backgroundColor:"#0d3266"}}>
+          <div className='text-center'>
+            <img src={img4} alt="" />
+          </div>
+          <p>
+          All the users around the world are looking for an immersive and comfortable experience in handling their software. However, most of the software programs are designed in a universal language like English. If the software is localized suiting the needs of the users, they will find a natural affection for it. Our software language localization covers all the domains of digital codes for the diversified community.
+          <br/><br/>
+          Software localization service refers to the process of modifying software keeping in account to both cultural and language differences. The localization services involves the modification of language, design elements, UX changes and might also involve some code changes to make the software appear relevant to the target audience. 
+          <br/><br/>
+          The goal of software localization service is to take language, technical and cultural differences into account and modify it to suit the needs of target audiences. The localization helps in keeping the original message and content intent with the preferred language. The software localization will bridge the language gap and modify your message to reach global audience. Our localization services in India pays special attention to the details in order to make the app effective and relevant to the new market. Our highly trained professionals will work towards localization strategy catering to target and global markets to build effective customer experiences.
+          </p>
+
+        </div>
+      </div>
+        </div>
+      </div>
+      
+
       {/* benefits section */}
       <div className='container py-4 mx-md-2'>
         <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >How Language Localization Services Companies Will Benefit?</h2>
