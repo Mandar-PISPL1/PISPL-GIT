@@ -201,6 +201,22 @@ export default function Translation() {
         </div>
 
       </div>
+
+      {/*Language we offer  */}
+
+      <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(1deg,-2.9deg)",transformOrigin:"left top",position:"relative",backgroundColor:"#0d2366",top:"7rem"}}></div>
+
+      <div className='container-fluid h1 d-flex justify-content-center align-items-center' style={{backgroundColor:'#0d2366',color:"white",height:"7rem"}}>
+          <h2>Languages We Offer</h2>
+      </div>
+
+      <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(1deg,2.9deg)",transformOrigin:"left bottom",position:"relative",backgroundColor:"#0d2366",top:"-7rem"}}></div>
+      
+      
+      
+
+
+
       {/* Why Choose Parikh Info Solutions As Translation Company? */}
       <div className='container py-4 mx-md-2'>
         <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Why Choose Parikh Info Solutions As Translation Company?</h2>
