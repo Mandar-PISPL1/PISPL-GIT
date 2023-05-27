@@ -72,7 +72,42 @@ export default function Transcription() {
         </div>
 
       </div>
+      
+      <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(1deg,-2.9deg)",transformOrigin:"left top",position:"relative",backgroundColor:"#0d2366",top:"7rem"}}></div>
+      <div className="conatiner-fluid py-4 " style={{backgroundColor:"#0d2366"}}>
+        <div className="row px-md-5 mx-md-5 m-0">
 
+          <div className="col-md-3 col-12 " style={{margin:"19px 0px"}}>
+            <div className="d-flex flex-column rounded-5" style={{backgroundColor:"white",width:"17rem",margin:"0 auto"}}>
+              <h2 className='h1 text-center' style={{color:"#49dab5",fontSize:"70px"}}>1</h2>
+              <p className='text-center'>Analyze Source Audio Files & Instructions</p>
+            </div>
+          </div>
+
+          <div className='col-md-3 col-12'  style={{margin:"19px 0px"}}>
+            <div className=" d-flex flex-column rounded-5" style={{backgroundColor:"white",width:"17rem",margin:"0 auto"}}>
+              <h2 className='h1 text-center' style={{color:"#49dab5",fontSize:"70px"}}>2</h2>
+              <p className='text-center'>Transcription (Human or MT+Human) with/without time coding</p>
+            </div>
+          </div>
+          <div className='col-md-3 col-12'  style={{margin:"19px 0px"}}>
+
+            <div className=" d-flex flex-column rounded-5" style={{backgroundColor:"white",width:"17rem",margin:"0 auto"}}>
+              <h2 className='h1 text-center' style={{color:"#49dab5",fontSize:"70px"}}>3</h2>
+              <p className='text-center'>Proofreading / QA</p>
+            </div>
+          </div>
+
+          <div className='col-md-3 col-12'  style={{margin:"19px 0px"}}>
+            <div className=" d-flex flex-column rounded-5" style={{backgroundColor:"white",width:"17rem",margin:"0 auto"}}>
+              <h2 className='h1 text-center' style={{color:"#49dab5",fontSize:"70px"}}>4</h2>
+              <p className='text-center'>Finalize Transcription as per client specifications</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(1deg,2.9deg)",transformOrigin:"left bottom",position:"relative",backgroundColor:"#0d2366",top:"-7rem"}}></div>
 
       <UspSection
         heading="Get Your 100 % Human Transcription"
