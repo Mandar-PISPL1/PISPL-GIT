@@ -136,6 +136,14 @@ export default function VoiceOver() {
             
         </div>
       </div>
+      {/* One of the Best Voice Over Companies! */}
+      <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(1deg,-2.9deg)",transformOrigin:"left top",position:"relative",backgroundColor:"#0d2366",top:"7rem"}}></div>
+
+      <div className='container-fluid h1 d-flex justify-content-center align-items-center' style={{backgroundColor:'#0d2366',color:"white",height:"7rem"}}>
+          <h2>One of the Best Voice Over Companies!</h2>
+      </div>
+
+      <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(1deg,2.9deg)",transformOrigin:"left bottom",position:"relative",backgroundColor:"#0d2366",top:"-7rem"}}></div>
       {/* Content */}
       <div className="conatiner py-4 mx-md-2">
         <div className="row px-md-5 mx-md-5 m-0">
