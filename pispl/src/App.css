@@ -627,3 +627,9 @@ section{
     float: left;
     margin-right: 5px;
   }
+
+  .normal-text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #0d2366;
+  }
