@@ -43,6 +43,24 @@ const Carousel = styled(Slider)`
     slick-next{
         right:-75px;
     }
+    .slick-next:before {
+        content: '>';
+        font-size: 39px;
+        color: #49dab5;
+        font-Weight:bolder;
+        position: relative;
+        z-index: 10;
+        left: 1px;
+    }
+    .slick-prev:before {
+        content: '<';
+        font-size: 39px;
+        font-Weight:bolder;
+        color: #49dab5;
+        position: relative;
+        z-index: 10;
+        left: 1px;
+    }
     `;
 const Wrap = styled.div`
     // border:1px solid black;
@@ -81,7 +99,7 @@ export default function TestAgain() {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -105,7 +123,7 @@ export default function TestAgain() {
 
     return (
 
-        <Carousel {...settings} >
+        <Carousel {...settings} className='mb-5'>
             <Wrap>
                 <div>
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", height: "3rem" }}>
