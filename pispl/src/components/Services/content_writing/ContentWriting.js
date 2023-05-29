@@ -6,6 +6,9 @@ import img2 from "../../assets/Content-Writing-Service-Center-Banner.png"
 import { BsArrowRightCircle } from "react-icons/bs";
 import { useEffect } from 'react';
 export default function ContentWriting() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const buttonstyle = {
     color: "#0d2366",
@@ -17,12 +20,10 @@ export default function ContentWriting() {
     border: "0px",
   }
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+ 
   return (
     <>
-      <Banner index={8} b={myimage} flag={true} />
+      <Banner index={8} b={myimage} flag={true} breadCrumb={true}/>
       <div className='myskew'></div>
 
       {/* Stand Out and Grow Your Business */}
@@ -31,7 +32,7 @@ export default function ContentWriting() {
           <div className="col-md-6 col-12">
             <h3 className='text-start m-3 ml-2 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Stand Out and Grow Your Business</h3>
             <p className='text-start' style={{ color: "#0d2366", fontWeight: "300" }} >IN THE DIGITAL WORLD WITH UNIQUE CONTENT!</p>
-            <div className='my-4 ' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
+            <div className='my-5 ' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
             <p className='text-start m-3' style={{ color: "#0d2366", fontWeight: "400" }} >At Parikh Info Solutions, we have a team of professional writers, digital marketing experts and project managers to <a href="https://parikhinfosolutions.com/blog/why-does-your-business-needs-content-writing-services/">implement the perfect content strategy</a> for your businesses. Our skilled writers can deliver content copies on different niche topics and multiple industries with excellent proficiency. With the perfect blend of creativity and technical skills, our professional writers can hit the right note with the audience and enhance your brand's message.<br /><br />Along with this, we also provide translation services in over 50+ languages to help your content reach global audiences. We're a one-stop solution for all your needs.
               Reach global audiences and wider market places with our tailor-made content writing services.
             </p>

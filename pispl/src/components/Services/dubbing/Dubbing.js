@@ -28,7 +28,7 @@ export default function Dubbing() {
   }
   return (
     <>
-      <Banner index={4} lottie={dubbing_lottie} />
+      <Banner index={4} lottie={dubbing_lottie} breadCrumb={true}/>
       <div className='myskew'></div>
 
       {/* We entertain all major languages across the globe! */}

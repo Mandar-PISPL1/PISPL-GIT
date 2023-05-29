@@ -29,7 +29,7 @@ export default function VoiceOver() {
   }
   return (
     <>
-      <Banner index={3} lottie={voiceover_lottie} />
+      <Banner index={3} lottie={voiceover_lottie} breadCrumb={true}/>
       <div className='myskew'></div>
       {/* The Best Voice for your Business */}
       <div className="conatiner py-4 mx-md-2">

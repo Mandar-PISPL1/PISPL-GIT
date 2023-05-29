@@ -81,12 +81,14 @@ const arr=[
 
     },{
         name_of_service:"Provide You with The Highest Quality Services within Deadline",
+        service_title:"About",
         content1:"With more than 20 years of experience, we stand by your side to support you while you climb the staircase to business growth.",
         content2:"",
         content3:"",
     },
     {
         name_of_service:"Contact Us",
+        service_title:"Contact Information",
         content1:"For any queries regarding our services or for service consultation reach out to us, and our experts will be happy to help you out.",
         content2:"",
         content3:""

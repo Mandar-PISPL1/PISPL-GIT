@@ -24,7 +24,7 @@ export default function () {
   }, []);
   return (
     <>
-      <Banner index={7} lottie={interpretation_lottie} />
+      <Banner index={7} lottie={interpretation_lottie} breadCrumb={true}/>
       <div className='myskew'></div>
 
       {/* Connect Better With Us! */}

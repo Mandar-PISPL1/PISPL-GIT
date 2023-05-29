@@ -17,7 +17,7 @@ export default function AiDubbing() {
   }, []);
   return (
     <>
-      <Banner index={5} b={myimage} flag={true} />
+      <Banner index={5} b={myimage} flag={true} breadCrumb={true}/>
       <div className='myskew'></div>
 
       {/* What is AI-Dubbing? */}
