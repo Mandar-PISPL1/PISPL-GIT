@@ -2,7 +2,7 @@ import React from 'react'
 import Counter from '../Incre-Counter/Counter'
 import UspSection from '../translation/UspSection'
 import { HiArrowNarrowRight } from "react-icons/hi";
-
+import { NavLink } from 'react-router-dom';
 export default function JoinNow() {
   const buttonstyle={
     color:"#0d2366",
@@ -23,8 +23,8 @@ export default function JoinNow() {
           <h1 className='fw-bold text-center' style={{fontSize:"45px"}}>Join Our Team</h1>
           <div className='my-4 ' style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></div>
           <div className='d-sm-flex' style={{ textAlign: 'center' }}>
-            <button style={buttonstyle}>carrer's <HiArrowNarrowRight /></button>
-            <button style={buttonstyle}>Work As a Freelancer <HiArrowNarrowRight /></button>
+            <NavLink to='/career-opportunities'><button style={buttonstyle}>carrer's <HiArrowNarrowRight /></button></NavLink>
+            <NavLink to='/freelancer'><button style={buttonstyle}>Work As a Freelancer <HiArrowNarrowRight /></button></NavLink>
           </div>
           
         </div>
