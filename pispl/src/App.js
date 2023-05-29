@@ -19,6 +19,8 @@ import Blogs from './components/blogs/Blogs';
 import JoinNow from './components/join_now/JoinNow';
 import Contact from './components/contact/Contact';
 import Home from './components/Home-page/Home';
+import FreeLancer from './components/freelancer/FreeLancer';
+import CareerPage from './components/careerpage/CareerPage';
 
 function App() {
   return (
@@ -43,6 +45,12 @@ function App() {
           <Route path='/clients' element={<Clients />} />
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/join-now' element={<JoinNow />} />
+          <Route path='/freelancer' element={<FreeLancer />} />
+          <Route path='/career-opportunities' element={<CareerPage />} />
+          <Route path='/freelancer-translator' element={<CareerPage />} />
+          <Route path='/freelancer-transcriber' element={<CareerPage />} />
+          <Route path='/freelancer-vo-dubbing-artist' element={<CareerPage />} />
+          <Route path='/freelancer-interpreter' element={<CareerPage />} />
         </Routes>
         <Footer />
         {/* <Form/> */}

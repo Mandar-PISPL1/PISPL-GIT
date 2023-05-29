@@ -77,7 +77,7 @@ export default function Form() {
             >
                 <form  onSubmit={handleSubmit}>
                     <h5 className="mb-3" style={{fontWeight:"600"}}>Get free support and quote on your email. Please submit the form to get in touch with us.</h5>
-                    <div className="mb-3">
+                    <div className="mb-3 normal-text">
                         <label htmlFor="email" className="form-label">
                             Email address *
                         </label>

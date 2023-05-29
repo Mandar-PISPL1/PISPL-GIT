@@ -4,7 +4,7 @@ import ScrollTrigger from 'react-scroll-trigger'
 export default function Counter() {
     const [count,setCount]=useState(false);
     return (
-        <div style={{backgroundColor:"#0d2366",color:"#49dab5"}}>
+        <div className='' style={{backgroundColor:"#0d2366",color:"#49dab5"}}>
             <ScrollTrigger onEnter={()=>{setCount(true)}} onExit={()=>{setCount(false)} }>
             <div className="container">
                 <div className="row p-md-5 py-5">

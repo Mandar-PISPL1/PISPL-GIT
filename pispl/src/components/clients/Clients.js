@@ -119,6 +119,9 @@ export default function Clients() {
             </div>
           </div>
         </div>
+
+        <h1 className='text-center mt-5 mb-2' style={{ color: "#0d2366", fontWeight: "700" }}>Customers Testimonials</h1>
+        <TestAgain/>
         <Counter/>
         <UspSection
           heading="Connect With Us Today!"
@@ -132,8 +135,7 @@ export default function Clients() {
         
       {/* <Test/> */}
       {/* <TestSlick/> */}
-      <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Customers Testimonials</h1>
-      <TestAgain/>
+      
 
      
 

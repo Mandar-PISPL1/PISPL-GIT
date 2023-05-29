@@ -10,7 +10,7 @@ export default function Contact() {
   }, []);
   return (
     <>
-      <Banner index={11} upperpara={false} lottie={lottie} />
+      <Banner index={11} upperpara={false} lottie={lottie} breadCrumb={true}/>
       <div className='myskew'></div>
       <div className='container py-3'>
         <div className='row px-md-5' >
@@ -35,7 +35,7 @@ export default function Contact() {
                 <h1  style={{ color: "#0d2366", fontWeight: "700" }}>USA Branch</h1>
                 <div className='mb-2' style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></div>
                 
-                <p style={{fontWeight:"300",color:"#0d2366"}}>
+                <p className='normal-text'>
                 713 Anchorage court<br/>
                 Pingree Grove,<br/>
                 IL 60140, USA.<br/>
@@ -51,7 +51,7 @@ export default function Contact() {
                 <h1 style={{ color: "#0d2366", fontWeight: "700" }}>Mumbai Branch</h1>
                 <div className='mb-2' style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></div>
            
-                  <p style={{fontWeight:"300",color:"#0d2366"}}>316, Gemstar Commercial Complex,
+                  <p className='normal-text'>316, Gemstar Commercial Complex,<br/>
                   Ramchandra Lane Extn, Kanch Pada,<br/>
                   Malad West, Mumbai 400 064,<br/>
                   Maharashtra, India.<br/>
