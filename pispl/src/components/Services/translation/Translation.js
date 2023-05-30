@@ -147,7 +147,7 @@ export default function Translation() {
             <div className="accordion accordion-flush" id="accordionFlushExample">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingOne">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style={{fontWeight:"600"}}>
                     Increases your company's visibility
                   </button>
                 </h2>
@@ -157,7 +157,7 @@ export default function Translation() {
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header normal-text" id="flush-headingTwo">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style={{fontWeight:"600"}}>
                     Enhances communication with the audience
                   </button>
                 </h2>
@@ -167,7 +167,7 @@ export default function Translation() {
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingThree">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style={{fontWeight:"600"}}>
                     Ensures a good reputation of your firm
                   </button>
                 </h2>
