@@ -641,3 +641,21 @@ section{
     font-weight: 700;
     color: #0d2366;
   }
+  
+#localization-types .nav-pills .active{
+    background-color: #0d3266 !important;
+
+    border-radius: 0px !important;
+
+}
+#localization-types .nav-pills .active b{
+    color: white !important;
+   
+}
+#localization-types .nav-pills .nav-link{
+    color: #49dab5 !important;
+    opacity: 1;
+}
+#localization-types .tab-content .fade:not(.show){
+    opacity: 1;
+    }

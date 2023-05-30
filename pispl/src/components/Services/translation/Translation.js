@@ -81,7 +81,7 @@ export default function Translation() {
         <div className='d-flex flex-column justify-content-center px-md-5 mx-md-5 m-0'>
           <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>What translation services do we provide?</h1>
           <div className='my-4' style={{ width: "60px", backgroundColor: "#49dab5", height: "5px",margin:'0 auto'}}></div>
-          <p className='normal-text'>We understand the need for translation for all the businesses hence, without confining it to any specific business requirement or industry, we provide full-fledged translation services to all the businesses across different industries.</p>
+          <p className='text-center normal-text'>We understand the need for translation for all the businesses hence, without confining it to any specific business requirement or industry, we provide full-fledged translation services to all the businesses across different industries.</p>
         </div>
         <div className='row px-md-5 mx-md-5 m-0'>
 
@@ -138,7 +138,7 @@ export default function Translation() {
         <div className='row px-md-5 mx-md-5 m-0'>
           <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>How Translation Promotes Business Growth?</h1>
 
-          <p className='normal-text'>Translating your company’s information into multiple languages makes you reach out to a wider audience and makes you publicly available in their native language. It offers a sense of belonging and gives you a firm stand to kickstart your business beyond geographical borders. It makes you look less alien and gives you an edge over competitors. Thus, with the increase in globalization, translation promotes all-around growth of your business.</p>
+          <p className='normal-text text-center'>Translating your company’s information into multiple languages makes you reach out to a wider audience and makes you publicly available in their native language. It offers a sense of belonging and gives you a firm stand to kickstart your business beyond geographical borders. It makes you look less alien and gives you an edge over competitors. Thus, with the increase in globalization, translation promotes all-around growth of your business.</p>
 
           <div className='col-md-6 col-12 d-flex justify-content-center'>
             <img src={translation3} style={{ height: "300px ", width: "300px" }}></img>
@@ -239,7 +239,7 @@ export default function Translation() {
       </div>
       {/* our translation process */}
       <div>
-        <h2 className='text-center m-3 heading-text' style={{ color: "#0d2366", fontWeight: "700" }} >Our Translation Process</h2>
+        <h2 className='text-center m-3 heading-text' style={{ color: "#49dab5", fontWeight: "700" }} >Our Translation Process</h2>
         <p className='text-center m-3 normal-text'  >We provide 100% Quality Assurance and a fast turnaround time through our human translation services in India and also all around the world.</p>
         <div>
           <div className='d-flex justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
@@ -259,7 +259,7 @@ export default function Translation() {
           </div>
 
           <div className='d-flex justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
-            <div style={{ color: "#0d2366", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>3</h1></div>
+            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>3</h1></div>
             <div style={{ backgroundColor: "#49dab5", color: "#0d2366", maxWidth: "27rem", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
               <h1 style={{ fontSize: "35px" }}>Allocation of Resources:</h1>
               <p style={{ color: "white" }}>After the creation of the source file, the project is assigned to the linguist (or a team of linguists) who has expertise on the subject as per the project requirement.</p>
@@ -267,7 +267,7 @@ export default function Translation() {
           </div>
 
           <div className='d-flex  justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
-            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>4</h1></div>
+            <div style={{ color: "#0d2366", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>4</h1></div>
             <div style={{ backgroundColor: "#0d2366", color: "#49dab5", maxWidth: "27rem", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
               <h1 style={{ fontSize: "35px" }}>Translation:</h1>
               <p style={{ color: "white" }}>The translation is done as per your specific requirement. We take care of style, tone, grammar, meaning, cultural nuances along with consistency with industry standards within our translated projects.</p>
@@ -283,7 +283,7 @@ export default function Translation() {
           </div>
 
           <div className='d-flex  justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
-            <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>6</h1></div>
+            <div style={{ color: "#0d2366", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>6</h1></div>
             <div style={{ backgroundColor: "#0d2366", color: "#49dab5", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
               <h1 style={{ fontSize: "35px" }}>Delivery of the Project:</h1>
               <p style={{ color: "white" }}>After a thorough quality check, the translated document is sent to you for feedback and suggestions.</p>

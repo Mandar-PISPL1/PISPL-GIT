@@ -59,7 +59,7 @@ export default function Transcription() {
       {/* Benefits */}
       <div className='container py-4 mx-md-2'>
         <h2 className='text-center m-3 heading-text' style={{ color: "#0d2366", fontWeight: "700" }} >Benefits of Our Transcription Services</h2>
-        <div className='row px-md-5 mx-md-5 m-0'>
+        <div className='row px-md-5 m-md-5 m-0'>
           {
             arr.map((element) => {
               return (
@@ -90,28 +90,28 @@ export default function Transcription() {
           <div className="col-md-3 col-12 " style={{ margin: "19px 0px" }}>
             <div className="d-flex flex-column rounded-5" style={{ backgroundColor: "white", width: "17rem", margin: "0 auto" }}>
               <h2 className='h1 text-center' style={{ color: "#49dab5", fontSize: "70px" }}>1</h2>
-              <p className='text-center'>Analyze Source Audio Files & Instructions</p>
+              <p className='text-center normal-text'>Analyze Source Audio Files & Instructions</p>
             </div>
           </div>
 
           <div className='col-md-3 col-12' style={{ margin: "19px 0px" }}>
             <div className=" d-flex flex-column rounded-5" style={{ backgroundColor: "white", width: "17rem", margin: "0 auto",height:"15rem",justifyContent:"center" }}>
               <h2 className='h1 text-center' style={{ color: "#49dab5", fontSize: "70px" }}>2</h2>
-              <p className='text-center'>Transcription (Human or MT+Human) with/without time coding</p>
+              <p className='text-center normal-text'>Transcription (Human or MT+Human) with/without time coding</p>
             </div>
           </div>
           <div className='col-md-3 col-12' style={{ margin: "19px 0px" }}>
 
             <div className=" d-flex flex-column rounded-5" style={{ backgroundColor: "white", width: "15rem", margin: "0 auto" ,height:"10rem",justifyContent:"center" }}>
               <h2 className='h1 text-center' style={{ color: "#49dab5", fontSize: "70px" }}>3</h2>
-              <p className='text-center'>Proofreading / QA</p>
+              <p className='text-center normal-text'>Proofreading / QA</p>
             </div>
           </div>
 
           <div className='col-md-3 col-12' style={{ margin: "19px 0px" }}>
             <div className=" d-flex flex-column rounded-5" style={{ backgroundColor: "white", width: "17rem", margin: "0 auto",height:"15rem",justifyContent:"center" }}>
               <h2 className='h1 text-center' style={{ color: "#49dab5", fontSize: "70px" }}>4</h2>
-              <p className='text-center px-2'>Finalize Transcription as per client specifications</p>
+              <p className='text-center px-2 normal-text'>Finalize Transcription as per client specifications</p>
             </div>
           </div>
         </div>

@@ -75,7 +75,7 @@ export default function Footer() {
                                 <li><NavLink to="/"><FaHome/> Home</NavLink></li>
                                 <li><NavLink to="/about"><BsInfoCircleFill/> About</NavLink></li>
                                 <li><NavLink to="/clients"><FaUserTie/> Clients</NavLink></li>
-                                <li><NavLink to="/blogs"><FaEdit/> Clients</NavLink></li>
+                                <li><NavLink to="/blogs"><FaEdit/> Blogs</NavLink></li>
                                 <li><NavLink to="/contact"><BsFillTelephoneFill/> Contact</NavLink></li>
                                 <li><NavLink to="/"><BsClipboard2CheckFill/> Privacy Policy</NavLink></li>
                             </ul>
