@@ -147,7 +147,7 @@ export default function Translation() {
             <div className="accordion accordion-flush" id="accordionFlushExample">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingOne">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style={{fontWeight:"600"}}>
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style={{fontWeight:"600",borderBottom:"1px solid #00dbb5"}}>
                     Increases your company's visibility
                   </button>
                 </h2>
@@ -157,7 +157,7 @@ export default function Translation() {
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header normal-text" id="flush-headingTwo">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style={{fontWeight:"600"}}>
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style={{fontWeight:"600",borderBottom:"1px solid #00dbb5"}}>
                     Enhances communication with the audience
                   </button>
                 </h2>
@@ -167,7 +167,7 @@ export default function Translation() {
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingThree">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style={{fontWeight:"600"}}>
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style={{fontWeight:"600",borderBottom:"1px solid #00dbb5"}}>
                     Ensures a good reputation of your firm
                   </button>
                 </h2>
@@ -185,7 +185,7 @@ export default function Translation() {
 
       {/* Benefits */}
       <div className='container py-4 mx-md-2'>
-        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Benefits of Our Translation Services</h2>
+        <h2 className='text-center m-3 heading-text' style={{ color: "#0d2366", fontWeight: "700" }} >Benefits of Our Translation Services</h2>
         <div className='row p-md-5 mx-md-5 m-0'>
           {
             arr.map((element) => {
@@ -208,7 +208,7 @@ export default function Translation() {
 
       <div className='container-fluid h1 d-flex justify-content-center align-items-center flex-column' style={{backgroundColor:'#0d2366',color:"white",height:"7rem"}}>
       <div className='my-4' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
-          <h2>Languages We Offer</h2>
+          <h2 className='heading-text' style={{color:"white"}}>Languages We Offer</h2>
       </div>
 
       <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(-3deg,3.9deg)",transformOrigin:"left bottom",position:"relative",backgroundColor:"#0d2366",top:"-7rem"}}></div>
@@ -220,7 +220,7 @@ export default function Translation() {
 
       {/* Why Choose Parikh Info Solutions As Translation Company? */}
       <div className='container py-4 mx-md-2'>
-        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Why Choose Parikh Info Solutions As Translation Company?</h2>
+        <h2 className='text-center m-3 heading-text' style={{ color: "#0d2366", fontWeight: "700" }} >Why Choose Parikh Info Solutions As Translation Company?</h2>
         <p className='text-center m-3 normal-text'  >Speak Like a Local With your Audience!</p>
         <div className='row px-md-5 mx-md-5 m-0'>
           {
@@ -239,7 +239,7 @@ export default function Translation() {
       </div>
       {/* our translation process */}
       <div>
-        <h2 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }} >Our Translation Process</h2>
+        <h2 className='text-center m-3 heading-text' style={{ color: "#0d2366", fontWeight: "700" }} >Our Translation Process</h2>
         <p className='text-center m-3 normal-text'  >We provide 100% Quality Assurance and a fast turnaround time through our human translation services in India and also all around the world.</p>
         <div>
           <div className='d-flex justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
