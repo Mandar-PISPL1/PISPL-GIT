@@ -21,6 +21,10 @@ import Contact from './components/contact/Contact';
 import Home from './components/Home-page/Home';
 import FreeLancer from './components/freelancer/FreeLancer';
 import CareerPage from './components/careerpage/CareerPage';
+import Translator from './components/freelancer/Translator';
+import Transcriber from './components/freelancer/Transcriber';
+import VoDubArtist from './components/freelancer/VoDubArtist';
+import Interpreter from './components/freelancer/Interpreter';
 
 function App() {
   return (
@@ -47,10 +51,10 @@ function App() {
           <Route path='/join-now' element={<JoinNow />} />
           <Route path='/freelancer' element={<FreeLancer />} />
           <Route path='/career-opportunities' element={<CareerPage />} />
-          <Route path='/freelancer-translator' element={<CareerPage />} />
-          <Route path='/freelancer-transcriber' element={<CareerPage />} />
-          <Route path='/freelancer-vo-dubbing-artist' element={<CareerPage />} />
-          <Route path='/freelancer-interpreter' element={<CareerPage />} />
+          <Route path='/freelancer-translator' element={<Translator />} />
+          <Route path='/freelancer-transcriber' element={<Transcriber />} />
+          <Route path='/freelancer-vo-dubbing-artist' element={<VoDubArtist />} />
+          <Route path='/freelancer-interpreter' element={<Interpreter />} />
         </Routes>
         <Footer />
         {/* <Form/> */}
