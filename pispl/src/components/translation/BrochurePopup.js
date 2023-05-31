@@ -28,7 +28,7 @@ export default function BrochurePopup() {
                     <div className="modal-content"  style={{backgroundColor:"#49dab5"}}>
                         <div className="modal-header d-flex flex-column justify-content-center align-items-center" style={{border:"0px",color:"#0d2366",fontWeight:"600"}}>
                             <h3 className="modal-title" id="exampleModalLabel">Get the FREE Brochure</h3>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" className="btn-close" style={{position:"relative",top: "-48px",right:" -8px"}} data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body px-4" >
                             <p className='mb-1'>Email Address </p>
