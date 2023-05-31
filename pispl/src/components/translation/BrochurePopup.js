@@ -1,21 +1,44 @@
 import React from 'react'
-
+import pdfFile from '../assets/Parikh-Info-Solutions.pdf'
 export default function BrochurePopup() {
+    const openPDFInNewTab =()=>{
+       
+        const pdfPath = process.env.PUBLIC_URL + pdfFile;
+        window.open(pdfPath, '_blank');
+    }
+    const buttonstyle = {
+        color: "white",
+        backgroundColor: "#0d2366",
+        fontSize: "20px",
+        width: "90%",
+        height: "3rem",
+        borderRadius: "5px",
+        border: "0px",
+    }
+    const inputStyle={
+        padding:" 11px 5px",
+        borderRadius: "11px",
+        border: "0px",
+        width:" 97%",
+    }
   return (
     <>
         <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Get the FREE Brochure</h5>
+                    <div className="modal-content"  style={{backgroundColor:"#49dab5"}}>
+                        <div className="modal-header d-flex flex-column justify-content-center align-items-center" style={{border:"0px",color:"#0d2366",fontWeight:"600"}}>
+                            <h3 className="modal-title" id="exampleModalLabel">Get the FREE Brochure</h3>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div className="modal-body">
-                            <h1>Hello</h1>
+                        <div className="modal-body px-4" >
+                            <p className='mb-1'>Email Address </p>
+                            <input style={inputStyle}></input>
+                            <p className='mb-1 mt-3'>Phone Number</p>
+                            <input style={inputStyle}></input>
                         </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Save changes</button>
+                        <div className="modal-footer d-flex justify-content-center"style={{border:"0px"}}>
+                            
+                            <button onClick={openPDFInNewTab} style={buttonstyle} type="button" className="btn btn-primary mb-3">Save changes</button>
                         </div>
                     </div>
                 </div>
