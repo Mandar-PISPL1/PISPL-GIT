@@ -38,8 +38,10 @@ export default function Transcription() {
           </div>
         </div>
       </div>
+
+      
       {/* Top Brand Section */}
-      <div className="repon py-3 px-md-5" style={{ textAlign: "center", margin: " 3rem auto",backgroundColor:"#f6f6f6" }}>
+      <div className="repon py-3 px-md-5" style={{ textAlign: "center", margin: "3rem auto",backgroundColor:"#f6f6f6" }}>
         <h1 className='text-center m-5' style={{ color: "#0d2366", fontWeight: "700" }}>Join Our Happy Customers</h1>
         <div className='container-fluid'>
           <div className='mb-5' style={mystyle}>
