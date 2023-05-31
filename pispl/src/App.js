@@ -21,7 +21,7 @@ import Contact from './components/contact/Contact';
 import Home from './components/Home-page/Home';
 import FreeLancer from './components/freelancer/FreeLancer';
 import CareerPage from './components/careerpage/CareerPage';
-import Translator from './components/freelancer/Translator';
+import Translator from './components/freelancer/translator/Translator';
 import Transcriber from './components/freelancer/Transcriber';
 import VoDubArtist from './components/freelancer/VoDubArtist';
 import Interpreter from './components/freelancer/Interpreter';
