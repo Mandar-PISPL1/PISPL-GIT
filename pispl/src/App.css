@@ -659,3 +659,7 @@ section{
 #localization-types .tab-content .fade:not(.show){
     opacity: 1;
     }
+
+.line-break{
+    white-space: pre-wrap;
+}

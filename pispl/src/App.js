@@ -15,7 +15,7 @@ import ContentWriting from './components/Services/content_writing/ContentWriting
 import VideoCreation from './components/Services/video_creation/VideoCreation';
 import AboutUs from './components/about_us/AboutUs';
 import Clients from './components/clients/Clients';
-import Blogs from './components/blogs/Blogs';
+import Blog from './components/blogs/Blog';
 import JoinNow from './components/join_now/JoinNow';
 import Contact from './components/contact/Contact';
 import Home from './components/Home-page/Home';
@@ -25,8 +25,16 @@ import Translator from './components/freelancer/translator/Translator';
 import Transcriber from './components/freelancer/Transcriber';
 import VoDubArtist from './components/freelancer/VoDubArtist';
 import Interpreter from './components/freelancer/Interpreter';
+import useFetch from './hooks/useFetch';
+import BlogContent from './components/blogcontent/BlogContent'
 
 function App() {
+  let {loading,data,error} =useFetch('http://localhost:1337/api/blogs?populate=*')
+  if(loading) return<p>loading....</p>
+  if(error) return <p>Error..</p>
+  console.log('================================')
+  console.log(data)
+
   return (
     <>
       <Router>
@@ -47,7 +55,8 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/clients' element={<Clients />} />
-          <Route path='/blogs' element={<Blogs />} />
+          <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
+          <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>}></Route>
           <Route path='/join-now' element={<JoinNow />} />
           <Route path='/freelancer' element={<FreeLancer />} />
           <Route path='/career-opportunities' element={<CareerPage />} />
@@ -55,6 +64,7 @@ function App() {
           <Route path='/freelancer-transcriber' element={<Transcriber />} />
           <Route path='/freelancer-vo-dubbing-artist' element={<VoDubArtist />} />
           <Route path='/freelancer-interpreter' element={<Interpreter />} />
+          {/* <Route path='/' element={<Homepage blogs={data?data:""}/>}></Route> */}
         </Routes>
         <Footer />
         {/* <Form/> */}
