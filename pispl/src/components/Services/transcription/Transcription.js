@@ -29,9 +29,9 @@ export default function Transcription() {
         <div className="row px-md-5 mx-md-5 m-0">
           <div className="col-md-7 col-12">
             <p className='text-start mx-3 my-0' style={{ color: "#0d2366", fontWeight: "300" }} >WE WRITE THE WORDS YOU SPEAK!</p>
-            <h1 className='text-start mx-3 ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Transform Your Multimedia to Definitive Text</h1>
+            <h3 className='text-start mx-3 ml-2 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Transform Your Multimedia to Definitive Text</h3>
             <div className='my-4 mx-3' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
-            <p className='text-start m-3 normal-text'  >Our team of professional transcribers ensures that the quality and essence of your files are retained. You can expect unparalleled, authentic texts; translated into a multitude of languages for widespread use. Be it any language, our experts pen down every sound, every word with precision.</p>
+            <p className='text-start m-3 normal-text'>Our team of professional transcribers ensures that the quality and essence of your files are retained. You can expect unparalleled, authentic texts; translated into a multitude of languages for widespread use. Be it any language, our experts pen down every sound, every word with precision.</p>
           </div>
           <div className="col-md-5 col-12">
             <iframe width="456" height="258" src="https://www.youtube.com/embed/ygJWdNwsyms" title="Budget Friendly Transcription Services in India - Parikh Info Solutions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -42,7 +42,7 @@ export default function Transcription() {
       
       {/* Top Brand Section */}
       <div className="repon py-3 px-md-5" style={{ textAlign: "center", margin: "3rem auto",backgroundColor:"#f6f6f6" }}>
-        <h1 className='text-center m-5' style={{ color: "#0d2366", fontWeight: "700" }}>Join Our Happy Customers</h1>
+        <h3 className='text-center m-5 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Join Our Happy Customers</h3>
         <div className='container-fluid'>
           <div className='mb-5' style={mystyle}>
             {

@@ -56,7 +56,7 @@ export default function Localization() {
 
           <div className="col-md-6 col-12">
             <p style={{ color: "#0d2366", fontWeight: "600" }}>ONE-STOP SOLUTION FOR ALL LOCALIZATION NEEDS</p>
-            <h1 className='  ' style={{ color: "#0d2366", fontWeight: "700" }}>Go Global With Confidence</h1>
+            <h3 className='h1' style={{ color: "#0d2366", fontWeight: "700" }}>Go Global With Confidence</h3>
             <div className='my-4 ' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
             <p className='text-start normal-text' >
               Localization services involve adding elements of native customs. This would make the experience more humanistic and natural. With all the information and instructions set in some foreign language, the viewers could feel a little overwhelmed.<br /><br />
@@ -78,7 +78,7 @@ export default function Localization() {
       {/* localization vs translation */}
       <div className="container py-4 mx-md-2">
         <div className="row px-md-5 mx-md-5 m-0">
-          <h1 className='text-center m-3 ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>Localization vs Translation</h1>
+          <h3 className='text-center m-3 ml-2 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Localization vs Translation</h3>
           <div className='my-4 text-center' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px", margin: "0px auto" }}></div>
           <p className='text-start m-md-3 normal-text'  >
             Translation services refer to the process of translating or changing text from one language to another, retaining its original meaning. The goal of translation is to maintain the originality of the original text and content in the target language.
@@ -93,10 +93,10 @@ export default function Localization() {
         </div>
       </div>
       {/* Top Brands */}
-      <div className="repon" style={{ textAlign: "center", margin: " 3rem auto" }}>
-        <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h1>
+      <div className="repon py-3 px-md-5" style={{ textAlign: "center", margin: "3rem auto",backgroundColor:"#f6f6f6" }}>
+        <h3 className='text-center m-5 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Top Brands</h3>
         <div className='container-fluid'>
-          <div className='' style={mystyle}>
+          <div className='mb-5' style={mystyle}>
             {
               brands.map((element) => {
                 return (
@@ -111,6 +111,7 @@ export default function Localization() {
       {/* We Provide Following Localization Services */}
       <div id="localization-types" className="container py-4 mx-md-4">
         <div className="row px-md-5 mx-md-5 m-0">
+          <h3 className='text-center m-3 ml-2 h1 mb-5' style={{ color: "#0d2366", fontWeight: "700" }}>We Provide Following Localization Services</h3>
           <ul className="nav nav-pills " id="pills-tab" role="tablist">
             <li className="nav-item" role="presentation">
               <button className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" ><b>Web Localization</b></button>
