@@ -146,7 +146,7 @@ export default function AiDubbing() {
         <div className='row px-md-5 mx-md-5 m-0 justify-content-around'>
           <h3 className='text-center m-3 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Industries We Cover</h3>
 
-          <p className='normal-text'>At Parikh Info Solutions, we offer high-quality dubbing services across industries like Entertainment, media, animation, documentaries, eLearning, Corporate, Gaming, Advertising, and many more.</p>
+          <p className='normal-text'>At Parikh Info Solutions, we offer <a href="https://parikhinfosolutions.com/blog/5-ways-dubbing-services-can-help-you-grow-business/" className='text-danger'>high-quality dubbing services across industries</a> like Entertainment, media, animation, documentaries, eLearning, Corporate, Gaming, Advertising, and many more.</p>
 
           <div className='col-md-7 col-12 d-flex justify-content-center ' style={{ maxHeight: "373px ", maxWidth: "493px" }}>
             <img src={img} style={{ height: "100% ", width: "100%" }}></img>
