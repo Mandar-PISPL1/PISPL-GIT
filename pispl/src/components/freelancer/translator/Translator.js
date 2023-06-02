@@ -1,132 +1,62 @@
 import React, { useState } from "react";
+import Pg1 from "./Pg1";
+import Pg2 from "./Pg2";
+import Pg3 from "./Pg3";
+import Pg4 from "./Pg4";
+import Pg5 from "./Pg5";
+import Pg6 from "./Pg6";
 
 export default function Translator() {
   const btnStyle = {
     width: "100%",
-    fontSize: " 24px",
+    fontSize: "24px",
+    color: "#0d2366",
     fontWeight: " 500",
-    backgroundColor: "#0d3266",
-    borderRadius: "5px",
+    backgroundColor: "#49dab5",
+    borderRadius: "0",
     border: "none"
   }
 
-  const [formValue, setFormValue] = useState(
-    {
-      email: "",
-      name: "",
-      companyname: "",
-      countrycode: "",
-      mobilenumber: "",
-      briefdetails: ""
-    });
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setFormValue({ ...formValue, [name]: value })
-
+  const [page,setPage]=useState(1);
+  const next =()=>{
+    if(page>=6){
+      setPage(page)
+    }
+    else{
+      setPage(page+1)
+    }
+  }
+  const prev =()=>{
+    if(page<=1){
+      setPage(page)
+    }
+    else{
+      setPage(page-1)
+    }
   }
 
   return (
+
     <>
-      <div className="container-sm" style={{ marginTop: "50px", width: "100%", color: "#0d2366" }}>
-        <form>
-          <h5 className="mb-3" style={{ fontWeight: "600" }}>Get free support and quote on your email. Please submit the form to get in touch with us.</h5>
-          
-          <div className="mb-3">
-            <label htmlFor="name" className="form-label">
-              First Name
-            </label>
-            <input
-              type="name"
-              name="name"
-              autoComplete="off"
-              id="name"
-              className="form-control"
-              value={formValue.name}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="name" className="form-label">
-              Last Name
-            </label>
-            <input
-              type="name"
-              name="name"
-              autoComplete="off"
-              id="name"
-              className="form-control"
-              value={formValue.name}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="mb-3 normal-text">
-            <label htmlFor="email" className="form-label">
-              Primary Email*
-            </label>
-            <input
-              type="email"
-              name="email"
-              autoComplete="off"
-              className="form-control"
-
-              id="email"
-              value={formValue.email}
-              onChange={handleChange}
-              required="required"
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="companyname" className="form-label">
-              Company Name *
-            </label>
-            <input
-              type="name"
-              id="companyname"
-              name="companyname"
-              autoComplete="off"
-              className="form-control"
-              value={formValue.companyname}
-              onChange={handleChange}
-            />
-          </div>
-          <div className=" mb-3 d-flex">
-            <div className="col-md-4">
-              <label htmlFor="countrycode" className="form-label">
-                County Code
-              </label>
-              <select className="form-select" aria-label="Default select example" name="countrycode" onChange={handleChange}>
-                {/* <option value="" >Select country code</option> */}
-                <option value="India (+91)" >India (+91)</option>
-                <option value="Andorra (+376)">Andorra (+376)</option>
-                <option value="Angola (+244)">Angola (+244)</option>
-              </select>
-            </div>
-            <div className="col-md-8 mx-1" >
-              <label htmlFor="mobilenumber" className="form-label">
-                Mobile/Whatsapp Number
-              </label>
-              <input
-                type="name"
-                id="mobilenumber"
-                name="mobilenumber"
-                autoComplete="off"
-                className="form-control"
-                value={formValue.mobilenumber}
-                onChange={handleChange}
-              />
-            </div>
-
-          </div>
-         
-          <div className="mb-3">
-            <button type="submit" style={btnStyle} className="btn btn-primary">Send Enquiry
-              <i aria-hidden="true" class="fas fa-location-arrow mx-2
-                        "></i></button>
-
-          </div>
+      
+      <div className="container w-50 width100">
+        <p className="text-center my-3">Join our freelance team.</p>
+        <form >
+          {/* <Pg1/>
+          <Pg2/> */}
+          {
+            page==1 ? <Pg1/>:page==2 ? <Pg2/> : page==3 ? <Pg3/> : page==4 ? <Pg4/> : page ==5 ? <Pg5/> : page ==6 ? <Pg6/> : null
+          }
         </form>
+        <div className="row my-4">
+            { <button type="submit" style={btnStyle} onClick={next} className="col-md-6 btn btn-primary my-2 py-3">NEXT</button> }
+            { <button type="submit" style={btnStyle} onClick={prev} className="col-md-6 btn btn-primary my-2 py-3">PREVIOUS</button>}
+          </div>
       </div>
+
+      
+      
+
 
     </>
 

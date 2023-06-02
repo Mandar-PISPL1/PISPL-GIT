@@ -15,9 +15,9 @@ import img5 from '../../assets/Latest-Technology.png'
 
 export default function AiDubbing() {
   const link = 'https://parikhinfosolutions.com/wp-content/uploads/2022/09/AI-Dubbing-Services-Background.png';
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const buttonstyle = {
     color: "#0d2366",

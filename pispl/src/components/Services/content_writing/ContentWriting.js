@@ -6,9 +6,9 @@ import img2 from "../../assets/Content-Writing-Service-Center-Banner.png"
 import { BsArrowRightCircle } from "react-icons/bs";
 import { useEffect } from 'react';
 export default function ContentWriting() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const buttonstyle = {
     color: "#0d2366",

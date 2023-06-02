@@ -19,9 +19,9 @@ import Benefits2 from '../voice_over/Benefits2'
 // import FAQ from '../../translation/FAQ'
 
 export default function () {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Banner index={7} lottie={interpretation_lottie} breadCrumb={true}/>

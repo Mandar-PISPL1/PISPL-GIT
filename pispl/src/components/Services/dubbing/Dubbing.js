@@ -16,9 +16,9 @@ import faqs from "./FAQContent";
 import FAQ from "../../translation/FAQ";
 
 export default function Dubbing() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const mystyle = {
     display: "flex",
     justifyContent: "space-evenly",
