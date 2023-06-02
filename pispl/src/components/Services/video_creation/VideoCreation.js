@@ -33,7 +33,7 @@ export default function VideoCreation() {
 
       {/* Choose The Best Explainer Video Services */}
       <div className='container py-4 mx-md-2'>
-        <h1 className='text-start m-3  mx-md-5 m-0' style={{ color: "#0d2366", fontWeight: "700" }}>Choose The Best Explainer Video Services</h1>
+        <h1 className='text-start m-3  mx-md-5 m-0' style={{ color: "#0d2366", fontWeight: "700" }}>Chooses The Best Explainer Video Services</h1>
         <div className='row px-md-5 mx-md-5 m-0 rounded shadow-lg' >
 
 
