@@ -32,34 +32,34 @@ export default function Navbar() {
                             <div className="dropdown">
                                 <ul>
                                     <li className="dropdown-link">
-                                        <NavLink to="/translation" onClick={handleDropdownClick}>Translation Services</NavLink>
+                                        <NavLink to="/#/translation" onClick={handleDropdownClick}>Translation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/transcription" onClick={handleDropdownClick}>Transcription Services</NavLink>
+                                        <NavLink to="/#/transcription" onClick={handleDropdownClick}>Transcription Services</NavLink>
                                     </li>
                                     <li className="dropdown-link" >
-                                        <NavLink to="/localization" onClick={handleDropdownClick}>Localization Services</NavLink>
+                                        <NavLink to="/#/localization" onClick={handleDropdownClick}>Localization Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/voice-over" onClick={handleDropdownClick}>Voice over Services</NavLink>
+                                        <NavLink to="/#/voice-over" onClick={handleDropdownClick}>Voice over Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/dubbing" onClick={handleDropdownClick}>Dubbing Services</NavLink>
+                                        <NavLink to="/#/dubbing" onClick={handleDropdownClick}>Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/ai-dubbing" onClick={handleDropdownClick}>AI Dubbing Services</NavLink>
+                                        <NavLink to="/#/ai-dubbing" onClick={handleDropdownClick}>AI Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
                                         <NavLink to="/video-subtitling" onClick={handleDropdownClick}>Video Subtitling Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/interpretation" onClick={handleDropdownClick}>Interpretation Services</NavLink>
+                                        <NavLink to="/#/interpretation" onClick={handleDropdownClick}>Interpretation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/content-writing" onClick={handleDropdownClick}>Content Writing Services</NavLink>
+                                        <NavLink to="/#/content-writing" onClick={handleDropdownClick}>Content Writing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/video-creation" onClick={handleDropdownClick}>Video creation Services</NavLink>
+                                        <NavLink to="/#/video-creation" onClick={handleDropdownClick}>Video creation Services</NavLink>
                                     </li>
                                    
                                     <div className="arrow"></div>
@@ -67,19 +67,19 @@ export default function Navbar() {
                             </div>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
-                        <NavLink to="/about" onClick={handleDropdownClick}>About Us</NavLink>
+                        <NavLink to="/#/about" onClick={handleDropdownClick}>About Us</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
-                        <NavLink to="/clients" onClick={handleDropdownClick}>Clients</NavLink>
+                        <NavLink to="/#/clients" onClick={handleDropdownClick}>Clients</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                        <NavLink to="/blogs" onClick={handleDropdownClick}>Blogs</NavLink>
+                        <NavLink to="/#/blogs" onClick={handleDropdownClick}>Blogs</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                        <NavLink to="/join-now" onClick={handleDropdownClick}>Join Now</NavLink>
+                        <NavLink to="/#/join-now" onClick={handleDropdownClick}>Join Now</NavLink>
                         </li>
                         <li className="nav-link"style={{'--i': 1}}>
-                        <NavLink to="/contact" onClick={handleDropdownClick}>Contact</NavLink>
+                        <NavLink to="/#/contact" onClick={handleDropdownClick}>Contact</NavLink>
                         </li>
                     </ul>
                 </div>
