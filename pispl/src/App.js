@@ -42,28 +42,28 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/#/translation' element={<Translation />} />
-          <Route path='/#/transcription' element={<Transcription />} />
-          <Route path='/#/localization' element={<Localization />} />
-          <Route path='/#/voice-over' element={<VoiceOver />} />
-          <Route path='/#/dubbing' element={<Dubbing />} />
-          <Route path='/#/ai-dubbing' element={<AiDubbing />} />
-          <Route path='/#/video-subtitling' element={<VideoSubtitling />} />
-          <Route path='/#/interpretation' element={<Interpretation />} />
-          <Route path='/#/content-writing' element={<ContentWriting />} />
-          <Route path='/#/video-creation' element={<VideoCreation />} />
-          <Route path='/#/contact' element={<Contact />} />
-          <Route path='/#/about' element={<AboutUs />} />
-          <Route path='/#/clients' element={<Clients />} />
-          <Route path='/#/blogs' element={<Blog blogs={data?data:""}/>} />
-          <Route path='/#/blog/:id' element={<BlogContent blogs={data?data:""}/>}></Route>
-          <Route path='/#/join-now' element={<JoinNow />} />
-          <Route path='/#/freelancer' element={<FreeLancer />} />
-          <Route path='/#/career-opportunities' element={<CareerPage />} />
-          <Route path='/#/freelancer-translator' element={<Translator />} />
-          <Route path='/#/freelancer-transcriber' element={<Transcriber />} />
-          <Route path='/#/freelancer-vo-dubbing-artist' element={<VoDubArtist />} />
-          <Route path='/#/freelancer-interpreter' element={<Interpreter />} />
+          <Route path='/translation' element={<Translation />} />
+          <Route path='/transcription' element={<Transcription />} />
+          <Route path='/localization' element={<Localization />} />
+          <Route path='/voice-over' element={<VoiceOver />} />
+          <Route path='/dubbing' element={<Dubbing />} />
+          <Route path='/ai-dubbing' element={<AiDubbing />} />
+          <Route path='/video-subtitling' element={<VideoSubtitling />} />
+          <Route path='/interpretation' element={<Interpretation />} />
+          <Route path='/content-writing' element={<ContentWriting />} />
+          <Route path='/video-creation' element={<VideoCreation />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<AboutUs />} />
+          <Route path='/clients' element={<Clients />} />
+          <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
+          <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>}></Route>
+          <Route path='/join-now' element={<JoinNow />} />
+          <Route path='/freelancer' element={<FreeLancer />} />
+          <Route path='/career-opportunities' element={<CareerPage />} />
+          <Route path='/freelancer-translator' element={<Translator />} />
+          <Route path='/freelancer-transcriber' element={<Transcriber />} />
+          <Route path='/freelancer-vo-dubbing-artist' element={<VoDubArtist />} />
+          <Route path='/freelancer-interpreter' element={<Interpreter />} />
           {/* <Route path='/' element={<Homepage blogs={data?data:""}/>}></Route> */}
         </Routes>
         <Footer />

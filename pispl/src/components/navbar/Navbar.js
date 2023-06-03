@@ -32,7 +32,7 @@ export default function Navbar() {
                             <div className="dropdown">
                                 <ul>
                                     <li className="dropdown-link">
-                                        <NavLink to="/#/translation" onClick={handleDropdownClick}>Translation Services</NavLink>
+                                        <NavLink to="/translation" onClick={handleDropdownClick}>Translation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
                                         <NavLink to="/#/transcription" onClick={handleDropdownClick}>Transcription Services</NavLink>
