@@ -3,7 +3,7 @@ import Banner from '../translation/Banner'
 import lottie from './contact-lottie.json'
 import { ImCheckmark } from "react-icons/im";
 import PhishingAlert from '../translation/PhishingAlert';
-import Form from '../form/Form'
+import ReactForm from '../form/ReactForm'
 export default function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -71,7 +71,7 @@ export default function Contact() {
           </div>
           {/* 2nd Column */}
           <div className='col-md-6 col-12'>
-            <Form/>
+            <ReactForm />
           </div>
         </div>
       </div>
