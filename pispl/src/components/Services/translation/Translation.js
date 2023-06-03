@@ -53,7 +53,7 @@ export default function Translation() {
           <div className="col-md-7 col-12">
             <div className='normal-text'>
               <p>Our experts are well versed in the needs of customers based in India in terms of the type of content they want. Thus, as a global translation company, we give our audience what perfectly resonates with them while ensuring the cultural context of the targeted audience based in India.</p>
-              <p>We understand the importance of regional languages in every industry. Thus, we provide you with the highest quality translation services with a team that masters your industry's knowledge and techniques. Grammar, tones, essence, meaning, jargon, everything will be taken into consideration to provide you with a high-standard translation services in India.</p>
+              <p>We understand the importance of regional languages in every industry. Thus, we provide you with the highest quality translation services with a team that masters your industry&apos;s knowledge and techniques. Grammar, tones, essence, meaning, jargon, everything will be taken into consideration to provide you with a high-standard translation services in India.</p>
             </div>
 
           </div>
@@ -65,9 +65,9 @@ export default function Translation() {
         <div className='container-fluid'>
           <div className='mb-5' style={mystyle}>
             {
-              brands.map((element) => {
+              brands.map((element,id) => {
                 return (
-                  <TopBrandSection sour={element.link} />
+                  <TopBrandSection sour={element.link} id={id}/>
                 )
               })
             }
@@ -104,7 +104,7 @@ export default function Translation() {
               </div>
 
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Literary Translation</h4>
-              <p style={{ fontSize: "18px" }}>We also help you with the translation of magazines, books, chapters, etc. to help you reach the maximum audience. Be it in any language, or any literary element you want to get translated; we’ve got you covered. Get your literary masterpiece translated into many languages with its apt meaning and emotions. Our experts & professionals make the translation possible for you by making it accurate & relevant at affordable prices.</p>
+              <p style={{ fontSize: "18px" }}>{"We also help you with the translation of magazines, books, chapters, etc. to help you reach the maximum audience. Be it in any language, or any literary element you want to get translated; weve got you covered. Get your literary masterpiece translated into many languages with its apt meaning and emotions. Our experts & professionals make the translation possible for you by making it accurate & relevant at affordable prices."}</p>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function Translation() {
         <div className='row px-md-5 mx-md-5 m-0'>
           <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>How Translation Promotes Business Growth?</h1>
 
-          <p className='normal-text text-center'>Translating your company’s information into multiple languages makes you reach out to a wider audience and makes you publicly available in their native language. It offers a sense of belonging and gives you a firm stand to kickstart your business beyond geographical borders. It makes you look less alien and gives you an edge over competitors. Thus, with the increase in globalization, translation promotes all-around growth of your business.</p>
+          <p className='normal-text text-center'>Translating your company&apos;s information into multiple languages makes you reach out to a wider audience and makes you publicly available in their native language. It offers a sense of belonging and gives you a firm stand to kickstart your business beyond geographical borders. It makes you look less alien and gives you an edge over competitors. Thus, with the increase in globalization, translation promotes all-around growth of your business.</p>
 
           <div className='col-md-6 col-12 d-flex justify-content-center'>
             <img src={translation3} style={{ height: "300px ", width: "300px" }}></img>
@@ -152,7 +152,7 @@ export default function Translation() {
                   </button>
                 </h2>
                 <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div className="accordion-body normal-text">Language is an essential route toward a company’s success. This process can become challenging with language as a barrier between you and your success. At Parikh Info Solutions, we break that wall with our translation services. Our certified translators make you reach out to a wider audience in their native language.</div>
+                  <div className="accordion-body normal-text">Language is an essential route toward a company&apos;s success. This process can become challenging with language as a barrier between you and your success. At Parikh Info Solutions, we break that wall with our translation services. Our certified translators make you reach out to a wider audience in their native language.</div>
                 </div>
               </div>
               <div className="accordion-item">
@@ -188,10 +188,10 @@ export default function Translation() {
         <h2 className='text-center m-3 heading-text' style={{ color: "#0d2366", fontWeight: "700" }} >Benefits of Our Translation Services</h2>
         <div className='row p-md-5 mx-md-5 m-0'>
           {
-            arr.map((element) => {
+            arr.map((element,id) => {
               return (
 
-                <Benefits img={element.img} title={element.title} content={element.content} />
+                <Benefits img={element.img} title={element.title} content={element.content} id={id}/>
 
               )
             })
@@ -224,10 +224,10 @@ export default function Translation() {
         <p className='text-center m-3 normal-text'  >Speak Like a Local With your Audience!</p>
         <div className='row px-md-5 mx-md-5 m-0'>
           {
-            arr1.map((element) => {
+            arr1.map((element,id) => {
               return (
 
-                <Benefits img={element.img} title={element.title} content={element.content} />
+                <Benefits img={element.img} title={element.title} content={element.content} id={id}/>
 
               )
             })
@@ -320,10 +320,10 @@ export default function Translation() {
             <div class="accordion col-md-10 col-12" id="accordionExample">
 
         {
-          faqs.map((element) =>{
+          faqs.map((element,id) =>{
             return (
              
-              <FAQ que={element.que} no={element.no} ans={element.ans}/>
+              <FAQ que={element.que} no={element.no} ans={element.ans} id={id}/>
               
             )
           })

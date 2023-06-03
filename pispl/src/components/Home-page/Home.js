@@ -85,10 +85,10 @@ export default function Home() {
             <div className='row px-md-5'>
 
               {
-                arr.map((element) => {
+                arr.map((element,id) => {
                   return (
                     <div className=' col-6 col-md-2 py-2  text-center'>
-                      <img src={element.link} style={{ maxHeight: "97px", MaxWidth: "169px" }} alt='Major Brands' title='Major Brands'></img>
+                      <img key={id} src={element.link} style={{ maxHeight: "97px", MaxWidth: "169px" }} alt='Major Brands' title='Major Brands'></img>
                     </div>
                   )
                 })
@@ -350,7 +350,7 @@ export default function Home() {
 
             </NavLink>
                 <h2 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Video Creation Services</h2>
-                <p className='normal-text px-3'>Capture your audience’s attention with creative and professional explainer videos. With an increase in techno-logical advancements, people have become prone to short attention span time. The explainer videos can help you spread your brand’s message and spread awareness effectively in a few minutes. We at Parikh Info Solutions, offer video creation services at every step from content, scripting, and editing, to voice-over and final video production.</p>
+                <p className='normal-text px-3'>Capture your audience&apos;s attention with creative and professional explainer videos. With an increase in techno-logical advancements, people have become prone to short attention span time. The explainer videos can help you spread your brand&apos;s message and spread awareness effectively in a few minutes. We at Parikh Info Solutions, offer video creation services at every step from content, scripting, and editing, to voice-over and final video production.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/video-creation'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
@@ -374,13 +374,13 @@ export default function Home() {
           {
 
 
-            arrr.map((element) => {
+            arrr.map((element,id) => {
               return (
-                <div className='col-md-2 col-6 p-2 d-flex justify-content-center'>
+                <div className='col-md-2 col-6 p-2 d-flex justify-content-center' key={id}>
                   <div style={{ width: "12rem", height: "6.2rem", border: "1px solid #d1d1d1", textAlign: "center" }}>
                     <div style={{ padding: "20px" }}>
                       <div style={{ width: "100%", textAlign: "center" }}>
-                        <i aria-hidden="true" class={`fas ${element.icon} fa-2x py-1s `} style={{ color: "#1e6fe0" }}></i>
+                        <i aria-hidden="true" className={`fas ${element.icon} fa-2x py-1s `} style={{ color: "#1e6fe0" }}></i>
                       </div>
                       <span className='text-center' style={{ color: "#7a7a7a" }}>{element.title}</span>
                     </div>

@@ -22,9 +22,9 @@ import Home from './components/Home-page/Home';
 import FreeLancer from './components/freelancer/FreeLancer';
 import CareerPage from './components/careerpage/CareerPage';
 import Translator from './components/freelancer/translator/Translator';
-import Transcriber from './components/freelancer/Transcriber';
-import VoDubArtist from './components/freelancer/VoDubArtist';
-import Interpreter from './components/freelancer/Interpreter';
+import Transcriber from './components/freelancer/transcriber/Transcriber';
+import VoDubArtist from './components/freelancer/vodubartist/VoDubArtist';
+import Interpreter from './components/freelancer/interpreter/Interpreter';
 import useFetch from './hooks/useFetch';
 import BlogContent from './components/blogcontent/BlogContent'
 

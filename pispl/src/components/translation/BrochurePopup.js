@@ -23,7 +23,7 @@ export default function BrochurePopup() {
     }
   return (
     <>
-        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content"  style={{backgroundColor:"#49dab5"}}>
                         <div className="modal-header d-flex flex-column justify-content-center align-items-center" style={{border:"0px",color:"#0d2366",fontWeight:"600"}}>

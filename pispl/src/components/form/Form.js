@@ -36,20 +36,7 @@ export default function Form() {
             console.log(response);
 
         })
-        // web@parikhinfosolutions.com
-        // web@parikhinfosolutions.com
-        // const config={
-        //     SecureToken:"9e163d01-c830-4ad0-82b3-496abed197e0",
-        //     Port:2525,
-        //     To : "web@parikhinfosolutions.com",
-        //     From : formValue.email,
-        //     Subject : "Contact form has been submitted",
-        //     Body : `${formValue.name} connected to you over email address: ${formValue.email}`,
-        // }
-        // if(window.Email){
-        //     window.Email.send(config).then(()=> alert("Email sent successfully"));
-        //     console.log("Sent email")
-        // }
+        
         setFormValue(
             {
                 email:"",
@@ -59,13 +46,7 @@ export default function Form() {
                 briefdetails:""
             }
         )
-        // emailjs.sendForm('service_gfkmnbe','template_15tmdog',e.target)
-    //     emailjs.sendForm('service_gfkmnbe', 'template_15tmdog',e.target , 'YOUR_PUBLIC_KEY')
-    //   .then((result) => {
-    //       alert("email send");
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
+       
 
     }
 
