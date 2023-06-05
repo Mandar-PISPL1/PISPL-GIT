@@ -101,7 +101,7 @@ export default function Clients() {
       {/* brands section */}
         <div style={{backgroundColor:"#f6f6f6",padding:"3rem 0rem"}}>
           <div>
-            <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Trusted by World's Major Brands</h1>
+            <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>Trusted by World&apos;s Major Brands</h1>
             <div className='container'>
               <div className='row px-md-5'>
                 
