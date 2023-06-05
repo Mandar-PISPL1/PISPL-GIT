@@ -3,6 +3,8 @@ import Pg1 from './Pg1'
 import Pg2 from './Pg2'
 import Pg3 from './Pg3'
 import Pg4 from './Pg4'
+import ProgressBar from "../ProgressBar";
+
 export default function Transcriber() {
   const btnStyle = {
     width: "100%",
@@ -31,10 +33,16 @@ export default function Transcriber() {
       setPage(page-1)
     }
   }
+  const calculateProgress = () => {
+    let a=(page / 6) * 100;
+    
+    return a;
+  };
   return (
     <>
     <div className="container w-50 width100">
         <p className="text-center my-3">Join our freelance team.</p>
+        <ProgressBar progress={calculateProgress()} percentage={a}/>
         <form >
           {/* <Pg1/>
           <Pg2/> */}
@@ -43,8 +51,9 @@ export default function Transcriber() {
           }
         </form>
         <div className="row my-4">
-            { <button type="submit" style={btnStyle} onClick={next} className="col-md-6 btn btn-primary my-2 py-3">NEXT</button> }
-            {  <button type="submit" style={btnStyle} onClick={prev} className="col-md-6 btn btn-primary my-2 py-3">PREVIOUS</button>}
+        { page < 6 && <button type="submit" style={btnStyle} onClick={next} className="col-md-6 btn btn-primary my-2 py-3">NEXT</button> }
+            { page > 1 && <button type="submit" style={btnStyle} onClick={prev} className="col-md-6 btn btn-primary my-2 py-3">PREVIOUS</button> }
+            {page===6 && <button type="submit" style={btnStyle}  className="col-md-6 btn btn-primary my-2 py-3">SUBMIT</button>}
           </div>
       </div>
 

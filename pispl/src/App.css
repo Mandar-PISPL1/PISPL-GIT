@@ -663,3 +663,14 @@ section{
 .line-break{
     white-space: pre-wrap;
 }
+.progress-bar {
+    background-color: #f1f1f1;
+    height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #2783f3;
+    transition: width 0.3s ease-in-out;
+  }

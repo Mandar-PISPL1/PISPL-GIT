@@ -16,36 +16,36 @@ export default function Pg1() {
             <div className="row my-2">
                 <div className="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">First Name</label>
-                    <input type="text" name='first_name' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
                 <div class="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Last Name</label>
-                    <input type="text" name='last_name' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
             </div>
             <div className="row my-2">
                 <div className="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Country Code</label>
-                    <input type="text" name='country_code' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
                 <div class="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Phone Number</label>
-                    <input type="text" name='phone_number' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
             </div>
             <div className="row my-2">
                 <div className="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Primary Email</label>
-                    <input type="text" name='primary_email' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
                 <div class="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Alternative Email (Optional)</label>
-                    <input type="text" name='alternative_email' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
             </div>
             <div className="my-2">
                 <label for="inputEmail4" className="pb-2 normal-text">Skype / Zoom ID / Hangout / Whatsapp</label>
-                <input type="text" name='Skype_Zoom_ID_Hangout_Whatsapp' className="form-control form-control-lg w-100 rounded border-secondary" />
+                <input type="text" className="form-control form-control-lg w-100 rounded border-secondary" />
             </div>
             <div className="my-0">
                 <label for="inputEmail4" className="pb-2 normal-text">Select Gender</label>
