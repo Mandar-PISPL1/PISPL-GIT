@@ -1,4 +1,5 @@
 import React from 'react'
+import SimpleForm from './form/SimpleForm';
 import { NavLink } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
@@ -27,7 +28,8 @@ import '../App.css';
 
 export default function Footer() {
     return (
-        <>
+        <>              
+            <SimpleForm />
             <div className='footer pt-4'>
                 <div className='container-fluid'>
                     <div className=' row'>
