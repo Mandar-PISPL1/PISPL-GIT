@@ -5,6 +5,7 @@ import Pg3 from "./Pg3";
 import Pg4 from "./Pg4";
 import Pg5 from "./Pg5";
 import Pg6 from "./Pg6";
+import ProgressBar from "../ProgressBar";
 
 export default function Translator() {
   const btnStyle = {
@@ -35,6 +36,12 @@ export default function Translator() {
       setPage(page-1)
     }
   }
+  const calculateProgress = () => {
+    let a=(page / 6) * 100;
+    
+    return a;
+  };
+  
   
 
   return (
@@ -43,6 +50,7 @@ export default function Translator() {
       
       <div className="container w-50 width100">
         <p className="text-center my-3">Join our freelance team.</p>
+        <ProgressBar progress={calculateProgress()} percentage={a}/>
         <form >
           {/* <Pg1/>
           <Pg2/> */}
