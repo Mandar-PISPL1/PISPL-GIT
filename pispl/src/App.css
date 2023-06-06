@@ -681,3 +681,15 @@ section{
     background-color: #2783f3;
     transition: width 0.3s ease-in-out;
   }
+  .blog-content img {
+    /* height: 200px; Set the desired height */
+    width: 754px; /* Set the desired width */
+  }
+  .blog-content h1,h2,h3,h4,h5,h6 {
+    color: #0d2366;
+  }
+  .blog-content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #041020;
+  }

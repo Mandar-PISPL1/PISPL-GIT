@@ -61,16 +61,19 @@ export default function BlogContent({ blogs }) {
                 
             </div>
 
-            <div className='container-fluid py-5' style={{ display: "flex" }}>
+            
 
-                <div style={{ border: "2px solid red", width: "15%",display:"flex",alignItems:"center" ,flexDirection:"column"}}>
+            <div className='container-fluid py-5'>
+                <div className='row'>
+                    <div className='col-md-2 col-12 border border-primary d-flex justify-content-center'>
+                    <div  style={{ width: "15%",display:"flex",alignItems:"center" ,flexDirection:"column"}}>
                     <p style={{color:"#0d2366"}}>share</p>
                     <div><BsWhatsapp style={iconStyle}/></div>
                     <div><BsFacebook style={iconStyle}/></div>
                     <div><BsLinkedin style={iconStyle}/></div>
                 </div>
-
-                <div style={{ width: "60%" }}>
+                    </div>
+                    <div className='col-md-7 col-12'>
                     <div className='featured-image text-center' >
                         <img src={`http://localhost:1337${blog.attributes.featuredImage.data.attributes.url}`} alt="" style={{ height: "372px", width: "711px" }} />
                     </div>
@@ -79,22 +82,24 @@ export default function BlogContent({ blogs }) {
 
                     </div>
                     <div>
-                        <ReactMarkdown className='line-break' >{blog.attributes.blogContent}</ReactMarkdown>
+                        <ReactMarkdown className='line-break blog-content' >{blog.attributes.blogContent}</ReactMarkdown>
                     </div>
-                </div>
-                <div style={{ width: "25%" }}>
+                    </div>
+                    <div className='col-md-3 col-12'>
                     <div className='text-center px-2 py-3 my-5' style={{ backgroundColor: "#f6f6f6", display: "flex", flexDirection: "column" }}>
                         <h2>Get Update On Every Blog </h2>
                         <div style={{ display: "flex", justifyContent: "center" }}>
 
-                            {/* <Lottie animationData={Email} style={{  height: "150px", width: "100px" }} /> */}
+                            
                         </div>
                         <input type="text" placeholder='YOUR EMAIL' style={{ padding: "6px 11px", margin: "12px auto" }} />
                         <button style={{ fontSize: "27px", padding: "7px 0px", width: "230px", margin: "6px auto" }}>Subscribe</button>
 
                     </div>
-                </div>
+                    </div>
+                    
 
+                </div>
 
             </div>
 
