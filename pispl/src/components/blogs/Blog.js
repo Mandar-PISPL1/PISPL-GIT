@@ -43,8 +43,8 @@ export default function Blog({ blogs }) {
           {
             blogs.data.map((blog) => {
               return (
-                <div className='col-md-6 col-12 d-flex justify-content-center rounded' style={{boxShadow:"0px 0px 10px -1px rgba(0,0,0,0.5)"}}>
-                  <div className='p-2'>
+                <div className='col-md-6 col-12 d-flex justify-content-center ' >
+                  <div className='p-2 rounded' style={{boxShadow:"0px 0px 10px -1px rgba(0,0,0,0.5)"}}>
                   <Link to={`/blog/${blog.id}`}>
 
                     <div className="card border-0">

@@ -30,6 +30,7 @@ export default function Translator() {
       Skype_Zoom_ID_Hangout_Whatsapp:"",
       gender:"",
       qualification:"",
+      stream:"",
       native_language:"",
       other_language1:"",
       other_language2:"",

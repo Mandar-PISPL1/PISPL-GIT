@@ -548,6 +548,13 @@ section{
     }
 }
 @media(max-width: 575px){
+    .phoneFlex{
+        flex-direction: column ;
+    }
+    .phoneFont{
+        font-size: 30px !important;
+        line-height: 45px !important;
+    }
     .phone-width{
         width: 22rem;
     }

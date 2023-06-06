@@ -16,6 +16,25 @@ export default function Transcriber() {
     border: "none"
   }
   const [page,setPage]=useState(1);
+  const [formValue,setFormValue] = useState({
+      first_name:"",
+      last_name:"",
+      country_code:"",
+      phone_number:"",
+      primary_email:"",
+      alternative_email:"",
+      Skype_Zoom_ID_Hangout_Whatsapp:"",
+      gender:"",
+      stream:"",
+      native_language:"",
+      currency:"",
+      language_transcription_rate_per_minute :"",
+      direct_native_to_english_rate_per_minute :"",
+      direct_transcription_output_rate_per_minute :"",
+      Do_you_work_on_weekends:"",
+      attachment:"",
+
+  })
   const [a,setA]=useState(true);
   const next =()=>{
     if(page>=6){
