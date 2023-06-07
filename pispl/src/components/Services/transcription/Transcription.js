@@ -33,7 +33,7 @@ export default function Transcription() {
             <div className='my-4 mx-3' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
             <p className='text-start m-3 normal-text'>Our team of professional transcribers ensures that the quality and essence of your files are retained. You can expect unparalleled, authentic texts; translated into a multitude of languages for widespread use. Be it any language, our experts pen down every sound, every word with precision.</p>
           </div>
-          <div className="col-md-5 col-12">
+          <div className="col-md-5 col-12 d-flex justify-content-center align-items-center">
             <iframe width="456" height="258" src="https://www.youtube.com/embed/ygJWdNwsyms" title="Budget Friendly Transcription Services in India - Parikh Info Solutions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>

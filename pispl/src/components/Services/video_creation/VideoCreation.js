@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { NavLink } from "react-router-dom";
 import Banner from '../../translation/Banner'
 import myimage from '../../assets/Video-Creation-Banner.png'
 import img from '../../assets/Video-Creation-Image-Banner-02.png'
@@ -66,13 +67,13 @@ export default function VideoCreation() {
     </div>
     <div className='container py-0 mx-md-2'>
         <div className='row mx-md-5 mx-0 px-3' >
-          <div className='col-md-6 col-12 px-5'>
+          <div className='col-md-6 col-12 px-md-5 mx-md-0 mb-3'>
             <div className='rounded border border-secondary' style={{ color: "#696969", padding: "30px" }}>
               <h1 className='text-center' style={{ fontSize: "30px", color: "#0d2366" }}>1.<u> Whiteboard Video</u></h1>
               <p>One of the most popular types of videos, whiteboard video is used to make complex topics understandable in creative way -just like how your teacher used to explain in school with a chalk and board. We can deliver a high-quality whiteboard video of 1-4 minutes with effective animation, visuals, creative content, and an appropriate voice-over that will deliver the right message and captivate your audience.</p>
             </div>
           </div>
-          <div className='col-md-6 col-12 px-5'>
+          <div className='col-md-6 col-12 px-md-5 mx-md-0 my-3'>
             <div className='rounded border border-secondary' style={{ color: "#696969", padding: "30px" }}>
               <h1 className='text-center' style={{ fontSize: "30px", color: "#0d2366" }}>2.<u>Explainer Video</u></h1>
               <p>
@@ -146,8 +147,8 @@ export default function VideoCreation() {
         </div>
       </div>
       {/* Why Choose Us for Video Creation? */}
-      <div className='container-fluid py-4 d-flex align-items-center' style={{ backgroundColor: "#0d2366", height: "650px" }}>
-        <div className="row px-md-5 mx-md-5 m-0">
+      <div className='container-fluid py-5 d-flex align-items-center' style={{ backgroundColor: "#0d2366"}}>
+        <div className="row px-md-5 m-md-5 m-0">
           <h3 className='text-start m-3 ml-2 h1' style={{ color: "White", fontWeight: "700" }}> Why Choose Us for Video Creation?</h3>
           <div className='my-2 mx-4' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
           <div className='d-flex flex-wrap '>
@@ -185,7 +186,7 @@ export default function VideoCreation() {
       </div>
 
       <div className='text-center my-5'>
-        <button style={buttonstyle}> GET A QUOTE <i aria-hidden="true" class="fas fa-arrow-alt-circle-right"></i></button>
+        <NavLink to="/contact"><button style={buttonstyle}> GET A QUOTE <i aria-hidden="true" class="fas fa-arrow-alt-circle-right"></i></button></NavLink>
       </div>
 
     </>

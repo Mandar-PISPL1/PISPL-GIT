@@ -27,6 +27,9 @@ import { BsSkype } from "react-icons/bs";
 import '../App.css';
 
 export default function Footer() {
+    const whiteStyle={
+        color:"white"
+    }
     return (
         <>              
             <SimpleForm />
@@ -72,7 +75,7 @@ export default function Footer() {
                 <div className='container-fluid pt-5 pb-2'>
                     <div className='row px-3'>
                         <div className='footer-col' style={{width:"20%"}}>
-                            <h2>Quick Links</h2>
+                            <h2 style={whiteStyle}>Quick Links</h2>
                             <ul className='p-0'>
                                 <li><NavLink to="/"><FaHome/> Home</NavLink></li>
                                 <li><NavLink to="/about"><BsInfoCircleFill/> About</NavLink></li>
@@ -83,7 +86,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className='footer-col' style={{width:"20%"}}>
-                            <h2>Services</h2>
+                            <h2 style={whiteStyle}>Services</h2>
                             <ul className='p-0'>
                                 <li><NavLink to="/translation#top"><BiFontColor/> Translation</NavLink></li>
                                 <li><NavLink to="/transcription"><BsHeadphones/> Transcription</NavLink></li>
@@ -99,7 +102,7 @@ export default function Footer() {
                         </div>
 
                         <div className='footer-col' style={{width:"25%"}}>
-                            <h2>Contact Details</h2>
+                            <h2 style={whiteStyle}>Contact Details</h2>
 
                             <p>316, Gemstar Commercial
                                 Complex,<br />
@@ -116,7 +119,7 @@ export default function Footer() {
 
                         </div>
                         <div className='footer-col' style={{width:"35%"}}>
-                            <h2>Map</h2>
+                            <h2 style={whiteStyle}>Map</h2>
                             <div className='map'>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d471.0161570555002!2d72.838855!3d19.189556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x832a1bf6767b8c34!2sParikh%20Info%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sus!4v1673971330090!5m2!1sen!2sus" title="Google Map" width="340" height="300" style={{ border: "0",width:"100%" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" data-lf-form-tracking-inspected-dzlr5a5ogex7boq2="true" data-lf-yt-playback-inspected-dzlr5a5ogex7boq2="true" data-lf-vimeo-playback-inspected-dzlr5a5ogex7boq2="true"></iframe>
                             </div>

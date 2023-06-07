@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
-import { BsWhatsapp,BsFacebook,BsLinkedin } from "react-icons/bs";
+import { BsWhatsapp, BsFacebook, BsLinkedin } from "react-icons/bs";
 // import Lottie from "lottie-react";
 // import Email from './Email.json'
 export default function BlogContent({ blogs }) {
@@ -15,15 +15,15 @@ export default function BlogContent({ blogs }) {
         border: "1px",
         padding: "3px 22px"
     }
-    const iconStyle={
-        backgroundColor:"#49dab5",
-        color:"white",
-        fontSize:"35px",
-        padding:"5px 0px",
-        width:"47px",
-        height:"34px",
-        borderRadius:"15px",
-        margin:"7px 0px",
+    const iconStyle = {
+        backgroundColor: "#49dab5",
+        color: "white",
+        fontSize: "35px",
+        padding: "5px 0px",
+        width: "47px",
+        height: "34px",
+        borderRadius: "15px",
+        margin: "7px 0px",
     }
 
     const { id } = useParams()
@@ -53,51 +53,51 @@ export default function BlogContent({ blogs }) {
                             <div><span className='mr-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="far fa-user-circle"></i></span>{blog.attributes.authorName}</span>
                                 <span className='mx-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="fas fa-calendar"></i></span>May 31, 2023</span>
                             </div>
-                            <div><button style={{backgroundColor:"#0d2366",color:"#49dab5",border:"2px solid #49dab5",padding:"3px 32px"}}>category</button></div>
+                            <div><button style={{ backgroundColor: "#0d2366", color: "#49dab5", border: "2px solid #49dab5", padding: "3px 32px" }}>category</button></div>
 
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
-            
+
 
             <div className='container-fluid py-5'>
                 <div className='row'>
-                    <div className='col-md-2 col-12 border border-primary d-flex justify-content-center'>
-                    <div  style={{ width: "15%",display:"flex",alignItems:"center" ,flexDirection:"column"}}>
-                    <p style={{color:"#0d2366"}}>share</p>
-                    <div><BsWhatsapp style={iconStyle}/></div>
-                    <div><BsFacebook style={iconStyle}/></div>
-                    <div><BsLinkedin style={iconStyle}/></div>
-                </div>
+                    <div className='col-md-2 col-12 d-flex justify-content-center'>
+                        <div style={{ width: "15%", display: "flex", alignItems: "center", flexDirection: "column" }}>
+                            <p style={{ color: "#0d2366" }}>share</p>
+                            <div><BsWhatsapp style={iconStyle} /></div>
+                            <div><BsFacebook style={iconStyle} /></div>
+                            <div><BsLinkedin style={iconStyle} /></div>
+                        </div>
                     </div>
                     <div className='col-md-7 col-12'>
-                    <div className='featured-image text-center' >
-                        <img src={`http://localhost:1337${blog.attributes.featuredImage.data.attributes.url}`} alt="" style={{ height: "372px", width: "711px" }} />
-                    </div>
-                    <div>
+                        <div className='featured-image text-center' >
+                            <img src={`http://localhost:1337${blog.attributes.featuredImage.data.attributes.url}`} alt="" style={{ height: "372px", width: "711px" }} />
+                        </div>
+                        <div>
 
 
-                    </div>
-                    <div>
-                        <ReactMarkdown className='line-break blog-content' >{blog.attributes.blogContent}</ReactMarkdown>
-                    </div>
+                        </div>
+                        <div id='blog-page-contain'>
+                            <ReactMarkdown className='line-break blog-content' >{blog.attributes.blogContent}</ReactMarkdown>
+                        </div>
                     </div>
                     <div className='col-md-3 col-12'>
-                    <div className='text-center px-2 py-3 my-5' style={{ backgroundColor: "#f6f6f6", display: "flex", flexDirection: "column" }}>
-                        <h2>Get Update On Every Blog </h2>
-                        <div style={{ display: "flex", justifyContent: "center" }}>
+                        <div className='text-center px-2 py-3 my-5' style={{ backgroundColor: "#f6f6f6", display: "flex", flexDirection: "column" }}>
+                            <h2>Get Update On Every Blog </h2>
+                            <div style={{ display: "flex", justifyContent: "center" }}>
 
-                            
+
+                            </div>
+                            <input type="text" placeholder='YOUR EMAIL' style={{ padding: "6px 11px", margin: "12px auto" }} />
+                            <button style={{ fontSize: "27px", padding: "7px 0px", width: "230px", margin: "6px auto" }}>Subscribe</button>
+
                         </div>
-                        <input type="text" placeholder='YOUR EMAIL' style={{ padding: "6px 11px", margin: "12px auto" }} />
-                        <button style={{ fontSize: "27px", padding: "7px 0px", width: "230px", margin: "6px auto" }}>Subscribe</button>
+                    </div>
 
-                    </div>
-                    </div>
-                    
 
                 </div>
 

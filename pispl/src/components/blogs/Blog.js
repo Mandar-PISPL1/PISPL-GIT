@@ -11,8 +11,6 @@ export default function Blog({ blogs }) {
     backgroundColor: "#49dab5",
     fontSize: "20px",
     width: "12rem",
-    // height: "3rem",
-    // borderRadius: "5px",
     border: "1px",
     padding:"3px 22px"
 }
@@ -43,7 +41,7 @@ export default function Blog({ blogs }) {
           {
             blogs.data.map((blog) => {
               return (
-                <div className='col-md-6 col-12 d-flex justify-content-center ' >
+                <div className='col-md-6 col-12 d-flex justify-content-center my-md-0 my-3' >
                   <div className='p-2 rounded' style={{boxShadow:"0px 0px 10px -1px rgba(0,0,0,0.5)"}}>
                   <Link to={`/blog/${blog.id}`}>
 
