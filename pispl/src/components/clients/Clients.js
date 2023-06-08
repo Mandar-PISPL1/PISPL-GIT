@@ -60,6 +60,7 @@ export default function Clients() {
     autoplay:true,
 }
   useEffect(() => {
+    document.title="Our Esteemed Clients | Parikh Info Solutions"
     window.scrollTo(0, 0);
   }, []);
   return (

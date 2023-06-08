@@ -9,6 +9,7 @@ import img4 from '../assets/A-to-AA.jpg'
 
 export default function AboutUs() {
   useEffect(() => {
+    document.title="About | parikh Info Solutions"
     window.scrollTo(0, 0);
   }, []);
   return (

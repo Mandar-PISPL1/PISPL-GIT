@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import './App.css';
 import Translation from './components/Services/translation/Translation';
 import Transcription from './components/Services/transcription/Transcription';
-import { HashRouter , Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React from 'react';
 import Localization from './components/Services/localization/Localization';
 import VoiceOver from './components/Services/voice_over/VoiceOver';
@@ -41,7 +41,7 @@ function App() {
 
         <Navbar />
         <Routes>
-          <Route path='/' element={<Dubbing/>} />
+          <Route path='/' element={<Home/>} />
           <Route path='/translation' element={<Translation/>}/>
           <Route path='/transcription' element={<Transcription/>}/>
           <Route path='/localization' element={<Localization/>}/>

@@ -12,6 +12,7 @@ import FAQ from '../../translation/FAQ'
 
 export default function Transcription() {
   useEffect(() => {
+    document.title='Best Transcription Services In India | Medical, Audio & Video Transcription'
     window.scrollTo(0, 0);
   }, []);
   const mystyle = {
@@ -132,7 +133,7 @@ export default function Transcription() {
         <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for professional translation services company? <NavLink to="/translation" style={{color:"#0d2366"}}><u>Read More.</u></NavLink></p>
       </div>
 
-      <div className='container p-5'>
+      <div className='container p-md-5'>
         <h4 className='text-center h1 fw-bold mb-4' style={{ color: "#0D2366" }}>Frequently Asked Questions:</h4>
         <div className='row justify-content-center'>
           <div className="accordion col-md-10 col-12" id="accordionExample">

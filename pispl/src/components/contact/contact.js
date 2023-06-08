@@ -7,6 +7,7 @@ import ReactForm from '../form/ReactForm'
 import Form from '../form/Form'
 export default function Contact() {
   useEffect(() => {
+    document.title="Contact Information | Parikh Info Solutions"
     window.scrollTo(0, 0);
   }, []);
   return (

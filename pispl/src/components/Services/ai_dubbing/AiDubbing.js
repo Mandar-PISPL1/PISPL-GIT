@@ -16,6 +16,7 @@ import img5 from '../../assets/Latest-Technology.png'
 export default function AiDubbing() {
   const link = 'https://parikhinfosolutions.com/wp-content/uploads/2022/09/AI-Dubbing-Services-Background.png';
   useEffect(() => {
+    document.title="Best AI Dubbing With Human-Like Voice In India"
     window.scrollTo(0, 0);
   }, []);
 

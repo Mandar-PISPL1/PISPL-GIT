@@ -20,6 +20,7 @@ import Benefits2 from '../voice_over/Benefits2'
 
 export default function () {
   useEffect(() => {
+    document.title='Video Remote Interpreting Services In India | Video Remote Interpretation'
     window.scrollTo(0, 0);
   }, []);
   return (
@@ -240,7 +241,7 @@ export default function () {
 
       />
 
-      <div className='container p-5'>
+      <div className='container p-md-5'>
         <h4 className='text-center h1 fw-bold mb-4' style={{ color: "#0D2366" }}>Frequently Asked Questions:</h4>
         <div className='row justify-content-center'>
           <div class="accordion col-md-10 col-12" id="accordionExample">

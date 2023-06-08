@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 
 
 export default function Blog({ blogs }) {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    document.title="PISPL Blog | Parikh Info Solutions"
+    window.scrollTo(0, 0);
+  }, []);
   const buttonstyle = {
     color: "#0d2366",
     backgroundColor: "#49dab5",

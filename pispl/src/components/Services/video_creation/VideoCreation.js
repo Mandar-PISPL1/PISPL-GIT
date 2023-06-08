@@ -24,9 +24,10 @@ export default function VideoCreation() {
     display: " block",
     
 }
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    document.title='Video Creation Services In India | Explainer Video & Whiteboard Animation Video Creation'
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Banner index={9} b={myimage} flag={true} breadCrumb={true}/>

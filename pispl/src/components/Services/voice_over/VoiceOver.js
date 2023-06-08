@@ -18,6 +18,7 @@ import FAQ from '../../translation/FAQ'
 export default function VoiceOver() {
 
   useEffect(() => {
+    document.title='Professional Voice Over Services In India | Voice Over For Youtube Videos'
     window.scrollTo(0, 0);
   }, []);
 
@@ -180,7 +181,7 @@ export default function VoiceOver() {
         <p className='text-white text-center my-0 py-3 fs-6'>Are you looking for interpretation services? <NavLink to="/interpretation">Read More.</NavLink></p>
       </div>
 
-      <div className='container p-5'>
+      <div className='container p-md-5'>
             <h4 className='text-center h1 fw-bold mb-4' style={{color: "#0D2366"}}>Frequently Asked Questions:</h4>
             <div className='row justify-content-center'>
             <div class="accordion col-md-10 col-12" id="accordionExample">

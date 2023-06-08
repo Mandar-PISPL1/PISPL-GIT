@@ -38,7 +38,7 @@ export default function Navbar() {
                                         <NavLink to="/transcription" onClick={handleDropdownClick}>Transcription Services</NavLink>
                                     </li>
                                     <li className="dropdown-link" >
-                                        <NavLink to="/#/localization" onClick={handleDropdownClick}>Localization Services</NavLink>
+                                        <NavLink to="/localization" onClick={handleDropdownClick}>Localization Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
                                         <NavLink to="/voice-over" onClick={handleDropdownClick}>Voice over Services</NavLink>

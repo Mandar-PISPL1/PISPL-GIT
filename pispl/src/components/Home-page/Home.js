@@ -29,6 +29,7 @@ import img9 from '../assets/video-creation-service.png'
 // import banner_image from "./Translation-Services-Main.png"
 export default function Home() {
   useEffect(() => {
+    document.title='Best Language Service Providers In India | Translation & Localization'
     window.scrollTo(0, 0);
   }, []);
 

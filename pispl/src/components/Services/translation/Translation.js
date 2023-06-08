@@ -16,6 +16,7 @@ import FAQ from '../../translation/FAQ'
 
 export default function Translation() {
   useEffect(() => {
+    document.title = 'Professional Translation Services In India | Language Translation Services'
     window.scrollTo(0, 0);
   }, []);
   // import '../../App.css'
@@ -30,7 +31,7 @@ export default function Translation() {
 
   return (
     <>
-      <Banner index={0} lottie={translation_service} breadCrumb={true}/>
+      <Banner index={0} lottie={translation_service} breadCrumb={true} />
       <div className='myskew'></div>
       {/* Content */}
       <div className='container py-4 mx-md-2'>
@@ -65,9 +66,9 @@ export default function Translation() {
         <div className='container-fluid'>
           <div className='mb-5' style={mystyle}>
             {
-              brands.map((element,id) => {
+              brands.map((element, id) => {
                 return (
-                  <TopBrandSection sour={element.link} id={id}/>
+                  <TopBrandSection sour={element.link} id={id} />
                 )
               })
             }
@@ -80,13 +81,13 @@ export default function Translation() {
       <div className='container'>
         <div className='d-flex flex-column justify-content-center px-md-5 mx-md-5 m-0'>
           <h1 className='text-center m-3' style={{ color: "#0d2366", fontWeight: "700" }}>What translation services do we provide?</h1>
-          <div className='my-4' style={{ width: "60px", backgroundColor: "#49dab5", height: "5px",margin:'0 auto'}}></div>
+          <div className='my-4' style={{ width: "60px", backgroundColor: "#49dab5", height: "5px", margin: '0 auto' }}></div>
           <p className='text-center normal-text'>We understand the need for translation for all the businesses hence, without confining it to any specific business requirement or industry, we provide full-fledged translation services to all the businesses across different industries.</p>
         </div>
         <div className='row px-md-5 mx-md-5 m-0'>
 
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
-          <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%",boxShadow:"0 0 10px 0 rgba(0,0,0,.5)" }}>
+            <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%", boxShadow: "0 0 10px 0 rgba(0,0,0,.5)" }}>
               <div className='text-center pb-3 '>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
               </div>
@@ -98,7 +99,7 @@ export default function Translation() {
           </div>
 
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
-          <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%",boxShadow:"0 0 10px 0 rgba(0,0,0,.5)" }}>
+            <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%", boxShadow: "0 0 10px 0 rgba(0,0,0,.5)" }}>
               <div className='text-center pb-3'>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
               </div>
@@ -111,7 +112,7 @@ export default function Translation() {
         <div className='row p-md-5 mx-md-5 m-0'>
 
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
-          <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%",boxShadow:"0 0 10px 0 rgba(0,0,0,.5)" }}>
+            <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%", boxShadow: "0 0 10px 0 rgba(0,0,0,.5)" }}>
               <div className='text-center pb-3'>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
               </div>
@@ -122,7 +123,7 @@ export default function Translation() {
           </div>
 
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
-            <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%",boxShadow:"0 0 10px 0 rgba(0,0,0,.5)" }}>
+            <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%", boxShadow: "0 0 10px 0 rgba(0,0,0,.5)" }}>
               <div className='text-center pb-3'>
                 <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
               </div>
@@ -147,7 +148,7 @@ export default function Translation() {
             <div className="accordion accordion-flush" id="accordionFlushExample">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingOne">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style={{fontWeight:"600",borderBottom:"1px solid #00dbb5"}}>
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style={{ fontWeight: "600", borderBottom: "1px solid #00dbb5" }}>
                     Increases your company's visibility
                   </button>
                 </h2>
@@ -157,7 +158,7 @@ export default function Translation() {
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header normal-text" id="flush-headingTwo">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style={{fontWeight:"600",borderBottom:"1px solid #00dbb5"}}>
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style={{ fontWeight: "600", borderBottom: "1px solid #00dbb5" }}>
                     Enhances communication with the audience
                   </button>
                 </h2>
@@ -167,7 +168,7 @@ export default function Translation() {
               </div>
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingThree">
-                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style={{fontWeight:"600",borderBottom:"1px solid #00dbb5"}}>
+                  <button className="accordion-button collapsed normal-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style={{ fontWeight: "600", borderBottom: "1px solid #00dbb5" }}>
                     Ensures a good reputation of your firm
                   </button>
                 </h2>
@@ -188,10 +189,10 @@ export default function Translation() {
         <h2 className='text-center m-3 heading-text' style={{ color: "#0d2366", fontWeight: "700" }} >Benefits of Our Translation Services</h2>
         <div className='row p-md-5 mx-md-5 m-0'>
           {
-            arr.map((element,id) => {
+            arr.map((element, id) => {
               return (
 
-                <Benefits img={element.img} title={element.title} content={element.content} id={id}/>
+                <Benefits img={element.img} title={element.title} content={element.content} id={id} />
 
               )
             })
@@ -204,17 +205,17 @@ export default function Translation() {
 
       {/*Language we offer  */}
 
-      <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(3deg,-3.9deg)",transformOrigin:"left top",position:"relative",backgroundColor:"#0d2366",top:"7rem"}}></div>
+      <div style={{ height: "7rem", width: "100%", zIndex: "-1", transform: "skew(3deg,-3.9deg)", transformOrigin: "left top", position: "relative", backgroundColor: "#0d2366", top: "7rem" }}></div>
 
-      <div className='container-fluid h1 d-flex justify-content-center align-items-center flex-column' style={{backgroundColor:'#0d2366',color:"white",height:"7rem"}}>
-      <div className='my-4' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
-          <h2 className='heading-text' style={{color:"white"}}>Languages We Offer</h2>
+      <div className='container-fluid h1 d-flex justify-content-center align-items-center flex-column' style={{ backgroundColor: '#0d2366', color: "white", height: "7rem" }}>
+        <div className='my-4' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
+        <h2 className='heading-text' style={{ color: "white" }}>Languages We Offer</h2>
       </div>
 
-      <div style={{height:"7rem",width:"100%",zIndex:"-1",transform:"skew(-3deg,3.9deg)",transformOrigin:"left bottom",position:"relative",backgroundColor:"#0d2366",top:"-7rem"}}></div>
-      
-      
-      
+      <div style={{ height: "7rem", width: "100%", zIndex: "-1", transform: "skew(-3deg,3.9deg)", transformOrigin: "left bottom", position: "relative", backgroundColor: "#0d2366", top: "-7rem" }}></div>
+
+
+
 
 
 
@@ -224,10 +225,10 @@ export default function Translation() {
         <p className='text-center m-3 normal-text'  >Speak Like a Local With your Audience!</p>
         <div className='row px-md-5 mx-md-5 m-0'>
           {
-            arr1.map((element,id) => {
+            arr1.map((element, id) => {
               return (
 
-                <Benefits img={element.img} title={element.title} content={element.content} id={id}/>
+                <Benefits img={element.img} title={element.title} content={element.content} id={id} />
 
               )
             })
@@ -243,8 +244,8 @@ export default function Translation() {
         <p className='text-center m-3 normal-text'  >We provide 100% Quality Assurance and a fast turnaround time through our human translation services in India and also all around the world.</p>
         <div>
           <div className='d-flex justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
-            <div style={{ color: "#49dab5",  padding: "0px 9px", maxWidth: "2rem" }}> <h1 style={{fontSize: "48px"}}>1</h1></div>
-            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
+            <div style={{ color: "#49dab5", padding: "0px 9px", maxWidth: "2rem" }}> <h1 style={{ fontSize: "48px" }}>1</h1></div>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", borderRadius: "8px" }}>
               <h1 style={{ fontSize: "35px" }}>Understanding Client Requirements:</h1>
               <p style={{ color: "white" }}>First, we as a translation services company understand your requirements and try to resolve your doubts. We try to understand what exactly you are looking for in the budget of your choice.</p>
             </div>
@@ -252,7 +253,7 @@ export default function Translation() {
           {/* #49dab5 */}
           <div className='d-flex justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
             <div style={{ color: "#0d2366", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>2</h1></div>
-            <div style={{ backgroundColor: "#0d2366", color: "#49dab5", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
+            <div style={{ backgroundColor: "#0d2366", color: "#49dab5", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", borderRadius: "8px" }}>
               <h1 style={{ fontSize: "35px" }}>Analysis and Preparation of the Source File:</h1>
               <p style={{ color: "white" }}>Then we analyze the source document. Based on that we send a price quote with a specific timeline for the translation project. Meanwhile, the project coordinator, with the help of local language experts creates a source file from the source document.</p>
             </div>
@@ -260,7 +261,7 @@ export default function Translation() {
 
           <div className='d-flex justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
             <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>3</h1></div>
-            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", maxWidth: "27rem", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", maxWidth: "27rem", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", borderRadius: "8px" }}>
               <h1 style={{ fontSize: "35px" }}>Allocation of Resources:</h1>
               <p style={{ color: "white" }}>After the creation of the source file, the project is assigned to the linguist (or a team of linguists) who has expertise on the subject as per the project requirement.</p>
             </div>
@@ -268,7 +269,7 @@ export default function Translation() {
 
           <div className='d-flex  justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
             <div style={{ color: "#0d2366", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>4</h1></div>
-            <div style={{ backgroundColor: "#0d2366", color: "#49dab5", maxWidth: "27rem", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
+            <div style={{ backgroundColor: "#0d2366", color: "#49dab5", maxWidth: "27rem", padding: "2rem 1rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", borderRadius: "8px" }}>
               <h1 style={{ fontSize: "35px" }}>Translation:</h1>
               <p style={{ color: "white" }}>The translation is done as per your specific requirement. We take care of style, tone, grammar, meaning, cultural nuances along with consistency with industry standards within our translated projects.</p>
             </div>
@@ -276,7 +277,7 @@ export default function Translation() {
 
           <div className='d-flex  justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
             <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>5</h1></div>
-            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)" ,borderRadius:"8px"}}>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", borderRadius: "8px" }}>
               <h1 style={{ fontSize: "35px" }}>Quality Check and Assurance:</h1>
               <p style={{ color: "white" }}>Quality supervisors proofread and check the translated document. We follow stringent quality check parameters to maintain superior quality in our translation services company.</p>
             </div>
@@ -284,7 +285,7 @@ export default function Translation() {
 
           <div className='d-flex  justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
             <div style={{ color: "#0d2366", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>6</h1></div>
-            <div style={{ backgroundColor: "#0d2366", color: "#49dab5", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
+            <div style={{ backgroundColor: "#0d2366", color: "#49dab5", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", borderRadius: "8px" }}>
               <h1 style={{ fontSize: "35px" }}>Delivery of the Project:</h1>
               <p style={{ color: "white" }}>After a thorough quality check, the translated document is sent to you for feedback and suggestions.</p>
             </div>
@@ -292,7 +293,7 @@ export default function Translation() {
 
           <div className='d-flex justify-content-between phone-width' style={{ maxWidth: "33rem", margin: "47px auto" }}>
             <div style={{ color: "#49dab5", fontSize: "48px", padding: "0px 9px", maxWidth: "2rem" }}> <h1>7</h1></div>
-            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)",borderRadius:"8px" }}>
+            <div style={{ backgroundColor: "#49dab5", color: "#0d2366", padding: "2rem 1rem", maxWidth: "27rem", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0,0.19)", borderRadius: "8px" }}>
               <h1 style={{ fontSize: "35px" }}>Post-Delivery Services:</h1>
               <p style={{ color: "white" }}>Parikh Info Solutions takes pride in its after delivery services. Any feedback and suggestions from your side are always welcomed. We implement them right away to prevent delays in your further plan of action.</p>
             </div>
@@ -314,23 +315,23 @@ export default function Translation() {
         <p className='text-white text-center my-0 py-3 fs-6'>Are You Looking For Transcription Services? <NavLink to="/transcription">Read More.</NavLink></p>
       </div>
 
-      <div className='container p-5'>
-            <h4 className='text-center h1 fw-bold mb-4' style={{color: "#0D2366"}}>Frequently Asked Questions:</h4>
-            <div className='row justify-content-center'>
-            <div class="accordion col-md-10 col-12" id="accordionExample">
+      <div className='container p-md-5'>
+        <h4 className='text-center h1 fw-bold mb-4' style={{ color: "#0D2366" }}>Frequently Asked Questions:</h4>
+        <div className='row justify-content-center'>
+          <div class="accordion col-md-10 col-12" id="accordionExample">
 
-        {
-          faqs.map((element,id) =>{
-            return (
-             
-              <FAQ que={element.que} no={element.no} ans={element.ans} id={id}/>
-              
-            )
-          })
-        }
+            {
+              faqs.map((element, id) => {
+                return (
+
+                  <FAQ que={element.que} no={element.no} ans={element.ans} id={id} />
+
+                )
+              })
+            }
+          </div>
         </div>
-            </div>
-        </div>
+      </div>
 
     </>
   )

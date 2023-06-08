@@ -17,6 +17,7 @@ import FAQ from "../../translation/FAQ";
 
 export default function Dubbing() {
   useEffect(() => {
+    document.title="Multilingual Dubbing Services In India | Professional Dubbing Company"
     window.scrollTo(0, 0);
   }, []);
   const mystyle = {
@@ -445,7 +446,7 @@ export default function Dubbing() {
         </p>
       </div>
 
-      <div className="container p-5">
+      <div className="container p-md-5">
         <h4
           className="text-center h1 fw-bold mb-4"
           style={{ color: "#0D2366" }}

@@ -19,6 +19,7 @@ import FAQ from '../../translation/FAQ'
 
 export default function Localization() {
   useEffect(() => {
+    document.title='Localization Services For Multilingual Websites | App Localization & Software Localization'
     window.scrollTo(0, 0);
   }, []);
   const mystyle = {
@@ -112,7 +113,7 @@ export default function Localization() {
       <div id="localization-types" className="container py-4 mx-md-4">
         <div className="row px-md-5 mx-md-5 m-0">
           <h3 className='text-center m-3 ml-2 h1 mb-5' style={{ color: "#0d2366", fontWeight: "700" }}>We Provide Following Localization Services</h3>
-          <ul className="nav nav-pills " id="pills-tab" role="tablist">
+          <ul className="nav nav-pills phoneFlex" id="pills-tab" role="tablist">
             <li className="nav-item" role="presentation">
               <button className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" ><b>Web Localization</b></button>
             </li>
@@ -123,7 +124,7 @@ export default function Localization() {
               <button className="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" ><b>Software Localization</b></button>
             </li>
           </ul>
-          <div className="tab-content p-0" id="pills-tabContent">
+          <div className="tab-content p-0 my-md-0 my-3" id="pills-tabContent">
             <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" style={{ color: "white", backgroundColor: "#0d3266" }}>
               <div className='text-center'>
                 <img src={img2} alt="" className='mt-5' />
@@ -194,7 +195,7 @@ export default function Localization() {
       </div>
 
 
-      <div className='container p-5'>
+      <div className='container p-md-5'>
         <h4 className='text-center h1 fw-bold mb-4' style={{ color: "#0D2366" }}>Frequently Asked Questions:</h4>
         <div className='row justify-content-center'>
           <div class="accordion col-md-10 col-12" id="accordionExample">

@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 export default function ContentWriting() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title="Best SEO Friendly Content Writing Services In India | High Quality Content"
   }, []);
 
   const buttonstyle = {

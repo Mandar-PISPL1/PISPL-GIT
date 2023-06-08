@@ -1,9 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Counter from '../Incre-Counter/Counter'
 import UspSection from '../translation/UspSection'
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { NavLink } from 'react-router-dom';
 export default function JoinNow() {
+  useEffect(() => {
+    document.title="Join Us | Parikh Info Solutions"
+    window.scrollTo(0, 0);
+  }, []);
   const buttonstyle={
     color:"#0d2366",
     backgroundColor:"#49dab5",
