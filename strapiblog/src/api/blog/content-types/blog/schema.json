@@ -35,11 +35,15 @@
     "authorName": {
       "type": "string"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "mappedBy": "blogs"
+    "CategoryName": {
+      "type": "string"
+    },
+    "videoURL": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

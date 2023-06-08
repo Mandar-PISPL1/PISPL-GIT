@@ -1,5 +1,4 @@
 {
-  "kind": "collectionType",
   "collectionName": "categories",
   "info": {
     "singularName": "category",
@@ -14,12 +13,7 @@
   "attributes": {
     "Categoryname": {
       "type": "string"
-    },
-    "blogs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::blog.blog",
-      "inversedBy": "categories"
     }
-  }
+  },
+  "kind": "collectionType"
 }

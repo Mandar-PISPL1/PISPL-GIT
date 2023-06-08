@@ -50,8 +50,8 @@ export default function Blog({ blogs }) {
                       <img src={`http://localhost:1337${blog.attributes.featuredImage.data.attributes.url}`} className="card-img-top" alt="..." />
                       <div className="card-body px-0" >
                         <h2 style={{fontWeight:"600",fontSize:"20px",color:"#0d2366",padding:"0px 0px"}}>{blog.attributes.blogTitle}</h2>
-                        <p style={{color:"#49dab5",fontSize:"13px"}}>Rashi Kapoor | May 31, 2023 | No Comments</p>
-                        <p style={{fontSize:"16px"}}>Table of Contents Introduction Over the years, the gaming industry has witnessed exponential growth, and</p>
+                        <p style={{color:"#49dab5",fontSize:"13px"}}>{blog.attributes.authorName} | May 31, 2023 | No Comments</p>
+                        <p style={{fontSize:"16px"}}>{blog.attributes.blogDesc}</p>
                       </div>
 
                     </div>
