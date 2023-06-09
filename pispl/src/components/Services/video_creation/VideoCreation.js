@@ -74,7 +74,7 @@ export default function VideoCreation() {
               <p>One of the most popular types of videos, whiteboard video is used to make complex topics understandable in creative way -just like how your teacher used to explain in school with a chalk and board. We can deliver a high-quality whiteboard video of 1-4 minutes with effective animation, visuals, creative content, and an appropriate voice-over that will deliver the right message and captivate your audience.</p>
             </div>
           </div>
-          <div className='col-md-6 col-12 px-md-5 mx-md-0 my-3'>
+          <div className='col-md-6 col-12 px-md-5 mx-md-0 mb-3'>
             <div className='rounded border border-secondary' style={{ color: "#696969", padding: "30px" }}>
               <h1 className='text-center' style={{ fontSize: "30px", color: "#0d2366" }}>2.<u>Explainer Video</u></h1>
               <p>

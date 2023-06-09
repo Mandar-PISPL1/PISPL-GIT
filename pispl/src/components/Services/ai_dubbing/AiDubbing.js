@@ -119,27 +119,51 @@ export default function AiDubbing() {
       <div>
       <h3 className='text-center m-3 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Why Choose Us?</h3>
       </div>
-      <div style={{ backgroundImage: `url(${link})`,backgroundPosition:"center top",backgroundRepeat:"no-repeat", height: "650px" }} className='container-fluid py-4'>
+      <div style={{ backgroundImage: `url(${link})`,backgroundPosition:"center top",backgroundRepeat:"no-repeat",height:"650px"}} className='container-fluid py-4'>
         <div className='row  mx-md-5 m-0'>
           <div className='d-flex flex-wrap justify-content-around' >
-            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%",height:"100vh" }}>
-              <img className="dPhoneview" src={img1} style={{position:"relative",top:"181px"}}></img>
+            <div className='col-md-2 col-12'>
+              <img className=" Ai-dub-phone" src={img1} style={{position:"relative",top:"181px"}}></img>
             </div>
-            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%",height:"100vh" }}>
-              <img className="dPhoneview" src={img2} style={{position:"relative",top:"124px"}}></img>
+            <div className='col-md-2 col-12'>
+              <img className="Ai-dub-phone " src={img2} style={{position:"relative",top:"124px"}}></img>
             </div>
-            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%",height:"100vh" }}>
-              <img className="dPhoneview" src={img3} style={{position:"relative",top:"181px"}}></img>
+            <div className='col-md-2 col-12'>
+              <img className="Ai-dub-phone " src={img3} style={{position:"relative",top:"181px"}}></img>
             </div>
-            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%",height:"100vh" }}>
-              <img className="dPhoneview" src={img4} style={{position:"relative",top:"124px"}}></img>
+            <div className='col-md-2 col-12'>
+              <img className=" Ai-dub-phone" src={img4} style={{position:"relative",top:"124px"}}></img>
             </div>
-            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%",height:"100vh" }}>
-              <img className="dPhoneview" src={img5} style={{position:"relative",top:"181px"}}></img>
+            <div className='col-md-2 col-12 '>
+              <img className="Ai-dub-phone " src={img5} style={{position:"relative",top:"181px"}}></img>
             </div>
           </div>
         </div>
       </div>
+      {/* <div>
+      <h3 className='text-center m-3 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Why Choose Us?</h3>
+      </div>
+      <div style={{ backgroundImage: `url(${link})`,backgroundPosition:"center top",backgroundRepeat:"no-repeat",height:"650px"}} className='container-fluid py-4'>
+        <div className='row  mx-md-5 m-0'>
+          <div className='d-flex flex-wrap justify-content-around' >
+            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%" }}>
+              <img className=" " src={img1} style={{position:"relative",top:"181px"}}></img>
+            </div>
+            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%" }}>
+              <img className=" " src={img2} style={{position:"relative",top:"124px"}}></img>
+            </div>
+            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%" }}>
+              <img className=" " src={img3} style={{position:"relative",top:"181px"}}></img>
+            </div>
+            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%" }}>
+              <img className=" " src={img4} style={{position:"relative",top:"124px"}}></img>
+            </div>
+            <div className=' mx-md-2 myphone d-flex flex-column' style={{ width: "17%" }}>
+              <img className=" " src={img5} style={{position:"relative",top:"181px"}}></img>
+            </div>
+          </div>
+        </div>
+      </div> */}
 
 
       {/* Industries We Cover */}

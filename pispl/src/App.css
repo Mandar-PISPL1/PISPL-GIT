@@ -548,6 +548,7 @@ section{
     }
 }
 @media(max-width: 575px){
+
     .phoneFlex{
         flex-direction: column ;
     }
@@ -564,8 +565,8 @@ section{
     .width100{
         width: 100% !important;
     }
-    .dPhoneview{
-        top:"0px"
+    .Ai-dub-phone{
+       position: static;
     }
     .myphonewidth{
         width: 80% !important;
