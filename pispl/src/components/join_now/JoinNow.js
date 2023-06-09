@@ -27,7 +27,7 @@ export default function JoinNow() {
           <h1 className='fw-bold text-center' style={{fontSize:"45px"}}>Join Our Team</h1>
           <div className='my-4 ' style={{width:"40px",backgroundColor:"#49dab5",height:"5px"}}></div>
           <div className='d-sm-flex' style={{ textAlign: 'center' }}>
-            <NavLink to='/career-opportunities'><button style={buttonstyle}>career&apos;s <HiArrowNarrowRight /></button></NavLink>
+            <NavLink to='/career-opportunities'><button style={buttonstyle}>Careers <HiArrowNarrowRight /></button></NavLink>
             <NavLink to='/freelancer'><button style={buttonstyle}>Work As a Freelancer <HiArrowNarrowRight /></button></NavLink>
           </div>
           
