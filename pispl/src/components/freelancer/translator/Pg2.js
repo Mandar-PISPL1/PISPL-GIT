@@ -16,7 +16,7 @@ export default function Pg2() {
           <div className="row my-2">
             <div className="col-12">
             <label for="exampleFormControlSelect1" className="pb-2 normal-text">Qualification <span style={{color: "red"}}>*</span></label>
-            <select class="form-select form-select-lg" id="exampleFormControlSelect1">
+            <select class="form-select form-select-lg" id="exampleFormControlSelect1" name="Qualification">
               <option>Under Graduate</option>
               <option>Graduate</option>
               <option>Post Graduate</option>
@@ -28,7 +28,7 @@ export default function Pg2() {
           <div className="row my-2">
             <div className="col-12">
               <label for="exampleFormControlSelect1" className="pb-2 normal-text">Stream <span style={{color: "red"}}>*</span></label>
-              <select class="form-select form-select-lg" id="exampleFormControlSelect1">
+              <select class="form-select form-select-lg" id="exampleFormControlSelect1" name='Stream'>
                 <option value="Science">Science</option>
                 <option value="Commerce">Commerce</option>
                 <option value="Arts">Arts</option>

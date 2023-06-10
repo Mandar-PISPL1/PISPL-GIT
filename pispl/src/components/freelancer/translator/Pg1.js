@@ -16,31 +16,31 @@ export default function Pg1() {
             <div className="row my-2">
                 <div className="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">First Name</label>
-                    <input type="text" name='first_name' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" name='Firstname' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
                 <div class="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Last Name</label>
-                    <input type="text" name='last_name' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" name='Lastname' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
             </div>
             <div className="row my-2">
                 <div className="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Country Code</label>
-                    <input type="text" name='country_code' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" name='Countrycode' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
                 <div class="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Phone Number</label>
-                    <input type="text" name='phone_number' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" name='Phonenumber' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
             </div>
             <div className="row my-2">
                 <div className="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Primary Email</label>
-                    <input type="text" name='primary_email' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" name='Primaryemail' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
                 <div class="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Alternative Email (Optional)</label>
-                    <input type="text" name='alternative_email' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+                    <input type="text" name='AlternativeEmail' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
                 </div>
             </div>
             <div className="my-2">
@@ -51,19 +51,19 @@ export default function Pg1() {
                 <label for="inputEmail4" className="pb-2 normal-text">Select Gender</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Male" />
+                <input class="form-check-input" type="radio" name="Gender" id="exampleRadios1" value="Male" />
                 <label class="form-check-label" for="exampleRadios1">
                     Male
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Female" />
+                <input class="form-check-input" type="radio" name="Gender" id="exampleRadios2" value="Female" />
                 <label class="form-check-label" for="exampleRadios2" >
                     Female
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Other" />
+                <input class="form-check-input" type="radio" name="Gender" id="exampleRadios3" value="Other" />
                 <label class="form-check-label" for="exampleRadios3">
                     Other
                 </label>

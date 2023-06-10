@@ -5,7 +5,7 @@ export default function Pg3() {
         <>
             <div className="my-2">
                 <label for="inputEmail4" className="pb-2 normal-text">Native Language </label>
-                <select class="form-select form-select-lg" id="exampleFormControlSelect1">
+                <select class="form-select form-select-lg" id="exampleFormControlSelect1" name='Native_Language'>
                     <option>Under Graduate</option>
                     <option>Graduate</option>
                     <option>Post Graduate</option>
@@ -16,7 +16,7 @@ export default function Pg3() {
                 <div className="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Other Language 1
                     </label>
-                    <select class="form-select form-select-lg" id="exampleFormControlSelect1">
+                    <select class="form-select form-select-lg" id="exampleFormControlSelect1" name='Other_language_1'>
                         <option>select Language 1</option>
                         <option>Graduate</option>
                         <option>Post Graduate</option>
@@ -26,7 +26,7 @@ export default function Pg3() {
                 <div class="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Other Language 2
                     </label>
-                    <select class="form-select form-select-lg" id="exampleFormControlSelect1">
+                    <select class="form-select form-select-lg" id="exampleFormControlSelect1" name='Other_language_2'>
                         <option>select Language 2</option>
                         <option>Graduate</option>
                         <option>Post Graduate</option>
@@ -36,7 +36,7 @@ export default function Pg3() {
                 <div className="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Other Language 3
                     </label>
-                    <select class="form-select form-select-lg" id="exampleFormControlSelect1">
+                    <select class="form-select form-select-lg" id="exampleFormControlSelect1" name='Other_language_3'>
                         <option>select Language 3</option>
                         <option>Graduate</option>
                         <option>Post Graduate</option>
@@ -46,7 +46,7 @@ export default function Pg3() {
                 <div class="col-md-6 col-12">
                     <label for="inputEmail4" className="pb-2 normal-text">Other Language 4
                     </label>
-                    <select class="form-select form-select-lg" id="exampleFormControlSelect1">
+                    <select class="form-select form-select-lg" id="exampleFormControlSelect1" name='Other_language_4'>
                         <option>select Language 4</option>
                         <option>Graduate</option>
                         <option>Post Graduate</option>
