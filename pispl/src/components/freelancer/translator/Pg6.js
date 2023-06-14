@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Pg6() {
+export default function Pg6({formValue,handleInputChange}) {
     return (
         <>
             <div className="my-0">
@@ -22,13 +22,13 @@ export default function Pg6() {
                 <label for="inputEmail4" className="pb-2 normal-text">Do you work on weekends?</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="Work_on_weekend" id="exampleRadios1" value="Male" />
+                <input class="form-check-input" type="radio" name="Work_on_weekend" id="exampleRadios1" value="Yes" />
                 <label class="form-check-label" for="exampleRadios1">
                     Yes
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="Work_on_weekend" id="exampleRadios2" value="Female" />
+                <input class="form-check-input" type="radio" name="Work_on_weekend" id="exampleRadios2" value="No" />
                 <label class="form-check-label" for="exampleRadios2" >
                     No
                 </label>

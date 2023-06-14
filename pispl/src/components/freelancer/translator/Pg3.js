@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Pg3() {
+export default function Pg3({formValue,handleInputChange}) {
     return (
         <>
             <div className="my-2">

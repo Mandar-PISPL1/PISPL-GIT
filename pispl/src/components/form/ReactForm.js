@@ -15,6 +15,7 @@ const ReactForm = () => {
 
     function Submit(e) {
         const formEle = document.querySelector("form");
+        console.log(formEle);
         const formDatab = new FormData(formEle);
         fetch(
           "https://script.google.com/macros/s/AKfycbz-LLEju4bWDtOjhK-UnnQ2B09SfzmrhIc1gfs3sQvCol6VfkVno1T8O5XSsB35k0NkwA/exec",
