@@ -29,11 +29,11 @@ import useFetch from './hooks/useFetch';
 import BlogContent from './components/blogcontent/BlogContent'
 
 function App() {
-  let {loading,data,error} =useFetch('http://localhost:1337/api/blogs?populate=*')
-  if(loading) return<p>loading....</p>
-  if(error) return <p>Error..</p>
-  console.log('================================')
-  console.log(data)
+  // let {loading,data,error} =useFetch('http://localhost:1337/api/blogs?populate=*')
+  // if(loading) return<p>loading....</p>
+  // if(error) return <p>Error..</p>
+  // console.log('================================')
+  // console.log(data)
 
   return (
     <>
@@ -55,8 +55,8 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/clients' element={<Clients/>}/>
-          <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
-          <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>} />
+          {/* <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
+          <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>} /> */}
           <Route path='/join-now' element={<JoinNow />} />
           <Route path='/freelancer' element={<FreeLancer />} />
           <Route path='/career-opportunities' element={<CareerPage />} />

@@ -1,6 +1,29 @@
 import React from 'react'
 import pdfFile from '../assets/Parikh-Info-Solutions.pdf'
 export default function BrochurePopup() {
+    // https://script.google.com/macros/s/AKfycbyr7ua73kI2xPsfsjzfNj8YFUHSXuFBt0Zkzmc5Y-TDWgJVWKY3qL4D8jxNvBiJkGFQ/exec
+    
+    function Submit(e) {
+        const formEle = document.querySelector("form");
+        console.log(formEle);
+        const formDatab = new FormData(formEle);
+        fetch(
+          "https://script.google.com/macros/s/AKfycbyr7ua73kI2xPsfsjzfNj8YFUHSXuFBt0Zkzmc5Y-TDWgJVWKY3qL4D8jxNvBiJkGFQ/exec",
+    
+          {
+            method: "POST",
+            body: formDatab
+          }
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+
     const openPDFInNewTab =()=>{
        
         const pdfPath = process.env.PUBLIC_URL + pdfFile;
@@ -23,6 +46,7 @@ export default function BrochurePopup() {
     }
   return (
     <>
+    <form className="form" onSubmit={(e) => Submit(e)}>
         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content"  style={{backgroundColor:"#49dab5"}}>
@@ -32,17 +56,18 @@ export default function BrochurePopup() {
                         </div>
                         <div className="modal-body px-4" >
                             <p className='mb-1'>Email Address </p>
-                            <input style={inputStyle}></input>
+                            <input style={inputStyle} name="Email" type='email'></input>
                             <p className='mb-1 mt-3'>Phone Number</p>
-                            <input style={inputStyle}></input>
+                            <input style={inputStyle} name="Phonenumber" type='text'></input>
                         </div>
                         <div className="modal-footer d-flex justify-content-center"style={{border:"0px"}}>
                             
-                            <button onClick={openPDFInNewTab} style={buttonstyle} type="button" className="btn btn-primary mb-3">Save changes</button>
+                            <button type="submit" onClick={openPDFInNewTab} style={buttonstyle} className="btn btn-primary mb-3">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
+            </form>
     </>
   )
 }
