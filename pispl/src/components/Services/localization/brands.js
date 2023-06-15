@@ -1,27 +1,31 @@
+import img1 from '../../assets/Explayin-Media-Works.png'
+import img2 from '../../assets/Pink-Lemonade.png'
+import img3 from '../../assets/Yanmar-1.png'
+import img4 from '../../assets/Sumeru-Ventures.png'
+import img5 from '../../assets/The-Art-of-Living.png'
+
 const brands=[
     {
         id:1,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Explayin-Media-Works.png"
-
+        link:img1
     },
     {
         id:2,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Pink-Lemonade.png"
-
+        link:img2
     },
     {
         id:3,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Yanmar-1.png"
+        link:img3
 
     },
     {
         id:4,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Sumeru-Ventures.png"
+        link:img4
 
     },
     {
         id:5,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/The-Art-of-Living.png"
+        link:img5
 
     }
 ]

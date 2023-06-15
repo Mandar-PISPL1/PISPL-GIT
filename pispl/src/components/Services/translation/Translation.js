@@ -12,6 +12,9 @@ import translation3 from "../../assets/Translation-03.png"
 import arr1 from './WhyChooseParikh'
 import faqs from './FAQContent'
 import FAQ from '../../translation/FAQ'
+import img1 from '../../assets/webinars.png'
+import img2 from '../../assets/Translation-01.png'
+import img3 from '../../assets/Translation-03-2.png'
 
 
 export default function Translation() {
@@ -44,12 +47,12 @@ export default function Translation() {
 
           </div>
           <div className="col-md-5 col-12" style={{ maxHeight: "460px", maxWidth: "460px" }}>
-            <img src="https://parikhinfosolutions.com/wp-content/uploads/2020/10/Translation-01.png" alt="" height="100%" width="100%" />
+            <img src={img2} alt="" height="100%" width="100%" />
           </div>
         </div>
         <div className='row px-md-5'>
           <div className="col-md-6 col-12 mx-md-5" style={{ maxHeight: "350px", maxWidth: "350px" }}>
-            <img src="https://parikhinfosolutions.com/wp-content/uploads/2020/10/Translation-03-2.png" alt="" height="100%" width="100%" />
+            <img src={img3} alt="" height="100%" width="100%" />
           </div>
           <div className="col-md-7 col-12">
             <div className='normal-text'>
@@ -89,7 +92,7 @@ export default function Translation() {
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
             <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%", boxShadow: "0 0 10px 0 rgba(0,0,0,.5)" }}>
               <div className='text-center pb-3 '>
-                <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
+                <img src={img1} style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Legal Translation</h4>
@@ -101,7 +104,7 @@ export default function Translation() {
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
             <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%", boxShadow: "0 0 10px 0 rgba(0,0,0,.5)" }}>
               <div className='text-center pb-3'>
-                <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
+                <img src={img1} style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Literary Translation</h4>
@@ -114,7 +117,7 @@ export default function Translation() {
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
             <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%", boxShadow: "0 0 10px 0 rgba(0,0,0,.5)" }}>
               <div className='text-center pb-3'>
-                <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
+                <img src={img1} style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Business Translation</h4>
@@ -125,7 +128,7 @@ export default function Translation() {
           <div className='col-md-6 col-12' style={{ color: "#2a3d78", margin: "19px 0px" }}>
             <div className=' rounded-3' style={{ padding: '1.5rem', height: "100%", boxShadow: "0 0 10px 0 rgba(0,0,0,.5)" }}>
               <div className='text-center pb-3'>
-                <img src="https://parikhinfosolutions.com/wp-content/uploads/2022/02/webinars.png" style={{ height: "71px", width: "71px" }}></img>
+                <img src={img1} style={{ height: "71px", width: "71px" }}></img>
               </div>
 
               <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Document Translation</h4>
