@@ -1,93 +1,104 @@
+import img1 from '../assets/Reliance-3.png'
+import img2 from '../assets/HDFC-Life-Insurance.png'
+import img3 from '../assets/Transperfect-2.png'
+import img4 from '../assets/Volkswagen-1.png'
+import img5 from '../assets/Lionbridge-1.png'
+import img6 from '../assets/Yanmar-1.png'
+import img7 from '../assets/The-Art-of-Living.png'
+import img8 from '../assets/Sodexo-1.png'
+import img9 from '../assets/HT-Media-1.png'
+import img10 from '../assets/LT-2.png'
+import img11 from '../assets/Kotak-2.png'
+import img12 from '../assets/Language-Connect-1.png'
+import img13 from '../assets/Aditya-Birla-Capital.png'
+import img14 from '../assets/Bookmyshow-2.png'
+import img15 from '../assets/Globe-Language-Services.png'
+import img16 from '../assets/BG-Communications-1.png'
+import img17 from '../assets/Birla-Sun-Life-1.png'
+import img18 from '../assets/OTIS-2.png'
 const arr=[
     {
         id:1,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Reliance-3.png"
+        link:img1
 
     },
     {
         id:2,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/HDFC-Life-Insurance.png"
+        link:img2
 
     },
     {
         id:3,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Transperfect-2.png"
+        link:img3
 
     },
     {
         id:4,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Volkswagen-1.png"
+        link:img4
 
     },
     {
         id:5,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Lionbridge-1.png"
+        link:img5
 
     },
     {
         id:6,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Yanmar-1.png"
+        link:img6
 
     },
     {
         id:7,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/The-Art-of-Living.png"
-
+        link:img7
     },
     {
         id:8,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Sodexo-1.png"
-
+        link:img8
     },
     {
         id:9,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/HT-Media-1.png"
-
+        link:img9
     },
     {
         id:10,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/LT-2.png"
-
+        link:img10
     },
     {
         id:11,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Kotak-2.png"
+        link:img11
 
     },
     {
         id:12,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Language-Connect-1.png"
-
+        link:img12
     },
     {
         id:13,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Aditya-Birla-Capital.png"
+        link:img13
 
     },
     {
         id:14,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Bookmyshow-2.png"
+        link:img14
 
     },
     {
         id:15,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Globe-Language-Services.png"
-
+        link:img15
     },
     {
         id:16,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/BG-Communications-1.png"
+        link:img16
 
     },
     {
         id:17,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/Birla-Sun-Life-1.png"
+        link:img17
 
     },
     {
         id:18,
-        link:"https://parikhinfosolutions.com/wp-content/uploads/2020/10/OTIS-2.png"
-
+        link:img18
     },
     
 ]

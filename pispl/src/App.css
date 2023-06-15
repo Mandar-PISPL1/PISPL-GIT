@@ -17,6 +17,10 @@
 /* class footer-col2 is for above section of footer */
 /* class footer-col is for below section of footer */
 
+header + div{
+    margin-top: 80px!important;
+}
+
 .footer{
 	background-color: #041020;
 	color: #eee;
@@ -547,7 +551,20 @@ section{
         font-size: 64px;
     }
 }
+.Ai-dub-phone{
+    position: relative;
+ }
+ .height-phone{
+    height: 650px;
+ }
 @media(max-width: 575px){
+    .Ai-dub-phone{
+        top: 0 !important;
+     }
+     .height-phone{
+        height: 100%;
+     }
+
 
     .phoneFlex{
         flex-direction: column ;
@@ -557,7 +574,8 @@ section{
         line-height: 45px !important;
     }
     .phone-width{
-        width: 22rem;
+        width: 22rem!important;
+        padding: 10px!important;
     }
     .width50{
         width: 50% !important;
@@ -565,9 +583,7 @@ section{
     .width100{
         width: 100% !important;
     }
-    .Ai-dub-phone{
-       position: static;
-    }
+    
     .myphonewidth{
         width: 80% !important;
     }

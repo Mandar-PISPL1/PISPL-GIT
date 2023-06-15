@@ -25,6 +25,13 @@ import img6 from '../assets/Subtitles-HP-3.png'
 import img7 from '../assets/Interpretation-HP.png'
 import img8 from '../assets/Digital-Marketing-HP.png'
 import img9 from '../assets/video-creation-service.png'
+import img10 from '../assets/indiamart-member.png'
+import img11 from '../assets/CitloB-Member-2023-2024-300x154.png'
+import img12 from '../assets/translation-directory-1.png'
+import img13 from '../assets/sulekha-member.png'
+import img14 from '../assets/proz-member.png'
+import img15 from '../assets/indian-translators-association-member.png'
+import img16 from '../assets/Executive-Council.jpg'
 
 // import banner_image from "./Translation-Services-Main.png"
 export default function Home() {
@@ -155,7 +162,7 @@ export default function Home() {
                 <img src={privacy_protection} alt='100% Data Privacy Icon' title='100% Data Privacy' style={{ height: "71px", width: "71px" }}></img>
               </div>
               <h4 className='text-center my-3'>100% Data Privacy</h4>
-              <p style={{ fontWeight: "400", fontSize: "18px" }}>We understand your concerns about data safety and privacy. We assure complete safety and privacy for your data. Our client’s concerns regarding privacy are our top priority. Hence, all the work done by us are<b style={{ fontWeight: "700" }}> confidential and completely secured</b> with no loopholes that cause uncertain consequences. Providing <b style={{ fontWeight: "700" }}>100% quality assurance</b> and <b style={{ fontWeight: "700" }}>100% safety </b>of your data is our main motto.</p>
+              <p style={{ fontWeight: "400", fontSize: "18px" }}>We understand your concerns about data safety and privacy. We assure complete safety and privacy for your data. Our client&apos;s concerns regarding privacy are our top priority. Hence, all the work done by us are<b style={{ fontWeight: "700" }}> confidential and completely secured</b> with no loopholes that cause uncertain consequences. Providing <b style={{ fontWeight: "700" }}>100% quality assurance</b> and <b style={{ fontWeight: "700" }}>100% safety </b>of your data is our main motto.</p>
             </div>
 
           </div>
@@ -402,24 +409,24 @@ export default function Home() {
             <h2>Proud Members of</h2>
           </div>
           <div className='col-md-1 col-6'>
-            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indiamart-member.png' alt='Indiamart Logo' title='Indiamart' style={{ height: "63px", width: "122px" }}></img>
+            <img src={img10} alt='Indiamart Logo' title='Indiamart' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-1 col-6'>
-            <img src='https://parikhinfosolutions.com/wp-content/uploads/2023/04/CitloB-Member-2023-2024.png' alt='CITLob Logo' title='CITLob' style={{ height: "63px", width: "122px" }}></img>
+            <img src={img11}alt='CITLob Logo' title='CITLob' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-2 col-6 text-center'>
-            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/translation-directory-1.png' alt='Translation Directory Logo' title='Translation Directory' style={{ height: "63px", width: "122px" }}></img>
+            <img src={img12}alt='Translation Directory Logo' title='Translation Directory' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-1 col-6'>
-            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/sulekha-member.png' alt='Sulekha.com Logo' title='Sulekha.com' style={{ height: "63px", width: "122px" }}></img></div>
+            <img src={img13} alt='Sulekha.com Logo' title='Sulekha.com' style={{ height: "63px", width: "122px" }}></img></div>
           <div className='col-md-1 col-12 text-center'>
-            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/proz-member.png' alt='Proz Logo' title='Proz' style={{ height: "63px", width: "122px" }}></img>
+            <img src={img14} alt='Proz Logo' title='Proz' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-2 col-12 text-center'>
-            <img src='https://parikhinfosolutions.com/wp-content/uploads/2020/10/indian-translators-association-member.png' alt='Indian Trasnlation Associations Logo' title='Indian Trasnlation Associations' style={{ height: "63px", width: "122px" }}></img>
+            <img src={img15} alt='Indian Trasnlation Associations Logo' title='Indian Trasnlation Associations' style={{ height: "63px", width: "122px" }}></img>
           </div>
           <div className='col-md-2 col-12 text-center'>
-            <img src="https://parikhinfosolutions.com/wp-content/uploads/2021/09/Executive-Council-Member-1-768x672.jpg" alt='Executive Council Member Logo' title='Executive Council Member' style={{ height: "63px", width: "122px" }}></img></div>
+            <img src={img16} alt='Executive Council Member Logo' title='Executive Council Member' style={{ height: "63px", width: "122px" }}></img></div>
         </div>
       </div>
 

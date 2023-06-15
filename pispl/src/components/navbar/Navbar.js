@@ -8,9 +8,9 @@ export default function Navbar() {
       }
   return (
     <>
-    <header >
+    <header style={{position:"fixed"}}>
         <div className="container-fluid d-flex align-items-center py-3
-        " style={{position:"sticky"}}>
+        " >
             {/* <input type="checkbox" name="" id="check"/> */}
             <input type="checkbox" id="check" checked={isOpen} onChange={() => setIsOpen(!isOpen)} />
             

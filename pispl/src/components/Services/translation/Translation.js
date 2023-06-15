@@ -315,7 +315,7 @@ export default function Translation() {
         <p className='text-white text-center my-0 py-3 fs-6'>Are You Looking For Transcription Services? <NavLink to="/transcription">Read More.</NavLink></p>
       </div>
 
-      <div className='container p-md-5'>
+      <div className='container p-md-5 my-4'>
         <h4 className='text-center h1 fw-bold mb-4' style={{ color: "#0D2366" }}>Frequently Asked Questions:</h4>
         <div className='row justify-content-center'>
           <div class="accordion col-md-10 col-12" id="accordionExample">
