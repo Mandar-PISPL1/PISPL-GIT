@@ -33,32 +33,6 @@ export default function VideoCreation() {
       <Banner index={9} b={myimage} flag={true} breadCrumb={true}/>
       <div className='myskew'></div>
 
-      {/* Choose The Best Explainer Video Services */}
-      {/* <div className='container py-4 mx-md-2'>
-        <div className="row px-md-5 mx-md-5 m-0">
-            <h3 className='text-start m-3 ml-2 h1' style={{ color: "#0d2366", fontWeight: "700" }}>Choose The Best Explainer Video Services</h3>
-            <div className='my-2 mx-4' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
-        </div>
-      </div>
-
-      <div className='container-fluid py-4 mx-md-2 w-75'>
-        <div className="row px-md-5 mx-md-5 m-0 rounded shadow-lg d-flex justify-content-center">
-            <div className='col-md-6 col-12 ' style={{ borderRightStyle: "1px dashed red " }}>
-              <div className='p-3 my-4' style={{ borderRightStyle: "dashed", borderRightColor: "#696969", borderRightWidth: "2px", color: "#696969" }}>
-                <h1 className='text-center' style={{ fontSize: "30px", color: "#0d2366" }}>1.<u> Whiteboard Video</u></h1>
-                <p>One of the most popular types of videos, whiteboard video is used to make complex topics understandable in creative way -just like how your teacher used to explain in school with a chalk and board. We can deliver a high-quality whiteboard video of 1-4 minutes with effective animation, visuals, creative content, and an appropriate voice-over that will deliver the right message and captivate your audience.</p>
-              </div>
-            </div>
-            <div className='col-md-6 col-12' style={{ borderRightStyle: "1px dashed red " }}>
-            <div className='p-3 my-4' style={{ color: "#696969" }}>
-              <h1 className='text-center' style={{ fontSize: "30px", color: "#0d2366" }}>2.<u>Explainer Video</u></h1>
-              <p>
-                Elevate your brand's presence with creative visuals, immaculate presentation and voice-over with a detailed explainer video. Explainer videos can be used to explain certain topics, about products or services and to create brand awareness. We can create the perfect 2-5 minute explainer video with precise information and unique content to deliver a high-quality video for your target audience.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
     <div className='container py-4 mx-md-2'>
       <div className="row px-md-5 mx-md-5 m-0">

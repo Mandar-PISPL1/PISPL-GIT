@@ -9,6 +9,9 @@ import img1 from "../../assets/CC-1.png"
 import img2 from '../../assets/Subtitle-Translation-Service.png'
 import faqs from './FAQContent'
 import FAQ from '../../translation/FAQ'
+import img3 from '../../assets/Provides-Clarity-1.png'
+import img4 from '../../assets/Engages-Audience-1.png'
+import img5 from '../../assets/Maintains-Language-Essence-1.png'
 
 export default function VideoSubtitling() {
   useEffect(() => {
@@ -115,7 +118,7 @@ export default function VideoSubtitling() {
         <div className='row px-md-5 mx-md-5 m-4'>
             <div className='col-md-4 col-12 my-3' style={{ color: "#2a3d78" }}>
                 <div className='text-center pb-3'>
-                    <img src="https://parikhinfosolutions.com/wp-content/uploads/2020/10/Provides-Clarity-1.png" style={{ height: "71px", width: "71px" }}></img>
+                    <img src={img3} style={{ height: "71px", width: "71px" }}></img>
                 </div>
 
                 <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Language Flexibility</h4>
@@ -124,7 +127,7 @@ export default function VideoSubtitling() {
 
             <div className='col-md-4 col-12 my-3' style={{ color: "#2a3d78" }}>
                 <div className='text-center pb-3'>
-                    <img src="https://parikhinfosolutions.com/wp-content/uploads/2020/10/Engages-Audience-1.png" style={{ height: "71px", width: "71px" }}></img>
+                    <img src={img4} style={{ height: "71px", width: "71px" }}></img>
                 </div>
 
                 <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Audience Engagement</h4>
@@ -133,7 +136,7 @@ export default function VideoSubtitling() {
 
             <div className='col-md-4 col-12 my-3' style={{ color: "#2a3d78" }}>
                 <div className='text-center pb-3'>
-                    <img src="https://parikhinfosolutions.com/wp-content/uploads/2020/10/Maintains-Language-Essence-1.png" style={{ height: "71px", width: "71px" }}></img>
+                    <img src={img5} style={{ height: "71px", width: "71px" }}></img>
                 </div>
 
                 <h4 className='text-center pb-4' style={{ fontWeight: "600" }}>Language Essence</h4>
