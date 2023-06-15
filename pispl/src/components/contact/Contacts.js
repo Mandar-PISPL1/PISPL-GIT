@@ -5,7 +5,7 @@ import { ImCheckmark } from "react-icons/im";
 import PhishingAlert from '../translation/PhishingAlert';
 import ReactForm from '../form/ReactForm'
 import Form from '../form/Form'
-export default function Contact() {
+export default function Contacts() {
   useEffect(() => {
     document.title="Contact Information | Parikh Info Solutions"
     window.scrollTo(0, 0);

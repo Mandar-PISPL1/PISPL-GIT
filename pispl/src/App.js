@@ -17,7 +17,7 @@ import AboutUs from './components/about_us/AboutUs';
 import Clients from './components/clients/Clients';
 import Blog from './components/blogs/Blog';
 import JoinNow from './components/join_now/JoinNow';
-import Contact from './components/contact/Contact';
+import Contacts from './components/contact/Contacts';
 import Home from './components/Home-page/Home';
 import FreeLancer from './components/freelancer/FreeLancer';
 import CareerPage from './components/careerpage/CareerPage';
@@ -52,7 +52,7 @@ function App() {
           <Route path='/interpretation'element={<Interpretation/>}/>
           <Route path='/content-writing' element={<ContentWriting/>}/>
           <Route path='/video-creation' element={<VideoCreation/>}/>
-          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/contact' element={<Contacts/>}/>
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/clients' element={<Clients/>}/>
           {/* <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
