@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Blog = ({posts}) => {
-   
+const BlogCopy = ({posts}) => {
+    const fetchFeaturedImage = async (mediaId) => {
+        try {
+          const response = await axios.get(`https://your-wordpress-site/wp-json/wp/v2/media/${mediaId}`);
+          return response.data.source_url;
+        } catch (error) {
+          console.error(error);
+        }
+      };
     const buttonstyle = {
         color: "#0d2366",
         backgroundColor: "#49dab5",
         fontSize: "20px",
+        width: "12rem",
         border: "1px",
         padding: "3px 22px"
     }
@@ -47,8 +55,8 @@ const Blog = ({posts}) => {
           {
             posts.map((post) => {
               return (
-                <div key={post.id} className='col-md-6 col-12 d-flex justify-content-center p-3' >
-                  <div className='p-2 rounded my-1' style={{boxShadow:"0px 0px 10px -1px rgba(0,0,0,0.5)"}}>
+                <div key={post.id} className='col-md-6 col-12 d-flex justify-content-center m-md-0 m-3 p-3' >
+                  <div className='p-2 rounded my-4' style={{boxShadow:"0px 0px 10px -1px rgba(0,0,0,0.5)"}}>
                   {/* <Link to={`/blog/${blog.id}`}> */}
 
                     <div className="card border-0">
@@ -82,4 +90,4 @@ const Blog = ({posts}) => {
     );
 };
 
-export default Blog;
+export default BlogCopy;

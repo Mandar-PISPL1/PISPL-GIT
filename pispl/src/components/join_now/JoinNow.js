@@ -76,13 +76,6 @@ export default function JoinNow() {
       {/* https://script.google.com/macros/s/AKfycbyqIZRlJ5-oTjSQt8qy1uordtapR7MJ72JwxZXZdZuamhpcT1dfTNPOgiHpC6hM8PH1Gg/exec */}
 
 
-      <form className="form" onSubmit={(e) => Submit(e)}>
-        <input placeholder="Your Name" name="Name" type="text" />
-        <input placeholder="Your Email" name="Email" type="text" />
-        <input placeholder="Your Message" name="Message" type="text" />
-        <input name="Name" type="submit" />
-      </form>
-
     </>
   )
 }

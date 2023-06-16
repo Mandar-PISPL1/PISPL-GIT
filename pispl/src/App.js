@@ -4,7 +4,7 @@ import './App.css';
 import Translation from './components/Services/translation/Translation';
 import Transcription from './components/Services/transcription/Transcription';
 import { Route, Routes } from "react-router-dom";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Localization from './components/Services/localization/Localization';
 import VoiceOver from './components/Services/voice_over/VoiceOver';
 import Dubbing from './components/Services/dubbing/Dubbing';
@@ -15,7 +15,7 @@ import ContentWriting from './components/Services/content_writing/ContentWriting
 import VideoCreation from './components/Services/video_creation/VideoCreation';
 import AboutUs from './components/about_us/AboutUs';
 import Clients from './components/clients/Clients';
-import Blog from './components/blogs/Blog';
+// import Blog from './components/blogs/Blog';
 import JoinNow from './components/join_now/JoinNow';
 import Contacts from './components/contact/Contacts';
 import Home from './components/Home-page/Home';
@@ -25,8 +25,11 @@ import Translator from './components/freelancer/translator/Translator';
 import Transcriber from './components/freelancer/transcriber/Transcriber';
 import VoDubArtist from './components/freelancer/vodubartist/VoDubArtist';
 import Interpreter from './components/freelancer/interpreter/Interpreter';
-import useFetch from './hooks/useFetch';
-import BlogContent from './components/blogcontent/BlogContent'
+// import useFetch from './hooks/useFetch';
+// import BlogContent from './components/blogcontent/BlogContent'
+import Blog from './components/blogs/Blog';
+import axios from 'axios';
+
 
 function App() {
   // let {loading,data,error} =useFetch('http://localhost:1337/api/blogs?populate=*')
@@ -34,6 +37,23 @@ function App() {
   // if(error) return <p>Error..</p>
   // console.log('================================')
   // console.log(data)
+  const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        axios.get('https://parikhinfosolutions.com/wp-json/wp/v2/posts?_embed&per_page=6')
+        .then(response => {
+            const modifiedPosts = response.data.map(post => {
+            const excerpt = post.excerpt.rendered; // Assuming the excerpt field is present in the JSON response
+            const truncatedExcerpt = excerpt.substring(0, 150); // Take only the first 10 characters
+            return { ...post, excerpt: truncatedExcerpt }; // Update the excerpt field in the post object
+            });
+            setPosts(modifiedPosts);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    }, []);
+    console.log(posts);
 
   return (
     <>
@@ -55,6 +75,7 @@ function App() {
           <Route path='/contact' element={<Contacts/>}/>
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/clients' element={<Clients/>}/>
+          <Route path='/blogs' element={<Blog posts={posts}/>}/>
           {/* <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
           <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>} /> */}
           <Route path='/join-now' element={<JoinNow />} />
