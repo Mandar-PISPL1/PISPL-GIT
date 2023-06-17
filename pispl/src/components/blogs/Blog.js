@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import { Link } from 'react-router-dom';
+// import NavLink from 'react-router-dom'
 
 const Blog = ({posts}) => {
    
@@ -48,8 +49,10 @@ const Blog = ({posts}) => {
             posts.map((post) => {
               return (
                 <div key={post.id} className='col-md-6 col-12 d-flex justify-content-center p-3' >
+                
+               
+                  <Link to={`/blogs/${post.id}`}>
                   <div className='p-2 rounded my-1' style={{boxShadow:"0px 0px 10px -1px rgba(0,0,0,0.5)"}}>
-                  {/* <Link to={`/blog/${blog.id}`}> */}
 
                     <div className="card border-0">
                       
@@ -63,8 +66,10 @@ const Blog = ({posts}) => {
                       </div>
 
                     </div>
-                  {/* </Link> */}
+          
                   </div>
+                  </Link>
+                
                 </div>
 
               )

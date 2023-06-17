@@ -26,9 +26,10 @@ import Transcriber from './components/freelancer/transcriber/Transcriber';
 import VoDubArtist from './components/freelancer/vodubartist/VoDubArtist';
 import Interpreter from './components/freelancer/interpreter/Interpreter';
 // import useFetch from './hooks/useFetch';
-// import BlogContent from './components/blogcontent/BlogContent'
+import BlogContentCopy from './components/blogcontent/BlogContentCopy';
 import Blog from './components/blogs/Blog';
 import axios from 'axios';
+import BlogCopy from './components/blogs/BlogCopy';
 
 
 function App() {
@@ -76,8 +77,10 @@ function App() {
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/clients' element={<Clients/>}/>
           <Route path='/blogs' element={<Blog posts={posts}/>}/>
+          <Route path='/blogscopy' element={<BlogCopy />}/>
           {/* <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
           <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>} /> */}
+          <Route path='blogs/:id' element={<BlogContentCopy posts={posts}/>}></Route>
           <Route path='/join-now' element={<JoinNow />} />
           <Route path='/freelancer' element={<FreeLancer />} />
           <Route path='/career-opportunities' element={<CareerPage />} />
