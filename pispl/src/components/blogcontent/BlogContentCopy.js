@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import { BsWhatsapp, BsFacebook, BsLinkedin } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
-
+import '../../frontend.min.css';
 // import Lottie from "lottie-react";
 // import Email from './Email.json'
 export default function BlogContentCopy({ posts }) {
@@ -86,11 +86,11 @@ export default function BlogContentCopy({ posts }) {
 
 
                         </div>
-                        <div id='blog-page-contain'>
+                        <div id=''>
                             {/* <ReactMarkdown className='line-break blog-content px-md-5' >content</ReactMarkdown> */}
                             {/* <div dangerouslySetInnerHTML={{ __html: blog.content }}></div> */}
                             <div dangerouslySetInnerHTML={{ __html: blog.content.rendered }}></div>
-                        </div>
+                        </div>  
                     </div>
                     <div className='col-md-3 col-12'>
                         <div className='text-center px-2 py-3 my-5' style={{ backgroundColor: "#f6f6f6", display: "flex", flexDirection: "column" }}>
