@@ -710,3 +710,9 @@ header{
     font-weight: 400;
     color: #041020;
   }
+a{
+    color: #db2b39;
+}
+.elementor-widget-container{
+    font-size: 18px;
+}

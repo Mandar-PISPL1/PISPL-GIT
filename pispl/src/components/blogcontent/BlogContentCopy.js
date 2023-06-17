@@ -1,11 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import { BsWhatsapp, BsFacebook, BsLinkedin } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import '../../frontend.min.css';
-// import Lottie from "lottie-react";
-// import Email from './Email.json'
 export default function BlogContentCopy({ posts }) {
     const buttonstyle = {
         color: "#0d2366",
@@ -29,14 +26,20 @@ export default function BlogContentCopy({ posts }) {
     }
 
     const { id } = useParams()
-    let blog = {}
-    if (blog) {
-        let arr = posts.filter(blog => blog.id == id)
-        blog = arr[0];
-    }
-    else {
-        blog = {}
-    }
+    let blog;
+    const filteredPosts = posts.filter((post) => post.id == id);
+    if (filteredPosts.length > 0) {
+        blog = filteredPosts[0];
+      } else {
+        blog = {};
+      }
+    // if (blog) {
+    //     let arr = posts.filter(blog => blog.id == id)
+    //     blog = arr[0];
+    // }
+    // else {
+    //     blog = {}
+    // }
 
     console.log("blog object =============")
     console.log(blog)
@@ -58,7 +61,7 @@ export default function BlogContentCopy({ posts }) {
                             <div><span className='mr-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="far fa-user-circle"></i></span>authorName</span>
                                 <span className='mx-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="fas fa-calendar"></i></span>May 31, 2023</span>
                             </div>
-                            <div><button style={{ backgroundColor: "#0d2366", color: "#49dab5", border: "2px solid #49dab5", padding: "3px 32px" }}>{categoryName}</button></div>
+                            <div><button style={{ backgroundColor: "#0d2366", color: "#49dab5", border: "2px solid #49dab5", padding: "3px 32px" }}>categoryName</button></div>
 
                         </div>
                     </div>
