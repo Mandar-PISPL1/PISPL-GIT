@@ -1,8 +1,12 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Link } from 'react-router-dom';
 // import NavLink from 'react-router-dom'
 
 const Blog = ({posts}) => {
+  useEffect(() => {
+    document.title="PISPL Blogs | Parikh Info Solutions"
+    window.scrollTo(0, 0);
+  }, []);
    
     const buttonstyle = {
         color: "#0d2366",

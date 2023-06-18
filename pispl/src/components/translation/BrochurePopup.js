@@ -56,9 +56,10 @@ export default function BrochurePopup() {
                         </div>
                         <div className="modal-body px-4" >
                             <p className='mb-1'>Email Address </p>
-                            <input style={inputStyle} name="Email" type='email'></input>
+                            <input required style={inputStyle} name="Email" type='email' />
                             <p className='mb-1 mt-3'>Phone Number</p>
-                            <input style={inputStyle} name="Phonenumber" type='text'></input>
+                            <input
+                             style={inputStyle} name="Phonenumber" type='text' required />
                         </div>
                         <div className="modal-footer d-flex justify-content-center"style={{border:"0px"}}>
                             
