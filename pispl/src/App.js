@@ -40,21 +40,32 @@ function App() {
   // console.log(data)
   const [posts, setPosts] = useState([]);
 
-    useEffect(() => {
-        axios.get('https://parikhinfosolutions.com/wp-json/wp/v2/posts?_embed&per_page=6')
-        .then(response => {
-            const modifiedPosts = response.data.map(post => {
-            const excerpt = post.excerpt.rendered; // Assuming the excerpt field is present in the JSON response
-            const truncatedExcerpt = excerpt.substring(0, 150); // Take only the first 10 characters
-            return { ...post, excerpt: truncatedExcerpt }; // Update the excerpt field in the post object
-            });
-            setPosts(modifiedPosts);
-        })
-        .catch(error => {
-            console.error(error);
-        });
-    }, []);
-    console.log(posts);
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(
+        'https://parikhinfosolutions.com/wp-json/wp/v2/posts?_embed&per_page=6'
+      );
+
+      const modifiedPosts = response.data.map((post) => {
+        const excerpt = post.excerpt?.rendered || '';
+        const truncatedExcerpt = excerpt.substring(0, 150);
+        const featuredMedia =
+          post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
+        return { ...post, excerpt: truncatedExcerpt, featuredMedia };
+      });
+
+      setPosts(modifiedPosts);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  fetchData();
+}, [posts]);
+
+console.log(posts);
+
 
   return (
     <>

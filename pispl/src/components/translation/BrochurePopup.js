@@ -1,6 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import pdfFile from '../assets/Parikh-Info-Solutions.pdf'
 export default function BrochurePopup() {
+  const [isFormValid, setFormValid] = useState(false);
+
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    // Update the form validity based on the input values
+    // setFormValid(name === 'Email' && value !== '' && document.querySelector('input[name="Phonenumber"]').value !== '');
+    setFormValid(true)
+  }
     // https://script.google.com/macros/s/AKfycbyr7ua73kI2xPsfsjzfNj8YFUHSXuFBt0Zkzmc5Y-TDWgJVWKY3qL4D8jxNvBiJkGFQ/exec
     
     function Submit(e) {
@@ -56,14 +64,14 @@ export default function BrochurePopup() {
                         </div>
                         <div className="modal-body px-4" >
                             <p className='mb-1'>Email Address </p>
-                            <input required style={inputStyle} name="Email" type='email' />
+                            <input required style={inputStyle} name="Email" type='email' onChange={handleInputChange}/>
                             <p className='mb-1 mt-3'>Phone Number</p>
                             <input
-                             style={inputStyle} name="Phonenumber" type='text' required />
+                             style={inputStyle} name="Phonenumber" type='text' onChange={handleInputChange}/>
                         </div>
                         <div className="modal-footer d-flex justify-content-center"style={{border:"0px"}}>
                             
-                            <button type="submit" onClick={openPDFInNewTab} style={buttonstyle} className="btn btn-primary mb-3">Save changes</button>
+                            <button type="submit" onClick={openPDFInNewTab} style={buttonstyle} className="btn btn-primary mb-3"  disabled={!isFormValid}>Save changes</button>
                         </div>
                     </div>
                 </div>

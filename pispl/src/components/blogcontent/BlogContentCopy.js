@@ -1,19 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import { BsWhatsapp, BsFacebook, BsLinkedin } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import '../../frontend.min.css';
 export default function BlogContentCopy({ posts }) {
-    const buttonstyle = {
-        color: "#0d2366",
-        backgroundColor: "#49dab5",
-        fontSize: "20px",
-        width: "12rem",
-        // height: "3rem",
-        // borderRadius: "5px",
-        border: "1px",
-        padding: "3px 22px"
-    }
+    useEffect(() => {
+        document.title="PISPL Blogs | Parikh Info Solutions"
+        window.scrollTo(0, 0);
+      }, []);
+    
     const iconStyle = {
         backgroundColor: "#49dab5",
         color: "white",
@@ -25,14 +20,21 @@ export default function BlogContentCopy({ posts }) {
         margin: "7px 0px",
     }
 
-    const { id } = useParams()
-    let blog;
+    const { id } = useParams();
+    let blog = {};
     const filteredPosts = posts.filter((post) => post.id == id);
     if (filteredPosts.length > 0) {
-        blog = filteredPosts[0];
-      } else {
-        blog = {};
-      }
+      blog = filteredPosts[0];
+    }
+    
+    const title = blog.title && blog.title.rendered;
+    const contentt = blog.content && blog.content.rendered;
+    const featuredMedia = blog._embedded && blog._embedded['wp:featuredmedia'];
+    const sourceUrl = featuredMedia && featuredMedia[0].source_url;
+
+    const categories = blog._embedded && blog._embedded['wp:term'] && blog._embedded['wp:term'][0];
+    const category = categories && categories[0];
+    const categoryName = category && category.name;
     // if (blog) {
     //     let arr = posts.filter(blog => blog.id == id)
     //     blog = arr[0];
@@ -41,11 +43,6 @@ export default function BlogContentCopy({ posts }) {
     //     blog = {}
     // }
 
-    console.log("blog object =============")
-    console.log(blog)
-    const categories = blog._embedded['wp:term'][0];
-    const category = categories[0];
-    const categoryName = category.name;
 
 
 
@@ -55,13 +52,13 @@ export default function BlogContentCopy({ posts }) {
             <div className='container-fluid py-5' style={{ backgroundColor: "var(--mainColor)", color: "var(--textColor)" }}>
                 <div className=' py-4 mx-md-5 px-md-5 d-flex justify-content-center'>
                     <div className='row px-md-5 mx-md-5 m-0 width100' style={{ width: "72%" }}>
-                        <h1 className='fw-bold text-start p-0 phoneFont' style={{ fontSize: "50px", lineHeight: "75px" }}>{blog.title.rendered}</h1>
+                        <h1 className='fw-bold text-start p-0 phoneFont' style={{ fontSize: "50px", lineHeight: "75px" }}>{title}</h1>
                         <div className='my-4' style={{ width: "80px", backgroundColor: "#49dab5", height: "5px" }}></div>
                         <div className='p-0 d-flex  justify-content-between phoneFlex'>
                             <div><span className='mr-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="far fa-user-circle"></i></span>authorName</span>
                                 <span className='mx-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="fas fa-calendar"></i></span>May 31, 2023</span>
                             </div>
-                            <div><button style={{ backgroundColor: "#0d2366", color: "#49dab5", border: "2px solid #49dab5", padding: "3px 32px" }}>categoryName</button></div>
+                            <div><button style={{ backgroundColor: "#0d2366", color: "#49dab5", border: "2px solid #49dab5", padding: "3px 32px" }}>{categoryName}</button></div>
 
                         </div>
                     </div>
@@ -83,7 +80,7 @@ export default function BlogContentCopy({ posts }) {
                     </div>
                     <div className='col-md-7 col-12'>
                         <div className='featured-image text-center' >
-                            <img src={blog._embedded['wp:featuredmedia'][0].source_url} alt="f-image" style={{ height: "372px", width: "711px" }} />
+                        {sourceUrl && <img src={sourceUrl} alt="f-image" style={{ height: "372px", width: "711px" }} />}
                         </div>
                         <div>
 
@@ -92,7 +89,7 @@ export default function BlogContentCopy({ posts }) {
                         <div id=''>
                             {/* <ReactMarkdown className='line-break blog-content px-md-5' >content</ReactMarkdown> */}
                             {/* <div dangerouslySetInnerHTML={{ __html: blog.content }}></div> */}
-                            <div dangerouslySetInnerHTML={{ __html: blog.content.rendered }}></div>
+                            <div dangerouslySetInnerHTML={{ __html: contentt }}></div>
                         </div>  
                     </div>
                     <div className='col-md-3 col-12'>
