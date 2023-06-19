@@ -92,7 +92,7 @@ const ReactForm = () => {
                 <h5 className="mb-3" style={{ fontWeight: "600" }}>Get free support and quote on your email. Please submit the form to get in touch with us.</h5>
                 <div className="mb-3 normal-text">
                     <label htmlFor="email" className="form-label">
-                        Email address *
+                        Email address <span style={{ color: "red"}}>*</span>
                     </label>
                     <input
                         type="email"
@@ -106,7 +106,7 @@ const ReactForm = () => {
                 </div>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">
-                        Full Name
+                        Full Name <span style={{ color: "red"}}>*</span>
                     </label>
                     <input
                         type="text"
@@ -114,12 +114,12 @@ const ReactForm = () => {
                         autoComplete="off"
                         // id="full_name"
                         className="form-control"
-
+                        
                     />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="companyname" className="form-label">
-                        Company Name *
+                        Company Name
                     </label>
                     <input
                         type="text"
@@ -373,7 +373,7 @@ const ReactForm = () => {
                 </div>
                 <div className="mb-3">
                     <label htmlFor="Briefdetails" className="form-label">
-                        Please give brief details about your requirements *
+                        Please give brief details about your requirements <span style={{ color: "red"}}>*</span>
                     </label>
                     <div >
                         <textarea className="form-control" required="required" style={{ height: "100px" }} name="Projectdetails" autoComplete="off"  ></textarea>
