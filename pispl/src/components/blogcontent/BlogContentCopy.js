@@ -1,14 +1,14 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { BsWhatsapp, BsFacebook, BsLinkedin } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import '../../frontend.min.css';
 export default function BlogContentCopy({ posts }) {
     useEffect(() => {
-        document.title="PISPL Blogs | Parikh Info Solutions"
+        document.title = "PISPL Blogs | Parikh Info Solutions"
         window.scrollTo(0, 0);
-      }, []);
-    
+    }, []);
+
     const iconStyle = {
         backgroundColor: "#49dab5",
         color: "white",
@@ -24,9 +24,9 @@ export default function BlogContentCopy({ posts }) {
     let blog = {};
     const filteredPosts = posts.filter((post) => post.id == id);
     if (filteredPosts.length > 0) {
-      blog = filteredPosts[0];
+        blog = filteredPosts[0];
     }
-    
+
     const title = blog.title && blog.title.rendered;
     const contentt = blog.content && blog.content.rendered;
     const featuredMedia = blog._embedded && blog._embedded['wp:featuredmedia'];
@@ -35,13 +35,29 @@ export default function BlogContentCopy({ posts }) {
     const categories = blog._embedded && blog._embedded['wp:term'] && blog._embedded['wp:term'][0];
     const category = categories && categories[0];
     const categoryName = category && category.name;
-    // if (blog) {
-    //     let arr = posts.filter(blog => blog.id == id)
-    //     blog = arr[0];
-    // }
-    // else {
-    //     blog = {}
-    // }
+
+    //author name
+    const jsonData = {
+        authors: [
+            { id: 4, name: "Dipti Valanju" },
+            { id: 5, name: "Prerna Topre" },
+            { id: 10, name: "shifa_pispl" },
+            { id: 12, name: "Sandili Patkar" },
+            { id: 14, name: "Rashi Kapoor" },
+            { id: 16, name: "pispl team" },
+            { id: 19, name: "Vedant Maheshwari" },
+            { id: 20, name: "Kashish Kanada" },
+
+        ],
+    };
+    function getAuthorName(authorId) {
+        const author = jsonData.authors.find((author) => author.id === authorId);
+        return author ? author.name : "Unknown Author";
+    }
+    // ID of the author you want to retrieve the name for
+    const authorName = getAuthorName(blog.author);
+    console.log(authorName);
+
 
 
 
@@ -55,7 +71,7 @@ export default function BlogContentCopy({ posts }) {
                         <h1 className='fw-bold text-start p-0 phoneFont' style={{ fontSize: "50px", lineHeight: "75px" }}>{title}</h1>
                         <div className='my-4' style={{ width: "80px", backgroundColor: "#49dab5", height: "5px" }}></div>
                         <div className='p-0 d-flex  justify-content-between phoneFlex'>
-                            <div><span className='mr-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="far fa-user-circle"></i></span>authorName</span>
+                            <div><span className='mr-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="far fa-user-circle"></i></span>{authorName}</span>
                                 <span className='mx-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="fas fa-calendar"></i></span>May 31, 2023</span>
                             </div>
                             <div><button style={{ backgroundColor: "#0d2366", color: "#49dab5", border: "2px solid #49dab5", padding: "3px 32px" }}>{categoryName}</button></div>
@@ -80,7 +96,7 @@ export default function BlogContentCopy({ posts }) {
                     </div>
                     <div className='col-md-7 col-12'>
                         <div className='featured-image text-center' >
-                        {sourceUrl && <img src={sourceUrl} alt="f-image" style={{ height: "372px", width: "711px" }} />}
+                            {sourceUrl && <img src={sourceUrl} alt="f-image" style={{ height: "372px", width: "711px" }} />}
                         </div>
                         <div>
 
@@ -90,7 +106,7 @@ export default function BlogContentCopy({ posts }) {
                             {/* <ReactMarkdown className='line-break blog-content px-md-5' >content</ReactMarkdown> */}
                             {/* <div dangerouslySetInnerHTML={{ __html: blog.content }}></div> */}
                             <div dangerouslySetInnerHTML={{ __html: contentt }}></div>
-                        </div>  
+                        </div>
                     </div>
                     <div className='col-md-3 col-12'>
                         <div className='text-center px-2 py-3 my-5' style={{ backgroundColor: "#f6f6f6", display: "flex", flexDirection: "column" }}>

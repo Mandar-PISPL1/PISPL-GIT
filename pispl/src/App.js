@@ -39,12 +39,14 @@ function App() {
   // console.log('================================')
   // console.log(data)
   const [posts, setPosts] = useState([]);
+  const [totalPage, setTotalpage] = useState(1);
+  const [currentPage, setcurrentPage] = useState(1);
 
 useEffect(() => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        'https://parikhinfosolutions.com/wp-json/wp/v2/posts?_embed&per_page=6'
+        `https://parikhinfosolutions.com/wp-json/wp/v2/posts?_embed&per_page=6&page=${currentPage}`
       );
 
       const modifiedPosts = response.data.map((post) => {
@@ -56,16 +58,19 @@ useEffect(() => {
       });
 
       setPosts(modifiedPosts);
+      setTotalpage(Number(response.headers['x-wp-total']));
+      // console.log("response=",response.headers['x-wp-total']);
     } catch (error) {
       console.error(error);
     }
   };
 
   fetchData();
-}, [posts]);
+},[currentPage]);
 
 console.log(posts);
 
+// console.log("response=",response.header['x-wp-total']);
 
   return (
     <>
@@ -87,7 +92,7 @@ console.log(posts);
           <Route path='/contact' element={<Contacts/>}/>
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/clients' element={<Clients/>}/>
-          <Route path='/blogs' element={<Blog posts={posts}/>}/>
+          <Route path='/blogs' element={<Blog posts={posts} totalPage={totalPage} currentPage={currentPage} setcurrentPage={setcurrentPage}/>}/>
           <Route path='/blogscopy' element={<BlogCopy />}/>
           {/* <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
           <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>} /> */}
