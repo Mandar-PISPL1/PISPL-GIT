@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import '../../frontend.min.css';
 export default function BlogContentCopy({ posts }) {
     useEffect(() => {
-        document.title = "PISPL Blogs | Parikh Info Solutions"
+        document.title = `${title}`
         window.scrollTo(0, 0);
     }, []);
 
@@ -21,7 +21,7 @@ export default function BlogContentCopy({ posts }) {
     }
 
     const { id } = useParams();
-    console.log("slug=",id);
+    console.log("slug=", id);
     let blog = {};
     const filteredPosts = posts.filter((post) => post.slug == id);
     console.log("",)
@@ -60,6 +60,25 @@ export default function BlogContentCopy({ posts }) {
     const authorName = getAuthorName(blog.author);
     console.log(authorName);
 
+    //date
+    // const dateString = "2023-06-03T10:22:39";
+
+    // Create a Date object from the date string
+    const date = new Date(blog.date);
+
+    // Define the options for the desired date format
+    const options = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+
+    // Format the date using the options
+    const formattedDate = new Intl.DateTimeFormat('en-US', options).format(date);
+
+    // Output the formatted date
+    console.log(formattedDate);
+
 
 
 
@@ -74,7 +93,7 @@ export default function BlogContentCopy({ posts }) {
                         <div className='my-4' style={{ width: "80px", backgroundColor: "#49dab5", height: "5px" }}></div>
                         <div className='p-0 d-flex  justify-content-between phoneFlex'>
                             <div><span className='mr-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="far fa-user-circle"></i></span>{authorName}</span>
-                                <span className='mx-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="fas fa-calendar"></i></span>May 31, 2023</span>
+                                <span className='mx-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="fas fa-calendar"></i></span>{formattedDate}</span>
                             </div>
                             <div><button style={{ backgroundColor: "#0d2366", color: "#49dab5", border: "2px solid #49dab5", padding: "3px 32px" }}>{categoryName}</button></div>
 

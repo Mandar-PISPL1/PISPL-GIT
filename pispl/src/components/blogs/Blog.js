@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // import NavLink from 'react-router-dom'
 
-const Blog = ({ posts,totalPage,currentPage,setcurrentPage }) => {
-  const Totalpage=totalPage/6;
-  const pg = Math.round(Totalpage)+1;
+const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
+  const Totalpage = totalPage / 6;
+  const pg = Math.round(Totalpage) + 1;
   console.log(currentPage)
   useEffect(() => {
     document.title = "PISPL Blogs | Parikh Info Solutions"
@@ -69,12 +69,26 @@ const Blog = ({ posts,totalPage,currentPage,setcurrentPage }) => {
             posts.map((post) => {
               const author = jsonData.authors.find((author) => author.id === post.author); // Find the author object from the authors array based on author ID
               const authorName = author ? author.name : "Unknown Author"; // Get the author name or display "Unknown Author" if author not found
+              const date = new Date(post.date);
+
+              // Define the options for the desired date format
+              const options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              };
+
+              // Format the date using the options
+              const formattedDate = new Intl.DateTimeFormat('en-US', options).format(date);
+
+              // Output the formatted date
+              console.log(formattedDate);
               return (
                 <div key={post.id} className='col-md-6 col-12 d-flex justify-content-center p-3' >
 
 
                   <Link to={`/blogs/${post.slug}`}>
-                    <div className='p-2 rounded my-1' style={{ boxShadow: "0px 0px 10px -1px rgba(0,0,0,0.5)" ,height:"100%"}}>
+                    <div className='p-2 rounded my-1' style={{ boxShadow: "0px 0px 10px -1px rgba(0,0,0,0.5)", height: "100%" }}>
 
                       <div className="card border-0">
 
@@ -82,7 +96,7 @@ const Blog = ({ posts,totalPage,currentPage,setcurrentPage }) => {
 
                         <div className="card-body px-0" >
                           <h2 style={{ fontWeight: "600", fontSize: "20px", color: "#0d2366", padding: "0px 0px" }}>{post.title.rendered}</h2>
-                          <p style={{ color: "#49dab5", fontSize: "13px" }}>{authorName} | May 31, 2023 | No Comments</p>
+                          <p style={{ color: "#49dab5", fontSize: "13px" }}>{authorName} | {formattedDate} </p>
                           {/* <p style={{fontSize:"16px"}}>{blog.attributes.blogDesc}</p> */}
                           <div dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
                         </div>
@@ -106,9 +120,9 @@ const Blog = ({ posts,totalPage,currentPage,setcurrentPage }) => {
       </div>
       {/* Pagination */}
       <div className='d-flex justify-content-around my-4'>
-        <button style={{color:"#e43765",border:"0px",backgroundColor:"white",fontSize:"20px"}} disabled={currentPage===1}   onClick={()=>{setcurrentPage(currentPage-1)}}>« Previous</button>
-        <span>{currentPage} of {pg}</span> 
-        <button style={{color:"#e43765",border:"0px",backgroundColor:"white",fontSize:"20px"}} disabled={currentPage===totalPage} onClick={()=>{setcurrentPage(currentPage+1)}}>Next »</button>
+        <button style={{ color: "#e43765", border: "0px", backgroundColor: "white", fontSize: "20px" }} disabled={currentPage === 1} onClick={() => { setcurrentPage(currentPage - 1) }}>« Previous</button>
+        <span>{currentPage} of {pg}</span>
+        <button style={{ color: "#e43765", border: "0px", backgroundColor: "white", fontSize: "20px" }} disabled={currentPage === totalPage} onClick={() => { setcurrentPage(currentPage + 1) }}>Next »</button>
 
       </div>
     </>
