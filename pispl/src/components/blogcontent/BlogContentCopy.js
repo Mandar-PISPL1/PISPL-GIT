@@ -21,8 +21,10 @@ export default function BlogContentCopy({ posts }) {
     }
 
     const { id } = useParams();
+    console.log("slug=",id);
     let blog = {};
-    const filteredPosts = posts.filter((post) => post.id == id);
+    const filteredPosts = posts.filter((post) => post.slug == id);
+    console.log("",)
     if (filteredPosts.length > 0) {
         blog = filteredPosts[0];
     }
