@@ -18,51 +18,27 @@ const ReactForm = () => {
         console.log(formEle);
         const formDatab = new FormData(formEle);
         fetch(
-            "https://script.google.com/macros/s/AKfycbzMi7ToquiCMEg9sXNF9uqzEWrfhkPB5WOvdVRSUqURScD4kK8lnnzd_3PhNm2xeV04yA/exec",
-
-            {
-              method: "POST",
-              body: formDatab
-            }
+          "https://script.google.com/macros/s/AKfycbzykz3f1kP1f1q7aC8c9QW3ikSNsdyu93ACZUVxhMgkxg7s6uy47n4OTsy-DMvJBt-k/exec",
+    
+          {
+            method: "POST",
+            body: formDatab
+          }
         )
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
 
 
 
 
 
-    // const form = useRef();
-
-    // const Submit = (e) => {
-    //     const formEle = document.querySelector("form");
-    // const formDatab = new FormData(formEle);
-    // fetch(
-    //     // before deploying 2nd time
-    //     // https://script.google.com/macros/s/AKfycbyqIZRlJ5-oTjSQt8qy1uordtapR7MJ72JwxZXZdZuamhpcT1dfTNPOgiHpC6hM8PH1Gg/exec
-    //   "https://script.google.com/macros/s/AKfycbzfA_gBHnfD70FzwMCs6CVHmLQFmUqSqnN9YhCj7cYAfzKNoIAOIAwtPYMFj0yqR8rXMQ/exec", //
-    // //   "https://script.google.com/macros/s/AKfycbzWCrlI1kWJW1fCzTwvaFGaCqyAu9ZDR0BE7v07leuOSSogl-IhinDCiblfowkCGl2rfw/exec",
-    // //   after deploy again
-    // //   https://script.google.com/macros/s/AKfycbzfA_gBHnfD70FzwMCs6CVHmLQFmUqSqnN9YhCj7cYAfzKNoIAOIAwtPYMFj0yqR8rXMQ/exec
-    //   {
-    //     method: "POST",
-    //     body: formDatab
-    //   }
-    // )
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
-
+    
 
     //     //email
     //     // axios.post('https://sheet.best/api/sheets/962023ab-672e-41c9-b86e-be6e23e381a0',formValue).then((response)=>{
