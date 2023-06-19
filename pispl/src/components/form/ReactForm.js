@@ -18,11 +18,11 @@ const ReactForm = () => {
         console.log(formEle);
         const formDatab = new FormData(formEle);
         fetch(
-            "https://script.google.com/macros/s/AKfycbz-LLEju4bWDtOjhK-UnnQ2B09SfzmrhIc1gfs3sQvCol6VfkVno1T8O5XSsB35k0NkwA/exec",
+            "https://script.google.com/macros/s/AKfycbzMi7ToquiCMEg9sXNF9uqzEWrfhkPB5WOvdVRSUqURScD4kK8lnnzd_3PhNm2xeV04yA/exec",
 
             {
-                method: "POST",
-                body: formDatab
+              method: "POST",
+              body: formDatab
             }
         )
             .then((res) => res.json())
