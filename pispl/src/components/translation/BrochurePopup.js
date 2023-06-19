@@ -63,9 +63,9 @@ export default function BrochurePopup() {
                             <button type="button" className="btn-close" style={{position:"relative",top: "-48px",right:" -8px"}} data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body px-4" >
-                            <p className='mb-1'>Email Address </p>
+                            <label className='mb-1'>Email Address <span style={{ color: "red"}}>*</span></label>
                             <input required style={inputStyle} name="Email" type='email' onChange={handleInputChange}/>
-                            <p className='mb-1 mt-3'>Phone Number</p>
+                            <label className='mb-1 mt-3'>Phone Number <span style={{ color: "red"}}>*</span></label>
                             <input
                              style={inputStyle} name="Phonenumber" type='text' onChange={handleInputChange}/>
                         </div>
