@@ -55,7 +55,7 @@ export default function Home() {
   const [count, setCount] = useState(false);
   return (
     <div style={{ overflowX: "hidden" }}>
-      <Banner index={12} b={home} flag={true} breadCrumb={false} />
+      <Banner index={12} b={home} flag={true} breadCrumb={false} brochure={true}/>
       <div className='myskew'></div>
 
       {/* Content */}

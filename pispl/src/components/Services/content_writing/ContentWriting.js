@@ -24,7 +24,7 @@ export default function ContentWriting() {
  
   return (
     <>
-      <Banner index={8} b={myimage} flag={true} breadCrumb={true}/>
+      <Banner index={8} b={myimage} flag={true} breadCrumb={true} brochure={true}/>
       <div className='myskew'></div>
 
       {/* Stand Out and Grow Your Business */}

@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
-// import emailjs from '@emailjs/browser';
-// import axios from "axios";
+import emailjs from '@emailjs/browser';
+import axios from "axios";
 const ReactForm = () => {
-
+    const form = useRef();
 
     const btnStyle = {
         width: "100%",
@@ -13,62 +13,47 @@ const ReactForm = () => {
         border: "none"
     }
 
-    function Submit(e) {
+
+
+    // https://script.google.com/macros/s/AKfycbwGqB9lqeJNMFLhFrBQ7lna5IHHVyO4S9cO_tezDuOp9vpRxywY2J12ze3DA9-7iuv0/exec
+    const sendEmail = (e) => {
         const formEle = document.querySelector("form");
         console.log(formEle);
         const formDatab = new FormData(formEle);
         fetch(
-          "https://script.google.com/macros/s/AKfycbzykz3f1kP1f1q7aC8c9QW3ikSNsdyu93ACZUVxhMgkxg7s6uy47n4OTsy-DMvJBt-k/exec",
-    
-          {
-            method: "POST",
-            body: formDatab
-          }
+            "https://script.google.com/macros/s/AKfycbzykz3f1kP1f1q7aC8c9QW3ikSNsdyu93ACZUVxhMgkxg7s6uy47n4OTsy-DMvJBt-k/exec",
+
+            {
+                method: "POST",
+                body: formDatab
+            }
         )
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      }
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
 
-
-
-
-
-    
-
-    //     //email
-    //     // axios.post('https://sheet.best/api/sheets/962023ab-672e-41c9-b86e-be6e23e381a0',formValue).then((response)=>{
-    //     //     console.log(response);
-
-    //     // })
-
-
-    //     // emailjs.sendForm('service_a2bethb', 'template_nek1mvm', form.current, '5sH2SEGLWixZ3RicY')
-    //     //     .then((result) => {
-    //     //         console.log(result.text);
-    //     //         console.log("Email Sent Succesfully.");
-    //     //     }, (error) => {
-    //     //         console.log(error.text);
-    //     //         console.log("Email Not Sent.");
-    //     // });
-
-
-
-    // };
-
+        emailjs.sendForm('service_a2bethb', 'template_nek1mvm', form.current, '5sH2SEGLWixZ3RicY')
+        .then((result) => {
+            console.log(result.text);
+            console.log("Email Sent Succesfully.");
+        }, (error) => {
+            console.log(error.text);
+            console.log("Email Not Sent.");
+        });
+    }
 
 
     return (
         <div className="container-sm" style={{ marginTop: "50px", width: "100%", color: "#0d2366" }}>
-            <form className="form" onSubmit={(e) => Submit(e)}>
+            <form ref={form} onSubmit={sendEmail} >
                 <h5 className="mb-3" style={{ fontWeight: "600" }}>Get free support and quote on your email. Please submit the form to get in touch with us.</h5>
                 <div className="mb-3 normal-text">
                     <label htmlFor="email" className="form-label">
-                        Email address <span style={{ color: "red"}}>*</span>
+                        Email address <span style={{ color: "red" }}>*</span>
                     </label>
                     <input
                         type="email"
@@ -77,12 +62,14 @@ const ReactForm = () => {
                         className="form-control"
                         id="email"
                         required="required"
+                    // value={formValue.email_address}
+                    // onChange={handleChange}
 
                     />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">
-                        Full Name <span style={{ color: "red"}}>*</span>
+                        Full Name <span style={{ color: "red" }}>*</span>
                     </label>
                     <input
                         type="text"
@@ -90,7 +77,9 @@ const ReactForm = () => {
                         autoComplete="off"
                         // id="full_name"
                         className="form-control"
-                        
+                    // value={formValue.full_name}
+                    // onChange={handleChange}
+
                     />
                 </div>
                 <div className="mb-3">
@@ -102,6 +91,8 @@ const ReactForm = () => {
                         name="Companyname"
                         autoComplete="off"
                         className="form-control"
+                    // value={formValue.company_name}
+                    // onChange={handleChange}
 
                     />
                 </div>
@@ -342,6 +333,8 @@ const ReactForm = () => {
                             name="Mobilenumber"
                             autoComplete="off"
                             className="form-control"
+                        // value={formValue.phone_number}
+                        // onChange={handleChange}
 
                         />
                     </div>
@@ -349,7 +342,7 @@ const ReactForm = () => {
                 </div>
                 <div className="mb-3">
                     <label htmlFor="Briefdetails" className="form-label">
-                        Please give brief details about your requirements <span style={{ color: "red"}}>*</span>
+                        Please give brief details about your requirements <span style={{ color: "red" }}>*</span>
                     </label>
                     <div >
                         <textarea className="form-control" required="required" style={{ height: "100px" }} name="Projectdetails" autoComplete="off"  ></textarea>

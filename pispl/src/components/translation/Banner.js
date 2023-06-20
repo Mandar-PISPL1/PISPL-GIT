@@ -29,7 +29,7 @@ export default function Banner(props) {
                         <p className='py-2 fw-light'>{arr[index].content1}</p>
                         <p className='py-2 fw-light'>{arr[index].content2}</p>
                         <p className='py-2 fw-light'>{arr[index].content3}</p>
-                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" style={buttonstyle}>Download Free Brochure <FaBook /></button>
+                        {props.brochure && <button data-bs-toggle="modal" data-bs-target="#exampleModal" style={buttonstyle}>Download Free Brochure <FaBook /></button> }
                         <br/><br/>
                         {props.breadCrumb && <NavLink to="/"><span className='fw-light text-danger'>Home &#187; </span> </NavLink> }<span className='fw-light'>{arr[index].service_title}</span>
                     </div>
@@ -42,7 +42,7 @@ export default function Banner(props) {
                 </div>
             </div>
 
-            <BrochurePopup/>
+            {props.brochure && <BrochurePopup/> }
 
         </>
     )

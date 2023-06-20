@@ -30,7 +30,7 @@ export default function Localization() {
   }
   return (
     <>
-      <Banner index={2} lottie={localization_lottie} breadCrumb={true} />
+      <Banner index={2} lottie={localization_lottie} breadCrumb={true} brochure={true}/>
       <div className='myskew'></div>
 
       {/* What is localization */}

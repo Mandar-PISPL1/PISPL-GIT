@@ -31,10 +31,10 @@ export default function VoiceOver() {
   }
   return (
     <>
-      <Banner index={3} lottie={voiceover_lottie} breadCrumb={true}/>
+      <Banner index={3} lottie={voiceover_lottie} breadCrumb={true} brochure={true}/>
       <div className='myskew'></div>
       {/* The Best Voice for your Business */}
-      <div className="conatiner py-4 mx-md-2">
+      <div className="container py-4 mx-md-2">
         <div className="row px-md-5 mx-md-5 m-0">
           <div className="col-md-7 col-12">
             <p className='text-start m-3' style={{ color: "#0d2366", fontWeight: "300" }} >JOIN HANDS WITH THE TOP VOICE OVER PROVIDERS</p>

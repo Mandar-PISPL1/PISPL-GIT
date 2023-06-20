@@ -23,7 +23,7 @@ export default function Transcription() {
   }
   return (
     <>
-      <Banner index={1} lottie={transcription_lottie} breadCrumb={true}/>
+      <Banner index={1} lottie={transcription_lottie} breadCrumb={true} brochure={true}/>
       <div className='myskew'></div>
       {/* Transform Your Multimedia to Definitive Text */}
       <div className="conatiner py-4 mx-md-2">

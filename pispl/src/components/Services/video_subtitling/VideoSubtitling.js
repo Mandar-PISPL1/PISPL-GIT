@@ -26,7 +26,7 @@ export default function VideoSubtitling() {
   }
   return (
     <>
-      <Banner index={6} lottie={videosubtitling_lottie} breadCrumb={true}/>
+      <Banner index={6} lottie={videosubtitling_lottie} breadCrumb={true} brochure={true}/>
       <div className='myskew'></div>
 
       {/* Get the Best Subtitles Translation for All Media */}

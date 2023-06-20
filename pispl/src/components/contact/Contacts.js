@@ -5,6 +5,7 @@ import { ImCheckmark } from "react-icons/im";
 import PhishingAlert from '../translation/PhishingAlert';
 import ReactForm from '../form/ReactForm'
 import Form from '../form/Form'
+import Newform from '../form/Newform';
 export default function Contacts() {
   useEffect(() => {
     document.title="Contact Information | Parikh Info Solutions"
@@ -12,7 +13,7 @@ export default function Contacts() {
   }, []);
   return (
     <>
-      <Banner index={11} upperpara={false} lottie={lottie} breadCrumb={true}/>
+      <Banner index={11} upperpara={false} lottie={lottie} breadCrumb={true} brochure={false}/>
       <div className='myskew'></div>
       <div className='container py-3'>
         <div className='row px-md-5' >
@@ -71,10 +72,10 @@ export default function Contacts() {
               </div>
             </div>
           </div>
-          {/* 2nd Column */}
+      
           <div className='col-md-6 col-12'>
-            <ReactForm />
-            {/* <Form/> */}
+          
+            <ReactForm/>
           </div>
         </div>
       </div>
@@ -82,5 +83,6 @@ export default function Contacts() {
       <PhishingAlert />
       
     </>
+  
   )
 }

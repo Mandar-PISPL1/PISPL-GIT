@@ -34,7 +34,7 @@ export default function Translation() {
 
   return (
     <>
-      <Banner index={0} lottie={translation_service} breadCrumb={true} />
+      <Banner index={0} lottie={translation_service} breadCrumb={true} brochure={true}/>
       <div className='myskew'></div>
       {/* Content */}
       <div className='container py-4 mx-md-2'>
