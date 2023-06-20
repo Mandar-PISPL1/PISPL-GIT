@@ -75,25 +75,7 @@ export default function BrochurePopup() {
                 <button type="submit" onClick={openPDFInNewTab} style={buttonstyle} className="btn btn-primary mb-3" disabled={!isFormValid}>Save changes</button>
               </div>
 
-                <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content"  style={{backgroundColor:"#49dab5"}}>
-                        <div className="modal-header d-flex flex-column justify-content-center align-items-center" style={{border:"0px",color:"#0d2366",fontWeight:"600"}}>
-                            <h3 className="modal-title" id="exampleModalLabel">Get the FREE Brochure</h3>
-                            <button type="button" className="btn-close" style={{position:"relative",top: "-48px",right:" -8px"}} data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body px-4" >
-                            <label className='mb-1'>Email Address <span style={{ color: "red"}}>*</span></label>
-                            <input required style={inputStyle} name="Email" type='email' onChange={handleInputChange}/>
-                            <label className='mb-1 mt-3'>Phone Number <span style={{ color: "red"}}>*</span></label>
-                            <input
-                             style={inputStyle} name="Phonenumber" type='text' onChange={handleInputChange}/>
-                        </div>
-                        <div className="modal-footer d-flex justify-content-center"style={{border:"0px"}}>
-                            
-                            <button type="submit" onClick={openPDFInNewTab} style={buttonstyle} className="btn btn-primary mb-3"  disabled={!isFormValid}>Save changes</button>
-                        </div>
-                    </div>
-                </div>
+              
 
             </div>
           </div>
