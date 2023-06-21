@@ -1,13 +1,24 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { BsWhatsapp, BsFacebook, BsLinkedin } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import '../../frontend.min.css';
 export default function BlogContentCopy({ posts }) {
+    const [viewpost,setviewPort] =useState(window.innerWidth);
     useEffect(() => {
         document.title = `${title}`
         window.scrollTo(0, 0);
     }, []);
+
+    useEffect(()=>{
+        const handleResize = () => {
+            setviewPort(window.innerWidth);
+          };
+          window.addEventListener('resize', handleResize);
+          return () => {
+            window.removeEventListener('resize', handleResize);
+          };
+    })
 
     const iconStyle = {
         backgroundColor: "#49dab5",
@@ -60,36 +71,7 @@ export default function BlogContentCopy({ posts }) {
     const authorName = getAuthorName(blog.author);
     console.log(authorName);
 
-    //date
-    // const dateString = "2023-06-03T10:22:39";
-
-    // Create a Date object from the date string
-    // const year = Number(blog.date.slice(0, 4));
-    // const month = Number(blog.date.slice(5, 7)) - 1; 
-    // const day = Number(blog.date.slice(8, 10));
-    // const hour = Number(blog.date.slice(11, 13));
-    // const minute = Number(blog.date.slice(14, 16));
-    // const second = Number(blog.date.slice(17, 19));
-
-    // // Create a new Date object
-    // const date = new Date(year, month, day, hour, minute, second);
-    // // const date =  new Date(blog.date);
-
-    // // Define the options for the desired date format
-    // const options = {
-    //     year: 'numeric',
-    //     month: 'long',
-    //     day: 'numeric'
-    // };
-
-    // // Format the date using the options
-    // const formattedDate = date.toLocaleDateString('en-US', options);
-
-    // Output the formatted date
-    //date
-    // const dateString = "2023-06-03T10:22:39";
-
-    // Create a Date object from the date string
+    
     const date = blog.date ? new Date(blog.date) : null;
 
     // Define the options for the desired date format
@@ -131,8 +113,8 @@ export default function BlogContentCopy({ posts }) {
 
             <div className='container-fluid py-5'>
                 <div className='row'>
-                    <div className='col-md-2 col-12 d-flex justify-content-center'>
-                        <div style={{ width: "15%", display: "flex", alignItems: "center", flexDirection: "column" }}>
+                    <div className='col-md-2 col-12 d-flex justify-content-center' >
+                        <div style={{ width: "15%", display: "flex", alignItems: "center", flexDirection: "column",display :viewpost > 480 ? 'block' : 'none' }}>
                             <p style={{ color: "#0d2366" }}>share</p>
                             <div><NavLink to='https://api.whatsapp.com/send?text=*Game%20Localization%E2%80%93The%20Quickest%20Way%20To%20Reach%20Global%20Gamers%21%20%7C%20Parikh%20Info%20Solutions*%0A%0Ahttps://parikhinfosolutions.com/blog/game-localization-the-quickest-way-to-reach-global-gamers/'><BsWhatsapp style={iconStyle} /></NavLink></div>
                             <div><NavLink to='https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fparikhinfosolutions.com%252Fblog%252Fgame-localization-the-quickest-way-to-reach-global-gamers%252F&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB'><BsFacebook style={iconStyle} /></NavLink></div>
@@ -141,7 +123,7 @@ export default function BlogContentCopy({ posts }) {
                     </div>
                     <div className='col-md-7 col-12'>
                         <div className='featured-image text-center' >
-                            {sourceUrl && <img src={sourceUrl} alt="f-image" style={{ height: "372px", width: "711px" }} />}
+                            {sourceUrl && <img src={sourceUrl} alt="f-image" style={{ height: "100%", width: "100%" }} />}
                         </div>
                         <div>
 
@@ -157,14 +139,24 @@ export default function BlogContentCopy({ posts }) {
                         <div className='text-center px-2 py-3 my-5' style={{ backgroundColor: "#f6f6f6", display: "flex", flexDirection: "column" }}>
                             <h2>Get Update On Every Blog </h2>
                             <div style={{ display: "flex", justifyContent: "center" }}>
-
+                                    {/* lottie file */}
 
                             </div>
-                            <input type="text" placeholder='YOUR EMAIL' style={{ padding: "6px 11px", margin: "12px auto" }} />
-                            <button style={{ fontSize: "27px", padding: "7px 0px", width: "230px", margin: "6px auto" }}>Subscribe</button>
+                            <input type="email" placeholder='YOUR EMAIL' style={{ padding: "6px 11px", margin: "12px auto" }} />
+                            <button style={{ fontSize: "27px", padding: "7px 48px", margin: "6px auto" }}>Subscribe</button>
 
                         </div>
                     </div>
+                    <div style={{ textAlign:"center", alignItems: "center",justifyContent:"center" ,display: viewpost <= 480 ? 'block' : 'none' }}>
+                            
+                            <div>
+                                <span className='mx-2'><NavLink to='https://api.whatsapp.com/send?text=*Game%20Localization%E2%80%93The%20Quickest%20Way%20To%20Reach%20Global%20Gamers%21%20%7C%20Parikh%20Info%20Solutions*%0A%0Ahttps://parikhinfosolutions.com/blog/game-localization-the-quickest-way-to-reach-global-gamers/'><BsWhatsapp style={iconStyle} /></NavLink></span>
+                                <span className='mx-2'><NavLink to='https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fparikhinfosolutions.com%252Fblog%252Fgame-localization-the-quickest-way-to-reach-global-gamers%252F&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB'><BsFacebook style={iconStyle} /></NavLink></span>
+                                <span className='mx-2'><NavLink to='https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%3A%2F%2Fparikhinfosolutions.com%2Fblog%2Fgame-localization-the-quickest-way-to-reach-global-gamers%2F%26title%3DGame%2520Localization%25E2%2580%2593The%2520Quickest%2520Way%2520To%2520Reach%2520Global%2520Gamers%2521%2520%257C%2520Parikh%2520Info%2520Solutions%26summary%3D%26source%3Dhttps%3A%2F%2Fparikhinfosolutions.com%2Fblog%2Fgame-localization-the-quickest-way-to-reach-global-gamers%2F'><BsLinkedin style={iconStyle} /></NavLink></span>
+                            <p style={{ color: "#0d2366",textAlign:"center" }}>share</p>
+                            </div>
+                        </div>
+
 
 
                 </div>
