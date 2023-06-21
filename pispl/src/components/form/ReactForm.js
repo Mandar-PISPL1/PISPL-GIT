@@ -36,14 +36,14 @@ const ReactForm = () => {
                 console.log(error);
             });
 
-        emailjs.sendForm('service_a2bethb', 'template_nek1mvm', form.current, '5sH2SEGLWixZ3RicY')
-            .then((result) => {
-                console.log(result.text);
-                console.log("Email Sent Succesfully.");
-            }, (error) => {
-                console.log(error.text);
-                console.log("Email Not Sent.");
-            });
+        // emailjs.sendForm('service_a2bethb', 'template_nek1mvm', form.current, '5sH2SEGLWixZ3RicY')
+        //     .then((result) => {
+        //         console.log(result.text);
+        //         console.log("Email Sent Succesfully.");
+        //     }, (error) => {
+        //         console.log(error.text);
+        //         console.log("Email Not Sent.");
+        //     });
     }
 
 
