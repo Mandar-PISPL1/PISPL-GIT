@@ -37,13 +37,13 @@ const ReactForm = () => {
             });
 
         emailjs.sendForm('service_a2bethb', 'template_nek1mvm', form.current, '5sH2SEGLWixZ3RicY')
-        .then((result) => {
-            console.log(result.text);
-            console.log("Email Sent Succesfully.");
-        }, (error) => {
-            console.log(error.text);
-            console.log("Email Not Sent.");
-        });
+            .then((result) => {
+                console.log(result.text);
+                console.log("Email Sent Succesfully.");
+            }, (error) => {
+                console.log(error.text);
+                console.log("Email Not Sent.");
+            });
     }
 
 
@@ -333,6 +333,10 @@ const ReactForm = () => {
                             name="Mobilenumber"
                             autoComplete="off"
                             className="form-control"
+                            maxLength="10"
+                            onInput={(event) => {
+                                event.target.value = event.target.value.slice(0, 10); // Restrict input to 10 characters
+                            }}
                         // value={formValue.phone_number}
                         // onChange={handleChange}
 

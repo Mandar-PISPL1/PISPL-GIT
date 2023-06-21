@@ -323,7 +323,10 @@ export default function Transcriber() {
             </div>
             <div className="col-md-6 col-12">
               <label for="inputEmail4" className="pb-2 normal-text">Phone Number<span style={{ color: "red" }}>*</span></label>
-              <input required type="text" name='Phonenumber' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+              <input required type="text" name='Phonenumber' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" maxLength="10"
+                onInput={(event) => {
+                  event.target.value = event.target.value.slice(0, 10); // Restrict input to 10 characters
+                }} />
             </div>
           </div>
           <div className="row my-2">
@@ -951,12 +954,12 @@ export default function Transcriber() {
           </div>
           <div className="my-3">
             <button type="submit" style={btnStyle} className="btn btn-primary">Register <i aria-hidden="true" className="fas fa-location-arrow mx-2">
-              </i></button>
+            </i></button>
 
           </div>
 
         </div>
-        
+
       </form>
       {/* <ProgressBar progress={calculateProgress()} percentage={a}/> */}
       {/* <form >

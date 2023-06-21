@@ -188,17 +188,17 @@ export default function Translator() {
         <form className="form" onSubmit={(e) => Submit(e)}>
           <div className="row my-2">
             <div className="col-md-6 col-12">
-              <label for="inputEmail4" className="pb-2 normal-text">First Name <span style={{ color: "red"}}>*</span></label>
+              <label for="inputEmail4" className="pb-2 normal-text">First Name <span style={{ color: "red" }}>*</span></label>
               <input required type="text" name='Firstname' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
             </div>
             <div className="col-md-6 col-12">
-              <label for="inputEmail4" className="pb-2 normal-text">Last Name <span style={{ color: "red"}}>*</span></label>
+              <label for="inputEmail4" className="pb-2 normal-text">Last Name <span style={{ color: "red" }}>*</span></label>
               <input required type="text" name='Lastname' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
             </div>
           </div>
           <div className="row my-2">
             <div className="col-md-6 col-12">
-              <label for="inputEmail4" className="pb-2 normal-text">Country Code <span style={{ color: "red"}}>*</span></label>
+              <label for="inputEmail4" className="pb-2 normal-text">Country Code <span style={{ color: "red" }}>*</span></label>
               <select required className="form-select form-select-lg border-secondary" id="exampleFormControlSelect1" name="Countrycode" >
                 <option value="India (+91)">India (+91)</option>
                 <option value="UK (+44)">UK (+44)</option>
@@ -423,13 +423,16 @@ export default function Translator() {
               </select>
             </div>
             <div className="col-md-6 col-12">
-              <label for="inputEmail4" className="pb-2 normal-text">Phone Number <span style={{ color: "red"}}>*</span></label>
-              <input required type="text" name='Phonenumber' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+              <label for="inputEmail4" className="pb-2 normal-text">Phone Number <span style={{ color: "red" }}>*</span></label>
+              <input required type="text" name='Phonenumber' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" maxLength="10"
+                onInput={(event) => {
+                  event.target.value = event.target.value.slice(0, 10); // Restrict input to 10 characters
+                }} />
             </div>
           </div>
           <div className="row my-2">
             <div className="col-md-6 col-12">
-              <label for="inputEmail4" className="pb-2 normal-text">Primary Email <span style={{ color: "red"}}>*</span></label>
+              <label for="inputEmail4" className="pb-2 normal-text">Primary Email <span style={{ color: "red" }}>*</span></label>
               <input required type="email" name='Primaryemail' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
             </div>
             <div className="col-md-6 col-12">
@@ -442,7 +445,7 @@ export default function Translator() {
             <input type="text" name='Skype_Zoom_ID_Hangout_Whatsapp' className="form-control form-control-lg w-100 rounded border-secondary" />
           </div>
           <div className="my-0">
-            <label for="inputEmail4" className="pb-2 normal-text">Select Gender <span style={{ color: "red"}}>*</span></label>
+            <label for="inputEmail4" className="pb-2 normal-text">Select Gender <span style={{ color: "red" }}>*</span></label>
           </div>
           <div className="form-check">
             <input checked className="form-check-input border-secondary" type="radio" name="Gender" id="exampleRadios1" value="Male" />
@@ -490,7 +493,7 @@ export default function Translator() {
           </div>
           <h2 className="text-center my-3">Language Details</h2>
           <div className="my-2">
-            <label for="inputEmail4" className="pb-2 normal-text">Native Language <span style={{ color: "red"}}>*</span></label>
+            <label for="inputEmail4" className="pb-2 normal-text">Native Language <span style={{ color: "red" }}>*</span></label>
             <select required className="form-select form-select-lg border-secondary" id="exampleFormControlSelect1" name='Native_Language'>
               <option value="Select Language 1">Select Language 1</option>
               <option value="Abkhazian">Abkhazian</option>
@@ -3073,7 +3076,7 @@ export default function Translator() {
             </div>
           </div>
           <div className="form-group">
-            <label for="inputEmail4" className="pb-2 normal-text">Expertise (Max 4) <span style={{ color: "red"}}>*</span>
+            <label for="inputEmail4" className="pb-2 normal-text">Expertise (Max 4) <span style={{ color: "red" }}>*</span>
             </label>
             <select required multiple className="form-control border-secondary" id="exampleFormControlSelect2">
               <option value="Adevertising">Adevertising</option>
@@ -3098,7 +3101,7 @@ export default function Translator() {
           </div>
           <h2 className="text-center my-3">Translation Rates </h2>
           <div className="my-2">
-            <label for="inputEmail4" className="pb-2 normal-text ">Select Your Currency <span style={{ color: "red"}}>*</span></label>
+            <label for="inputEmail4" className="pb-2 normal-text ">Select Your Currency <span style={{ color: "red" }}>*</span></label>
             <select required className="form-select form-select-lg border-secondary" id="exampleFormControlSelect1" name='Currency'>
               <option>INR</option>
               <option>USD</option>
@@ -3108,7 +3111,7 @@ export default function Translator() {
             </select>
           </div>
           <div className="my-2">
-            <label for="inputEmail4" className="pb-2 normal-text">Translation Rate From EN {'>'} Native (Per Word) <span style={{ color: "red"}}>*</span></label>
+            <label for="inputEmail4" className="pb-2 normal-text">Translation Rate From EN {'>'} Native (Per Word) <span style={{ color: "red" }}>*</span></label>
             <input required type="text" className="form-control form-control-lg w-100 rounded border-secondary" name="Translation_Rate_From_EN_to_Native_Per_Word" />
           </div>
           <div className="row my-2">
@@ -3152,12 +3155,12 @@ export default function Translator() {
             <input type="text" className="form-control form-control-lg w-100 rounded border-secondary" name='Qa_Review_rate_per_word' />
           </div>
           <div className="my-2">
-            <label for="inputEmail4" className="pb-2 normal-text">Your daily translation output (Number of Words Per Day) <span style={{ color: "red"}}>*</span></label>
+            <label for="inputEmail4" className="pb-2 normal-text">Your daily translation output (Number of Words Per Day) <span style={{ color: "red" }}>*</span></label>
             <input required type="text" className="form-control form-control-lg w-100 rounded border-secondary" name='Your_daily_translation_output_number_of_words_per_day' />
           </div>
           <h2 className="text-center my-3">Additional Details</h2>
           <div className="my-0">
-            <label for="inputEmail4" className="pb-2 normal-text">Do you accept rush translation? <span style={{ color: "red"}}>*</span></label>
+            <label for="inputEmail4" className="pb-2 normal-text">Do you accept rush translation? <span style={{ color: "red" }}>*</span></label>
           </div>
           <div className="form-check">
             <input checked className="form-check-input border-secondary" type="radio" name="Rush_Transaltion" id="exampleRadios1" value="Male" />
@@ -3172,9 +3175,9 @@ export default function Translator() {
             </label>
           </div>
           <div className="my-0">
-            <label for="inputEmail4" className="pb-2 normal-text">Do you work on weekends? <span style={{ color: "red"}}>*</span></label>
+            <label for="inputEmail4" className="pb-2 normal-text">Do you work on weekends? <span style={{ color: "red" }}>*</span></label>
           </div>
-          <div  className="form-check">
+          <div className="form-check">
             <input checked className="form-check-input border-secondary" type="radio" name="Work_on_weekend" id="exampleRadios1" value="Yes" />
             <label className="form-check-label" for="exampleRadios1">
               Yes
@@ -3187,14 +3190,14 @@ export default function Translator() {
             </label>
           </div>
           <div className="form-group">
-            <label for="inputEmail4" className="pb-2 normal-text">Attache Your CV (.Doc, .Docx, .PDF) <span style={{ color: "red"}}>*</span></label>
+            <label for="inputEmail4" className="pb-2 normal-text">Attache Your CV (.Doc, .Docx, .PDF) <span style={{ color: "red" }}>*</span></label>
             <label for="exampleFormControlFile1">Example file input</label>
             <input type="file" className="form-control-file" id="exampleFormControlFile1" />
 
           </div>
           <div className="my-3">
             <button type="submit" style={btnStyle} className="btn btn-primary">Register <i aria-hidden="true" className="fas fa-location-arrow mx-2">
-              </i></button>
+            </i></button>
 
           </div>
         </form>

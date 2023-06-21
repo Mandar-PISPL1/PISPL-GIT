@@ -327,7 +327,10 @@ export default function VoDubArtist() {
             </div>
             <div className="col-md-6 col-12">
               <label for="inputEmail4" className="pb-2 normal-text">Phone Number</label>
-              <input required type="text" name='Phonenumber' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" />
+              <input required type="text" name='Phonenumber' className="form-control form-control-lg mb-2 w-100 rounded border-secondary" maxLength="10"
+                onInput={(event) => {
+                  event.target.value = event.target.value.slice(0, 10); // Restrict input to 10 characters
+                }} />
             </div>
           </div>
           <div className="row my-2">

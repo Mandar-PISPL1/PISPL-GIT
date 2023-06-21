@@ -64,7 +64,33 @@ export default function BlogContentCopy({ posts }) {
     // const dateString = "2023-06-03T10:22:39";
 
     // Create a Date object from the date string
-    const date = new Date(blog.date);
+    // const year = Number(blog.date.slice(0, 4));
+    // const month = Number(blog.date.slice(5, 7)) - 1; 
+    // const day = Number(blog.date.slice(8, 10));
+    // const hour = Number(blog.date.slice(11, 13));
+    // const minute = Number(blog.date.slice(14, 16));
+    // const second = Number(blog.date.slice(17, 19));
+
+    // // Create a new Date object
+    // const date = new Date(year, month, day, hour, minute, second);
+    // // const date =  new Date(blog.date);
+
+    // // Define the options for the desired date format
+    // const options = {
+    //     year: 'numeric',
+    //     month: 'long',
+    //     day: 'numeric'
+    // };
+
+    // // Format the date using the options
+    // const formattedDate = date.toLocaleDateString('en-US', options);
+
+    // Output the formatted date
+    //date
+    // const dateString = "2023-06-03T10:22:39";
+
+    // Create a Date object from the date string
+    const date = blog.date ? new Date(blog.date) : null;
 
     // Define the options for the desired date format
     const options = {
@@ -74,9 +100,7 @@ export default function BlogContentCopy({ posts }) {
     };
 
     // Format the date using the options
-    const formattedDate = new Intl.DateTimeFormat('en-US', options).format(date);
-
-    // Output the formatted date
+    const formattedDate = new Intl.DateTimeFormat('en-US', options).format(date) ;
     console.log(formattedDate);
 
 
@@ -126,7 +150,7 @@ export default function BlogContentCopy({ posts }) {
                         <div id=''>
                             {/* <ReactMarkdown className='line-break blog-content px-md-5' >content</ReactMarkdown> */}
                             {/* <div dangerouslySetInnerHTML={{ __html: blog.content }}></div> */}
-                            <div dangerouslySetInnerHTML={{ __html: contentt }}></div>
+                            <div style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: contentt }}></div>
                         </div>
                     </div>
                     <div className='col-md-3 col-12'>
