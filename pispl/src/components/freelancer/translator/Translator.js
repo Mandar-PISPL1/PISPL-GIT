@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-// import Pg1 from "./Pg1";
-// import Pg2 from "./Pg2";
-// import Pg3 from "./Pg3";
-// import Pg4 from "./Pg4";
-// import Pg5 from "./Pg5";
-// import Pg6 from "./Pg6";
-// import ProgressBar from "../ProgressBar";
-// import { google } from 'googleapis';
+
 
 export default function Translator() {
 
@@ -31,11 +24,6 @@ export default function Translator() {
       });
   }
 
-
-
-
-  //   const apiKey = 'AIzaSyCEW5S5tR3xLJR9Y_ysEmtGnQXFTTlvdh8';
-  // const spreadsheetId = '11F1RqcRg4vIHmorpMfDi2H6KJlsyuwWCFX_8MmlRKds';
   const btnStyle = {
     width: "100%",
     fontSize: "24px",
@@ -46,121 +34,7 @@ export default function Translator() {
     border: "none"
   }
 
-  const [page, setPage] = useState(1);
-  //form -> https://script.google.com/macros/s/AKfycby-9h1aamtQHnKU73NoIVrKJdqZlpQb6TpyZO657N_VIOQkuiS3DjmMMCuXMcFEeON6-Q/exec
-
-
-  const [formValue, setFormValue] = useState({
-    Firstname: "",
-    Lastname: "",
-    Countrycode: "",
-    Phonenumber: "",
-    Primaryemail: "",
-    AlternativeEmail: "",
-    Skype_Zoom_ID_Hangout_Whatsapp: "",
-    Gender: "",
-    Qualification: "",
-    Stream: "",
-    Other_language_1: "",
-    Other_language_2: "",
-    Other_language_3: "",
-    Other_language_4: "",
-    Currency: "",
-    Translation_Rate_From_EN_to_Native_Per_Word: "",
-    Translation_Rate_From_EN_to_Language_1_Per_Word: "",
-    Translation_Rate_From_EN_to_Language_2_Per_Word: "",
-    Translation_Rate_From_EN_to_Language_3_Per_Word: "",
-    Translation_Rate_From_EN_to_Language_4_Per_Word: "",
-    Adaptation_rate_per_word: "",
-    Book_Translation_rate_per_rate: "",
-    Proofreading_rate_per_word: "",
-    Qa_Review_rate_per_word: "",
-    Your_daily_translation_output_number_of_words_per_day: "",
-    direct_transcription_output_rate_per_minute: "",
-    Rush_Transaltion: "",
-    Do_you_work_on_weekends: "",
-
-
-  })
-  const handleInputChange = (event) => {
-    setFormValue({ ...formValue, [event.target.name]: event.target.value });
-  };
-
-
-  // function Submit(e) {
-  //   const formEle = document.querySelector("form");
-  //   const formDatab = new FormData(formEle);
-  //   console.log(formDatab)
-
-  //   fetch(
-  //     "https://script.google.com/macros/s/AKfycby-9h1aamtQHnKU73NoIVrKJdqZlpQb6TpyZO657N_VIOQkuiS3DjmMMCuXMcFEeON6-Q/exec",
-  //     {
-  //       method: "POST",
-  //       body: formDatab
-  //     }
-  //   )
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
-
-
-  const next = () => {
-    if (page >= 6) {
-      setPage(page)
-    }
-    else {
-      setPage(page + 1)
-    }
-  }
-  const prev = () => {
-    if (page <= 1) {
-      setPage(page)
-    }
-    else {
-      setPage(page - 1)
-    }
-  }
-  const calculateProgress = () => {
-    let a = (page / 6) * 100;
-    return a;
-  };
-  console.log(formValue)
-
-  // const submitForm = async () => {
-  //   const auth = new google.auth.GoogleAuth({
-  //     keyFile: '../../../../credential.json', // Include path to your credentials file if necessary
-  //     scopes: 'https://www.googleapis.com/auth/spreadsheets',
-  //   });
-
-  //   const sheets = google.sheets({ version: 'v4', auth });
-
-
-  //   const values = [
-  //     [formValue.Firstname, formValue.Lastname, formValue.Countrycode,, formValue.Phonenumber, formValue.AlternativeEmail, formValue.Skype_Zoom_ID_Hangout_Whatsapp, formValue.Gender, formValue.Qualification, formValue.Stream, formValue.Other_language_1, formValue.Other_language_2, formValue.Other_language_3, formValue.Other_language_4, formValue.Currency, formValue.Translation_Rate_From_EN_to_Native_Per_Word, formValue.Translation_Rate_From_EN_to_Language_1_Per_Word, formValue.Translation_Rate_From_EN_to_Language_2_Per_Word, formValue.Translation_Rate_From_EN_to_Language_3_Per_Word, formValue.Translation_Rate_From_EN_to_Language_4_Per_Word, formValue.Adaptation_rate_per_word, formValue.Book_Translation_rate_per_rate, formValue.Proofreading_rate_per_word, formValue.Qa_Review_rate_per_word, formValue.Your_daily_translation_output_number_of_words_per_day, formValue.direct_transcription_output_rate_per_minute, formValue.Rush_Transaltion, formValue.Do_you_work_on_weekends]
-  //   ];
-
-  //   const resource = {
-  //     values,
-  //   };
-
-  //   try {
-  //     const response = await sheets.spreadsheets.values.append({
-  //       spreadsheetId,
-  //       range: 'Page1', // Update with the actual sheet name and range
-  //       valueInputOption: 'USER_ENTERED',
-  //       resource,
-  //     });
-
-  //     console.log('Data added successfully');
-  //   } catch (error) {
-  //     console.error('Error adding data:', error);
-  //   }
-  // };
+ 
 
 
 
@@ -169,22 +43,9 @@ export default function Translator() {
   return (
 
     <>
-      <div className="container w-50 width100">
+      <div className="container w-50 width100 mt-160">
         <h2 className="text-center my-3">Join our freelance team.</h2>
-        {/* <ProgressBar progress={calculateProgress()} /> */}
-        {/* <form onSubmit={(e) => Submit(e)}>
-         <form > 
-          
-          {
-            page==1 ? <Pg1 formValue={formValue} handleInputChange={handleInputChange}/>:page==2 ? <Pg2 formValue={formValue} handleInputChange={handleInputChange}/> : page==3 ? <Pg3 formValue={formValue} handleInputChange={handleInputChange}/> : page==4 ? <Pg4 formValue={formValue} handleInputChange={handleInputChange}/> : page ==5 ? <Pg5 formValue={formValue} handleInputChange={handleInputChange}/> : page ==6 ? <Pg6 formValue={formValue} handleInputChange={handleInputChange}/> : null
-          }
         
-          <div className="row my-4">
-            { page < 6 && <input type="button" style={btnStyle} onClick={next} className="col-md-6 btn btn-primary my-2 py-3" value="NEXT"/> }
-            { page > 1 && <input type="button"style={btnStyle} onClick={prev} className="col-md-6 btn btn-primary my-2 py-3" value="PREVIOUS"/> }
-            {page===6 && <button type="submit" style={btnStyle} onSubmit={submitForm}  className="col-md-6 btn btn-primary my-2 py-3">SUBMIT</button>}
-          </div>
-        </form> */}
         <form className="form" onSubmit={(e) => Submit(e)}>
           <div className="row my-2">
             <div className="col-md-6 col-12">

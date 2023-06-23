@@ -1,15 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useRef  } from 'react';
 import { Link } from 'react-router-dom';
-// import NavLink from 'react-router-dom'
+
 
 const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
+  
   const Totalpage = totalPage / 6;
   const pg = Math.round(Totalpage) + 1;
+  const containerRef = useRef(null);
   console.log(currentPage)
   useEffect(() => {
     document.title = "PISPL Blogs | Parikh Info Solutions"
+    containerRef.current.scrollTo(0, 0);
     window.scrollTo(0, 0);
-  }, []);
+  }, [currentPage]);
 
   const buttonstyle = {
     color: "#0d2366",
@@ -35,8 +38,8 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
 
   return (
     <>
-      <div className='container-fluid py-3' style={{ backgroundColor: "var(--mainColor)", color: "var(--textColor)" }}>
-        <div className='d-flex justify-content-center align-items-center flex-column' style={{ padding: "60px 0px" }}>
+      <div className='container-fluid ' style={{ backgroundColor: "var(--mainColor)", color: "var(--textColor)" }} >
+        <div className='d-flex justify-content-center align-items-center flex-column' style={{ padding: "30px 0px" }}>
           <h1 className='fw-bold text-center' style={{ fontSize: "45px" }}>Grow Your Business</h1>
           <div className='my-4 ' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px" }}></div>
           <p className='text-center mb-5' style={{ fontSize: "22px", fontWeight: "300", maxWidth: "788px" }}>Get new updates direct to your inbox. 💌 To help you get the most out of through the globalization.</p>
@@ -47,22 +50,14 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
             </form>
 
           </div>
-          <p className='my-4'>✅ Don’t worry! We hate SPAM just as much as you do.</p>
+          <p className='mt-4'>✅ Don’t worry! We hate SPAM just as much as you do.</p>
 
         </div>
 
 
       </div>
-      {/* <div>
-                {posts.map(post => (
-                    <div key={post.id}>
-                        <h2>{post.title.rendered}</h2>
-                        <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}></div>
-                    </div>
-                ))}
-            </div> */}
-
-      <div className='container-fluid'>
+     
+      <div className='container-fluid' ref={containerRef}>
         <div className='row px-md-5 py-4 mx-md-5 m-0'>
 
           {

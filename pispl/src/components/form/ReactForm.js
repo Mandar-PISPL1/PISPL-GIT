@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import axios from "axios";
+import { useNavigate  } from 'react-router-dom';
 const ReactForm = () => {
     const form = useRef();
+    const navigate = useNavigate();
 
     const btnStyle = {
         width: "100%",
@@ -15,7 +15,7 @@ const ReactForm = () => {
 
 
 
-    // https://script.google.com/macros/s/AKfycbwGqB9lqeJNMFLhFrBQ7lna5IHHVyO4S9cO_tezDuOp9vpRxywY2J12ze3DA9-7iuv0/exec
+   
     const sendEmail = (e) => {
         const formEle = document.querySelector("form");
         console.log(formEle);
@@ -31,19 +31,13 @@ const ReactForm = () => {
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
+                // history.push('/success');
+                // navigate('/success');
             })
             .catch((error) => {
                 console.log(error);
             });
 
-        // emailjs.sendForm('service_a2bethb', 'template_nek1mvm', form.current, '5sH2SEGLWixZ3RicY')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         console.log("Email Sent Succesfully.");
-        //     }, (error) => {
-        //         console.log(error.text);
-        //         console.log("Email Not Sent.");
-        //     });
     }
 
 

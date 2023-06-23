@@ -30,6 +30,7 @@ import BlogContentCopy from './components/blogcontent/BlogContentCopy';
 import Blog from './components/blogs/Blog';
 import axios from 'axios';
 import BlogCopy from './components/blogs/BlogCopy';
+import SuccessPage from './components/SuccessPage'
 
 
 function App() {
@@ -104,6 +105,7 @@ console.log(posts);
           <Route path='/freelancer-transcriber' element={<Transcriber />} />
           <Route path='/freelancer-vo-dubbing-artist' element={<VoDubArtist />} />
           <Route path='/freelancer-interpreter' element={<Interpreter />} />
+          <Route path='/success' element={<SuccessPage />} />
           {/* <Route path='/' element={<Homepage blogs={data?data:""}/>}></Route> */}
         </Routes>
         <Footer />

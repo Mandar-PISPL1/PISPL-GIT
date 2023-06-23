@@ -68,7 +68,10 @@ export default function BrochurePopup() {
                 <input required style={inputStyle} name="Email" type='email' onChange={handleInputChange} />
                 <p className='mb-1 mt-3'>Phone Number</p>
                 <input
-                  style={inputStyle} name="Phonenumber" type='text' onChange={handleInputChange} />
+                  style={inputStyle} name="Phonenumber" type='text' onChange={handleInputChange} maxLength="10"
+                  onInput={(event) => {
+                      event.target.value = event.target.value.slice(0, 10); // Restrict input to 10 characters
+                  }}/>
               </div>
               <div className="modal-footer d-flex justify-content-center" style={{ border: "0px" }}>
 
