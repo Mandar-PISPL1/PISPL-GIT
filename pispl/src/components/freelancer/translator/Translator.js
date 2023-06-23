@@ -48,7 +48,7 @@ export default function Translator() {
 
     <>
       <div className="container w-50 width100 mt-160">
-      <div className="myskew"></div>
+      {/* <div className="myskew"></div> */}
         <h2 className="text-center my-3">Join our freelance team.</h2>
         
         <form className="form" onSubmit={(e) => Submit(e)}>
