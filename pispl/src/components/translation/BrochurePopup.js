@@ -58,15 +58,15 @@ export default function BrochurePopup() {
         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
           <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content" style={{ backgroundColor: "#49dab5" }}>
+            <div className="modal-content" style={{ backgroundColor: "#49dab5", borderRadius: "10%", padding: "20px" }}>
               <div className="modal-header d-flex flex-column justify-content-center align-items-center" style={{ border: "0px", color: "#0d2366", fontWeight: "600" }}>
                 <h3 className="modal-title" id="exampleModalLabel">Get the FREE Brochure</h3>
-                <button type="button" className="btn-close" style={{ position: "relative", top: "-48px", right: " -8px" }} data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" className="btn-close" style={{ position: "relative", top: "-48px", right: " -8px", color: "#fff" }} data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div className="modal-body px-4" >
-                <p className='mb-1'>Email Address </p>
+              <div className="modal-body p-0 px-4" >
+                <p className='mb-2'>Email Address </p>
                 <input required style={inputStyle} name="Email" type='email' onChange={handleInputChange} />
-                <p className='mb-1 mt-3'>Phone Number</p>
+                <p className='mb-2 mt-3'>Phone Number</p>
                 <input
                   style={inputStyle} name="Phonenumber" type='text' onChange={handleInputChange} maxLength="10"
                   onInput={(event) => {
@@ -75,7 +75,7 @@ export default function BrochurePopup() {
               </div>
               <div className="modal-footer d-flex justify-content-center" style={{ border: "0px" }}>
 
-                <button type="submit" onClick={openPDFInNewTab} style={buttonstyle} className="btn btn-primary mb-3" disabled={!isFormValid}>Save changes</button>
+                <button type="submit" onClick={openPDFInNewTab} style={buttonstyle} className="btn btn-primary my-3" disabled={!isFormValid}>Download Brochure Now</button>
               </div>
 
               
