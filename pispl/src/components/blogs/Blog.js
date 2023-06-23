@@ -31,7 +31,6 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
       { id: 16, name: "pispl team" },
       { id: 19, name: "Vedant Maheshwari" },
       { id: 20, name: "Kashish Kanada" },
-
     ],
   };
 
