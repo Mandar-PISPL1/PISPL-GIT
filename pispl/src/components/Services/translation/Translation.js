@@ -335,6 +335,11 @@ export default function Translation() {
           </div>
         </div>
       </div>
+      <div>
+        <form>
+          <input type='file' name='file'></input>
+        </form>
+      </div>
 
     </>
   )
