@@ -22,6 +22,8 @@ export default function VoDubArtist() {
       .catch((error) => {
         console.log(error);
       });
+      const pdfPath =  "/#/thank-you";
+    window.open(pdfPath, '_self');
   }
   const btnStyle = {
     width: "100%",

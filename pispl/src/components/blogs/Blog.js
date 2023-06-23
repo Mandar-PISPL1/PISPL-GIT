@@ -87,7 +87,7 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
 
                       <div className="card border-0">
 
-                        <img src={post._embedded['wp:featuredmedia'][0].source_url} className="card-img-top" alt="..." />
+                        <img src={post._embedded['wp:featuredmedia'][0].source_url} className="card-img-top" alt="..." style={{width:"555px",height:"290px",objectFit:"contain"}}/>
 
                         <div className="card-body px-0" >
                           <h2 style={{ fontWeight: "600", fontSize: "20px", color: "#0d2366", padding: "0px 0px" }}>{post.title.rendered}</h2>

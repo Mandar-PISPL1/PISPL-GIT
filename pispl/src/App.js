@@ -49,8 +49,9 @@ useEffect(() => {
       const response = await axios.get(
         `https://parikhinfosolutions.com/wp-json/wp/v2/posts?_embed&per_page=6&page=${currentPage}`
       );
+      const publishedPosts = response.data.filter((post) => post.status === 'publish');
 
-      const modifiedPosts = response.data.map((post) => {
+      const modifiedPosts = publishedPosts.map((post) => {
         const excerpt = post.excerpt?.rendered || '';
         const truncatedExcerpt = excerpt.substring(0, 150);
         const featuredMedia =
@@ -105,7 +106,7 @@ console.log(posts);
           <Route path='/freelancer-transcriber' element={<Transcriber />} />
           <Route path='/freelancer-vo-dubbing-artist' element={<VoDubArtist />} />
           <Route path='/freelancer-interpreter' element={<Interpreter />} />
-          <Route path='/success' element={<SuccessPage />} />
+          <Route path='/thank-you' element={<SuccessPage />} />
           {/* <Route path='/' element={<Homepage blogs={data?data:""}/>}></Route> */}
         </Routes>
         <Footer />

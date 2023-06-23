@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-
+import { NavLink } from "react-router-dom";
+import { redirect  } from 'react-router-dom';
 
 export default function Translator() {
+  
 
   function Submit(e) {
     const formEle = document.querySelector("form");
@@ -22,6 +24,8 @@ export default function Translator() {
       .catch((error) => {
         console.log(error);
       });
+      const pdfPath =  "/#/thank-you";
+    window.open(pdfPath, '_self');
   }
 
   const btnStyle = {
@@ -44,6 +48,7 @@ export default function Translator() {
 
     <>
       <div className="container w-50 width100 mt-160">
+      <div className="myskew"></div>
         <h2 className="text-center my-3">Join our freelance team.</h2>
         
         <form className="form" onSubmit={(e) => Submit(e)}>
@@ -3057,9 +3062,13 @@ export default function Translator() {
 
           </div>
           <div className="my-3">
+            {/* <button type="submit" style={btnStyle} className="btn btn-primary"><NavLink to="/success">Register </NavLink><i aria-hidden="true" className="fas fa-location-arrow mx-2">
+            </i></button> */}
             <button type="submit" style={btnStyle} className="btn btn-primary">Register <i aria-hidden="true" className="fas fa-location-arrow mx-2">
             </i></button>
 
+            {/* <button onClick={click} style={btnStyle} className="btn btn-primary">click <i aria-hidden="true" className="fas fa-location-arrow mx-2">
+            </i></button> */}
           </div>
         </form>
       </div>
