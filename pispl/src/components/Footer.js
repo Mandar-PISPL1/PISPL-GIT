@@ -86,7 +86,7 @@ export default function Footer() {
                         <div className='footer-col' style={{width:"20%"}}>
                             <h2 style={whiteStyle}>Services</h2>
                             <ul className='p-0'>
-                                <li><NavLink to="/translation#top"><BiFontColor/> Translation</NavLink></li>
+                                <li><NavLink to="/translation"><BiFontColor/> Translation</NavLink></li>
                                 <li><NavLink to="/transcription"><BsHeadphones/> Transcription</NavLink></li>
                                 <li><NavLink to="/localization"><BsGlobe/> Localization</NavLink></li>
                                 <li><NavLink to="/dubbing"><FaMicrophone/> Dubbing</NavLink></li>
