@@ -44,12 +44,12 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
           <p className='text-center mb-5' style={{ fontSize: "22px", fontWeight: "300", maxWidth: "788px" }}>Get new updates direct to your inbox. 💌 To help you get the most out of through the globalization.</p>
           <div className='d-flex justify-content-center' style={{ textAlign: 'center' }}>
             <form className='d-flex'>
-              <input placeholder='Your Email' style={{ color: "#49dab5", backgroundColor: "#0d2366", border: "1px solid #49dab5", padding: "2px 5px", fontSize: "20px", padding: "2px 5px" }}></input>
+              <input placeholder='Your Email' style={{ color: "#49dab5", backgroundColor: "#0d2366", border: "1px solid #49dab5", padding: "2px 5px", fontSize: "20px", padding: "2px 5px", width: "100%" }}></input>
               <button style={buttonstyle}>SUBSCRIBE</button>
             </form>
 
           </div>
-          <p className='mt-4'>✅ Don’t worry! We hate SPAM just as much as you do.</p>
+          <p className='mt-4'>✅ Don't worry! We hate SPAM just as much as you do.</p>
 
         </div>
 
@@ -82,17 +82,17 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
 
 
                   <Link to={`/blogs/${post.slug}`}>
-                    <div className='p-2 rounded my-1' style={{ boxShadow: "0px 0px 10px -1px rgba(0,0,0,0.5)", height: "100%" }}>
+                    <div className='p-3 rounded my-1' style={{ boxShadow: "0px 0px 10px -1px rgba(0,0,0,0.5)", height: "100%" }}>
 
                       <div className="card border-0">
 
-                        <img src={post._embedded['wp:featuredmedia'][0].source_url} className="card-img-top" alt="..." style={{width:"555px",height:"290px",objectFit:"contain"}}/>
+                        <img src={post._embedded['wp:featuredmedia'][0].source_url} className="card-img-top" alt="..." style={{width:"100%",height:"290px",objectFit:"contain"}}/>
 
                         <div className="card-body px-0" >
                           <h2 style={{ fontWeight: "600", fontSize: "20px", color: "#0d2366", padding: "0px 0px" }}>{post.title.rendered}</h2>
                           <p style={{ color: "#49dab5", fontSize: "13px" }}>{authorName} | {formattedDate} </p>
                           {/* <p style={{fontSize:"16px"}}>{blog.attributes.blogDesc}</p> */}
-                          <div dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
+                          <div className='post_content' dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
                         </div>
 
                       </div>
