@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { BiCaretDown } from "react-icons/bi";
+import { BsWhatsapp } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -85,6 +86,10 @@ export default function Navbar() {
                 </div>
 
                 
+            </div>
+
+            <div className='whatsapp'>
+                <a href='https://wa.me/+919136109881/?text=I%20am%20interested%20to%20know%20more%20about%20services%20offered%20by%20Parikh%20Info%20Solutions%20Pvt.%20Ltd.' style={{color: "#fff", padding: "10px 20px", backgroundColor: "#25D366", borderRadius: "45px"}}><BsWhatsapp/> Whatsapp</a>
             </div>
 
             <div className="hamburger-menu-container">

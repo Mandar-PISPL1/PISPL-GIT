@@ -63,6 +63,9 @@ header + div{
 }
 
 @media(max-width: 415px){
+    .whatsapp{
+        display: none;
+    }
   .footer-col{
     width: 100%!important;
 }
@@ -719,4 +722,9 @@ a{
 
 .mt-160{
     margin-top: 160px!important;
+}
+
+
+.post_content p{
+    margin: 0;
 }
