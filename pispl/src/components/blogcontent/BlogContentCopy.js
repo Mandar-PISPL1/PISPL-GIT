@@ -116,7 +116,7 @@ export default function BlogContentCopy({ posts }) {
             <div className='container-fluid py-5' style={{ backgroundColor: "var(--mainColor)", color: "var(--textColor)" }}>
                 <div className=' py-4 mx-md-5 px-md-5 d-flex justify-content-center'>
                     <div className='row px-md-5 mx-md-5 m-0 width100' style={{ width: "72%" }}>
-                        <h1 className='fw-bold text-start p-0 phoneFont' style={{ fontSize: "50px", lineHeight: "75px" }}>{title}</h1>
+                        <h1 className='fw-bold text-start p-0 phoneFont' dangerouslySetInnerHTML={{ __html: title }} style={{ fontSize: "50px", lineHeight: "75px" }} />
                         <div className='my-4' style={{ width: "80px", backgroundColor: "#49dab5", height: "5px" }}></div>
                         <div className='p-0 d-flex  justify-content-between phoneFlex'>
                             <div><span className='mr-3'><span style={{ marginRight: "6px" }}><i aria-hidden="true" class="far fa-user-circle"></i></span>{authorName}</span>

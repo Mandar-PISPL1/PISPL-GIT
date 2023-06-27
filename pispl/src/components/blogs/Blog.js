@@ -89,7 +89,7 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
                         <img src={post._embedded['wp:featuredmedia'][0].source_url} className="card-img-top" alt="..." style={{width:"100%",height:"290px",objectFit:"contain"}}/>
 
                         <div className="card-body px-0" >
-                          <h2 style={{ fontWeight: "600", fontSize: "20px", color: "#0d2366", padding: "0px 0px" }}>{post.title.rendered}</h2>
+                          <h2 dangerouslySetInnerHTML={{ __html: post.title.rendered }} style={{ fontWeight: "600", fontSize: "20px", color: "#0d2366", padding: "0px 0px" }} />
                           <p style={{ color: "#49dab5", fontSize: "13px" }}>{authorName} | {formattedDate} </p>
                           {/* <p style={{fontSize:"16px"}}>{blog.attributes.blogDesc}</p> */}
                           <div className='post_content' dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
