@@ -26,10 +26,9 @@ import Transcriber from './components/freelancer/transcriber/Transcriber';
 import VoDubArtist from './components/freelancer/vodubartist/VoDubArtist';
 import Interpreter from './components/freelancer/interpreter/Interpreter';
 // import useFetch from './hooks/useFetch';
-import BlogContentCopy from './components/blogcontent/BlogContentCopy';
+import BlogContent from './components/blogcontent/BlogContent';
 import Blog from './components/blogs/Blog';
 import axios from 'axios';
-import BlogCopy from './components/blogs/BlogCopy';
 import SuccessPage from './components/SuccessPage'
 
 
@@ -95,10 +94,9 @@ console.log(posts);
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/clients' element={<Clients/>}/>
           <Route path='/blogs' element={<Blog posts={posts} totalPage={totalPage} currentPage={currentPage} setcurrentPage={setcurrentPage}/>}/>
-          <Route path='/blogscopy' element={<BlogCopy />}/>
           {/* <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
           <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>} /> */}
-          <Route path='blogs/:id' element={<BlogContentCopy posts={posts}/>}></Route>
+          <Route path='blogs/:id' element={<BlogContent posts={posts}/>}></Route>
           <Route path='/join-now' element={<JoinNow />} />
           <Route path='/freelancer' element={<FreeLancer />} />
           <Route path='/career-opportunities' element={<CareerPage />} />
@@ -107,10 +105,8 @@ console.log(posts);
           <Route path='/freelancer-vo-dubbing-artist' element={<VoDubArtist />} />
           <Route path='/freelancer-interpreter' element={<Interpreter />} />
           <Route path='/thank-you' element={<SuccessPage />} />
-          {/* <Route path='/' element={<Homepage blogs={data?data:""}/>}></Route> */}
         </Routes>
         <Footer />
-        {/* <Form/> */}
    
     </>
   );
