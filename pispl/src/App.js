@@ -15,7 +15,6 @@ import ContentWriting from './components/Services/content_writing/ContentWriting
 import VideoCreation from './components/Services/video_creation/VideoCreation';
 import AboutUs from './components/about_us/AboutUs';
 import Clients from './components/clients/Clients';
-// import Blog from './components/blogs/Blog';
 import JoinNow from './components/join_now/JoinNow';
 import Contacts from './components/contact/Contacts';
 import Home from './components/Home-page/Home';
@@ -25,7 +24,6 @@ import Translator from './components/freelancer/translator/Translator';
 import Transcriber from './components/freelancer/transcriber/Transcriber';
 import VoDubArtist from './components/freelancer/vodubartist/VoDubArtist';
 import Interpreter from './components/freelancer/interpreter/Interpreter';
-// import useFetch from './hooks/useFetch';
 import BlogContent from './components/blogcontent/BlogContent';
 import Blog from './components/blogs/Blog';
 import axios from 'axios';
@@ -33,11 +31,7 @@ import SuccessPage from './components/SuccessPage'
 
 
 function App() {
-  // let {loading,data,error} =useFetch('http://localhost:1337/api/blogs?populate=*')
-  // if(loading) return<p>loading....</p>
-  // if(error) return <p>Error..</p>
-  // console.log('================================')
-  // console.log(data)
+
   const [posts, setPosts] = useState([]);
   const [totalPage, setTotalpage] = useState(1);
   const [currentPage, setcurrentPage] = useState(1);
@@ -60,7 +54,6 @@ useEffect(() => {
 
       setPosts(modifiedPosts);
       setTotalpage(Number(response.headers['x-wp-total']));
-      // console.log("response=",response.headers['x-wp-total']);
     } catch (error) {
       console.error(error);
     }
@@ -69,15 +62,9 @@ useEffect(() => {
   fetchData();
 },[currentPage]);
 
-console.log(posts);
-
-// console.log("response=",response.header['x-wp-total']);
-
   return (
     <>
-      
-
-        <Navbar />
+      <Navbar />
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/translation' element={<Translation/>}/>
@@ -94,8 +81,6 @@ console.log(posts);
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/clients' element={<Clients/>}/>
           <Route path='/blogs' element={<Blog posts={posts} totalPage={totalPage} currentPage={currentPage} setcurrentPage={setcurrentPage}/>}/>
-          {/* <Route path='/blogs' element={<Blog blogs={data?data:""}/>} />
-          <Route path='/blog/:id' element={<BlogContent blogs={data?data:""}/>} /> */}
           <Route path='blogs/:id' element={<BlogContent posts={posts}/>}></Route>
           <Route path='/join-now' element={<JoinNow />} />
           <Route path='/freelancer' element={<FreeLancer />} />
@@ -107,7 +92,6 @@ console.log(posts);
           <Route path='/thank-you' element={<SuccessPage />} />
         </Routes>
         <Footer />
-   
     </>
   );
 }
