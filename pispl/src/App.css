@@ -48,6 +48,11 @@ header + div{
 	padding: 0 20px;
     font-weight: 400;
 }
+
+.footer-col ul{
+	list-style-type: none;
+}
+
 .footer-col ul li a{
 	color:#eee;
 	text-decoration: none;
