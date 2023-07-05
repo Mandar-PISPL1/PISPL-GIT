@@ -26,7 +26,6 @@ import VoDubArtist from './components/freelancer/vodubartist/VoDubArtist';
 import Interpreter from './components/freelancer/interpreter/Interpreter';
 import BlogContent from './components/blogcontent/BlogContent';
 import Blog from './components/blogs/Blog';
-import LoadMoreBlog from './components/blogs/LoadMoreBlog';
 import axios from 'axios';
 import SuccessPage from './components/SuccessPage'
 
@@ -82,7 +81,6 @@ useEffect(() => {
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/clients' element={<Clients/>}/>
           <Route path='/blogs' element={<Blog posts={posts} totalPage={totalPage} currentPage={currentPage} setcurrentPage={setcurrentPage}/>}/>
-          <Route path='/loadmoreblog' element={<LoadMoreBlog posts={posts} />}/>
           <Route path='blogs/:id' element={<BlogContent posts={posts}/>}></Route>
           <Route path='/join-now' element={<JoinNow />} />
           <Route path='/freelancer' element={<FreeLancer />} />

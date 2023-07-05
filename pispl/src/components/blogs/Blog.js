@@ -92,7 +92,7 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
                           <h2 dangerouslySetInnerHTML={{ __html: post.title.rendered }} style={{ fontWeight: "600", fontSize: "20px", color: "#0d2366", padding: "0px 0px" }} />
                           <p style={{ color: "#49dab5", fontSize: "13px" }}>{authorName} | {formattedDate} </p>
                           {/* <p style={{fontSize:"16px"}}>{blog.attributes.blogDesc}</p> */}
-                          <div className='post_content' dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
+                          <div className='post_content' dangerouslySetInnerHTML={{ __html: post.acf.post_description }}></div>
                         </div>
 
                       </div>
