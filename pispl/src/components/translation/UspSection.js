@@ -17,7 +17,7 @@ export default function UspSection(props) {
     }
     return (
         <>
-            <div style={{ backgroundColor: "#0d2366", height: "80vh", display: "flex", alignItems: "center" }}>
+            <div style={{ backgroundColor: "#0d2366", height: "50vh", display: "flex", alignItems: "center" }}>
                 <div style={{ padding: "3rem 0rem", width: "100%" }}>
 
                     <h1 className=" text-center py-3" style={{ fontWeight: "700", color: "white" }}>{props.heading}</h1>

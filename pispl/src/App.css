@@ -41,7 +41,7 @@ header + div{
 	display: flex;
     justify-content: center;
 	align-items: center;
-
+    padding: 0px!important;
 }
 
 .footer-col{
@@ -92,11 +92,10 @@ iframe{
 .certificate{
 	display: flex;
 	flex-wrap: wrap;
-
+    justify-content: flex-end;
 }
 .certificate img{
 	margin: 2px 7px;
-	width: 30%;
 }
 
 @media(max-width: 767px){
@@ -117,7 +116,6 @@ iframe{
 	justify-content: center;
 	align-items: center;
 	font-size: 1.7rem;
-	margin: auto;
 }
 
 
@@ -631,6 +629,26 @@ header{
     transform-origin: left bottom;
     position: relative;
     top: -40px;
+}
+
+.footer-skew{
+    background-color: #a3abc5;
+    width: 100%;
+    height: 36px;
+    z-index: -1;
+    transform: skew(0deg,1deg);
+    transform-origin: left bottom;
+    position: relative;
+    top:10px;
+}
+
+.footer-skew2{
+    background-color: #49dab5;
+    width: 100%;
+    height: 5px;
+    transform-origin: right top;
+    position: relative;
+    top:0px;
 }
 
 .skewed-div-up{

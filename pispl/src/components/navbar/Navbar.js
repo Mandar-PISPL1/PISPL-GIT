@@ -33,34 +33,34 @@ export default function Navbar() {
                             <div className="dropdown">
                                 <ul>
                                     <li className="dropdown-link">
-                                        <NavLink to="/translation" onClick={handleDropdownClick}>Translation Services</NavLink>
+                                        <NavLink to="/our-services/translation-services-india/" onClick={handleDropdownClick}>Translation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/transcription" onClick={handleDropdownClick}>Transcription Services</NavLink>
+                                        <NavLink to="/our-services/transcription-services-india/" onClick={handleDropdownClick}>Transcription Services</NavLink>
                                     </li>
                                     <li className="dropdown-link" >
-                                        <NavLink to="/localization" onClick={handleDropdownClick}>Localization Services</NavLink>
+                                        <NavLink to="/our-services/localization-services/" onClick={handleDropdownClick}>Localization Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/voice-over" onClick={handleDropdownClick}>Voice over Services</NavLink>
+                                        <NavLink to="/our-services/voiceover-services-india/" onClick={handleDropdownClick}>Voice over Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/dubbing" onClick={handleDropdownClick}>Dubbing Services</NavLink>
+                                        <NavLink to="/our-services/dubbing-services/" onClick={handleDropdownClick}>Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/ai-dubbing" onClick={handleDropdownClick}>AI Dubbing Services</NavLink>
+                                        <NavLink to="/our-services/ai-dubbing-services-in-india/" onClick={handleDropdownClick}>AI Dubbing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/video-subtitling" onClick={handleDropdownClick}>Video Subtitling Services</NavLink>
+                                        <NavLink to="/our-services/video-subtitling-services/" onClick={handleDropdownClick}>Video Subtitling Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/interpretation" onClick={handleDropdownClick}>Interpretation Services</NavLink>
+                                        <NavLink to="/our-services/video-remote-interpretation-services/" onClick={handleDropdownClick}>Interpretation Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/content-writing" onClick={handleDropdownClick}>Content Writing Services</NavLink>
+                                        <NavLink to="/our-services/content-writing-services-in-india/" onClick={handleDropdownClick}>Content Writing Services</NavLink>
                                     </li>
                                     <li className="dropdown-link">
-                                        <NavLink to="/video-creation" onClick={handleDropdownClick}>Video creation Services</NavLink>
+                                        <NavLink to="/our-services/video-creation-service-in-india/" onClick={handleDropdownClick}>Video creation Services</NavLink>
                                     </li>
                                    
                                     <div className="arrow"></div>
@@ -71,16 +71,16 @@ export default function Navbar() {
                         <NavLink to="/about" onClick={handleDropdownClick}>About Us</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}} >
-                        <NavLink to="/clients" onClick={handleDropdownClick}>Clients</NavLink>
+                        <NavLink to="/our-clients/" onClick={handleDropdownClick}>Clients</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                        <NavLink to="/blogs" onClick={handleDropdownClick}>Blogs</NavLink>
+                        <NavLink to="/blog" onClick={handleDropdownClick}>Blogs</NavLink>
                         </li>
                         <li className="nav-link" style={{'--i': 1}}>
-                        <NavLink to="/join-now" onClick={handleDropdownClick}>Join Now</NavLink>
+                        <NavLink to="/join-us" onClick={handleDropdownClick}>Join Now</NavLink>
                         </li>
                         <li className="nav-link"style={{'--i': 1}}>
-                        <NavLink to="/contact" onClick={handleDropdownClick}>Contact</NavLink>
+                        <NavLink to="/contact-us" onClick={handleDropdownClick}>Contact</NavLink>
                         </li>
                     </ul>
                 </div>

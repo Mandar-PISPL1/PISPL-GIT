@@ -212,10 +212,10 @@ export default function Home() {
       <div className='skewed-div-down'></div>
 
       {/* We Help Your Business With */}
-      <div className="conatiner py-4 mx-md-2">
+      <div className="conatiner-fluid py-4 mx-md-2">
         <h1 className='text-center ml-2' style={{ color: "#0d2366", fontWeight: "700" }}>We Help Your Business With</h1>
         <div className='my-4 ' style={{ width: "40px", backgroundColor: "#49dab5", height: "5px", margin: "0 auto" }}></div>
-        <div className="row px-md-5 mx-md-5 m-0">
+        <div className="row px m-0">
           <div className='col-md-4 col-12 ' style={{ padding: "0px 38px", margin: "65px 0px" }}>
               <div className='shadow-lg rounded-3 ' style={{ height: "100%" }}>
             <NavLink to='/translation'>
@@ -224,8 +224,8 @@ export default function Home() {
                   <img src={img1}></img>
                 </div>
             </NavLink>
-                <h3 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Translation Services</h3>
-                <p className='normal-text px-3'>Be it a small paragraph or large document, Parikh Info Solutions has the experience and the resources to translate content from one language to another. With an eye for details and keeping it all relevant, reliable, authentic and accurate, Parikh Info solutions provide apt translation services to enhance your business and make optimum use of your resources. A translation that fits your requirement and aptly translates the words & emotions as a part of data, at Parikh info solution, we provide excellent human translation services provided by our native language experts.</p>
+                <h3 className='text-center my-3' style={{ fontSize: "22px", color: "#0d2366" }}>Translation Services</h3>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>Be it a small paragraph or large document, Parikh Info Solutions has the experience and the resources to translate content from one language to another. With an eye for details and keeping it all relevant, reliable, authentic and accurate, Parikh Info solutions provide apt translation services to enhance your business and make optimum use of your resources. A translation that fits your requirement and aptly translates the words & emotions as a part of data, at Parikh info solution, we provide excellent human translation services provided by our native language experts.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/translation'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
@@ -242,7 +242,7 @@ export default function Home() {
                 </div>
             </NavLink>
                 <h2 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Localization Services</h2>
-                <p className='normal-text px-3 '>Our Localization services will help you localize your websites, applications, and software to the requirement of indigenous viewers. With the surge in global competition, businesses face the need for localization of their business in order to make it less alien in markets beyond boundaries. To give a firm stand in international & national markets, across boundaries, at Parikh info solutions we help the businesses kickstart with the right move. This will lead to substantial growth in your business. Without confining to any specific localization service for a business, we cover Website localization, Software localization, and App localization under one umbrella.</p>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>Our Localization services will help you localize your websites, applications, and software to the requirement of indigenous viewers. With the surge in global competition, businesses face the need for localization of their business in order to make it less alien in markets beyond boundaries. To give a firm stand in international & national markets, across boundaries, at Parikh info solutions we help the businesses kickstart with the right move. This will lead to substantial growth in your business. Without confining to any specific localization service for a business, we cover Website localization, Software localization, and App localization under one umbrella.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/localization'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
@@ -259,7 +259,7 @@ export default function Home() {
 
             </NavLink>
                 <h2 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Transcription Services</h2>
-                <p className='normal-text px-3'>We have perfected the job of transforming audio and speech into quality text files. We entertain both audio and video files and strive to offer the highest possible quality with the lowest error rate. We commit to the best quality <NavLink to="/transcription" className='text-danger'>transcription services</NavLink> and assure to make the process easy & hassle-free for you. With a dedicated team of project managers to look after your needs & a process to keep it all relevant; at Parikh Info Solutions we aim to provide excellent <NavLink to="/transcription" className='text-danger'>transcription services</NavLink>. We guarantee absolute professionalism, precision & result that is worth your time & penny.</p>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>We have perfected the job of transforming audio and speech into quality text files. We entertain both audio and video files and strive to offer the highest possible quality with the lowest error rate. We commit to the best quality <NavLink to="/transcription" className='text-danger'>transcription services</NavLink> and assure to make the process easy & hassle-free for you. With a dedicated team of project managers to look after your needs & a process to keep it all relevant; at Parikh Info Solutions we aim to provide excellent <NavLink to="/transcription" className='text-danger'>transcription services</NavLink>. We guarantee absolute professionalism, precision & result that is worth your time & penny.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/transcription'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
@@ -274,14 +274,12 @@ export default function Home() {
                 <div style={{ maxHeight: "198px", maxWidth: "302px", paddingTop: "7px" }}>
                   <img src={img4} style={{ height: "100%", width: "100%" }}></img>
                 </div>
-
             </NavLink>
                 <h2 className='text-center py-3' style={{ fontSize: "25px", color: "#0d2366" }}>Dubbing Services</h2>
-                <p className='normal-text px-3'>If you are after pinpoint translation, script designing, and meticulous multilingual dubbing; you are at the right place. It is beyond a doubt an integral part of a video as it helps you reach masses. Hence, it is always a win-win to get professionals on board. With experience spanning years under belt & expertise in the field, we commit results that meet your requirements and help you grow your business. We deliver fast and affordable dubbing services, setting professional standards with a pool of skilled artists embellished with the latest technology.</p>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>If you are after pinpoint translation, script designing, and meticulous multilingual dubbing; you are at the right place. It is beyond a doubt an integral part of a video as it helps you reach masses. Hence, it is always a win-win to get professionals on board. With experience spanning years under belt & expertise in the field, we commit results that meet your requirements and help you grow your business. We deliver fast and affordable dubbing services, setting professional standards with a pool of skilled artists embellished with the latest technology.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/dubbing'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
-
               </div>
           </div>
 
@@ -294,7 +292,7 @@ export default function Home() {
 
             </NavLink>
                 <h2 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Voice Over Services</h2>
-                <p className='normal-text px-3'>We cover a plethora of languages, and our artists are well versed in their preferred language. We make sure that our professional voice-over artists have the opposite accent for the job. Our team of professionals & dedicated project managers will assure the smooth working of your work along with keeping it 100% accurate, relevant & reliable. We assure the timely delivery of your project at pocket-friendly rates to keep your budget unaffected too.</p>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>We cover a plethora of languages, and our artists are well versed in their preferred language. We make sure that our professional voice-over artists have the opposite accent for the job. Our team of professionals & dedicated project managers will assure the smooth working of your work along with keeping it 100% accurate, relevant & reliable. We assure the timely delivery of your project at pocket-friendly rates to keep your budget unaffected too.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/voice-over'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
@@ -310,7 +308,7 @@ export default function Home() {
 
             </NavLink>
                 <h2 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Subtitling Services</h2>
-                <p className='normal-text px-3'>We provide on-demand subtitles for the latest movies and series for all languages, for all platforms. Our experience in the field & team of professionals makes us the right choice for your project. We understand the significance of subtitles & their role in making your project a big hit. We offer a multitude of languages, from English to other global languages, to all the indigenous ones. Just ask for it, and we are right here to serve you.</p>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>We provide on-demand subtitles for the latest movies and series for all languages, for all platforms. Our experience in the field & team of professionals makes us the right choice for your project. We understand the significance of subtitles & their role in making your project a big hit. We offer a multitude of languages, from English to other global languages, to all the indigenous ones. Just ask for it, and we are right here to serve you.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/video-subtitling'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
@@ -326,7 +324,7 @@ export default function Home() {
 
             </NavLink>
                 <h2 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Interpretation Services</h2>
-                <p className='normal-text px-3'>To Bridge the communication gap between you and your clients with the help of our video remote interpreters, at Parikh Info Solutions we bring apt interpretation services. Our interpreters help you connect with your clients by acting as language mediators on online platforms. All you need is a strong internet connection and a device consisting of a webcam, with good audio and video quality..</p>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>To Bridge the communication gap between you and your clients with the help of our video remote interpreters, at Parikh Info Solutions we bring apt interpretation services. Our interpreters help you connect with your clients by acting as language mediators on online platforms. All you need is a strong internet connection and a device consisting of a webcam, with good audio and video quality..</p>
                 <div className='text-center p-2'>
                 <NavLink to='/interpretation'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
@@ -342,7 +340,7 @@ export default function Home() {
 
             </NavLink>
                 <h2 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Content Writing Services</h2>
-                <p className='normal-text px-3'>Get Noticed with Precise, Professional & Quality-Driven Content! We can deliver all your technical, digital and professional needs with our bespoke content writing services. Our team of digital-savvy experts & skilled writers will help you hit the target audience with the right words & highly optimized SEO content.</p>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>Get Noticed with Precise, Professional & Quality-Driven Content! We can deliver all your technical, digital and professional needs with our bespoke content writing services. Our team of digital-savvy experts & skilled writers will help you hit the target audience with the right words & highly optimized SEO content.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/content-writing'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>
@@ -358,7 +356,7 @@ export default function Home() {
 
             </NavLink>
                 <h2 className='text-center my-3' style={{ fontSize: "25px", color: "#0d2366" }}>Video Creation Services</h2>
-                <p className='normal-text px-3'>Capture your audience&apos;s attention with creative and professional explainer videos. With an increase in techno-logical advancements, people have become prone to short attention span time. The explainer videos can help you spread your brand&apos;s message and spread awareness effectively in a few minutes. We at Parikh Info Solutions, offer video creation services at every step from content, scripting, and editing, to voice-over and final video production.</p>
+                <p className='normal-text px-3' style={{ fontSize: "14px", color: "#0d2366" }}>Capture your audience&apos;s attention with creative and professional explainer videos. With an increase in techno-logical advancements, people have become prone to short attention span time. The explainer videos can help you spread your brand&apos;s message and spread awareness effectively in a few minutes. We at Parikh Info Solutions, offer video creation services at every step from content, scripting, and editing, to voice-over and final video production.</p>
                 <div className='text-center p-2'>
                 <NavLink to='/video-creation'><button className='mb-3' style={buttonstyle}> Learn More </button></NavLink>
                 </div>

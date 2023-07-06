@@ -81,7 +81,7 @@ const Blog = ({ posts, totalPage, currentPage, setcurrentPage }) => {
                 <div key={post.id} className='col-md-6 col-12 d-flex justify-content-center p-3' >
 
 
-                  <Link to={`/blogs/${post.slug}`}>
+                  <Link to={`/blog/${post.slug}`}>
                     <div className='p-3 rounded my-1' style={{ boxShadow: "0px 0px 10px -1px rgba(0,0,0,0.5)", height: "100%" }}>
 
                       <div className="card border-0">

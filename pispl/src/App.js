@@ -67,22 +67,22 @@ useEffect(() => {
       <Navbar />
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/translation' element={<Translation/>}/>
-          <Route path='/transcription' element={<Transcription/>}/>
-          <Route path='/localization' element={<Localization/>}/>
-          <Route path='/voice-over' element={<VoiceOver/>}/>
-          <Route path='/dubbing' element={<Dubbing/>}/>
-          <Route path='/ai-dubbing' element={<AiDubbing/>}/>
-          <Route path='/video-subtitling' element={<VideoSubtitling/>}/>
-          <Route path='/interpretation'element={<Interpretation/>}/>
-          <Route path='/content-writing' element={<ContentWriting/>}/>
-          <Route path='/video-creation' element={<VideoCreation/>}/>
-          <Route path='/contact' element={<Contacts/>}/>
+          <Route path='/our-services/translation-services-india/' element={<Translation/>}/>
+          <Route path='/our-services/transcription-services-india/' element={<Transcription/>}/>
+          <Route path='/our-services/localization-services/' element={<Localization/>}/>
+          <Route path='/our-services/voiceover-services-india/' element={<VoiceOver/>}/>
+          <Route path='/our-services/dubbing-services/' element={<Dubbing/>}/>
+          <Route path='/our-services/ai-dubbing-services-in-india/' element={<AiDubbing/>}/>
+          <Route path='/our-services/video-subtitling-services/' element={<VideoSubtitling/>}/>
+          <Route path='/our-services/video-remote-interpretation-services/'element={<Interpretation/>}/>
+          <Route path='/our-services/content-writing-services-in-india/' element={<ContentWriting/>}/>
+          <Route path='/our-services/video-creation-service-in-india/' element={<VideoCreation/>}/>
+          <Route path='/contact-us' element={<Contacts/>}/>
           <Route path='/about' element={<AboutUs/>}/>
-          <Route path='/clients' element={<Clients/>}/>
-          <Route path='/blogs' element={<Blog posts={posts} totalPage={totalPage} currentPage={currentPage} setcurrentPage={setcurrentPage}/>}/>
-          <Route path='blogs/:id' element={<BlogContent posts={posts}/>}></Route>
-          <Route path='/join-now' element={<JoinNow />} />
+          <Route path='/our-clients/' element={<Clients/>}/>
+          <Route path='/blog' element={<Blog posts={posts} totalPage={totalPage} currentPage={currentPage} setcurrentPage={setcurrentPage}/>}/>
+          <Route path='blog/:id' element={<BlogContent posts={posts}/>}></Route>
+          <Route path='/join-us' element={<JoinNow />} />
           <Route path='/freelancer' element={<FreeLancer />} />
           <Route path='/career-opportunities' element={<CareerPage />} />
           <Route path='/freelancer-translator' element={<Translator />} />
