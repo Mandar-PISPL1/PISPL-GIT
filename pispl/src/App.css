@@ -50,7 +50,7 @@ header + div{
 }
 
 .footer-col ul{
-	list-style-type: none;
+	list-style-type: none!important;
 }
 
 .footer-col ul li a{
@@ -261,6 +261,12 @@ header{
     align-items: center;
     justify-content: space-between;
     transition: .5s;
+    border-bottom: 2px solid #49dab600;
+}
+
+.nav-link > a:hover{
+    border-bottom: 2px solid #49dab5;
+    color: #49dab5;
 }
 
 .nav-link > a > i{
@@ -275,11 +281,12 @@ header{
     transform: translateY(10px);
     opacity: 0;
     pointer-events: none;
-    transition: .5s;
+    transition: .3s;
 }
 
 .dropdown ul{
     position: relative;
+    padding-left: 0rem;
 }
 
 .dropdown-link > a{
