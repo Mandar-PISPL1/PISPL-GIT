@@ -4,6 +4,8 @@ import { FaHome } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsPinterest } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -54,8 +56,8 @@ export default function Footer() {
                                 <a href="https://www.linkedin.com/company/parikh-info-solutions-private-limited"><BsLinkedin color='#49dab5'/></a>
                                 <a href="https://www.youtube.com/@parikhinfosolutions1837"><BsYoutube color='#49dab5' /></a>
                                 <a href="https://www.facebook.com/parikhinfosolutionspvtltd"><BsFacebook color='#49dab5' /></a>
-                                <a href="https://twitter.com/Parikh_PISPL"><BsYoutube color='#49dab5' /></a>
-                                <a href="https://in.pinterest.com/parikhinfosolutions/"><BsFacebook color='#49dab5' /></a>
+                                <a href="https://twitter.com/Parikh_PISPL"><BsTwitter color='#49dab5' /></a>
+                                <a href="https://in.pinterest.com/parikhinfosolutions/"><BsPinterest color='#49dab5' /></a>
                             </span>
                         </div>
                         {/* third section */}
